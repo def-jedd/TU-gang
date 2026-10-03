@@ -23,7 +23,15 @@ missing, the app falls back to practice voice **and says so on screen**.
 Owner: UI + NFC (Teammate 1). The tutor API is
 [`apps/bikol-rag-cli/server.py`](../bikol-rag-cli/README.md#serve-the-mobile-app).
 
-## Run it (2 minutes)
+## Run it
+
+One person runs the dev server; phones open it in one of two apps:
+
+| | **TU-gang dev build** (recommended) | **Expo Go** |
+|---|---|---|
+| Real NFC cards | Yes | No (on-screen cards only) |
+| Get it | APK from EAS (below) | Play Store / App Store (SDK 57) |
+| Start the server with | `npx expo start` or `npm run tunnel` | `npm run start:go` or `npm run tunnel:go` |
 
 ```bash
 cd apps/mobile
@@ -31,41 +39,33 @@ npm install
 npx expo start
 ```
 
-Scan the QR code with **Expo Go** (Android) or the Camera app (iOS). With no
-backend configured the app uses the built-in **mock**, and every answer is
-labelled **"Demo data · not live AI"**.
+It's **`npx expo …`** or **`npm run …`**. `npm expo …` is not a command.
+Because `expo-dev-client` is installed, a plain `npx expo start` makes a QR
+code **for the dev build**; Expo Go users need the `:go` scripts.
 
-**Phone stuck on "Loading…" / never opens?** Venue and guest Wi-Fi usually
-block devices from reaching each other. Use the tunnel instead (ngrok is
-already a dev dependency — no global install needed):
+**Live AI vs demo:** with `EXPO_PUBLIC_API_BASE_URL=auto` in `.env.local`,
+the app talks to the tutor API on the computer running Expo. That needs the
+phone and computer on the **same network without client isolation**, e.g.
+a phone hotspot. Guest/venue Wi-Fi blocks it, and through `npm run tunnel`
+the app can open but cannot reach the API ("can't reach the tutor").
 
-```bash
-npm run tunnel
-```
+### Install the dev build (any teammate, Android)
 
-Note: the `.env.local` backend URL must also be reachable from the phone —
-a laptop LAN IP won't work on guest Wi-Fi either; use the backend's deployed
-URL or a phone hotspot for both devices.
+1. On the phone, open the latest development build from the
+   [project's builds page](https://expo.dev/accounts/jjoshua-sek/projects/tu-gang/builds)
+   and tap **Install** (allow "install unknown apps" if asked).
+2. Open **TU-gang**: it lists dev servers on the same network, or scan the
+   terminal's QR code with the phone camera.
+3. Rebuild only when native code changes (new native package, `app.json`
+   plugins/permissions): `npx eas-cli build --profile development --platform android`.
+   EAS uploads only `apps/mobile` source (see `/.easignore`; never relax it,
+   since EAS ignores the nested `.gitignore` files and would upload `.env` files).
 
-It's **`npx expo start`** or **`npm run tunnel`**. `npm expo …` is not a
-command (npm answers `Unknown command: "expo"`, and no QR code appears).
+### Expo Go (no install, no NFC)
 
-### Teammates: try it on your phone (no login needed)
-
-One person runs the dev server; everyone else only needs **Expo Go**
-(Play Store / App Store, the version for SDK 57).
-
-1. Open Expo Go → **Scan QR code** (iPhone: use the Camera app) and scan the
-   QR code in the terminal of whoever ran `npm run tunnel`.
-2. That's it. No Expo account needed, and you don't need to sign in as the
-   person running the server. The "not signed in to Expo CLI" banner on
-   Expo Go's home screen only controls the *Development servers* list; ignore it.
-3. With `npm run tunnel` you don't even need the same Wi-Fi.
-
-Why it's open: the dev server serves an anonymous, unsigned manifest
-because this project has no EAS project ID (`extra.eas.projectId` in
-`app.json`). If someone later runs `eas init` / `eas build`, Expo starts
-signing it with that account, so re-check that teammates can still open it.
+`npm run tunnel:go`, then Expo Go → **Scan QR code**. No Expo account or
+login needed. The project owner's server signs the manifest and anyone
+else's serves it unsigned; both open on any phone.
 
 Other scripts: `npm test` (card → JSON tests), `npm run typecheck`,
 `npm run web` (quick layout checks in a browser).
