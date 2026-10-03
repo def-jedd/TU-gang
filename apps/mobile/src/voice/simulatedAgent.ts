@@ -10,7 +10,7 @@ import { questionForTopic } from '../nfc/cardReducer';
 import { explain } from '../services/api';
 import type { Difficulty, ExplainRequest } from '../types/tutor';
 import { simplerThan } from './controls';
-import { preferredVoice, Speech } from './deviceSpeech';
+import { preferredVoice, speakLine, Speech } from './deviceSpeech';
 import type { VoiceAgent, VoiceContext, VoiceControl, VoiceListener } from './types';
 
 // DRAFT Bikol — needs native review (see src/i18n/copy.ts header).
@@ -124,15 +124,7 @@ export class SimulatedVoiceAgent implements VoiceAgent {
       if (run !== this.run || this.stopped) return;
       const id = `practice-${run}-${i}`;
       this.listener.onCaption({ id, speaker: 'agent', text: lines[i], final: false });
-      const finished = await new Promise<boolean>((resolve) =>
-        Speech.speak(lines[i], {
-          ...voice,
-          rate: RATE[this.context.difficulty],
-          onDone: () => resolve(true),
-          onStopped: () => resolve(false),
-          onError: () => resolve(true), // skip a line the engine can't read
-        }),
-      );
+      const finished = await speakLine(lines[i], { rate: RATE[this.context.difficulty] });
       if (!finished || run !== this.run || this.stopped) return;
       this.listener.onCaption({ id, speaker: 'agent', text: lines[i], final: true });
     }

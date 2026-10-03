@@ -19,10 +19,39 @@ export function preferredVoice(): Promise<VoiceChoice> {
   chosen ??= Speech.getAvailableVoicesAsync()
     .then((voices) => {
       const match = voices.find((v) => /^(fil|tl)([-_]|$)/i.test(v.language));
-      return match ? { language: match.language, voice: match.identifier } : { language: 'fil-PH' };
+      // No Filipino voice installed: use the phone's default voice. Asking for
+      // an uninstalled language makes many Android engines say nothing at all.
+      return match ? { language: match.language, voice: match.identifier } : {};
     })
-    .catch(() => ({ language: 'fil-PH' }));
+    .catch(() => ({}));
   return chosen;
+}
+
+/** Use the phone's default voice from now on (after the chosen one failed). */
+export function fallBackToDefaultVoice() {
+  chosen = Promise.resolve({});
+}
+
+/** Speak one line; if the chosen voice errors, retry once with the default voice. Resolves false if stopped. */
+export async function speakLine(text: string, options: { rate?: number } = {}): Promise<boolean> {
+  const attempt = (voice: VoiceChoice) =>
+    new Promise<'done' | 'stopped' | 'error'>((resolve) =>
+      Speech.speak(text, {
+        ...voice,
+        rate: options.rate,
+        onDone: () => resolve('done'),
+        onStopped: () => resolve('stopped'),
+        onError: () => resolve('error'),
+      }),
+    );
+  const voice = await preferredVoice();
+  let result = await attempt(voice);
+  if (result === 'error' && (voice.language || voice.voice)) {
+    fallBackToDefaultVoice();
+    result = await attempt({});
+  }
+  if (result === 'error') console.warn('[speech] the phone could not speak:', text.slice(0, 40));
+  return result !== 'stopped';
 }
 
 let labelsMuted = false;
@@ -36,7 +65,7 @@ export function setLabelsMuted(muted: boolean) {
 export function speakLabel(text: string) {
   if (!SPOKEN_LABELS || labelsMuted || !text) return;
   Speech.stop();
-  preferredVoice().then((v) => Speech.speak(text, { ...v, rate: 0.95 }));
+  speakLine(text, { rate: 0.95 });
 }
 
 export { Speech };
