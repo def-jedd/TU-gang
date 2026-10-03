@@ -21,6 +21,8 @@ type CallState = {
   canHear: boolean;
   notice: VoiceNotice;
   provider: Provider | 'unknown' | null;
+  /** Which engine is speaking right now. */
+  voice: 'agora' | 'phone' | null;
 };
 
 type VoiceContextValue = CallState & {
@@ -50,6 +52,7 @@ const IDLE: CallState = {
   canHear: false,
   notice: null,
   provider: null,
+  voice: null,
 };
 
 const MAX_CAPTIONS = 30;
@@ -123,6 +126,9 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
         },
         onProvider(provider) {
           if (mine()) setCall((prev) => ({ ...prev, provider }));
+        },
+        onVoice(voice) {
+          if (mine()) setCall((prev) => ({ ...prev, voice }));
         },
         onError(kind) {
           if (!mine()) return;
