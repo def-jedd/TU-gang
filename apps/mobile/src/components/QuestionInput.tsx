@@ -1,5 +1,5 @@
 import { ClaySurface } from './ClaySurface';
-import { useState } from 'react';
+import { useId, useState } from 'react';
 import { Pressable, StyleSheet, TextInput, View } from 'react-native';
 
 import { MAX_QUESTION_LENGTH } from '../nfc/cardReducer';
@@ -17,12 +17,13 @@ type Props = {
 };
 
 export function QuestionInput({ label, placeholder, clearLabel, value, onChangeText, onSubmit }: Props) {
+  const labelId=useId();
   const [focused, setFocused] = useState(false);
   const nearLimit = value.length > MAX_QUESTION_LENGTH * 0.8;
 
   return (
     <View style={styles.wrap}>
-      <AppText variant="label" color={colors.inkSoft} nativeID="question-label">
+      <AppText variant="label" color={colors.inkSoft} nativeID={labelId}>
         {label}
       </AppText>
       <ClaySurface intensity="strong" selected={focused} style={[styles.field, focused && styles.fieldFocused]}>
@@ -42,7 +43,7 @@ export function QuestionInput({ label, placeholder, clearLabel, value, onChangeT
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
           accessibilityLabel={label}
-          accessibilityLabelledBy="question-label"
+          accessibilityLabelledBy={labelId}
           style={styles.input}
           maxFontSizeMultiplier={1.6}
         />
@@ -83,6 +84,12 @@ const styles = StyleSheet.create({
   fieldFocused: { borderColor: colors.primary },
   input: {
     flex: 1,
+    position: 'relative',
+    zIndex: 1,
+    minWidth: 0,
+    backgroundColor: colors.surface,
+    borderRadius: radius.sm,
+    paddingHorizontal: space.sm,
     fontFamily: fonts.body,
     fontSize: typeScale.body.fontSize,
     lineHeight: typeScale.body.lineHeight,
@@ -92,7 +99,12 @@ const styles = StyleSheet.create({
     paddingBottom: 0,
     textAlignVertical: 'top',
     outlineWidth: 0,
+    outlineStyle: 'solid',
+    outlineColor: 'transparent',
   },
   clear: { width: touch.min, minHeight: touch.min, alignItems: 'center', justifyContent: 'flex-start' },
   counter: { textAlign: 'right' },
 });
+
+
+

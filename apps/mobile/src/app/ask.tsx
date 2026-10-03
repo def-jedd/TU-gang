@@ -6,23 +6,17 @@ import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, View } from 're
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AppText } from '@/components/AppText';
-import { AnswerLanguageSelector } from '@/components/AnswerLanguageSelector';
 import { LanguageBadge } from '@/components/Badges';
 import { Button } from '@/components/Button';
-import { CardGrid } from '@/components/CardGrid';
-import { DifficultySelector } from '@/components/DifficultySelector';
 import { Icon } from '@/components/Icon';
-import { LearningCard } from '@/components/LearningCard';
 import { QuestionInput } from '@/components/QuestionInput';
 import { ScreenHeader } from '@/components/ScreenHeader';
-import { TeachingStyleSelector } from '@/components/TeachingStyleSelector';
 import { useTutor } from '@/hooks/useTutor';
-import { TOPIC_CARDS } from '@/nfc/cards';
-import { layout, category, colors, space } from '@/theme/tokens';
+import { layout, colors, space } from '@/theme/tokens';
 
 /** Secondary, reading-based mode: for helpers who can type, or noisy rooms. */
 export default function AskScreen() {
-  const { t, uiLang, draft, update, submit } = useTutor();
+  const { t, draft, update, submit } = useTutor();
   const [showHint, setShowHint] = useState(false);
   const canAsk = draft.question.trim().length > 0;
 
@@ -54,33 +48,6 @@ export default function AskScreen() {
             onChangeText={(value) => update({ type: 'QUESTION', value })}
             onSubmit={ask}
           />
-
-          <AnswerLanguageSelector value={draft.language} onChange={(value) => update({ type: 'LANGUAGE', value })} />
-          <DifficultySelector value={draft.difficulty} onChange={(value) => update({ type: 'DIFFICULTY', value })} />
-          <TeachingStyleSelector value={draft.style} onChange={(value) => update({ type: 'STYLE', value })} />
-
-          <View style={styles.section}>
-            <View style={styles.sectionTitle}>
-              <Icon name="gesture-tap" size={22} color={category.topic.ink} />
-              <AppText variant="heading" style={{ flexShrink: 1 }}>{t.orPickTopic}</AppText>
-            </View>
-            <CardGrid>
-              {TOPIC_CARDS.map((card) => (
-                <LearningCard
-                  key={card.code}
-                  card={card}
-                  lang={uiLang}
-                  size="tile"
-                  selected={draft.topic === card.topic}
-                  onPress={() => {
-                    setShowHint(false);
-                    update({ type: 'TOPIC', value: card.topic });
-                  }}
-                />
-              ))}
-            </CardGrid>
-          </View>
-
 
         </ScrollView>
 
@@ -127,3 +94,4 @@ const styles = StyleSheet.create({
   hint: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
   dimmed: { opacity: 0.6 },
 });
+

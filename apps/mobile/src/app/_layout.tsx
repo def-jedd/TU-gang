@@ -35,8 +35,8 @@ export default function RootLayout() {
   if (!ready) return null;
 
   return (
-    <TutorProvider>
-      <ProfileProvider>
+    <ProfileProvider>
+      <TutorProvider>
       <VoiceProvider>
         <NfcProvider>
           <StatusBar style="dark" />
@@ -49,7 +49,7 @@ export default function RootLayout() {
           /><BottomNav /></View>
         </NfcProvider>
       </VoiceProvider>
-      </ProfileProvider>
-    </TutorProvider>
+      </TutorProvider>
+    </ProfileProvider>
   );
 }
