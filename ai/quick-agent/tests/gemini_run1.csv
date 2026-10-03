@@ -1,0 +1,79 @@
+﻿id,question,input_language,level,style,action,generator,examples_used,output,format_ok,spoken_style_problems,correct_science,naturalness,notes
+T01,Why do objects fall?,en,simple,friend,explain,gemini,sample_001(topic_and_style);sample_011(style_only);sample_017(style_only),"TOPIC: Gravity
+EXPLANATION: An grabidad iyo an pwersa kan daga na nagbubutong nin mga bagay pababa. Ini an minagibo na an sarong bagay mahulog kun ini binutasan.
+EXAMPLE: Kun binutasan mo an sarong mangga sa poon, ini mahulog tulos sa daga.
+KEY_POINT_1: Pwersa kan daga
+KEY_POINT_2: Nagbubutong pababa
+KEY_POINT_3: Arog kan nahulog na bunga",yes,none,,,
+T02,What does one-half mean?,en,simple,friend,explain,gemini,sample_011(topic_and_style);sample_001(style_only);sample_017(style_only),"TOPIC: one half
+EXPLANATION: An kabanga iyo an saro sa duwang pantay na parte kan sarong bilog na bagay. Kun gigibuhon mo ining duwa, pantay an lambang kabtang.
+EXAMPLE: Kun bubangaon mo an sarong tinapay sa duwang parte para saimo asin sa katood mo, kabanga an saimong makakarawat.
+KEY_POINT_1: Saro sa duwang pantay na parte
+KEY_POINT_2: Magkasurog an duwang kabtang
+KEY_POINT_3: Katunga kan sarong kabilogan",yes,none,,,
+T03,Explain black holes simply,en,simple,friend,explain,gemini,sample_001(style_only);sample_011(style_only);sample_017(style_only),"TOPIC: Black Holes
+EXPLANATION: An itom na buho sarong makusog na lugar sa espasyo. Nakuang ibutong kaini pati an liwanag ta grabe an kapangyarihan.
+EXAMPLE: Kun magrani an sarong bituon, dai na ini makakatakas asin masusopsop kaini.
+KEY_POINT_1: Makusog na pwersa kan grabidad
+KEY_POINT_2: Dai nakakatakas an liwanag
+KEY_POINT_3: Sinupsop an mga kataraid na bagay",yes,none,,,
+T04,What is a fraction?,en,simple,friend,explain,gemini,sample_001(style_only);sample_011(style_only);sample_017(style_only),"TOPIC: fractions
+EXPLANATION: An fraction iyo an parte kan sarong bilog o grupo. Iyo ini an nagpapahiling kun pirang kabtang an kinuha mo.
+EXAMPLE: Kun igwa kang sarong mansanas na binanga sa duwang pantay na parte, an lambang saro saro sa duwang parte.
+KEY_POINT_1: Parte kan kabilogan
+KEY_POINT_2: Pantay na kabtang
+KEY_POINT_3: Numerador asin denominador",yes,none,,,
+T05,Bakit natutunaw ang yelo?,tl,simple,friend,explain,gemini,sample_001(style_only);sample_011(style_only);sample_017(style_only),"TOPIC: Melting Ice
+EXPLANATION: An init kan palibot an nagpapalinaw kan yelo para magin tubig. Pag mainit an panahon, madali ining malona.
+EXAMPLE: Kun ibugtak mo an sarong pidaso nin yelo sa lamesa, matunaw ini pakalihis nin pirang minuto.
+KEY_POINT_1: Init an nagpapalona sa yelo
+KEY_POINT_2: Nagigin tubig an yelo
+KEY_POINT_3: Nangyayari ini sa mainit na lugar",yes,none,,,
+T06,Why does ice melt?,en,very_simple,friend,explain,gemini,sample_003(topic_and_style);sample_001(style_only);sample_011(style_only),"TOPIC: ice melting
+EXPLANATION: An yelo nagigin tubig kun ini naiinitan. Nababago an porma kaini poon sa matagas pasiring sa likido.
+EXAMPLE: Kun ibugtak mo an yelo sa mainit na lamesa, ini tulos na nagrarapa.
+KEY_POINT_1: init an nagpapalipot kan yelo
+KEY_POINT_2: nagigin tubig an yelo
+KEY_POINT_3: madaling mahunaw sa mainit",yes,none,,,
+T07,Why does ice melt?,en,simple,friend,explain,gemini,sample_003(topic_and_style);sample_001(style_only);sample_011(style_only),"TOPIC: melting ice
+EXPLANATION: An yelo nagigin tubig kun ini minagabat sa init kan palibot. Pag nagtitinit an palibot, an yelo natutunaw.
+EXAMPLE: An sorbetes sa payong na init madali man nagigin likido.
+KEY_POINT_1: Init hale sa palibot
+KEY_POINT_2: Yelo nagigin likidong tubig
+KEY_POINT_3: Pagtuninaw kan yelo",yes,none,,,
+T08,Why does ice melt?,en,normal,friend,explain,gemini,sample_003(topic_and_style);sample_001(style_only);sample_011(style_only),"TOPIC: melting ice
+EXPLANATION: An yelo nagigin tubig kun ini nagkukua nin init hale sa palibot. Taong init an nagpapaluway-luway na pagkatunaw kaini.
+EXAMPLE: Kun gibohon mong ilog an sarong pidaso nin yelo sa lamesa, ini mababasa asin magigin tubig.
+KEY_POINT_1: Init hale sa palibot
+KEY_POINT_2: Nagigin likidong tubig an yelo
+KEY_POINT_3: Luway-luway na pagkatunaw",yes,none,,,
+T09,Why does ice melt?,en,simple,teacher,explain,gemini,sample_003(topic_and_style);sample_001(style_only);sample_011(style_only),"TOPIC: melting ice
+EXPLANATION: An yelo nagigin tubig kun ini nababasa kan init sa palibot. Huli sa init, an matagas na yelo luway-luway na natutunaw.
+EXAMPLE: An sorbetes sa aldaw madaling natutunaw asin nagigin likido.
+KEY_POINT_1: Init hale sa palibot
+KEY_POINT_2: Luway-luway na nagigin likido
+KEY_POINT_3: Pagsabrit nin init",yes,none,,,
+T10,Why does ice melt?,en,simple,ate_kuya,explain,gemini,sample_003(topic_and_style);sample_001(style_only);sample_011(style_only),"TOPIC: melting ice
+EXPLANATION: An yelo nagigin tubig kun ini minagantad nin init hale sa palibot. Nababago an porma kaini huli ta an lipot kaya sanang magdanay kun igwang grabeng katugnawan.
+EXAMPLE: Kun gibohon mong patak an yelo sa lamesa, ini malaugib asin madali sanang mawawara.
+KEY_POINT_1: init hale sa palibot
+KEY_POINT_2: pagbabago kan porma
+KEY_POINT_3: pagigin tubig kan yelo",yes,none,,,
+T11,How do plants make food? Include the chlorophyll part.,en,simple,friend,explain,gemini,sample_002(topic_and_style);sample_001(style_only);sample_011(style_only),"TOPIC: Photosynthesis
+EXPLANATION: An mga tinanom naggagamit nin chlorophyll sa paghigos nin liwanag kan saldang. Ini an nagtatabang sainda para magibo an saindang kakanon.
+EXAMPLE: Isipon an dahon bilang sarong kusina na naggagamit nin init para magluto.
+KEY_POINT_1: Paggamit nin liwanag kan saldang
+KEY_POINT_2: Papel kan chlorophyll
+KEY_POINT_3: Paggibo nin sarong asukar",yes,none,,,
+T12,Why is the sky blue?,en,simple,friend,explain,gemini,sample_001(style_only);sample_011(style_only);sample_017(style_only),"TOPIC: Blue Sky
+EXPLANATION: An kolor asul kan langit nahihiling ta huli sa liwanag gikan sa saldang. Ini sumasabog asin nagkakawararak sa saindang paglaban sa ere ta sa palibot kan kinaban.
+EXAMPLE: Kun ika naglalakaw sa odto, an langit asul huli ta mas madaling nagkakawararak an asul na liwanag kumpara sa iba.
+KEY_POINT_1: Liwanag gikan sa saldang
+KEY_POINT_2: Nagkakawararak sa ere
+KEY_POINT_3: Kulay asul an nahihiling ta",yes,none,,,
+T13,Why do objects fall?,en,simple,friend,explain_differently,gemini,sample_001(topic_and_style);sample_011(style_only);sample_017(style_only),"TOPIC: gravity
+EXPLANATION: May pwersa sa daga na nagpupugol satin para dai kita lumayog. Pag binutasan ta an sarong bagay, kaipuhan niyang magdiretso sa ibaba.
+EXAMPLE: Kun gibohon mong buhian an payong sa itaas, madulag ini tulos pasiring sa salog.
+KEY_POINT_1: May pwersa an daga
+KEY_POINT_2: Nagbubutong sa ibaba
+KEY_POINT_3: Dai kita lumayog",yes,none,,,
