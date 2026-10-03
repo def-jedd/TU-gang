@@ -1,5 +1,2947 @@
 {
   "grade": 1,
   "term": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "g1-gmrc_values-w1-1",
+      "grade": 1,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naipakikita ang tiwala sa sarili sa pamamagitan ng paggamit ng mga batayang impormasyon sa mga angkop na situwasyon a. Nakakikilala ng mga batayang impormasyon ng sarili b. Naiuugnay ang batayang impormasyon ng sarili sa mahalagang bahagi ng pagkilala c. Naipahahayag ang mga batayang impormasyon ng sarili (hal. pangalan, edad, kasarian, magulang, tirahan, petsa ng kapanganakan, palayaw, mga gusto o hilig at paniniwala o relihiyon)",
+      "topic": "self_confidence",
+      "title": {
+        "en": "Self-Confidence"
+      },
+      "student_question": "How can I feel proud and sure of myself?",
+      "icon": "account-star",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 GMRC (last updated July 20, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-gmrc_values-w2-1",
+      "grade": 1,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging totoo sa pamamagitan ng mabuting pakikipag-ugnayan sa kapuwa a. Naiisa-isa ang mga wastong paraan sa pakikipagkaibigan b. Naiuugnay na ang pagkakaroon ng kaibigan sa pagbuo ng ugnayan sa kapuwa na tanggap ang pagkakapareho at pagkakaiba ng mga tao c. Nakapagbabahagi ng mga wastong paraan ng pakikipagkaibigan (hal. paggamit ng magagalang na pananalita, pag-unawa sa pagkakaiba-iba, wastong pagtawag sa pangalan)",
+      "topic": "sincerity",
+      "title": {
+        "en": "Being Truthful"
+      },
+      "student_question": "Why should I always tell the truth to others?",
+      "icon": "handshake",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 GMRC (last updated July 20, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-gmrc_values-w3-1",
+      "grade": 1,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging matiyaga sa pamamagitan ng palagiang pagtatabi ng mga naipong pera sa alkansiya o mga gamit sa lagayan a. Natutukoy ang mga paraan ng pag-iimpok at pagtitipid ayon sa sariling kakayahan b. Naisasaalang-alang ang sariling paraan ng pag-iimpok at pagtitipid na makatutulong upang matugunan ang kaniyang pangangailangan c. Nailalapat ang mga paraan ng pag-iimpok at pagtitipid (hal. pagtatabi ng pera o gamit sa paaralan)",
+      "topic": "saving_money",
+      "title": {
+        "en": "Saving Money"
+      },
+      "student_question": "Why should I save my coins in a piggy bank?",
+      "icon": "piggy-bank",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 GMRC (last updated July 20, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-gmrc_values-w5-1",
+      "grade": 1,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging madasalin sa pamamagitan ng wastong kilos at salita sa pananalangin a. Natutukoy ang mga sariling paraan ng pananalangin b. Natutuklasan na ang sariling paraan ng pananalangin ay nakatutulong sa pagpapabuti ng ugali c. Nakapagbabahagi ng mga karanasan tungkol sa pagpapabuti ng kaniyang ugali dahil sa pananalangin (hal. disiplina, pagdarasal, nangunguna sa pagdarasal sa klase)",
+      "topic": "prayer",
+      "title": {
+        "en": "Praying"
+      },
+      "student_question": "How should I act when I pray?",
+      "icon": "hands-pray",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 GMRC (last updated July 20, 2026), First Term, Week 5, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-gmrc_values-w6-1",
+      "grade": 1,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging mapagpasalamat sa pamamagitan ng pag-iingat ng mga yamang mula sa kapaligiran\na. Nakakikilala ng mga paraan ng pag-iingat sa mga yaman mula sa kapaligiran b. Naiuugnay na ang sariling paraan ng pag-iingat sa mga yaman mula sa kapaligiran ay pagpapasalamat sa mga biyayang tinatamasa c. Naipahahayag ang pagpapasalamat sa mga yaman na mula sa kapaligiran",
+      "topic": "gratitude",
+      "title": {
+        "en": "Being Thankful"
+      },
+      "student_question": "How can I show I am thankful for nature?",
+      "icon": "leaf",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 GMRC (last updated July 20, 2026), First Term, Week 6, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-gmrc_values-w7-1",
+      "grade": 1,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging magalang sa pamamagitan ng mga angkop na kilos na nagbibigay-halaga sa mga karapatang tinatamasa bilang bata a. Natutukoy ang mga sariling karapatan ng bata (Rights of a Child) (hal. pangalan, edukasyon, pagkain, tubig, tahanan, pamilya) b. Natutuklasan na ang mga sariling karapatan (Rights of a Child) bilang bata ay nagpapabuti sa kaniyang kapakanan c. Naipahahayag ang pagiging magalang sa mga karapatan ng bata na kaniyang natatamasa",
+      "topic": "respect",
+      "title": {
+        "en": "Respect"
+      },
+      "student_question": "How do I show respect to other people?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 GMRC (last updated July 20, 2026), First Term, Weeks 7–8, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-gmrc_values-w9-1",
+      "grade": 1,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Naipakikita ang kalinisan sa pamamagitan ng palagiang pagsunod sa mga alituntunin sa paglilinis ng katawan ayon sa gabay ng pamilya, tagapangalaga, o nakatatanda a. Naiisa-isa ang mga paraan ng kalinisan sa katawan na natutuhan b. Natutuklasan na ang kalinisan sa katawan ayon sa gabay ng pamilya ay may mabuting epekto sa sariling kalusugan c. Nailalapat ang mga paraan ng kalinisan sa katawan ayon sa gabay ng pamilya, tagapangalaga ,at nakatatatanda (hal. paghuhugas ng kamay bago at pagkatapos kumain, paliligo araw-araw, pagsusuot ng malinis na damit, pagsisipilyo)",
+      "topic": "cleanliness",
+      "title": {
+        "en": "Keeping Clean"
+      },
+      "student_question": "Why do I need to keep my body clean?",
+      "icon": "shower",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 GMRC (last updated July 20, 2026), First Term, Weeks 9–10, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-1",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Talk about one’s personal experiences.\na. oneself and family\nb. content-specific topics",
+      "topic": "talking_about_myself",
+      "title": {
+        "en": "Talking About Myself"
+      },
+      "student_question": "How can I tell others about me and my family?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-2",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Express ideas using a variety of symbols (e.g., drawings, emojis, scribbles).\na. oneself and family\nb. content-specific topics",
+      "topic": "symbols",
+      "title": {
+        "en": "Drawing My Ideas"
+      },
+      "student_question": "How can I share my ideas with drawings?",
+      "icon": "draw",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-3",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use high-frequency and content-specific words referring to oneself and family.",
+      "topic": "family_words",
+      "title": {
+        "en": "Family Words"
+      },
+      "student_question": "What words can I use to talk about my family?",
+      "icon": "home-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-4",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Participate in and contribute to group oral language activities (e.g., singing, chanting, sabayang bigkas).",
+      "topic": "group_singing",
+      "title": {
+        "en": "Singing Together"
+      },
+      "student_question": "Why is it fun to sing and chant with my class?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-5",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Notice the features (e.g., sounds, intonation, signs) of their first language and other languages in one’s context.",
+      "topic": "sounds_of_language",
+      "title": {
+        "en": "Sounds of My Language"
+      },
+      "student_question": "How do the sounds of my language differ from other languages?",
+      "icon": "ear-hearing",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-6",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Recognize how language reflects cultural practices and norms.\na. Share about the language(s) spoken at home\nb. Share words and phrases in their language",
+      "topic": "language_and_culture",
+      "title": {
+        "en": "Language and Culture"
+      },
+      "student_question": "How does the way we talk show our culture?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-7",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "View and listen to a range of texts for enjoyment and interest.",
+      "topic": "enjoying_stories",
+      "title": {
+        "en": "Enjoying Stories"
+      },
+      "student_question": "Why is it fun to listen to stories?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-8",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Engage with or respond to a short spoken texts.\na. View or listen to spoken texts",
+      "topic": "responding_to_stories",
+      "title": {
+        "en": "Responding to Stories"
+      },
+      "student_question": "What can I say after I hear a story?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-9",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Give reason/s for choosing books/texts for enjoyment and interest.",
+      "topic": "choosing_books",
+      "title": {
+        "en": "Choosing a Book"
+      },
+      "student_question": "How do I choose a book I will enjoy?",
+      "icon": "bookshelf",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-10",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Record and report ideas and events using some learnt vocabulary.\na. Relate ideas or events to one’s experience",
+      "topic": "telling_events",
+      "title": {
+        "en": "Telling What Happened"
+      },
+      "student_question": "How can I tell others what happened?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w1-11",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Draw and discuss information or ideas from a range of text (e.g., stories, images, digital texts). a. Note and describe main points (e.g., main characters and events) b. Relate ideas or events to one’s experience",
+      "topic": "ideas_from_texts",
+      "title": {
+        "en": "Ideas From Stories and Pictures"
+      },
+      "student_question": "What can I learn from stories and pictures?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-1",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Participate in classroom interactions using verbal and non-verbal responses.\na. Respond to teacher’s one-step instructions\nb. Ask questions",
+      "topic": "classroom_talk",
+      "title": {
+        "en": "Talking in Class"
+      },
+      "student_question": "How can I answer my teacher using words and actions?",
+      "icon": "school",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-2",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use words to represent ideas and events related to oneself and family.\na. words that represent people (naming words)",
+      "topic": "family_words",
+      "title": {
+        "en": "Words About Me"
+      },
+      "student_question": "What words can I use to talk about myself?",
+      "icon": "account",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-3",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use high-frequency and content-specific words referring to oneself and family.",
+      "topic": "family_words",
+      "title": {
+        "en": "Family Words"
+      },
+      "student_question": "What words can I use to talk about my family?",
+      "icon": "home-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-4",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Participate in and contribute to group oral language activities (e.g., singing, chanting, sabayang bigkas).",
+      "topic": "group_singing",
+      "title": {
+        "en": "Singing Together"
+      },
+      "student_question": "Why is it fun to sing and chant with my class?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-5",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Recognize how a change in intonation (volume, pitch) and body language can change the meanings of utterances/expressions.\na. Recognize the difference between statements, questions, commands and exclamations.",
+      "topic": "tone_of_voice",
+      "title": {
+        "en": "Tone of Voice"
+      },
+      "student_question": "How does my voice change what my words mean?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-6",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Recognize how language reflects cultural practices and norms.\na. Share words and phrases in their language\nb. Notice how local names of streets, places and landmarks have origins in their language",
+      "topic": "language_and_culture",
+      "title": {
+        "en": "Language and Culture"
+      },
+      "student_question": "How does the way we talk show our culture?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-7",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "View and listen to a range of texts for enjoyment and interest.",
+      "topic": "enjoying_stories",
+      "title": {
+        "en": "Enjoying Stories"
+      },
+      "student_question": "Why is it fun to listen to stories?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-8",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Engage with or respond to a short spoken texts.\na. Identify a variety of purposes for viewing and listening to texts",
+      "topic": "responding_to_stories",
+      "title": {
+        "en": "Responding to Stories"
+      },
+      "student_question": "What can I say after I hear a story?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-9",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Give reason/s for choosing books/texts for enjoyment and interest.",
+      "topic": "choosing_books",
+      "title": {
+        "en": "Choosing a Book"
+      },
+      "student_question": "How do I choose a book I will enjoy?",
+      "icon": "bookshelf",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-10",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Record and report ideas and events using some learnt vocabulary.\na. Relate ideas or events to one’s experience",
+      "topic": "telling_events",
+      "title": {
+        "en": "Telling What Happened"
+      },
+      "student_question": "How can I tell others what happened?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w2-11",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Draw and discuss information or ideas from a range of text (e.g., stories, images, digital texts).\na. Note and describe main points (e.g., main characters and events)\nb. Relate ideas or events to one’s experience",
+      "topic": "ideas_from_texts",
+      "title": {
+        "en": "Ideas From Stories and Pictures"
+      },
+      "student_question": "What can I learn from stories and pictures?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-1",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use common and socially acceptable expressions (e.g., greetings, leave-taking).\na. Use simple and appropriate personal greetings\nb. Use familiar terms of address\nc. Greet and respond appropriately to greetings",
+      "topic": "greetings",
+      "title": {
+        "en": "Greetings"
+      },
+      "student_question": "How do I greet people and say goodbye politely?",
+      "icon": "hand-wave",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-2",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Share confidently thoughts, preferences, needs, feelings, and ideas with peers, teachers, and other adults.",
+      "topic": "sharing_feelings",
+      "title": {
+        "en": "Sharing My Feelings"
+      },
+      "student_question": "How can I tell others how I feel?",
+      "icon": "emoticon-happy",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-3",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use words to represent ideas and events related to oneself and family.\na. words that represent animals (naming words)",
+      "topic": "family_words",
+      "title": {
+        "en": "Words About Me"
+      },
+      "student_question": "What words can I use to talk about myself?",
+      "icon": "account",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-4",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use high-frequency and content-specific words referring to oneself and family.",
+      "topic": "family_words",
+      "title": {
+        "en": "Family Words"
+      },
+      "student_question": "What words can I use to talk about my family?",
+      "icon": "home-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-5",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Participate in and contribute to group oral language activities (e.g., singing, chanting, sabayang bigkas).",
+      "topic": "group_singing",
+      "title": {
+        "en": "Singing Together"
+      },
+      "student_question": "Why is it fun to sing and chant with my class?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-6",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Recognize how a change in intonation (volume, pitch) and body language can change the meanings of utterances/expressions.\na. Recognize the difference between statements, questions, commands and exclamations.",
+      "topic": "tone_of_voice",
+      "title": {
+        "en": "Tone of Voice"
+      },
+      "student_question": "How does my voice change what my words mean?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-7",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Recognize how language reflects cultural practices and norms.\na. Share words and phrases in their language\nb. Notice how local names of streets, places and landmarks have origins in their language",
+      "topic": "language_and_culture",
+      "title": {
+        "en": "Language and Culture"
+      },
+      "student_question": "How does the way we talk show our culture?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-8",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "View and listen to a range of texts for enjoyment and interest.",
+      "topic": "enjoying_stories",
+      "title": {
+        "en": "Enjoying Stories"
+      },
+      "student_question": "Why is it fun to listen to stories?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-9",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Engage with or respond to a short spoken texts.\na. Discuss what is interesting or entertaining in a text",
+      "topic": "responding_to_stories",
+      "title": {
+        "en": "Responding to Stories"
+      },
+      "student_question": "What can I say after I hear a story?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-10",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Give reason/s for choosing books/texts for enjoyment and interest.",
+      "topic": "choosing_books",
+      "title": {
+        "en": "Choosing a Book"
+      },
+      "student_question": "How do I choose a book I will enjoy?",
+      "icon": "bookshelf",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-11",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Record and report ideas and events using some learnt vocabulary.\na. Relate ideas or events to one’s experience",
+      "topic": "telling_events",
+      "title": {
+        "en": "Telling What Happened"
+      },
+      "student_question": "How can I tell others what happened?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-12",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use own words in retelling information from various texts (e.g., legends, fables, and jokes).",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Stories"
+      },
+      "student_question": "How can I retell a story in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w3-13",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Draw and discuss information or ideas from a range of text (e.g., stories, images, digital texts).\na. Note and describe main points (e.g., main characters and events) b. Sequence up to three (3) key events c. Relate ideas or events to one’s experience",
+      "topic": "ideas_from_texts",
+      "title": {
+        "en": "Ideas From Stories and Pictures"
+      },
+      "student_question": "What can I learn from stories and pictures?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-1",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Interact purposely and participate in conversations and discussions in pairs, in groups, or in whole-class discussions.\na. Make requests\nb. Seek help",
+      "topic": "conversations",
+      "title": {
+        "en": "Having Conversations"
+      },
+      "student_question": "How do I take turns when talking in a group?",
+      "icon": "forum",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-2",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Share confidently thoughts, preferences, needs, feelings, and ideas with peers, teachers, and other adults.",
+      "topic": "sharing_feelings",
+      "title": {
+        "en": "Sharing My Feelings"
+      },
+      "student_question": "How can I tell others how I feel?",
+      "icon": "emoticon-happy",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-3",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use words to represent ideas and events related to oneself and family.\na. words that represent objects (naming words)",
+      "topic": "family_words",
+      "title": {
+        "en": "Words About Me"
+      },
+      "student_question": "What words can I use to talk about myself?",
+      "icon": "account",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-4",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use language to express connections between ideas.\na. Express compare and contrast",
+      "topic": "connecting_ideas",
+      "title": {
+        "en": "Connecting Ideas"
+      },
+      "student_question": "How can I join two ideas when I talk?",
+      "icon": "link-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-5",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use high-frequency and content-specific words referring to oneself and family.",
+      "topic": "family_words",
+      "title": {
+        "en": "Family Words"
+      },
+      "student_question": "What words can I use to talk about my family?",
+      "icon": "home-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-6",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Participate in and contribute to group oral language activities (e.g., singing, chanting, sabayang bigkas).",
+      "topic": "group_singing",
+      "title": {
+        "en": "Singing Together"
+      },
+      "student_question": "Why is it fun to sing and chant with my class?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-7",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Recognize how a change in intonation (volume, pitch) and body language can change the meanings of utterances/expressions.\na. Recognize the difference between statements, questions, commands and exclamations.",
+      "topic": "tone_of_voice",
+      "title": {
+        "en": "Tone of Voice"
+      },
+      "student_question": "How does my voice change what my words mean?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-8",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Recognize how language reflects cultural practices and norms.\na. Share words and phrases in their language\nb. Notice how local names of streets, places and landmarks have origins in their language\nc. Explore local terms for food and their origins.",
+      "topic": "language_and_culture",
+      "title": {
+        "en": "Language and Culture"
+      },
+      "student_question": "How does the way we talk show our culture?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-9",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "View and listen to a range of texts for enjoyment and interest.",
+      "topic": "enjoying_stories",
+      "title": {
+        "en": "Enjoying Stories"
+      },
+      "student_question": "Why is it fun to listen to stories?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-10",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Engage with or respond to a short spoken texts.\na. Express personal preferences",
+      "topic": "responding_to_stories",
+      "title": {
+        "en": "Responding to Stories"
+      },
+      "student_question": "What can I say after I hear a story?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-11",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Give reason/s for choosing books/texts for enjoyment and interest.",
+      "topic": "choosing_books",
+      "title": {
+        "en": "Choosing a Book"
+      },
+      "student_question": "How do I choose a book I will enjoy?",
+      "icon": "bookshelf",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-12",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Record and report ideas and events using some learnt vocabulary.\na. Relate ideas or events to one’s experience",
+      "topic": "telling_events",
+      "title": {
+        "en": "Telling What Happened"
+      },
+      "student_question": "How can I tell others what happened?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-13",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use own words in retelling information from various texts (e.g., legends, fables, and jokes).",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Stories"
+      },
+      "student_question": "How can I retell a story in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w4-14",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Draw and discuss information or ideas from a range of text (e.g., stories, images, digital texts).\na. Note and describe main points (e.g., main characters and events)\nb. Sequence up to three (3) key events\nc. Relate ideas or events to one’s experience",
+      "topic": "ideas_from_texts",
+      "title": {
+        "en": "Ideas From Stories and Pictures"
+      },
+      "student_question": "What can I learn from stories and pictures?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-1",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Interact purposely and participate in conversations and discussions in pairs, in groups, or in whole-class discussions.\na. Give or offer information",
+      "topic": "conversations",
+      "title": {
+        "en": "Having Conversations"
+      },
+      "student_question": "How do I take turns when talking in a group?",
+      "icon": "forum",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-2",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Share confidently thoughts, preferences, needs, feelings, and ideas with peers, teachers, and other adults.",
+      "topic": "sharing_feelings",
+      "title": {
+        "en": "Sharing My Feelings"
+      },
+      "student_question": "How can I tell others how I feel?",
+      "icon": "emoticon-happy",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-3",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use words to represent ideas and events related to oneself and family.\na. words that represent locations (naming words)",
+      "topic": "family_words",
+      "title": {
+        "en": "Words About Me"
+      },
+      "student_question": "What words can I use to talk about myself?",
+      "icon": "account",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-4",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use language to express connections between ideas.\na. Express cause and effect",
+      "topic": "connecting_ideas",
+      "title": {
+        "en": "Connecting Ideas"
+      },
+      "student_question": "How can I join two ideas when I talk?",
+      "icon": "link-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-5",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use high-frequency and content-specific words referring to oneself and family.",
+      "topic": "family_words",
+      "title": {
+        "en": "Family Words"
+      },
+      "student_question": "What words can I use to talk about my family?",
+      "icon": "home-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-6",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Participate in and contribute to group oral language activities (e.g., singing, chanting, sabayang bigkas).",
+      "topic": "group_singing",
+      "title": {
+        "en": "Singing Together"
+      },
+      "student_question": "Why is it fun to sing and chant with my class?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-7",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Recognize how a change in intonation (volume, pitch) and body language can change the meanings of utterances/expressions.\na. Recognize the difference between statements, questions, commands and exclamations.",
+      "topic": "tone_of_voice",
+      "title": {
+        "en": "Tone of Voice"
+      },
+      "student_question": "How does my voice change what my words mean?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-8",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Recognize how language reflects cultural practices and norms.\na. Share words and phrases in their language b. Notice how local names of streets, places and landmarks have origins in their language c. Explore local terms for food and their origins.",
+      "topic": "language_and_culture",
+      "title": {
+        "en": "Language and Culture"
+      },
+      "student_question": "How does the way we talk show our culture?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-9",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "View and listen to a range of texts for enjoyment and interest.",
+      "topic": "enjoying_stories",
+      "title": {
+        "en": "Enjoying Stories"
+      },
+      "student_question": "Why is it fun to listen to stories?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-10",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Give reason/s for choosing books/texts for enjoyment and interest.",
+      "topic": "choosing_books",
+      "title": {
+        "en": "Choosing a Book"
+      },
+      "student_question": "How do I choose a book I will enjoy?",
+      "icon": "bookshelf",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-11",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Record and report ideas and events using some learnt vocabulary.\na. Note and describe main points\nb. Relate ideas or events to one’s experience",
+      "topic": "telling_events",
+      "title": {
+        "en": "Telling What Happened"
+      },
+      "student_question": "How can I tell others what happened?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-12",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use own words in retelling information from various texts (e.g., legends, fables, and jokes).",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Stories"
+      },
+      "student_question": "How can I retell a story in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-language-w5-13",
+      "grade": 1,
+      "subject": "language",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Draw and discuss information or ideas from a range of text (e.g., stories, images, digital texts).\na. Note and describe main points (e.g., main characters and events)\nb. Infer the character’s feelings and traits\nc. Relate ideas or events to one’s experience",
+      "topic": "ideas_from_texts",
+      "title": {
+        "en": "Ideas From Stories and Pictures"
+      },
+      "student_question": "What can I learn from stories and pictures?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Language (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 13 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-makabansa-w1-1",
+      "grade": 1,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Nailalarawan na ang bawat tao ay may iba’t-ibang:\na. Katangiang Pisikal\nb. Pangangailangan\nc. Interes at Kakayahan",
+      "topic": "everyone_is_unique",
+      "title": {
+        "en": "Everyone Is Unique"
+      },
+      "student_question": "Why is every person different from others?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 MAKABANSA, First Term, Weeks 1–6, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-makabansa-w7-1",
+      "grade": 1,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang karapatan at tungkulin ng bawat bata",
+      "topic": "child_rights",
+      "title": {
+        "en": "Rights and Duties of Children"
+      },
+      "student_question": "What are my rights and my duties as a child?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 MAKABANSA, First Term, Weeks 7–8, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-makabansa-w9-1",
+      "grade": 1,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Napahahalagahan ang indibidwalidad ng bawat tao",
+      "topic": "everyone_is_unique",
+      "title": {
+        "en": "Everyone Is Unique"
+      },
+      "student_question": "Why should I value what makes each person special?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 MAKABANSA, First Term, Weeks 9–10, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w1-1",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify simple 2-dimensional shapes (triangle, rectangle, square) of different size and in different orientation.",
+      "topic": "shapes",
+      "title": {
+        "en": "2D Shapes"
+      },
+      "student_question": "What are triangles, rectangles, and squares?",
+      "icon": "shape",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w1-2",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Compare and distinguish 2-dimensional shapes according to features such as sides and corners.",
+      "topic": "shapes",
+      "title": {
+        "en": "Sides and Corners"
+      },
+      "student_question": "How do I tell shapes apart by their sides and corners?",
+      "icon": "shape",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w1-3",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Compose and decompose triangles, squares, and rectangles.",
+      "topic": "shapes",
+      "title": {
+        "en": "Making Shapes"
+      },
+      "student_question": "How can I make new shapes from triangles and squares?",
+      "icon": "shape-plus",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w2-1",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Count up to 100 (includes counting up or down from a given number and identifying a number that is 1 more or 1 less than a given number).",
+      "topic": "counting",
+      "title": {
+        "en": "Counting to 100"
+      },
+      "student_question": "How do I count up to 100?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w3-1",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Read and write numerals up to 100.",
+      "topic": "numbers",
+      "title": {
+        "en": "Writing Numbers"
+      },
+      "student_question": "How do I read and write numbers up to 100?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w4-1",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Recognize and represent numbers up to 100 using a variety of concrete and pictorial models (e.g., number line, block or bar models, and numerals).",
+      "topic": "numbers",
+      "title": {
+        "en": "Showing Numbers"
+      },
+      "student_question": "How can I show a number using blocks or pictures?",
+      "icon": "cube-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Weeks 4–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w6-1",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Compare two numbers up to 20.",
+      "topic": "comparing_numbers",
+      "title": {
+        "en": "Comparing Numbers"
+      },
+      "student_question": "How do I know which number is bigger?",
+      "icon": "greater-than",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w6-2",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Order numbers up to 20 from smallest to largest, and vice versa.",
+      "topic": "comparing_numbers",
+      "title": {
+        "en": "Ordering Numbers"
+      },
+      "student_question": "How do I put numbers in order from smallest to biggest?",
+      "icon": "sort-numeric-ascending",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w6-3",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Describe the position of objects using ordinal numbers: 1st, 2nd, 3rd, up to 10th.",
+      "topic": "ordinal_numbers",
+      "title": {
+        "en": "First, Second, Third"
+      },
+      "student_question": "What do first, second, and third mean?",
+      "icon": "format-list-numbered",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w6-4",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Compose and decompose numbers up to 10 using concrete materials (e.g., 5 is 5 and 0; 4 and 1; 3 and 2; 2 and 3; 1 and 4; 0 and 5).",
+      "topic": "numbers",
+      "title": {
+        "en": "Breaking Numbers Apart"
+      },
+      "student_question": "How can I split a number into two smaller numbers?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w8-1",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Illustrate addition of numbers with sums up to 20 using a variety of concrete and pictorial models and describes addition as “counting up,” and “putting together.”",
+      "topic": "addition",
+      "title": {
+        "en": "Adding Numbers"
+      },
+      "student_question": "What does it mean to add numbers?",
+      "icon": "plus",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w8-2",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Illustrate by applying the following properties of addition, using sums up to 20:\na. the sum of zero and any number is equal to the number\na. changing the order of the addends does not change the sum.",
+      "topic": "addition",
+      "title": {
+        "en": "Rules of Adding"
+      },
+      "student_question": "Does the order of numbers matter when I add?",
+      "icon": "plus",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w9-1",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Solve problems (given orally or in pictures) involving addition with sums up to 20.",
+      "topic": "addition",
+      "title": {
+        "en": "Adding in Word Problems"
+      },
+      "student_question": "How do I solve a story problem by adding?",
+      "icon": "plus",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w9-2",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Measure the length of an object and the distance between two objects using non-standard units.",
+      "topic": "measuring_length",
+      "title": {
+        "en": "Measuring Length"
+      },
+      "student_question": "How can I measure things using my hand or a string?",
+      "icon": "ruler",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w10-1",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Compare lengths and distances using non-standard units.",
+      "topic": "measuring_length",
+      "title": {
+        "en": "Comparing Lengths"
+      },
+      "student_question": "How do I know which thing is longer?",
+      "icon": "ruler",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-mathematics-w10-2",
+      "grade": 1,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Solve problems involving lengths and distances using non-standard units.",
+      "topic": "measuring_length",
+      "title": {
+        "en": "Length Problems"
+      },
+      "student_question": "How do I solve problems about how long things are?",
+      "icon": "ruler",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w1-1",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Chant nursery rhymes and poems.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Nursery Rhymes"
+      },
+      "student_question": "Why do we chant nursery rhymes?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w1-2",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Segment a two-three syllable word into its syllabic parts.",
+      "topic": "syllables",
+      "title": {
+        "en": "Syllables"
+      },
+      "student_question": "How do I split a word into its parts?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w1-3",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify rhyming words in nursery rhymes, poems, and chants.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Rhyming Words"
+      },
+      "student_question": "Which words rhyme in a poem?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w1-4",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Say two or three words that rhyme.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Saying Rhyming Words"
+      },
+      "student_question": "Can I think of words that rhyme?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w1-5",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify initial sounds (vowels, consonants, and semi-vowels, if any).",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "First Sounds"
+      },
+      "student_question": "What sound does a word start with?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w1-6",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to oneself.",
+      "topic": "words_about_me",
+      "title": {
+        "en": "Words About Me"
+      },
+      "student_question": "What words can I use to describe myself?",
+      "icon": "account",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w1-7",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Recognize environmental print (symbols).",
+      "topic": "signs_and_symbols",
+      "title": {
+        "en": "Signs Around Us"
+      },
+      "student_question": "What do the signs around us mean?",
+      "icon": "sign-direction",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w1-8",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Recognize the parts of the book (cover page, title page, etc.)",
+      "topic": "parts_of_a_book",
+      "title": {
+        "en": "Parts of a Book"
+      },
+      "student_question": "What are the parts of a book?",
+      "icon": "book-open-page-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w1-9",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Recognize proper eye movement skills in reading: left to right, top to bottom, and return sweep",
+      "topic": "reading_direction",
+      "title": {
+        "en": "How We Read"
+      },
+      "student_question": "Which way do my eyes move when I read?",
+      "icon": "eye",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-1",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Chant nursery rhymes and poems.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Nursery Rhymes"
+      },
+      "student_question": "Why do we chant nursery rhymes?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-2",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Segment a two-three syllable word into its syllabic parts.",
+      "topic": "syllables",
+      "title": {
+        "en": "Syllables"
+      },
+      "student_question": "How do I split a word into its parts?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-3",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify rhyming words in nursery rhymes, poems, and chants.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Rhyming Words"
+      },
+      "student_question": "Which words rhyme in a poem?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-4",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Say two or three words that rhyme.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Saying Rhyming Words"
+      },
+      "student_question": "Can I think of words that rhyme?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-5",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify initial sounds (vowels, consonants, and semi-vowels, if any).",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "First Sounds"
+      },
+      "student_question": "What sound does a word start with?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-6",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Produce the sound of the letters of L1.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Letter Sounds"
+      },
+      "student_question": "What sound does each letter make?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-7",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify the letters in L1.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Knowing Letters"
+      },
+      "student_question": "How do I know which letter is which?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-8",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Isolate sounds (consonants and vowels) in a word (beginning and/or ending).",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Sounds in a Word"
+      },
+      "student_question": "What sounds can I hear at the start and end of a word?",
+      "icon": "ear-hearing",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-9",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Substitute individual sounds in simple words to make new words.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Changing Sounds"
+      },
+      "student_question": "How can I change one sound to make a new word?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-10",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Sound out words accurately.",
+      "topic": "sounding_out",
+      "title": {
+        "en": "Sounding Out Words"
+      },
+      "student_question": "How do I sound out a new word?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-11",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to oneself.",
+      "topic": "words_about_me",
+      "title": {
+        "en": "Words About Me"
+      },
+      "student_question": "What words can I use to describe myself?",
+      "icon": "account",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-12",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Read high-frequency words accurately for meaning.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-13",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Recognize environmental print (symbols).",
+      "topic": "signs_and_symbols",
+      "title": {
+        "en": "Signs Around Us"
+      },
+      "student_question": "What do the signs around us mean?",
+      "icon": "sign-direction",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-14",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Recognize the parts of the book (cover page, title page, etc.)",
+      "topic": "parts_of_a_book",
+      "title": {
+        "en": "Parts of a Book"
+      },
+      "student_question": "What are the parts of a book?",
+      "icon": "book-open-page-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-15",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Recognize proper eye movement skills in reading: left to right, top to bottom, and return sweep",
+      "topic": "reading_direction",
+      "title": {
+        "en": "How We Read"
+      },
+      "student_question": "Which way do my eyes move when I read?",
+      "icon": "eye",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-16",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important details in stories (character, setting, and events).\nb. Relate story events to one’s experience.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w2-17",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Narrate one’s personal experiences: oneself.",
+      "topic": "telling_events",
+      "title": {
+        "en": "Talking About My Day"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 9 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-1",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Chant nursery rhymes and poems.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Nursery Rhymes"
+      },
+      "student_question": "Why do we chant nursery rhymes?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-2",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Segment a two-three syllable word into its syllabic parts.",
+      "topic": "syllables",
+      "title": {
+        "en": "Syllables"
+      },
+      "student_question": "How do I split a word into its parts?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-3",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify rhyming words in nursery rhymes, poems, and chants.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Rhyming Words"
+      },
+      "student_question": "Which words rhyme in a poem?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-4",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Say two or three words that rhyme.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Saying Rhyming Words"
+      },
+      "student_question": "Can I think of words that rhyme?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-5",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify initial sounds (vowels, consonants, and semi-vowels, if any).",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "First Sounds"
+      },
+      "student_question": "What sound does a word start with?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-6",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Produce the sound of the letters of L1.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Letter Sounds"
+      },
+      "student_question": "What sound does each letter make?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-7",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify the letters in L1.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Knowing Letters"
+      },
+      "student_question": "How do I know which letter is which?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-8",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Isolate sounds (consonants and vowels) in a word (beginning and/or ending).",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Sounds in a Word"
+      },
+      "student_question": "What sounds can I hear at the start and end of a word?",
+      "icon": "ear-hearing",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-9",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Substitute individual sounds in simple words to make new words.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Changing Sounds"
+      },
+      "student_question": "How can I change one sound to make a new word?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-10",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Sound out words accurately.",
+      "topic": "sounding_out",
+      "title": {
+        "en": "Sounding Out Words"
+      },
+      "student_question": "How do I sound out a new word?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-11",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to oneself.",
+      "topic": "words_about_me",
+      "title": {
+        "en": "Words About Me"
+      },
+      "student_question": "What words can I use to describe myself?",
+      "icon": "account",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-12",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify words with different functions (naming and describing words).\na. words that label persons, places, and things",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Naming and Describing Words"
+      },
+      "student_question": "What are naming words and describing words?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-13",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Read high-frequency words accurately for meaning.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-14",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Recognize environmental print (symbols).",
+      "topic": "signs_and_symbols",
+      "title": {
+        "en": "Signs Around Us"
+      },
+      "student_question": "What do the signs around us mean?",
+      "icon": "sign-direction",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-15",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Recognize the parts of the book (cover page, title page, etc.)",
+      "topic": "parts_of_a_book",
+      "title": {
+        "en": "Parts of a Book"
+      },
+      "student_question": "What are the parts of a book?",
+      "icon": "book-open-page-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-16",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Recognize proper eye movement skills in reading: left to right, top to bottom, and return sweep",
+      "topic": "reading_direction",
+      "title": {
+        "en": "How We Read"
+      },
+      "student_question": "Which way do my eyes move when I read?",
+      "icon": "eye",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-17",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important details in stories (character, setting, and events).\nb. Sequence events in stories.\nc. Relate story events to one’s experience.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-18",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Narrate one’s personal experiences: oneself.",
+      "topic": "telling_events",
+      "title": {
+        "en": "Talking About My Day"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w3-19",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Express ideas about: oneself.",
+      "topic": "sharing_feelings",
+      "title": {
+        "en": "Sharing My Ideas"
+      },
+      "student_question": "How can I share my ideas about myself?",
+      "icon": "lightbulb-on",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 10 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-1",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Chant nursery rhymes and poems.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Nursery Rhymes"
+      },
+      "student_question": "Why do we chant nursery rhymes?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-2",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Segment a two-three syllable word into its syllabic parts.",
+      "topic": "syllables",
+      "title": {
+        "en": "Syllables"
+      },
+      "student_question": "How do I split a word into its parts?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-3",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify rhyming words in nursery rhymes, poems, and chants.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Rhyming Words"
+      },
+      "student_question": "Which words rhyme in a poem?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-4",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Say two or three words that rhyme.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Saying Rhyming Words"
+      },
+      "student_question": "Can I think of words that rhyme?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-5",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify initial sounds (vowels, consonants, and semi-vowels, if any).",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "First Sounds"
+      },
+      "student_question": "What sound does a word start with?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-6",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Produce the sound of the letters of L1.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Letter Sounds"
+      },
+      "student_question": "What sound does each letter make?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-7",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify the letters in L1.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Knowing Letters"
+      },
+      "student_question": "How do I know which letter is which?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-8",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Isolate sounds (consonants and vowels) in a word (beginning and/or ending).",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Sounds in a Word"
+      },
+      "student_question": "What sounds can I hear at the start and end of a word?",
+      "icon": "ear-hearing",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-9",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Substitute individual sounds in simple words to make new words.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Changing Sounds"
+      },
+      "student_question": "How can I change one sound to make a new word?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-10",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Sound out words accurately.",
+      "topic": "sounding_out",
+      "title": {
+        "en": "Sounding Out Words"
+      },
+      "student_question": "How do I sound out a new word?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-11",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to oneself.",
+      "topic": "words_about_me",
+      "title": {
+        "en": "Words About Me"
+      },
+      "student_question": "What words can I use to describe myself?",
+      "icon": "account",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-12",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify words with different functions (naming and describing words).\na. words that label animals and actions",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Naming and Describing Words"
+      },
+      "student_question": "What are naming words and describing words?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-13",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Read high-frequency words accurately for meaning.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-14",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Recognize environmental print (symbols).",
+      "topic": "signs_and_symbols",
+      "title": {
+        "en": "Signs Around Us"
+      },
+      "student_question": "What do the signs around us mean?",
+      "icon": "sign-direction",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-15",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Recognize the parts of the book (cover page, title page, etc.)",
+      "topic": "parts_of_a_book",
+      "title": {
+        "en": "Parts of a Book"
+      },
+      "student_question": "What are the parts of a book?",
+      "icon": "book-open-page-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-16",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Recognize proper eye movement skills in reading: left to right, top to bottom, and return sweep",
+      "topic": "reading_direction",
+      "title": {
+        "en": "How We Read"
+      },
+      "student_question": "Which way do my eyes move when I read?",
+      "icon": "eye",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-17",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important details in stories (character, setting, and events). b. Sequence events in stories. c. Infer the character's feelings and traits. d. Relate story events to one’s experience.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-18",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Narrate one’s personal experiences: oneself.",
+      "topic": "telling_events",
+      "title": {
+        "en": "Talking About My Day"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w4-19",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Express ideas about: oneself.",
+      "topic": "sharing_feelings",
+      "title": {
+        "en": "Sharing My Ideas"
+      },
+      "student_question": "How can I share my ideas about myself?",
+      "icon": "lightbulb-on",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 11 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-1",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Chant nursery rhymes and poems.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Nursery Rhymes"
+      },
+      "student_question": "Why do we chant nursery rhymes?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-2",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Segment a two-three syllable word into its syllabic parts.",
+      "topic": "syllables",
+      "title": {
+        "en": "Syllables"
+      },
+      "student_question": "How do I split a word into its parts?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-3",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify rhyming words in nursery rhymes, poems, and chants.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Rhyming Words"
+      },
+      "student_question": "Which words rhyme in a poem?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-4",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Say two or three words that rhyme.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Saying Rhyming Words"
+      },
+      "student_question": "Can I think of words that rhyme?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-5",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify initial sounds (vowels, consonants, and semi-vowels, if any).",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "First Sounds"
+      },
+      "student_question": "What sound does a word start with?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-6",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Produce the sound of the letters of L1.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Letter Sounds"
+      },
+      "student_question": "What sound does each letter make?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-7",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify the letters in L1.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Knowing Letters"
+      },
+      "student_question": "How do I know which letter is which?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-8",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Isolate sounds (consonants and vowels) in a word (beginning and/or ending).",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Sounds in a Word"
+      },
+      "student_question": "What sounds can I hear at the start and end of a word?",
+      "icon": "ear-hearing",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-9",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Substitute individual sounds in simple words to make new words.",
+      "topic": "letter_sounds",
+      "title": {
+        "en": "Changing Sounds"
+      },
+      "student_question": "How can I change one sound to make a new word?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-10",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Sound out words accurately.",
+      "topic": "sounding_out",
+      "title": {
+        "en": "Sounding Out Words"
+      },
+      "student_question": "How do I sound out a new word?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-11",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to oneself.",
+      "topic": "words_about_me",
+      "title": {
+        "en": "Words About Me"
+      },
+      "student_question": "What words can I use to describe myself?",
+      "icon": "account",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-12",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify words with different functions (naming and describing words).\na. words that label situations, ideas, and emotions",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Naming and Describing Words"
+      },
+      "student_question": "What are naming words and describing words?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-13",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Read high-frequency words accurately for meaning.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-14",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Recognize environmental print (symbols).",
+      "topic": "signs_and_symbols",
+      "title": {
+        "en": "Signs Around Us"
+      },
+      "student_question": "What do the signs around us mean?",
+      "icon": "sign-direction",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-15",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Recognize the parts of the book (cover page, title page, etc.)",
+      "topic": "parts_of_a_book",
+      "title": {
+        "en": "Parts of a Book"
+      },
+      "student_question": "What are the parts of a book?",
+      "icon": "book-open-page-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-16",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Recognize proper eye movement skills in reading: left to right, top to bottom, and return sweep",
+      "topic": "reading_direction",
+      "title": {
+        "en": "How We Read"
+      },
+      "student_question": "Which way do my eyes move when I read?",
+      "icon": "eye",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-17",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important details in stories (character, setting, and events).\nb. Sequence events in stories. c. Infer the character's feelings and traits. d. Predict possible ending. e. Relate story events to one’s experience.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-18",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Narrate one’s personal experiences: oneself.",
+      "topic": "telling_events",
+      "title": {
+        "en": "Talking About My Day"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-19",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use own words in retelling myths, legends, fables, and narrative poems.",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Legends and Fables"
+      },
+      "student_question": "How can I retell a legend or fable in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-20",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Express ideas about: oneself.",
+      "topic": "sharing_feelings",
+      "title": {
+        "en": "Sharing My Ideas"
+      },
+      "student_question": "How can I share my ideas about myself?",
+      "icon": "lightbulb-on",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g1-reading_literacy-w5-21",
+      "grade": 1,
+      "subject": "reading_literacy",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Respond creatively to texts (myths, legends, fables, and narrative poems).",
+      "topic": "responding_to_stories",
+      "title": {
+        "en": "Responding Creatively"
+      },
+      "student_question": "How can I draw or act out a story I read?",
+      "icon": "palette",
+      "source": "DepEd Three-Term Budget of Work, Grade 1 Reading and Literacy (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 12 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    }
+  ]
 }

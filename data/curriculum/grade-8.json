@@ -1,5 +1,1451 @@
 {
   "grade": 8,
   "term": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "g8-araling_panlipunan-w1-1",
+      "grade": 8,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Nailalarawan ang katangiang pisikal ng daigdig at implikasyon nito sa pamumuhay ng mga tao",
+      "topic": "world_geography",
+      "title": {
+        "en": "Earth's Physical Features"
+      },
+      "student_question": "How do the land and climate of the world affect how people live?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Araling Panlipunan, First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-araling_panlipunan-w2-1",
+      "grade": 8,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Nasusuri ang kalagayang heograpikal ng mga sinaunang kabihasnan sa Asya at iba pang bahagi ng daigdig",
+      "topic": "ancient_civilizations",
+      "title": {
+        "en": "Geography of Ancient Civilizations"
+      },
+      "student_question": "Why did ancient civilizations start near rivers?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Araling Panlipunan, First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-araling_panlipunan-w3-1",
+      "grade": 8,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Napatutunayan ang kahalagahan ng pakikipag-ugnayan ng mga tao sa pag-unlad ng mga kabihasnan",
+      "topic": "ancient_civilizations",
+      "title": {
+        "en": "Interaction and Progress"
+      },
+      "student_question": "How did trade and contact help civilizations grow?",
+      "icon": "ferry",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Araling Panlipunan, First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-araling_panlipunan-w4-1",
+      "grade": 8,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Natataya ang epekto ng estrukturang panlipunan sa pag-unlad ng pamumuhay ng tao",
+      "topic": "social_structure",
+      "title": {
+        "en": "Social Structure"
+      },
+      "student_question": "How did social classes affect how people lived?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Araling Panlipunan, First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-araling_panlipunan-w5-1",
+      "grade": 8,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang papel ng relihiyon at ibang paniniwala sa paghubog sa pagkakakilanlang kultural ng tao",
+      "topic": "religion_and_culture",
+      "title": {
+        "en": "Religion and Culture"
+      },
+      "student_question": "How did religion shape people's culture?",
+      "icon": "candle",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Araling Panlipunan, First Term, Week 5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-araling_panlipunan-w6-1",
+      "grade": 8,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Napahahalagahan ang interaksiyon ng tao sa kaniyang kapaligiran",
+      "topic": "people_and_environment",
+      "title": {
+        "en": "People and the Environment"
+      },
+      "student_question": "How do people and their environment affect each other?",
+      "icon": "leaf",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Araling Panlipunan, First Term, Week 6, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-araling_panlipunan-w7-1",
+      "grade": 8,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Natatalakay ang mahahalagang pangyayari noong ika-15 at ika-16 siglo bago ang panahon ng paggalugad ng mga lupain",
+      "topic": "age_of_exploration",
+      "title": {
+        "en": "Before the Age of Exploration"
+      },
+      "student_question": "What happened in the 1400s and 1500s before Europeans explored new lands?",
+      "icon": "compass",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Araling Panlipunan, First Term, Week 7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-araling_panlipunan-w8-1",
+      "grade": 8,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Nasusuri ang mga pangyayari at kinahinatnan ng paggalugad at kolonyalismo ng mga Europeo sa mga bagong lupain sa America",
+      "topic": "age_of_exploration",
+      "title": {
+        "en": "Exploration and Colonialism"
+      },
+      "student_question": "What happened when Europeans explored and colonized new lands?",
+      "icon": "compass",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Araling Panlipunan, First Term, Weeks 8–9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-araling_panlipunan-w10-1",
+      "grade": 8,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Nasusuri ang mga naging unang tugon ng mga Asyano sa panahon ng paggalugad at kolonyalismo",
+      "topic": "asian_responses",
+      "title": {
+        "en": "How Asians Responded"
+      },
+      "student_question": "How did Asian countries respond to European colonizers?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Araling Panlipunan, First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-english-w1-1",
+      "grade": 8,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Analyze literary texts as expressions of individual or communal values within: o Structural context:\n▪ Conflict:\n● Character vs Character\n● Character vs Society\n● Character vs Nature/environment\n▪ Character\n▪ Characterization\n▪ Plot:\n▪ Linear and flashback\n▪ Parallel\n▪ Diction\n▪ Tone and mood\n▪ Style\n▪ Figures of speech and sound devices",
+      "topic": "literary_analysis",
+      "title": {
+        "en": "Analyzing Literature"
+      },
+      "student_question": "How does a story show the values of a person or a community?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 14 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-english-w1-2",
+      "grade": 8,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify one’s meaning and purpose in selecting the type of literary text for composition.",
+      "topic": "creative_writing",
+      "title": {
+        "en": "Choosing What to Write"
+      },
+      "student_question": "How do I choose what kind of story or poem to write?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 15 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-english-w1-3",
+      "grade": 8,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Compose literary texts using appropriate structure.",
+      "topic": "creative_writing",
+      "title": {
+        "en": "Writing Literature"
+      },
+      "student_question": "How do I give my story or poem a good structure?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 15 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w1-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Discuss the background of aquaculture and its relation to fisheries.",
+      "topic": "aquaculture",
+      "title": {
+        "en": "Aquaculture"
+      },
+      "student_question": "What is aquaculture?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w1-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Discuss career and business opportunities related to fisheries.",
+      "topic": "fishery_careers",
+      "title": {
+        "en": "Careers in Fisheries"
+      },
+      "student_question": "What jobs are there in fisheries?",
+      "icon": "briefcase",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w1-3",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Discuss the phases of fish culture.",
+      "topic": "fish_raising",
+      "title": {
+        "en": "Phases of Fish Culture"
+      },
+      "student_question": "What are the stages of raising fish?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w1-4",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify common fishes according to their habitat",
+      "topic": "fish_habitats",
+      "title": {
+        "en": "Where Fish Live"
+      },
+      "student_question": "Which fish live in fresh water and which live in the sea?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w1-5",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Assess ICT as tools for online marketing.",
+      "topic": "online_marketing",
+      "title": {
+        "en": "Online Marketing"
+      },
+      "student_question": "How can ICT help sell products online?",
+      "icon": "web",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w2-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Familiarize themselves with sections of RA. 10654.",
+      "topic": "fisheries_law",
+      "title": {
+        "en": "The Fisheries Law"
+      },
+      "student_question": "What does the Philippine Fisheries Code say?",
+      "icon": "gavel",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w2-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Discuss fish species in the Philippines.",
+      "topic": "fish_species",
+      "title": {
+        "en": "Fish of the Philippines"
+      },
+      "student_question": "What kinds of fish live in the Philippines?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w2-3",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Discuss Occupational Safety and Health (OSH) hazards in fisheries.",
+      "topic": "farm_safety",
+      "title": {
+        "en": "Safety in Fisheries"
+      },
+      "student_question": "What dangers do fishers face at work?",
+      "icon": "alert",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w2-4",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Discuss advantages and disadvantages of organic aquaculture.",
+      "topic": "organic_aquaculture",
+      "title": {
+        "en": "Organic Aquaculture"
+      },
+      "student_question": "What are the pros and cons of organic fish farming?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w2-5",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Discuss current events reflecting on their own digital citizenship.",
+      "topic": "digital_citizenship",
+      "title": {
+        "en": "Digital Citizenship"
+      },
+      "student_question": "How can I be a good digital citizen?",
+      "icon": "account-network",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w3-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify different aquaculture methods and selected practices.",
+      "topic": "aquaculture",
+      "title": {
+        "en": "Aquaculture Methods"
+      },
+      "student_question": "What are the different ways to raise fish?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w3-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Determine the area and depth requirement of aquaculture facilities.",
+      "topic": "aquaculture",
+      "title": {
+        "en": "Fish Pond Requirements"
+      },
+      "student_question": "How big and deep should a fish pond be?",
+      "icon": "waves",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w3-3",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Distinguish ICT-related legal bases and their consequences.",
+      "topic": "cyber_laws",
+      "title": {
+        "en": "ICT Laws"
+      },
+      "student_question": "What laws protect people online?",
+      "icon": "gavel",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w4-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Discuss the uses of tools and equipment in aquaculture.",
+      "topic": "fishing_tools",
+      "title": {
+        "en": "Aquaculture Tools"
+      },
+      "student_question": "What tools are used in fish farming?",
+      "icon": "tools",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w4-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify fishing gears used for catching fish.",
+      "topic": "fishing_tools",
+      "title": {
+        "en": "Fishing Gear"
+      },
+      "student_question": "What gear do fishers use to catch fish?",
+      "icon": "hook",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w5-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Create a simple hand line following safety precautions.",
+      "topic": "fishing_tools",
+      "title": {
+        "en": "Making a Hand Line"
+      },
+      "student_question": "How do I make a simple fishing hand line safely?",
+      "icon": "hook",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w5-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Familiarize themselves with the tools and equipment in ICT.",
+      "topic": "ict_tools",
+      "title": {
+        "en": "ICT Tools and Equipment"
+      },
+      "student_question": "What tools and equipment are used in ICT?",
+      "icon": "tools",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Week 5, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w6-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Discuss basic fishing bait methods.",
+      "topic": "fishing_tools",
+      "title": {
+        "en": "Fishing Bait"
+      },
+      "student_question": "What kinds of bait do fishers use?",
+      "icon": "hook",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w6-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Discuss post-harvest handling activities.",
+      "topic": "post_harvest",
+      "title": {
+        "en": "After the Catch"
+      },
+      "student_question": "How should fish be handled after they are caught?",
+      "icon": "basket",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w6-3",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Familiarize themselves with appropriate software applications for specific tasks.",
+      "topic": "software",
+      "title": {
+        "en": "Choosing Software"
+      },
+      "student_question": "Which software should I use for a task?",
+      "icon": "application",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Week 6, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w6-4",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Introduction to software.",
+      "topic": "software",
+      "title": {
+        "en": "What Is Software?"
+      },
+      "student_question": "What is software?",
+      "icon": "application",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Week 6, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w7-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Perform sorting, grading, and storing of fishes following safety precautions.",
+      "topic": "post_harvest",
+      "title": {
+        "en": "Sorting and Storing Fish"
+      },
+      "student_question": "How do we sort and store fish safely?",
+      "icon": "fridge",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w7-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "System Software",
+      "topic": "software",
+      "title": {
+        "en": "System Software"
+      },
+      "student_question": "What is system software?",
+      "icon": "cog",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Week 7, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w8-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Discuss the importance of food processing.",
+      "topic": "food_processing",
+      "title": {
+        "en": "Why Process Food"
+      },
+      "student_question": "Why is food processing important?",
+      "icon": "food",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w8-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Discuss opportunities for food processing as a career and as a business.",
+      "topic": "food_processing",
+      "title": {
+        "en": "Careers in Food Processing"
+      },
+      "student_question": "What jobs and businesses are there in food processing?",
+      "icon": "briefcase",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w8-3",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Discuss different raw materials used in food processing.",
+      "topic": "food_processing",
+      "title": {
+        "en": "Raw Materials"
+      },
+      "student_question": "What raw materials are used to process food?",
+      "icon": "food",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w8-4",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Explain the ingredients used for food processing.",
+      "topic": "food_processing",
+      "title": {
+        "en": "Ingredients"
+      },
+      "student_question": "What ingredients are used in processed food?",
+      "icon": "food",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w8-5",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Application Software",
+      "topic": "software",
+      "title": {
+        "en": "Application Software"
+      },
+      "student_question": "What is application software?",
+      "icon": "application",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Week 8, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w9-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Discuss different methods in food processing following industry standards.",
+      "topic": "food_processing",
+      "title": {
+        "en": "Food Processing Methods"
+      },
+      "student_question": "What are different ways to process food?",
+      "icon": "food",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w9-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Discuss different tools and equipment, uses, and maintenance in food processing.",
+      "topic": "food_processing",
+      "title": {
+        "en": "Food Processing Tools"
+      },
+      "student_question": "What tools are used to process food?",
+      "icon": "tools",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w9-3",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Multimedia, Graphics, and Web Software",
+      "topic": "software",
+      "title": {
+        "en": "Multimedia and Web Software"
+      },
+      "student_question": "What software is used for graphics and websites?",
+      "icon": "palette",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Week 9, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w10-1",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Perform quantification procedures in processing food.",
+      "topic": "food_processing",
+      "title": {
+        "en": "Measuring Ingredients"
+      },
+      "student_question": "How do I measure ingredients correctly?",
+      "icon": "scale",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w10-2",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Discuss different packaging materials used in food processing.",
+      "topic": "food_packaging",
+      "title": {
+        "en": "Food Packaging"
+      },
+      "student_question": "What materials are used to package food?",
+      "icon": "package-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w10-3",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Develop sample label design for processed food products.",
+      "topic": "food_packaging",
+      "title": {
+        "en": "Food Labels"
+      },
+      "student_question": "How do I design a label for a food product?",
+      "icon": "label",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-epp_tle-w10-4",
+      "grade": 8,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Software Installation, Updates",
+      "topic": "software",
+      "title": {
+        "en": "Installing Software"
+      },
+      "student_question": "How do I install and update software?",
+      "icon": "download",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 TLE: ICT (last updated April 7, 2026), First Term, Week 10, PDF page 7 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-gmrc_values-w1-1",
+      "grade": 8,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa maingat na paghusga sa pamamagitan ng pagninilay sa kamalayan sa mga emosyong nararamdaman, kilos, pag-iisip, at reaksiyon ng katawan. a. Naiisa-isa ang mga indikasyon ng pagkakaroon ng kamalayan sa mga emosyong nararamdaman. b. Napatutunayan na ang emosyong nararamdaman ay nakatutulong upang lubos na makilala ang sarili at makatugon nang wasto sa mga nararamdaman sa bawat situwasyon tungo sa pagpapaunlad ng sarili at ugnayan sa kapuwa. c. Naipakikita ang pagkilala sa mga emosyong nararamdaman.",
+      "topic": "prudence",
+      "title": {
+        "en": "Thinking About Emotions"
+      },
+      "student_question": "How can understanding my emotions help me decide well?",
+      "icon": "emoticon",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Values Education (last updated July 20, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-gmrc_values-w2-1",
+      "grade": 8,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging matatag sa pamamagitan ng mga gawaing nagpapakita ng pagpapahalaga sa mga positibong pananaw gabay ang pamilya. a. Nailalarawan ang positibong pananaw gabay ang pamilya. b. Naipaliliwanag na ang positibong pananaw gabay ang pamilya ay may impluwensiya sa kalusugang pangkaisipan at pangkatawan, na nagsisilbing kanlungan sa lahat ng panahon at ito ang naglilinang ng katatagan. c. Naisasakilos ang mga gawain na nagpapahalaga sa mga positibong pananaw gabay ang pamilya.",
+      "topic": "resilience",
+      "title": {
+        "en": "Positive Attitude"
+      },
+      "student_question": "How can a positive attitude make me stronger?",
+      "icon": "arm-flex",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Values Education (last updated July 20, 2026), First Term, Weeks 2–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-gmrc_values-w3-1",
+      "grade": 8,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging mapagmalasakit sa pamamagitan ng pagiging sensitibo at wastong pagtugon sa pangangailangan ng kapuwa. a. Nailalarawan ang mga paraan ng pakikipagkapuwa bilang isang kabataan. b. Naipaliliwanag na ang pakikipagkapuwa-tao ay nakaugat sa kalikasan ng tao bilang panlipunang nilalang at naglilinang ng kaniyang kaganapan bilang tao sa pamamagitan ng paglilingkod sa kapuwa na indikasyon ng pagmamahal. c. Nailalapat ang mga paraan ng pakikipagkapuwa bilang isang kabataan.",
+      "topic": "compassion",
+      "title": {
+        "en": "Responding to Others' Needs"
+      },
+      "student_question": "How can I notice and help people in need?",
+      "icon": "hand-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Values Education (last updated July 20, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-gmrc_values-w4-1",
+      "grade": 8,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa paggalang sa buhay sa pamamagitan ng pag-iwas sa mga gawain at ugnayan na nakasasama sa katawan. a. Natutukoy ang mga paraan ng pag-iingat sa sarili gabay ang pananampalataya. b. Naipaliliwanag na ang pananampalataya bilang gabay sa pag-iingat sa sarili ay pagpapanatili ng ugnayan sa Diyos at pagtiyak upang lubos na mapahalagahan ang buhay at makamit ang layunin ng kaniyang pagkalikha. c. Naisasakilos ang mga paraan ng pag-iingat sa sarili gabay ang pananampalataya.",
+      "topic": "respect_for_life",
+      "title": {
+        "en": "Avoiding Harmful Habits"
+      },
+      "student_question": "How can I avoid things that harm my life?",
+      "icon": "heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Values Education (last updated July 20, 2026), First Term, Weeks 4–5, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-gmrc_values-w5-1",
+      "grade": 8,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging mapagpasalamat sa pamamagitan ng pagpapahayag ng mga papuri at kabutihan ng Diyos batay sa relihiyon o paniniwalang kinabibilangan. a. Naiisa-isa ang mga sariling paraan ng pagdakila sa Diyos. b. Naipaliliwanag na ang mga sariling paraan ng pagdakila sa Diyos ay pagkilala sa Kaniya at pagpapasalamat sa lahat ng mga biyayang tinatamasa. c. Nakapaglalapat ng mga sariling paraan ng pagdakila sa Diyos batay sa relihiyon o paniniwalang kinabibilangan.",
+      "topic": "gratitude",
+      "title": {
+        "en": "Praising God's Goodness"
+      },
+      "student_question": "How can I show gratitude for blessings?",
+      "icon": "heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Values Education (last updated July 20, 2026), First Term, Weeks 5–6, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-gmrc_values-w6-1",
+      "grade": 8,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Nakapagsasanay ng kapayakan sa pamamagitan ng pagbibigay-priyoridad sa mga pangangailangan kaysa sa kagustuhan. a. Nakapagpapahayag ng mga paraan ng payak na pamumuhay bilang pansariling pag-iingat sa kalikasan. b. Nahihinuha na ang payak na pamumuhay at wastong pagkunsumo ay kailangan bilang pakikiisa ng tao sa pag-iingat sa kalikasan. c. Naisasakilos ang mga paraan ng payak na pamumuhay bilang pansariling pag-iingat sa kalikasan.",
+      "topic": "simplicity",
+      "title": {
+        "en": "Needs Before Wants"
+      },
+      "student_question": "Why should needs come before wants?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Values Education (last updated July 20, 2026), First Term, Weeks 6–7, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-gmrc_values-w7-1",
+      "grade": 8,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging mapagmalasakit sa pamamagitan ng pakikisangkot sa mga gawaing nagtatampok ng pagtitipid at pag-iimpok upang makatulong sa pamayanan (hal. pagbibigay ng mga lata, bote, pahayagan na maaaring ibenta). a. Naiisa-isa ang mga paraan ng sariling pag-iimpok at pagtitipid upang makatulong sa pamayanan ayon sa kakayahan. b. Naipaliliwanag na ang sariling pag-iimpok at pagtitipid upang makatulong sa pamayanan ay aktibong pakikibahagi sa pagpapabuti ng kalagayan ng mga mamamayan at pagtugon sa kanilang mga pangangailangan. c. Nailalapat ang mga paraan ng sariling pag-iimpok at pagtitipid upang makatulong sa pamayanan ayon sa kakayahan.",
+      "topic": "compassion",
+      "title": {
+        "en": "Helping the Community"
+      },
+      "student_question": "How can I join activities that help others?",
+      "icon": "hand-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Values Education (last updated July 20, 2026), First Term, Weeks 7–8, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-gmrc_values-w8-1",
+      "grade": 8,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging masipag sa pamamagitan ng paggawa hanggang matapos ang mga itinakdang gawain sa pag-aaral sa kabila ng mga hamon/limitasyon. a. Naiisa-isa ang mga tungkulin ng pamilya sa edukasyon ng bawat bata. b. Naipaliliwanag na ang tungkulin ng pamilya sa edukasyon ng bata ay paunlarin ang mga kaalaman, kasanayan, at pagpapahalaga ng bawat bata tungo sa matagumpay at makabuluhang buhay na ginagabayan ng katotohanan at kabutihan. c. Nailalapat ang mga tungkulin sa sariling edukasyon bilang pagtugon sa tungkulin ng pamilya.",
+      "topic": "industriousness",
+      "title": {
+        "en": "Being Hardworking"
+      },
+      "student_question": "How can I finish my tasks on time?",
+      "icon": "briefcase-check",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Values Education (last updated July 20, 2026), First Term, Weeks 8–9, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w1-1",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Determine measures of central tendency of ungrouped data.",
+      "topic": "central_tendency",
+      "title": {
+        "en": "Mean, Median, and Mode"
+      },
+      "student_question": "What are the mean, median, and mode?",
+      "icon": "chart-bar",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w1-2",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Draw conclusions from statistical data using the measures of central tendency.",
+      "topic": "central_tendency",
+      "title": {
+        "en": "Using Averages"
+      },
+      "student_question": "What can averages tell us about data?",
+      "icon": "chart-bar",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w1-3",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Model real-life situations using algebraic expressions.",
+      "topic": "algebraic_expressions",
+      "title": {
+        "en": "Algebraic Expressions"
+      },
+      "student_question": "How can I write a real-life situation using letters and numbers?",
+      "icon": "variable",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w2-1",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Add and subtract simple monomials.",
+      "topic": "monomials",
+      "title": {
+        "en": "Adding Monomials"
+      },
+      "student_question": "How do I add and subtract terms like 3x and 5x?",
+      "icon": "variable",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w2-2",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Multiply and divide simple monomials, leading to the derivation of the laws of exponents.",
+      "topic": "exponents",
+      "title": {
+        "en": "Laws of Exponents"
+      },
+      "student_question": "What are the laws of exponents?",
+      "icon": "exponent",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w3-1",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Multiply simple monomials and binomials with simple binomials and multinomials, using the distributive property with various techniques and models.",
+      "topic": "polynomials",
+      "title": {
+        "en": "Multiplying Polynomials"
+      },
+      "student_question": "How do I multiply expressions like (x + 2)(x + 3)?",
+      "icon": "variable",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Weeks 3–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w3-2",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use special product patterns to multiply binomials.",
+      "topic": "special_products",
+      "title": {
+        "en": "Special Products"
+      },
+      "student_question": "What are special product patterns in algebra?",
+      "icon": "variable",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Weeks 3–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w3-3",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Completely factor different types of polynomials (polynomials with common monomial factor; difference of two squares; quadratic trinomials, including perfect square trinomials).",
+      "topic": "factoring",
+      "title": {
+        "en": "Factoring"
+      },
+      "student_question": "How do I factor a polynomial?",
+      "icon": "variable",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Weeks 3–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w6-1",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Solve problems involving special products and factors of polynomials.",
+      "topic": "factoring",
+      "title": {
+        "en": "Factoring Problems"
+      },
+      "student_question": "How do I use factoring to solve problems?",
+      "icon": "variable",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Weeks 6–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w6-2",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Simplify rational algebraic expressions.",
+      "topic": "rational_expressions",
+      "title": {
+        "en": "Simplifying Rational Expressions"
+      },
+      "student_question": "How do I simplify a fraction with variables?",
+      "icon": "division",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Weeks 6–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w6-3",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Perform operations on rational algebraic expressions.",
+      "topic": "rational_expressions",
+      "title": {
+        "en": "Operations on Rational Expressions"
+      },
+      "student_question": "How do I add or multiply fractions with variables?",
+      "icon": "division",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Weeks 6–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w6-4",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Solve problems involving simple rational algebraic equations (using cross-multiplication).",
+      "topic": "rational_expressions",
+      "title": {
+        "en": "Rational Equations"
+      },
+      "student_question": "How do I solve equations using cross-multiplication?",
+      "icon": "equal",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Weeks 6–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w9-1",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Formulate the rule for finding the next term in a sequence by looking for patterns.",
+      "topic": "sequences",
+      "title": {
+        "en": "Number Patterns"
+      },
+      "student_question": "How do I find the next number in a pattern?",
+      "icon": "dots-horizontal",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w9-2",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Illustrate and describe the Cartesian coordinate plane.",
+      "topic": "coordinate_plane",
+      "title": {
+        "en": "The Coordinate Plane"
+      },
+      "student_question": "What is the Cartesian coordinate plane?",
+      "icon": "axis-arrow",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w10-1",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Plot points on the Cartesian coordinate plane and determine the coordinates of a point on the plane.",
+      "topic": "coordinate_plane",
+      "title": {
+        "en": "Plotting Points"
+      },
+      "student_question": "How do I plot a point on a graph?",
+      "icon": "axis-arrow",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-mathematics-w10-2",
+      "grade": 8,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Solve problems involving distance between two points and midpoint of a line segment on the Cartesian coordinate plane.",
+      "topic": "coordinate_plane",
+      "title": {
+        "en": "Distance and Midpoint"
+      },
+      "student_question": "How do I find the distance between two points on a graph?",
+      "icon": "axis-arrow",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w1-1",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Using a labeled diagram, trace how food travels through the digestive tract and explain how different digestive processes work, including mechanical processing, secretion, digestion, absorption, and elimination.",
+      "topic": "digestive_system",
+      "title": {
+        "en": "Digestive System"
+      },
+      "student_question": "How does food travel through my body?",
+      "icon": "stomach",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w1-2",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use models, flow charts, diagrams, and simulations to explain how body systems work together, such as digestion and excretion.",
+      "topic": "body_systems",
+      "title": {
+        "en": "Body Systems Working Together"
+      },
+      "student_question": "How do my body systems work together?",
+      "icon": "human",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w1-3",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Describe how plant organs (leaf, stem, roots) work together as the transport system.",
+      "topic": "plant_transport",
+      "title": {
+        "en": "Plant Transport System"
+      },
+      "student_question": "How do leaves, stems, and roots work together?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w3-1",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Represent patterns of inheritance of a simple dominant/ recessive characteristic through generations of a family.",
+      "topic": "heredity",
+      "title": {
+        "en": "Heredity"
+      },
+      "student_question": "Why do children look like their parents?",
+      "icon": "dna",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w3-2",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Predict simple ratios of offspring genotypes and phenotypes in crosses involving dominant/recessive gene pairs.",
+      "topic": "heredity",
+      "title": {
+        "en": "Predicting Traits"
+      },
+      "student_question": "How can we predict which traits children will get?",
+      "icon": "dna",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w4-1",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Describe the importance of the six-kingdom system and the three-domain system of classification of living things.",
+      "topic": "classification",
+      "title": {
+        "en": "Classifying Living Things"
+      },
+      "student_question": "What are the six kingdoms of living things?",
+      "icon": "paw",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Weeks 4–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w4-2",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Explain why humans are classified under Class Mammalia and the Order Primates.",
+      "topic": "classification",
+      "title": {
+        "en": "Humans as Mammals"
+      },
+      "student_question": "Why are humans called mammals and primates?",
+      "icon": "human",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Weeks 4–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w6-1",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Using flow charts and labeled diagrams explain the role of plants and animals in the cycles of nature, such as the carbon, oxygen, and water cycles.",
+      "topic": "cycles_in_nature",
+      "title": {
+        "en": "Cycles in Nature"
+      },
+      "student_question": "How do plants and animals help the carbon and oxygen cycles?",
+      "icon": "sync",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Weeks 6–9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w6-2",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Describe the process of photosynthesis and respiration, and identify its raw materials needed and products.",
+      "topic": "photosynthesis",
+      "title": {
+        "en": "Photosynthesis and Respiration"
+      },
+      "student_question": "How do plants make food from sunlight?",
+      "icon": "leaf",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Weeks 6–9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w6-3",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Using information from secondary sources identify the different parts of the cell where photosynthesis and respiration occur.",
+      "topic": "photosynthesis",
+      "title": {
+        "en": "Where Photosynthesis Happens"
+      },
+      "student_question": "Which parts of the cell do photosynthesis and respiration?",
+      "icon": "leaf",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Weeks 6–9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w6-4",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Plan a scientific investigation to verify the raw materials needed for photosynthesis.",
+      "topic": "photosynthesis",
+      "title": {
+        "en": "Testing Photosynthesis"
+      },
+      "student_question": "How can I test what plants need to make food?",
+      "icon": "flask",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Weeks 6–9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w10-1",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Develop a timeline for the historical background of the development of the current Atomic Model that identifies tiny particles as atoms.",
+      "topic": "atomic_model",
+      "title": {
+        "en": "History of the Atom"
+      },
+      "student_question": "How did scientists discover what atoms look like?",
+      "icon": "atom",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w10-2",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Draw the structure of an atom in terms of the nucleus and electron shells.",
+      "topic": "atomic_model",
+      "title": {
+        "en": "Structure of an Atom"
+      },
+      "student_question": "What are the parts of an atom?",
+      "icon": "atom",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g8-science-w11-1",
+      "grade": 8,
+      "subject": "science",
+      "term": 1,
+      "week": 11,
+      "competency_code": null,
+      "competency": "Differentiate the subatomic particles protons, neutrons, and electrons in terms of their symbol, mass, charge, and location within an atom.",
+      "topic": "subatomic_particles",
+      "title": {
+        "en": "Protons, Neutrons, and Electrons"
+      },
+      "student_question": "How are protons, neutrons, and electrons different?",
+      "icon": "atom",
+      "source": "DepEd Three-Term Budget of Work, Grade 8 Science (last updated April 8, 2026), First Term, Week 11, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    }
+  ]
 }
