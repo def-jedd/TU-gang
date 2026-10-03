@@ -10,6 +10,8 @@ type Props = {
   card: CardDef;
   lang: UiLang;
   selected?: boolean;
+  /** The active student already finished this lesson: shows a gold star. */
+  done?: boolean;
   onPress?: () => void;
   /** `deck`: card simulator. `tile`: Home topic picker. */
   size?: 'deck' | 'tile';
@@ -23,7 +25,7 @@ const LIP = 5;
  * The on-screen twin of a physical NFC card: same colour, icon and words as
  * the printed card, so a child who can't read the label still recognises it.
  */
-export function LearningCard({ card, lang, selected = false, onPress, size = 'deck', showCode }: Props) {
+export function LearningCard({ card, lang, selected = false, done = false, onPress, size = 'deck', showCode }: Props) {
   const palette = category[card.category];
   const label = card.label[lang];
   const hint = card.hint?.[lang];
@@ -53,6 +55,8 @@ export function LearningCard({ card, lang, selected = false, onPress, size = 'de
             </View>
             {selected ? (
               <Icon name="check-circle" size={26} color={colors.onPrimary} />
+            ) : done ? (
+              <Icon name="star-circle" size={30} color={colors.accentLip} />
             ) : (
               <Icon name="nfc-variant" size={20} color={palette.solid} />
             )}

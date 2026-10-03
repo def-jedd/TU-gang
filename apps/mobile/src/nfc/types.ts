@@ -23,4 +23,15 @@ export type NfcReader = {
   /** Starts listening. Resolves to a stop function. */
   listen(onTag: (tag: ScannedTag) => void, onSessionEnd?: () => void): Promise<() => void>;
   openSettings(): Promise<void>;
+  /**
+   * Write one NDEF Text record to the next card held to the phone. `build`
+   * gets the card's free space (text bytes) and returns the text to write.
+   */
+  writeText(build: (maxTextBytes: number) => string): Promise<WriteResult>;
+  /** Stop waiting for a card to write to. */
+  cancelWrite(): Promise<void>;
 };
+
+export type WriteResult =
+  | { ok: true; text: string; maxTextBytes: number }
+  | { ok: false; error: 'unavailable' | 'too_small' | 'cancelled' | 'failed'; detail?: string };

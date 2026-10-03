@@ -3,12 +3,15 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 import { AppState } from 'react-native';
 
 import { useTutor, type CardOutcome } from '../hooks/useTutor';
+import { decodeProfileCard, isProfileCardText, type Profile } from '../profiles/profileCard';
+import { useProfiles } from '../profiles/ProfileProvider';
+import { speakLabel } from '../voice/deviceSpeech';
 import { INTERACTION_MODE } from '../services/config';
 import { useVoice } from '../voice/VoiceProvider';
 import { UID_TO_CARD } from './cards';
 import { parseCardCode } from './cardReducer';
 import { nfcReader } from './reader';
-import type { NfcAvailability, ScannedTag } from './types';
+import type { NfcAvailability, ScannedTag, WriteResult } from './types';
 
 export type LastScan = { code: string | null; outcome: CardOutcome; at: number };
 
@@ -23,6 +26,12 @@ type NfcContextValue = {
   recheck: () => void;
   /** Same path a physical tag takes — used by the on-screen card simulator. */
   tapCard: (code: string) => CardOutcome;
+  /** Last student profile card tapped (Home shows "Hi, <name>!"). */
+  lastProfile: { profile: Profile; at: number } | null;
+  /** True while waiting for a card to write to (normal listening is paused). */
+  writing: boolean;
+  writeCardText: (build: (maxTextBytes: number) => string) => Promise<WriteResult>;
+  cancelWrite: () => void;
 };
 
 const NfcContext = createContext<NfcContextValue | null>(null);
@@ -40,8 +49,17 @@ function cardCodeFromTag(tag: ScannedTag): string | null {
  * any screen: tapping ACTION_EXPLAIN anywhere jumps straight to the answer.
  */
 export function NfcProvider({ children }: { children: ReactNode }) {
-  const { applyCard } = useTutor();
+  const { applyCard, t } = useTutor();
   const voice = useVoice();
+  const profiles = useProfiles();
+  const [writing, setWriting] = useState(false);
+  const [lastProfile, setLastProfile] = useState<{ profile: Profile; at: number } | null>(null);
+  const profilesRef = useRef(profiles);
+  const helloRef = useRef(t.helloStudent);
+  useEffect(() => {
+    profilesRef.current = profiles;
+    helloRef.current = t.helloStudent;
+  }, [profiles, t.helloStudent]);
   const pathname = usePathname();
   const [availability, setAvailability] = useState<NfcAvailability>('checking');
   const [scanning, setScanning] = useState(false);
@@ -95,6 +113,15 @@ export function NfcProvider({ children }: { children: ReactNode }) {
 
   const handleTag = useCallback(
     (tag: ScannedTag) => {
+      // Student profile card: switch to that student (merging their progress).
+      const profileText = tag.payloads.find(isProfileCardText);
+      const card = profileText ? decodeProfileCard(profileText) : null;
+      if (card) {
+        const merged = profilesRef.current.importFromCard(card);
+        setLastProfile({ profile: merged, at: Date.now() });
+        speakLabel(`${helloRef.current}, ${merged.name}!`);
+        return;
+      }
       const code = cardCodeFromTag(tag);
       if (code) tapCard(code);
       else setLastScan({ code: null, outcome: { kind: 'unknown' }, at: Date.now() });
@@ -118,7 +145,7 @@ export function NfcProvider({ children }: { children: ReactNode }) {
 
   // Android: listen continuously while NFC is ready.
   useEffect(() => {
-    if (availability !== 'ready' || !nfcReader.continuous) return;
+    if (availability !== 'ready' || !nfcReader.continuous || writing) return;
     let stop: (() => void) | null = null;
     let cancelled = false;
     nfcReader
@@ -132,7 +159,21 @@ export function NfcProvider({ children }: { children: ReactNode }) {
       cancelled = true;
       stop?.();
     };
-  }, [availability, handleTag]);
+  }, [availability, handleTag, writing]);
+
+  const writeCardText = useCallback(async (build: (maxTextBytes: number) => string) => {
+    setWriting(true); // stops the normal listener (effect above) so the write can own the NFC chip
+    await new Promise((resolve) => setTimeout(resolve, 200));
+    try {
+      return await nfcReader.writeText(build);
+    } finally {
+      setWriting(false);
+    }
+  }, []);
+
+  const cancelWrite = useCallback(() => {
+    nfcReader.cancelWrite();
+  }, []);
 
   // iOS: one scan per button press (system sheet).
   const scanOnce = useCallback(() => {
@@ -172,6 +213,10 @@ export function NfcProvider({ children }: { children: ReactNode }) {
         openSettings,
         recheck,
         tapCard,
+        lastProfile,
+        writing,
+        writeCardText,
+        cancelWrite,
       }}>
       {children}
     </NfcContext.Provider>

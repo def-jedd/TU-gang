@@ -1,5 +1,5 @@
 import { router } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -18,6 +18,7 @@ import { topicCard } from '@/nfc/cards';
 import { FEATURES } from '@/services/config';
 import { listenSupported } from '@/voice/listen';
 import { useListen } from '@/voice/useListen';
+import { useProfiles } from '@/profiles/ProfileProvider';
 import { colors, radius, space, TEXT_SCALES, touch } from '@/theme/tokens';
 
 export default function ResultScreen() {
@@ -35,6 +36,13 @@ export default function ResultScreen() {
   const listen = useListen(listenEnabled ? (response?.request_id ?? null) : null, listenEnabled);
   const [tappedFor, setTappedFor] = useState<string | null>(null);
   const listenTapped = !!response && tappedFor === response.request_id;
+
+  // A topic answered in reading mode also counts as a lesson done.
+  const { markLessonDone } = useProfiles();
+  const answeredTopic = status === 'success' ? (answeredRequest?.topic ?? null) : null;
+  useEffect(() => {
+    if (answeredTopic) markLessonDone(answeredTopic);
+  }, [answeredTopic, markLessonDone]);
 
   return (
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>

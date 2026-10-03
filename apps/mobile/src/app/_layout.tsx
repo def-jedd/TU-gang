@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { iconFont } from '@/components/Icon';
 import { TutorProvider } from '@/hooks/useTutor';
 import { NfcProvider } from '@/nfc/NfcProvider';
+import { ProfileProvider } from '@/profiles/ProfileProvider';
 import { colors } from '@/theme/tokens';
 import { VoiceProvider } from '@/voice/VoiceProvider';
 
@@ -33,6 +34,7 @@ export default function RootLayout() {
 
   return (
     <TutorProvider>
+      <ProfileProvider>
       <VoiceProvider>
         <NfcProvider>
           <StatusBar style="dark" />
@@ -45,6 +47,7 @@ export default function RootLayout() {
           />
         </NfcProvider>
       </VoiceProvider>
+      </ProfileProvider>
     </TutorProvider>
   );
 }

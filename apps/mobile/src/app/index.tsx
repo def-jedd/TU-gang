@@ -1,4 +1,5 @@
 import { router } from 'expo-router';
+import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -18,6 +19,8 @@ import { UiLangToggle } from '@/components/UiLangToggle';
 import { useTutor } from '@/hooks/useTutor';
 import { STYLE_CARDS, TOPIC_CARDS } from '@/nfc/cards';
 import { useNfc } from '@/nfc/NfcProvider';
+import { useProfiles } from '@/profiles/ProfileProvider';
+import { StudentAvatar } from '@/components/StudentAvatar';
 import { category, colors, radius, space } from '@/theme/tokens';
 import type { VoiceContext } from '@/voice/types';
 import { useVoice } from '@/voice/VoiceProvider';
@@ -29,7 +32,16 @@ import { useVoice } from '@/voice/VoiceProvider';
  */
 export default function HomeScreen() {
   const { t, uiLang, setUiLang, draft, update } = useTutor();
-  const { availability } = useNfc();
+  const { availability, lastProfile } = useNfc();
+  const { active: student } = useProfiles();
+  // "Hi, Ana!" for a few seconds after a profile card is tapped.
+  const [greeting, setGreeting] = useState<string | null>(null);
+  useEffect(() => {
+    if (!lastProfile) return;
+    setGreeting(`${t.helloStudent}, ${lastProfile.profile.name}!`);
+    const timer = setTimeout(() => setGreeting(null), 4000);
+    return () => clearTimeout(timer);
+  }, [lastProfile, t.helloStudent]);
   const voice = useVoice();
   const tutor = STYLE_CARDS.find((c) => c.value === draft.style) ?? STYLE_CARDS[0];
   const tutorName = tutor.label[uiLang];
@@ -58,6 +70,30 @@ export default function HomeScreen() {
           </View>
           <UiLangToggle value={uiLang} onChange={setUiLang} />
         </View>
+
+        {/* Who is learning: tap to switch, or tap a profile card on the back of the phone. */}
+        <Pressable
+          onPress={() => router.push('/profiles')}
+          accessibilityRole="button"
+          accessibilityLabel={student ? `${student.name}, ${t.gradeTitle} ${student.grade}` : t.whoIsLearning}
+          style={({ pressed }) => [styles.student, pressed && styles.pressed]}>
+          {student ? (
+            <StudentAvatar avatar={student.avatar} size={48} />
+          ) : (
+            <View style={styles.studentEmpty}>
+              <Icon name="account-question" size={28} color={colors.inkSoft} />
+            </View>
+          )}
+          <View style={styles.flex}>
+            <AppText variant="heading">{greeting ?? (student ? student.name : t.whoIsLearning)}</AppText>
+            {student ? (
+              <AppText variant="caption" color={colors.inkSoft}>
+                {t.gradeTitle} {student.grade} · ★ {student.done.length} {t.lessonsDone}
+              </AppText>
+            ) : null}
+          </View>
+          <Icon name="account-switch" size={26} color={colors.primary} />
+        </Pressable>
 
         <View style={styles.metaRow}>
           <LanguageBadge t={t} language={draft.language} />
@@ -120,6 +156,7 @@ export default function HomeScreen() {
                 lang={uiLang}
                 size="tile"
                 selected={draft.topic === card.topic}
+                done={!!student?.done.includes(card.topic)}
                 onPress={() => {
                   update({ type: 'TOPIC', value: card.topic });
                   call({ topic: card.topic, question: null });
@@ -157,6 +194,26 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary,
     borderBottomWidth: 4,
     borderBottomColor: colors.primaryLip,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  student: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: space.md,
+    padding: space.md,
+    borderRadius: radius.lg,
+    backgroundColor: colors.surface,
+    borderWidth: 2,
+    borderColor: colors.border,
+  },
+  studentEmpty: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    borderWidth: 2,
+    borderStyle: 'dashed',
+    borderColor: colors.borderStrong,
     alignItems: 'center',
     justifyContent: 'center',
   },
