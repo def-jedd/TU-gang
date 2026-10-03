@@ -154,21 +154,25 @@ export class ListenPlayer {
   }
 
   private async speak(run: number) {
-    if (!this.session || run !== this.run) return;
+    const session = this.session;
+    if (!session || run !== this.run) return;
     this.wantPlay = false;
     this.set('playing');
     try {
-      await post(`/api/voice/${this.session.session_id}/speak`);
+      await post(`/api/voice/${session.session_id}/speak`);
     } catch (error) {
       if (run === this.run) this.fail(String(error));
       return;
     }
+    // Stopped while the server was queueing the speech (e.g. the student
+    // tapped Next): this run is over, so don't start its timers.
+    if (run !== this.run) return;
     this.lastLoudAt = Date.now();
     this.ticker = setInterval(() => {
       if (run === this.run && isListenDone(this.heardAt, this.lastLoudAt, Date.now())) this.finish(run);
     }, 250);
     // Safety net: never stay "playing" past the server's own hard stop.
-    this.timers.push(setTimeout(() => run === this.run && this.finish(run), this.session.expires_in_seconds * 1000));
+    this.timers.push(setTimeout(() => run === this.run && this.finish(run), session.expires_in_seconds * 1000));
   }
 
   private async finish(run: number) {
