@@ -31,6 +31,7 @@ class FakeProvider:
 REFERENCE = {
     "id": "sample_003", "role": "tutoring_style", "retrieval_use": "topic_and_style",
     "topic": "melting", "text": "Student: Tano ta natunaw an yelo?\nTutor: An yelo natunaw kun nainitan.",
+    "english_question": "Why does ice melt?", "english_answer": "Ice melts when it gets warm.",
 }
 
 
