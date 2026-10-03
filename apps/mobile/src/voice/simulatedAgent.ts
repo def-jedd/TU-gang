@@ -8,13 +8,17 @@
  */
 import { questionForTopic } from '../nfc/cardReducer';
 import { explain } from '../services/api';
-import type { Difficulty, ExplainRequest } from '../types/tutor';
+import type { Difficulty, ExplainRequest, Language } from '../types/tutor';
 import { simplerThan } from './controls';
 import { preferredVoice, Speech } from './deviceSpeech';
 import type { VoiceAgent, VoiceContext, VoiceControl, VoiceListener } from './types';
 
 // DRAFT Bikol — needs native review (see src/i18n/copy.ts header).
-const GREETING = 'Kumusta, tugang! Ano an gusto mong maaraman? Pumili nin litrato.';
+const GREETING: Record<Language, string> = {
+  bikol_daet: 'Kumusta, tugang! Ano an gusto mong maaraman? Pumili nin litrato.',
+  tagalog: 'Kumusta! Ano ang gusto mong matutuhan? Pumili ng larawan.',
+  english: 'Hello! What would you like to learn? Choose a picture.',
+};
 
 /** Slower speech for simpler levels: easier to follow for new learners. */
 const RATE: Record<Difficulty, number> = { very_simple: 0.82, simple: 0.9, normal: 1 };
@@ -40,17 +44,17 @@ export class SimulatedVoiceAgent implements VoiceAgent {
     this.listener = listener;
     listener.onPhase('connecting');
     const run = ++this.run;
-    await Promise.all([preferredVoice(), new Promise((r) => setTimeout(r, 700))]);
+    await Promise.all([preferredVoice(context.language), new Promise((r) => setTimeout(r, 700))]);
     if (run !== this.run || this.stopped) return;
     if (this.hasSubject()) await this.teach('explain');
-    else await this.say([GREETING]);
+    else await this.say([GREETING[this.context.language]]);
   }
 
   async control(command: VoiceControl) {
     if (this.stopped) return;
     switch (command.action) {
       case 'repeat':
-        await this.say(this.lastLines.length ? this.lastLines : [GREETING]);
+        await this.say(this.lastLines.length ? this.lastLines : [GREETING[this.context.language]]);
         return;
       case 'simpler':
         this.context.difficulty = simplerThan(this.context.difficulty);
@@ -65,12 +69,15 @@ export class SimulatedVoiceAgent implements VoiceAgent {
       case 'set_style':
         this.context.style = command.value;
         break;
+      case 'set_language':
+        this.context.language = command.value;
+        break;
       case 'explain_differently':
         if (this.hasSubject()) return this.teach('explain_differently');
         break;
     }
     if (this.hasSubject()) await this.teach('explain');
-    else await this.say([GREETING]);
+    else await this.say([GREETING[this.context.language]]);
   }
 
   setMuted() {
@@ -116,7 +123,7 @@ export class SimulatedVoiceAgent implements VoiceAgent {
 
   private async say(lines: string[], run = ++this.run) {
     this.lastLines = lines;
-    const voice = await preferredVoice();
+    const voice = await preferredVoice(this.context.language);
     if (run !== this.run || this.stopped) return;
     this.listener.onPhase('speaking');
 

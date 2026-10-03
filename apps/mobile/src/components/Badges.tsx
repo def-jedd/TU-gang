@@ -2,7 +2,7 @@ import { StyleSheet, View } from 'react-native';
 
 import type { Copy } from '../i18n/copy';
 import { category, colors, radius, space } from '../theme/tokens';
-import type { ExplainResponse } from '../types/tutor';
+import type { ExplainResponse, Language } from '../types/tutor';
 import { AppText } from './AppText';
 import { Icon, type IconName } from './Icon';
 
@@ -17,12 +17,14 @@ function Pill({ icon, label, fg, bg, a11y }: { icon: IconName; label: string; fg
   );
 }
 
-export function LanguageBadge({ t }: { t: Copy }) {
+export function LanguageBadge({ t, language }: { t: Copy; language: Language }) {
+  const label = language === 'tagalog' ? t.answerLanguageTagalog
+    : language === 'english' ? t.answerLanguageEnglish : t.answerLanguageBikol;
   return (
     <Pill
       icon="map-marker-radius"
-      label={t.languageLabel}
-      a11y={t.languageA11y}
+      label={label}
+      a11y={`${t.answerLanguageTitle}: ${label}`}
       fg={category.language.ink}
       bg={category.language.tint}
     />

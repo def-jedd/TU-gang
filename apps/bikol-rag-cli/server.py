@@ -49,7 +49,7 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 class ExplainRequest(BaseModel):
     question: str = Field("", max_length=500)
     topic: str | None = Field(None, max_length=64)
-    language: Literal["bikol_daet"] = "bikol_daet"
+    language: Literal["bikol_daet", "tagalog", "english"] = "bikol_daet"
     difficulty: Literal["very_simple", "simple", "normal"] = "simple"
     style: Literal["teacher", "friend", "ate_kuya"] = "teacher"
     action: Literal["explain", "explain_differently"] = "explain"
@@ -94,14 +94,18 @@ def explain(request: ExplainRequest):
     problem = not_ready()
     if problem:
         return error(503, problem)
+    if request.language != "bikol_daet" and config.ACTIVE_PROVIDER != "gemini":
+        return error(422, "Tagalog and English answers currently require the Gemini provider.")
 
     references = retriever.retrieve(question, config.TOP_GENERAL_CHUNKS, config.TOP_CUSTOM_CHUNKS)
+    answer_language = "bikol" if request.language == "bikol_daet" else request.language
     try:
         answer = generate_answer(*providers, question, references,
-                                 request.difficulty, request.style, request.action)
+                                 request.difficulty, request.style, request.action, answer_language)
     except (RuntimeError, ValueError) as failure:
         return error(502, str(failure))
-    if clearly_english(" ".join([answer["explanation"], answer["example"], *answer["key_points"]])):
+    if request.language == "bikol_daet" and clearly_english(
+            " ".join([answer["explanation"], answer["example"], *answer["key_points"]])):
         return error(502, "The model answered in English instead of Bikol. Please try again.")
 
     matched = next((ref["topic"] for ref in references if ref.get("retrieval_use") == "topic_and_style"), None)

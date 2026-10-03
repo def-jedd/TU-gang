@@ -36,6 +36,7 @@ Request (built from the cards / pickers the student chose):
 ```
 
 `topic` and `question` can both be `null` (free conversation: the tutor greets and asks what the student wants to learn).
+`language` can be `bikol_daet`, `tagalog`, or `english`. The future live voice backend must choose its greeting, ASR, and TTS for that selection. Practice voice already sends the selected value to `/api/explain`.
 
 Response `200`:
 
@@ -75,6 +76,7 @@ Backend steps:
 { "action": "set_topic", "value": "gravity" }
 { "action": "set_difficulty", "value": "normal" }
 { "action": "set_style", "value": "teacher" }
+{ "action": "set_language", "value": "tagalog" }
 ```
 
 Respond `200 {"ok": true}` (or `204`). Suggested implementation with Agora's REST API:

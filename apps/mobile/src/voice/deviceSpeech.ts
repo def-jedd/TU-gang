@@ -9,20 +9,27 @@
 import * as Speech from 'expo-speech';
 
 import { SPOKEN_LABELS } from '../services/config';
+import type { Language } from '../types/tutor';
 
 type VoiceChoice = { language?: string; voice?: string };
 
-let chosen: Promise<VoiceChoice> | null = null;
+const chosen = new Map<Language, Promise<VoiceChoice>>();
 
-/** Prefer an installed Filipino/Tagalog voice; otherwise let the OS pick. */
-export function preferredVoice(): Promise<VoiceChoice> {
-  chosen ??= Speech.getAvailableVoicesAsync()
+/** Select a phone voice for the answer language; Bikol uses Filipino as a fallback. */
+export function preferredVoice(language: Language = 'bikol_daet'): Promise<VoiceChoice> {
+  const cached = chosen.get(language);
+  if (cached) return cached;
+  const english = language === 'english';
+  const preference = english ? /^en([-_]|$)/i : /^(fil|tl)([-_]|$)/i;
+  const fallback = english ? 'en-US' : 'fil-PH';
+  const choice = Speech.getAvailableVoicesAsync()
     .then((voices) => {
-      const match = voices.find((v) => /^(fil|tl)([-_]|$)/i.test(v.language));
-      return match ? { language: match.language, voice: match.identifier } : { language: 'fil-PH' };
+      const match = voices.find((v) => preference.test(v.language));
+      return match ? { language: match.language, voice: match.identifier } : { language: fallback };
     })
-    .catch(() => ({ language: 'fil-PH' }));
-  return chosen;
+    .catch(() => ({ language: fallback }));
+  chosen.set(language, choice);
+  return choice;
 }
 
 let labelsMuted = false;

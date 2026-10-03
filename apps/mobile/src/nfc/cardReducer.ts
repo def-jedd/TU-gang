@@ -77,6 +77,8 @@ const STYLE_CODES: Record<string, TeachingStyle> = {
 
 const LANGUAGE_CODES: Record<string, Language> = {
   LANG_BIKOL_DAET: 'bikol_daet',
+  LANG_TAGALOG: 'tagalog',
+  LANG_ENGLISH: 'english',
 };
 
 const ACTION_CODES: Record<string, CardAction> = {

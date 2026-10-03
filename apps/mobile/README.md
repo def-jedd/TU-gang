@@ -83,6 +83,10 @@ Other scripts: `npm test` (card → JSON tests), `npm run typecheck`,
 In dev builds the bottom of the Home screen shows which backend is in use and
 whether `GET /api/health` answers.
 
+### Choose the tutor's answer language
+
+On Home or Type, open the **Answer language** dropdown and choose **Bikol**, **Tagalog**, or **English** before asking. The result screen can re-explain the same question in a different language. The dropdown also shows other Philippine languages and named varieties as disabled **Coming soon** entries; they cannot be sent to the tutor. The list is drawn from [Glottolog 5.3's Philippines catalog](https://glottolog.org/glottolog/language.map.html?country=PH), licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), and is not an exhaustive inventory of every dialect. The EN/BIK control in the header changes only the app's labels. With the Gemini API, all three answer choices use the same retrieval pipeline. Tagalog and English use the English side of the paired teaching examples; no native-reviewed Tagalog examples are in the current dataset. Ollama remains Bikol only. Practice voice follows the selected answer language; native Agora voice is still awaiting its backend route and a development build.
+
 ## API contract (frozen — change only together with the backend)
 
 Types: [`src/types/tutor.ts`](src/types/tutor.ts).
@@ -104,6 +108,7 @@ POST /api/explain
 
 - `topic` is `null` for typed questions; set when a topic card/picture is used.
 - `action` is `explain` or `explain_differently`.
+- `language` is `bikol_daet`, `tagalog`, or `english`. The Bikol source examples' exact regional variety is not yet confirmed.
 - Response: `request_id, topic, language, explanation, example, key_points[], source_ids[], provider`.
   `example`, `key_points`, `source_ids` may be empty. `provider` must be
   `ollama` | `kiro` | `quick` | `approved_fallback` | `mock`; the UI shows it on every answer.
@@ -187,7 +192,9 @@ the app is open; on iOS, press **Scan a card** first (system sheet).
 | *any new topic* | `TOPIC_<NAME>` e.g. `TOPIC_VOLCANOES` | works without an app update |
 | Very simple / Simple / Normal | `MODE_VERY_SIMPLE` / `MODE_SIMPLE` / `MODE_NORMAL` | difficulty |
 | Teacher / Friend / Ate-Kuya | `STYLE_TEACHER` / `STYLE_FRIEND` / `STYLE_ATE_KUYA` | tutor tone |
-| Bikol · Daet | `LANG_BIKOL_DAET` | language |
+| Bikol | `LANG_BIKOL_DAET` | language |
+| Tagalog | `LANG_TAGALOG` | language |
+| English | `LANG_ENGLISH` | language |
 | Explain | `ACTION_EXPLAIN` | starts a call about the chosen cards (from any screen) |
 | Another way | `ACTION_EXPLAIN_DIFFERENTLY` | re-explains the last answer |
 | Start over | `ACTION_RESET` | clears everything (ends the call) |

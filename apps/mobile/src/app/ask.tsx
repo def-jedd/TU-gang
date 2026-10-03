@@ -4,6 +4,7 @@ import { KeyboardAvoidingView, Platform, ScrollView, StyleSheet, View } from 're
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AppText } from '@/components/AppText';
+import { AnswerLanguageSelector } from '@/components/AnswerLanguageSelector';
 import { LanguageBadge } from '@/components/Badges';
 import { Button } from '@/components/Button';
 import { CardGrid } from '@/components/CardGrid';
@@ -38,7 +39,7 @@ export default function AskScreen() {
       <KeyboardAvoidingView style={styles.flex} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
           <View style={styles.metaRow}>
-            <LanguageBadge t={t} />
+            <LanguageBadge t={t} language={draft.language} />
           </View>
 
           <AppText variant="title">{t.askTitle}</AppText>
@@ -74,6 +75,7 @@ export default function AskScreen() {
             </CardGrid>
           </View>
 
+          <AnswerLanguageSelector value={draft.language} onChange={(value) => update({ type: 'LANGUAGE', value })} />
           <DifficultySelector value={draft.difficulty} onChange={(value) => update({ type: 'DIFFICULTY', value })} />
           <TeachingStyleSelector value={draft.style} onChange={(value) => update({ type: 'STYLE', value })} />
         </ScrollView>

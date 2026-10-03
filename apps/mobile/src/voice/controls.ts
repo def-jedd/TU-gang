@@ -25,7 +25,7 @@ export function cardToVoiceControl(action: CardAction): CardInCall {
     case 'RESET':
       return { kind: 'end_call' };
     case 'LANGUAGE':
-      return { kind: 'ignore' }; // only one language today
+      return { kind: 'control', control: { action: 'set_language', value: action.value } };
   }
 }
 

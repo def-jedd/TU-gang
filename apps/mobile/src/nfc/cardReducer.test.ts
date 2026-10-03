@@ -11,6 +11,7 @@ import {
   type DraftAction,
   type LearningDraft,
 } from './cardReducer.ts';
+import { cardToVoiceControl } from '../voice/controls.ts';
 
 /** Simulates tapping a sequence of physical cards. */
 function tapCards(codes: string[], start: LearningDraft = INITIAL_DRAFT) {
@@ -33,6 +34,8 @@ describe('parseCardCode', () => {
     assert.deepEqual(parseCardCode('MODE_NORMAL'), { type: 'DIFFICULTY', value: 'normal' });
     assert.deepEqual(parseCardCode('STYLE_ATE_KUYA'), { type: 'STYLE', value: 'ate_kuya' });
     assert.deepEqual(parseCardCode('LANG_BIKOL_DAET'), { type: 'LANGUAGE', value: 'bikol_daet' });
+    assert.deepEqual(parseCardCode('LANG_TAGALOG'), { type: 'LANGUAGE', value: 'tagalog' });
+    assert.deepEqual(parseCardCode('LANG_ENGLISH'), { type: 'LANGUAGE', value: 'english' });
     assert.deepEqual(parseCardCode('ACTION_EXPLAIN'), { type: 'SUBMIT' });
     assert.deepEqual(parseCardCode('ACTION_EXPLAIN_DIFFERENTLY'), { type: 'EXPLAIN_DIFFERENTLY' });
     assert.deepEqual(parseCardCode('ACTION_RESET'), { type: 'RESET' });
@@ -90,6 +93,21 @@ describe('cards → request JSON', () => {
     ];
     const viaButtons = buttons.reduce(draftReducer, INITIAL_DRAFT);
     assert.deepEqual(buildExplainRequest(viaCards), buildExplainRequest(viaButtons));
+  });
+
+  it('sends the chosen answer language for either a card or a selector', () => {
+    const viaCard = tapCards(['TOPIC_MELTING', 'LANG_TAGALOG']).draft;
+    const buttons: DraftAction[] = [
+      { type: 'TOPIC', value: 'melting' },
+      { type: 'LANGUAGE', value: 'tagalog' },
+    ];
+    const viaSelector = buttons.reduce(draftReducer, INITIAL_DRAFT);
+    assert.deepEqual(buildExplainRequest(viaCard), buildExplainRequest(viaSelector));
+    const built = buildExplainRequest(viaCard);
+    assert.ok(built.ok);
+    assert.equal(built.request.language, 'tagalog');
+    assert.deepEqual(cardToVoiceControl({ type: 'LANGUAGE', value: 'english' }),
+      { kind: 'control', control: { action: 'set_language', value: 'english' } });
   });
 
   it('typing a question clears a previously tapped topic', () => {

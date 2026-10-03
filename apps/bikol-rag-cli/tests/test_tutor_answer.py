@@ -89,6 +89,10 @@ class TutorDispatchTests(unittest.TestCase):
         self.assertEqual(answer, {"explanation": "Bikol sentence. Bikol sentence.", "example": "Bikol sentence.",
                                   "key_points": []})
 
+    def test_two_stage_flow_rejects_unsupported_answer_language(self):
+        with self.assertRaisesRegex(ValueError, "require the Gemini provider"):
+            tutor.generate_answer(FakeProvider(""), FakeProvider(""), "Q?", [], language="english")
+
 
 class GeminiJsonModeTests(unittest.TestCase):
     def test_json_mode_sets_response_mime_type(self):
