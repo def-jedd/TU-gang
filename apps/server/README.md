@@ -1,14 +1,25 @@
 # Bikol tutor API server
 
-Express + TypeScript. Owns the API between the mobile app, Supabase retrieval and voice.
-Implemented so far: `GET /api/health` and the Agora **Listen** routes. `POST /api/explain` is next.
+Express + TypeScript. **The app's single front door:** one base URL for answers and voice.
+
+| Route | What it does |
+|---|---|
+| `GET /api/health` | This server's status, plus the tutor's status and `provider` |
+| `POST /api/explain` | **Forwarded unchanged** to Jed's Python tutor (`TUTOR_UPSTREAM_URL`). Each answer is remembered under the tutor's own `request_id`, so Listen can speak it. The response (including `provider`) is passed through as-is. |
+| `POST /api/voice/*` | Agora Listen (below) |
 
 ```bash
+# 1. Jed's tutor:  cd apps/bikol-rag-cli && python server.py   (port 8000)
+# 2. This server:
 cd apps/server
-cp .env.example .env.local   # fill in values
+cp .env.example .env.local   # fill in values; TUTOR_UPSTREAM_URL=http://localhost:8000
 npm install
-npm run dev                  # http://localhost:3000
+npm run dev                  # http://localhost:3000, prints the phone URL
 ```
+
+**Mobile `.env.local`:** point **both** answers and voice at this server. Use `EXPO_PUBLIC_API_PORT=3000` (with `EXPO_PUBLIC_API_BASE_URL=auto`), or paste the `Phone setting:` line the server prints. If the app calls Jed's server directly on 8000, Listen returns 404, because this server never saw the answer.
+
+**Errors from the tutor** pass through with their status (e.g. `422` for an empty question). If the tutor is down: `502`. Slower than `TUTOR_TIMEOUT_MS` (default 90 s): `504`. Not configured: `503`.
 
 ## Listen (Agora text-to-speech)
 
@@ -51,6 +62,7 @@ Voice: MiniMax `speech-2.8-turbo`, `English_captivating_female1`, Agora-managed 
 | In a browser | `npm run dev`, then open http://localhost:3000/voice-test. Pick an example and press Listen. The log shows timings. |
 | Automated end-to-end | With the server running: `npm run test:voice -- sample_001` (headless Chromium listener) |
 | Confirm no agents left running | `npx tsx scripts/list-agents.mts` |
+| Without Jed's tutor / Gemini | `node scripts/fake-tutor.mjs` (port 8000, same routes as `server.py`, canned reviewed Bikol, labeled `provider: "mock"`) |
 | Types | `npm run typecheck` |
 
 Dev-only routes (when `ENABLE_VOICE_TEST_PAGE=true`):

@@ -13,6 +13,12 @@ const schema = z.object({
   AGORA_APP_ID: z.string().regex(/^[0-9a-f]{32}$/i, 'must be the 32-char Agora App ID'),
   AGORA_APP_CERTIFICATE: z.string().regex(/^[0-9a-f]{32}$/i, 'must be the 32-char App Certificate'),
   VOICE_TTS: z.enum(['minimax-english', 'minimax-filipino-boost']).default('minimax-english'),
+  // Jed's Python tutor (apps/bikol-rag-cli/server.py). /api/explain is forwarded there.
+  TUTOR_UPSTREAM_URL: z
+    .url()
+    .optional()
+    .transform((v) => v?.replace(/\/+$/, '')),
+  TUTOR_TIMEOUT_MS: z.coerce.number().int().positive().default(90_000),
   ENABLE_VOICE_TEST_PAGE: z
     .enum(['true', 'false'])
     .default('false')

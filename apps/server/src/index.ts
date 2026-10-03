@@ -1,6 +1,8 @@
+import { networkInterfaces } from 'node:os';
 import cors from 'cors';
 import express, { type ErrorRequestHandler } from 'express';
 import { env, publicDir } from './lib/env.js';
+import { explainRouter } from './routes/explain.js';
 import { healthRouter } from './routes/health.js';
 import { voiceRouter } from './routes/voice.js';
 import { stopAllListens, VoiceError } from './services/agora.js';
@@ -10,6 +12,7 @@ app.use(cors());
 app.use(express.json({ limit: '16kb' }));
 
 app.use('/api/health', healthRouter);
+app.use('/api/explain', explainRouter);
 app.use('/api/voice', voiceRouter);
 
 if (env.ENABLE_VOICE_TEST_PAGE) {
@@ -34,8 +37,21 @@ const errorHandler: ErrorRequestHandler = (error, _req, res, _next) => {
 };
 app.use(errorHandler);
 
+function lanAddress(): string {
+  for (const addresses of Object.values(networkInterfaces())) {
+    for (const a of addresses ?? []) if (a.family === 'IPv4' && !a.internal) return a.address;
+  }
+  return 'localhost';
+}
+
 const server = app.listen(env.PORT, () => {
   console.log(`Bikol tutor server on http://localhost:${env.PORT}`);
+  console.log(`Phone setting: EXPO_PUBLIC_API_BASE_URL=http://${lanAddress()}:${env.PORT}`);
+  console.log(
+    env.TUTOR_UPSTREAM_URL
+      ? `Forwarding /api/explain to ${env.TUTOR_UPSTREAM_URL}`
+      : 'TUTOR_UPSTREAM_URL not set: /api/explain returns 503',
+  );
   if (env.ENABLE_VOICE_TEST_PAGE) console.log(`Voice test page: http://localhost:${env.PORT}/voice-test`);
 });
 
