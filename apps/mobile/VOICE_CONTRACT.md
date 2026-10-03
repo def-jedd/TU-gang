@@ -18,6 +18,17 @@ The mobile side is done and waiting on these three routes. Client code:
                                  └─▶ Quick (verified route) or approved fallback
 ```
 
+> **Status (implemented):** `apps/server/src/services/conversation.ts` +
+> `src/routes/voice.ts`. The agent uses Agora ARES speech recognition
+> (`fil-PH`, or `en-US` for English) with turn detection, so the student just
+> talks; Gemini (OpenAI-compatible endpoint, `provider: "gemini"`) writes the
+> replies from `prompts/voice_tutor_system.txt` (+ speaker-reviewed Bikol
+> examples for Bikol calls); MiniMax speaks them. Topic explanations wait for
+> the internal `{ "action": "ready" }` control, which the phone sends once the
+> agent has joined. Sections below are the original design notes; where they
+> differ (e.g. no `llm.url` proxy, Agora SDK instead of raw REST), the code wins.
+> Dev-only: `GET /api/voice/sessions/:id/history` (needs `ENABLE_VOICE_TEST_PAGE=true`).
+
 Agora customer ID/secret, the App Certificate, and Quick credentials stay
 **on the backend only**. The phone receives one short-lived RTC token.
 

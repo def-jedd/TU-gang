@@ -54,13 +54,14 @@ export const DEFAULT_UI_LANG: UiLang = process.env.EXPO_PUBLIC_UI_LANG === 'bik'
 
 /**
  * Voice engine for calls:
- * - `simulated` (default): practice voice — device speech, works in Expo Go,
+ * - `simulated`: practice voice — device speech, works in Expo Go,
  *   cannot hear the student. Always labelled as practice.
- * - `agora`: live Agora Conversational AI agent. Needs the dev build AND the
- *   backend's /api/voice/sessions route; falls back to practice (with an
- *   on-screen notice) when either is missing.
+ * - `agora` (default): live Agora Conversational AI call — the student talks,
+ *   the tutor hears and answers. Needs the dev build AND the backend's
+ *   /api/voice/sessions route; falls back to practice (with an on-screen
+ *   notice) when either is missing or the call can't start.
  */
-export const VOICE_MODE: 'agora' | 'simulated' = process.env.EXPO_PUBLIC_VOICE_MODE === 'agora' ? 'agora' : 'simulated';
+export const VOICE_MODE: 'agora' | 'simulated' = process.env.EXPO_PUBLIC_VOICE_MODE === 'simulated' ? 'simulated' : 'agora';
 
 /** Show the not-yet-supported Philippine languages in the answer-language picker. */
 export const SHOW_UPCOMING_LANGUAGES = process.env.EXPO_PUBLIC_SHOW_UPCOMING_LANGUAGES === 'true';

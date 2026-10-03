@@ -52,7 +52,8 @@ export async function createVoiceSession(context: VoiceContext): Promise<VoiceSe
   return raw as VoiceSession;
 }
 
-export async function sendVoiceControl(sessionId: string, control: VoiceControl): Promise<void> {
+/** `ready` is internal: the phone joined the channel, so the tutor may start talking. */
+export async function sendVoiceControl(sessionId: string, control: VoiceControl | { action: 'ready' }): Promise<void> {
   await requestJson(
     `${base()}/api/voice/sessions/${encodeURIComponent(sessionId)}/control`,
     {

@@ -8,6 +8,7 @@ import { answerToSpeech } from '../services/speechText.js';
 import {
   activeListenCount, speakListen, startListen, stopListen, VoiceError,
 } from '../services/agora.js';
+import { callHistory, controlCall, startCall, stopCall } from '../services/conversation.js';
 
 export const voiceRouter = Router();
 
@@ -57,6 +58,65 @@ voiceRouter.post('/start', async (req, res) => {
 
   res.json(await startListen(text));
 });
+
+// ---- Live calls (two-way conversation). Contract: apps/mobile/VOICE_CONTRACT.md
+
+const language = z.enum(['bikol_daet', 'tagalog', 'english']);
+const difficulty = z.enum(['very_simple', 'simple', 'normal']);
+const style = z.enum(['teacher', 'friend', 'ate_kuya']);
+const topic = z.string().trim().min(1).max(60).regex(/^[A-Za-z0-9_ -]+$/);
+
+const callSchema = z.object({
+  topic: topic.nullable().default(null),
+  question: z.string().trim().min(1).max(300).nullable().default(null),
+  language: language.default('bikol_daet'),
+  difficulty: difficulty.default('simple'),
+  style: style.default('ate_kuya'),
+});
+
+const controlSchema = z.discriminatedUnion('action', [
+  z.object({ action: z.literal('ready') }),
+  z.object({ action: z.literal('simpler') }),
+  z.object({ action: z.literal('repeat') }),
+  z.object({ action: z.literal('explain_differently') }),
+  z.object({ action: z.literal('set_topic'), value: topic }),
+  z.object({ action: z.literal('set_difficulty'), value: difficulty }),
+  z.object({ action: z.literal('set_style'), value: style }),
+  z.object({ action: z.literal('set_language'), value: language }),
+]);
+
+voiceRouter.post('/sessions', async (req, res) => {
+  const parsed = callSchema.safeParse(req.body ?? {});
+  if (!parsed.success) {
+    res.status(400).json({ error: 'Send { topic, question, language, difficulty, style }' });
+    return;
+  }
+  res.json(await startCall(parsed.data));
+});
+
+voiceRouter.post('/sessions/:sessionId/control', async (req, res) => {
+  const parsed = controlSchema.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: 'Unknown control action' });
+    return;
+  }
+  await controlCall(req.params.sessionId, parsed.data);
+  res.json({ ok: true });
+});
+
+voiceRouter.get('/sessions/:sessionId/history', async (req, res) => {
+  if (!env.ENABLE_VOICE_TEST_PAGE) {
+    res.status(404).json({ error: 'Not found' });
+    return;
+  }
+  res.json(await callHistory(req.params.sessionId));
+});
+
+voiceRouter.delete('/sessions/:sessionId', async (req, res) => {
+  res.json({ stopped: await stopCall(req.params.sessionId) });
+});
+
+// ---- Listen (one stored answer read aloud)
 
 voiceRouter.post('/:sessionId/speak', async (req, res) => {
   res.json(await speakListen(req.params.sessionId));
