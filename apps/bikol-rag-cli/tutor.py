@@ -63,11 +63,12 @@ def generate_sentences(fact_provider, answer_provider, question, references,
 
 
 def generate_answer(fact_provider, answer_provider, question, references,
-                    difficulty="simple", style=None, action="explain"):
+                    difficulty="simple", style=None, action="explain", language="bikol"):
     """The app's answer fields: explanation, example, key_points."""
     if fact_provider is None:
         # Hosted one-call flow (Gemini): the model returns the fields as JSON.
-        prompt = build_full_answer_prompt(question, references, difficulty, style, action, as_json=True)
+        prompt = build_full_answer_prompt(question, references, language=language, difficulty=difficulty,
+                                          style=style, action=action, as_json=True)
         return parse_answer_json(answer_provider.generate(prompt, json_output=True))
 
     sentences = generate_sentences(fact_provider, answer_provider, question, references, difficulty, style, action)

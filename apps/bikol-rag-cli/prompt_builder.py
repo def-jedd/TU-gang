@@ -73,35 +73,54 @@ FULL_ANSWER_LEVELS = {
     "normal": "Use the vocabulary of a grade-school lesson.",
 }
 
+ANSWER_LANGUAGES = ("bikol", "tagalog", "english")
+
 # The app's answer fields. Students LISTEN to these (voice-first app), so the
 # strings must read well aloud.
-ANSWER_JSON_FORMAT = """Write a concise Bikol explanation, one relatable Bikol example, and exactly three short Bikol key points. Write for listening: short sentences, no lists, symbols, or section labels inside the text. Do not include an English translation.
-Return only a JSON object with exactly these keys:
-{"explanation": "<Bikol explanation>", "example": "<Bikol example>", "key_points": ["<point 1>", "<point 2>", "<point 3>"]}
+ANSWER_JSON_KEYS = """Return only a JSON object with exactly these keys:
+{"explanation": "<explanation>", "example": "<example>", "key_points": ["<point 1>", "<point 2>", "<point 3>"]}
 """
 
-CLI_FORMAT = (
-    "Write a concise Bikol explanation, relatable Bikol example sentences, and exactly three short Bikol "
-    "key points. If the student asks for a specific number of example sentences, provide that number; "
-    "otherwise provide one. Follow other reasonable format requests from the student. Use clear section "
-    "labels. Do not include an English translation.\n"
-)
 
+def build_full_answer_prompt(student_question, retrieved_chunks, language="bikol", difficulty=None,
+                             style=None, action="explain", as_json=False):
+    """Build a hosted-model prompt with examples suited to the answer language.
 
-def build_full_answer_prompt(student_question, retrieved_chunks, difficulty=None, style=None,
-                             action="explain", as_json=False):
-    """One-call prompt for a hosted model; examples teach style, not facts.
-
-    With no choices this is exactly the CLI's prompt. The mobile API passes the
-    app's level, tutor, and "another way" choices and asks for JSON (as_json).
+    With only (question, chunks, language) this is exactly the CLI's prompt.
+    The mobile API also passes the app's level, tutor, and "another way"
+    choices and asks for JSON (as_json).
     """
+    language = language.lower()
+    if language not in ANSWER_LANGUAGES:
+        raise ValueError(f"Unsupported answer language: {language}")
     tutoring = [chunk for chunk in retrieved_chunks if chunk.get("role") == "tutoring_style"]
-    language = [chunk for chunk in retrieved_chunks if chunk.get("role") == "language_style"]
-    examples = "\n\n".join(
-        f"Example {index} [{chunk['id']}; {chunk.get('retrieval_use', 'style_only')}]:\n{chunk['text']}"
-        for index, chunk in enumerate(tutoring, 1)
-    )
-    public = "\n".join(f"- {chunk['text']}" for chunk in language)
+
+    if language == "bikol":
+        name = "Bikol"
+        examples = "\n\n".join(
+            f"Example {index} [{chunk['id']}; {chunk.get('retrieval_use', 'style_only')}]:\n{chunk['text']}"
+            for index, chunk in enumerate(tutoring, 1)
+        )
+        public = "\n".join(
+            f"- {chunk['text']}" for chunk in retrieved_chunks if chunk.get("role") == "language_style"
+        )
+        intro = "Answer in natural Bikol. Use the speaker-reviewed Bikol teaching interactions below for teaching and wording style. Their exact regional variety is unspecified."
+        examples_heading = "Speaker-reviewed Bikol teaching examples"
+        public_section = f"Optional unreviewed public Bikol language references (wording only):\n{public or 'None'}\n\n"
+        only = "Do not include an English translation."
+        final = f"Write a concise Bikol explanation, relatable Bikol example sentences, and exactly three short Bikol key points. {only}"
+    else:
+        name = "Tagalog" if language == "tagalog" else "English"
+        examples = "\n\n".join(
+            f"Example {index} [{chunk['id']}; {chunk.get('retrieval_use', 'style_only')}]:\n"
+            f"Student: {chunk['english_question']}\nTutor: {chunk['english_answer']}"
+            for index, chunk in enumerate(tutoring, 1)
+        )
+        intro = f"Answer in natural {name}. The examples below are English teaching examples for structure and simplicity; they have not been reviewed as {name} language examples."
+        examples_heading = "English teaching examples"
+        public_section = ""
+        only = f"Write only in {name}, except for necessary technical terms. Do not add a translation."
+        final = f"Write a concise {name} explanation, relatable {name} example sentences, and exactly three short {name} key points. {only}"
 
     adapt = []
     if action == "explain_differently":
@@ -113,19 +132,25 @@ def build_full_answer_prompt(student_question, retrieved_chunks, difficulty=None
         adapt.append(f"Sound like {TONES[style]} talking to the student.")
     adaptation = f"{' '.join(adapt)}\n\n" if adapt else ""
 
-    return f"""You are a patient educational tutor. Answer the student's new question in natural Bikol, using the speaker-reviewed teaching interactions below as examples of how to explain. The exact regional variety of these examples has not been specified.
+    if as_json:
+        output = (f"Write a concise {name} explanation, one relatable {name} example, and exactly three short "
+                  f"{name} key points. Write for listening: short sentences, no lists, symbols, or section "
+                  f"labels inside the text. {only}\n{ANSWER_JSON_KEYS}")
+    else:
+        output = (f"{final} If the student asks for a specific number of example sentences, provide that number; "
+                  "otherwise provide one. Follow other reasonable format requests from the student. Use clear "
+                  "section labels.\n")
 
-First understand the concept accurately. Teach it rather than translating an English answer word for word. Use an English academic term if a reliable Bikol term is unclear. Do not copy the examples' facts into an unrelated answer. If uncertain about a factual claim, say so. These examples demonstrate teaching style and are not factual sources for the new question.
+    return f"""You are a patient educational tutor. {intro}
 
-Speaker-reviewed teaching examples:
+First understand the concept accurately. Teach it rather than translating an English answer word for word. Do not copy the examples' facts into an unrelated answer. If uncertain about a factual claim, say so. These examples demonstrate teaching style and are not factual sources for the new question.
+
+{examples_heading}:
 {examples}
 
-Optional unreviewed public language references (wording only):
-{public or 'None'}
+{public_section}New student question: {student_question}
 
-New student question: {student_question}
-
-{adaptation}{ANSWER_JSON_FORMAT if as_json else CLI_FORMAT}"""
+{adaptation}{output}"""
 
 
 def parse_answer_json(raw):
@@ -153,4 +178,3 @@ def parse_answer_json(raw):
         "example": example.strip() if isinstance(example, str) else "",
         "key_points": [point.strip() for point in points if isinstance(point, str) and point.strip()][:3],
     }
-

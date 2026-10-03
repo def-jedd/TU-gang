@@ -6,7 +6,7 @@ from unittest.mock import patch
 
 import config
 import tutor
-from prompt_builder import ANSWER_JSON_FORMAT, CLI_FORMAT, build_full_answer_prompt, parse_answer_json
+from prompt_builder import ANSWER_JSON_KEYS, build_full_answer_prompt, parse_answer_json
 from providers.gemini import GeminiProvider
 
 
@@ -42,15 +42,25 @@ class ParseAnswerJsonTests(unittest.TestCase):
 class PromptTests(unittest.TestCase):
     def test_default_prompt_is_the_cli_prompt(self):
         prompt = build_full_answer_prompt("Q?", [])
-        self.assertTrue(prompt.endswith(CLI_FORMAT))
+        self.assertTrue(prompt.endswith("Use clear section labels.\n"))
         self.assertNotIn("Sound like", prompt)
 
     def test_app_choices_reach_the_prompt(self):
-        prompt = build_full_answer_prompt("Q?", [], "very_simple", "ate_kuya", "explain_differently", as_json=True)
+        prompt = build_full_answer_prompt("Q?", [], difficulty="very_simple", style="ate_kuya",
+                                          action="explain_differently", as_json=True)
         self.assertIn("only words a young child already knows", prompt)
         self.assertIn("caring older sibling", prompt)
         self.assertIn("from a different angle", prompt)
-        self.assertTrue(prompt.endswith(ANSWER_JSON_FORMAT))
+        self.assertIn("natural Bikol", prompt)
+        self.assertTrue(prompt.endswith(ANSWER_JSON_KEYS))
+
+    def test_json_mode_follows_the_answer_language(self):
+        chunk = {"id": "s1", "role": "tutoring_style", "text": "Student: Tano?\nTutor: Iyo.",
+                 "english_question": "Why?", "english_answer": "Because."}
+        prompt = build_full_answer_prompt("Q?", [chunk], "tagalog", as_json=True)
+        self.assertIn("natural Tagalog", prompt)
+        self.assertIn("three short Tagalog key points", prompt)
+        self.assertTrue(prompt.endswith(ANSWER_JSON_KEYS))
 
 
 class TutorDispatchTests(unittest.TestCase):
