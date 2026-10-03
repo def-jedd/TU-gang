@@ -1,9 +1,24 @@
 # TU-gang — mobile app (UI + NFC)
 
-Expo / React Native app for the Bikol-first adaptive tutor. A student asks any
-school question (by typing, tapping a picture, or tapping a physical NFC
-card), picks how simple and who explains, and gets a concept-first Bikol
-explanation, an example, and three key points.
+Expo / React Native app for the Bikol-first adaptive tutor. **Voice-first**:
+our students may not read yet, so learning is a *phone call* with a tutor
+(Ate/Kuya, Friend or Teacher). A student taps a picture or a physical NFC
+card, or just calls and talks, and the tutor explains the concept in Bikol
+out loud. A typed/reading mode remains as a secondary option (**Type**).
+
+## Voice: two engines, one screen
+
+| | Practice voice (`simulated`, default) | Live voice (`agora`) |
+|---|---|---|
+| Runs in | Expo Go **today** | Dev build only (native Agora SDK) |
+| Tutor's words | `/api/explain` (or mock) | Agora agent → our LLM endpoint → Quick / fallback |
+| Voice | phone's own speech (fil-PH voice) | Agora TTS |
+| Hears the student? | **No**: student steers with buttons/cards | **Yes**: full conversation, interruptible |
+| Badge on screen | "Practice voice · not live AI" | "Live voice · Agora" |
+
+Switch with `EXPO_PUBLIC_VOICE_MODE=agora` once the backend implements
+[VOICE_CONTRACT.md](VOICE_CONTRACT.md). If the dev build or backend is
+missing, the app falls back to practice voice **and says so on screen**.
 
 Owner: UI + NFC (Teammate 1). Backend lives in `apps/server` (Teammate 3).
 
@@ -85,10 +100,18 @@ Put these words in a question:
 ```text
 src/
   app/                 screens (Expo Router)
-    index.tsx          Home / Ask
-    result.tsx         Answer, explain differently, change level/tutor
+    index.tsx          Home (voice-first): tutor, level, topic pictures, Call
+    call.tsx           The call: avatar + turn phases, controls, captions
+    ask.tsx            Type mode (secondary): typed question → result
+    result.tsx         Answer (reading mode), explain differently
     cards.tsx          Learning cards: NFC status, tray, on-screen deck
   hooks/useTutor.tsx   app state: draft, request lifecycle, applyCard()
+  voice/
+    VoiceProvider.tsx  the active call; cards steer it; haptic "your turn"
+    agoraAgent.native.ts  live Agora agent (dev build)
+    simulatedAgent.ts  practice voice (Expo Go)
+    agoraMessages.ts   caption parser for the agent's data stream (tested)
+    voiceApi.ts        /api/voice/sessions client (see VOICE_CONTRACT.md)
   nfc/
     cardReducer.ts     ONE reducer for cards + buttons (pure, unit-tested)
     cards.ts           card faces: codes, icons, labels
@@ -104,12 +127,12 @@ src/
 
 ### Why it needs a development build
 
-`react-native-nfc-manager` is native code, which **Expo Go cannot load**. In
+`react-native-nfc-manager` **and `react-native-agora`** are native code, which **Expo Go cannot load**. In
 Expo Go (and on web or phones without NFC) the app says so and the on-screen
 cards do exactly the same thing. Physical and on-screen cards share one code
 path (`applyCard`), so they always produce identical requests.
 
-To test real NFC on an Android phone with NFC:
+To test real NFC and live Agora voice on an Android phone:
 
 ```bash
 # Option A — local build (Android Studio + SDK installed, phone on USB with USB debugging)
@@ -142,9 +165,13 @@ the app is open; on iOS, press **Scan a card** first (system sheet).
 | Very simple / Simple / Normal | `MODE_VERY_SIMPLE` / `MODE_SIMPLE` / `MODE_NORMAL` | difficulty |
 | Teacher / Friend / Ate-Kuya | `STYLE_TEACHER` / `STYLE_FRIEND` / `STYLE_ATE_KUYA` | tutor tone |
 | Bikol · Daet | `LANG_BIKOL_DAET` | language |
-| Explain | `ACTION_EXPLAIN` | sends the request (from any screen) |
+| Explain | `ACTION_EXPLAIN` | starts a call about the chosen cards (from any screen) |
 | Another way | `ACTION_EXPLAIN_DIFFERENTLY` | re-explains the last answer |
-| Start over | `ACTION_RESET` | clears everything |
+| Start over | `ACTION_RESET` | clears everything (ends the call) |
+
+**During a call, cards steer the tutor:** a topic card switches topic, a
+level card re-explains at that level, a tutor card changes the tone,
+`ACTION_EXPLAIN` repeats, `ACTION_RESET` hangs up.
 
 Codes are case-insensitive and spaces/dashes are tolerated. URI records such
 as `tugang://card/TOPIC_GRAVITY` also work. Can't write to a tag? Add its UID
@@ -153,8 +180,9 @@ to `UID_TO_CARD` in `src/nfc/cards.ts`.
 ## Honesty rules this app enforces
 
 - Every answer shows who generated it (`provider`). Mock data is labelled as such.
-- **Listen** stays hidden until the voice route passes native-speaker review
-  (`EXPO_PUBLIC_ENABLE_LISTEN`).
+- Calls always show which voice is talking: practice voice is never presented as live AI.
+- **Listen** on the reading screen stays hidden until the voice route passes
+  native-speaker review (`EXPO_PUBLIC_ENABLE_LISTEN`).
 - The `bik` UI strings and mock Bikol answers are **unreviewed drafts**.
   English is the default UI until our Daet reviewer signs off on `src/i18n/copy.ts`.
 

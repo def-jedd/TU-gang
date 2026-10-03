@@ -14,6 +14,22 @@ research in our project brief.
 | **Linguistic Interdependence** (Cummins, 1979) | Concepts learned in L1 transfer to L2. | Explanations are in Bikol, but topic cards keep the **English academic term** ("Photosynthesis") with an everyday hint underneath, bridging home language and the language of the textbook and exam. |
 | **ACTRC MTB-MLE findings** | Mother-tongue education struggled for lack of localised materials. | Language is labelled precisely as **Bikol · Daet** — not "Bikol" — and all UI Bikol is kept in one reviewable file so the local speaker can correct it in minutes. |
 
+## Voice-first (v2): designed for listening, not reading
+
+Our users are pre-readers, so the main flow no longer asks anyone to read.
+
+| Decision | Why |
+|---|---|
+| **The tutor is a phone call.** Green Call button, red End, the tutor's face as the biggest button. | Filipino children already know Messenger calls. Reusing a familiar mental model removes the need for instructions (cognitive load). |
+| **Turn-taking without words:** each phase has its own colour, icon and pulse: *calling* (grey ring), *your turn* (green, ear), *thinking* (amber dots), *speaking* (teal, sound waves). The halo swells with the real loudness of whoever is talking. | A child must know *when to talk* without reading "Your turn". |
+| **A buzz when it's your turn.** | A second, non-visual channel (UDL). Works even if the child is looking away. |
+| **Every label can speak.** Tapping a tutor or level says its name, and each heading has a speaker button. | Medhi, Sagar & Toyama (2006), *Text-Free User Interfaces for Illiterate and Semi-Literate Users*: graphics plus voice feedback beat text for non-literate users. |
+| **Cards steer a live call.** Tap the "Very simple" card mid-call and the tutor re-explains more simply. | The tangible card becomes a way to *talk back* without words (TUI). |
+| **Simpler / Again / Another way** are the only in-call buttons. | They are the three things a confused learner needs, and pressing them carries no penalty (affective filter). |
+| **Captions are optional (CC button), off by default.** | Same-Language Subtitling (Kothari / PlanetRead, India): text shown in sync with speech in the *same* language has been linked to reading gains. Here it is opt-in "read-along" for students ready for it, and helps teachers and judges follow Bikol audio. |
+| **Slower speech at lower levels** (practice voice: 0.82× for *very simple*). | Comprehension first: simpler level = simpler words *and* slower pace. |
+| **Practice voice is always labelled as practice.** | Device speech reading Bikol with a Filipino voice is an approximation. It must never be mistaken for the live, reviewed tutor. |
+
 ## Typography
 
 - **Andika** (SIL International) for everything the student reads. It was
