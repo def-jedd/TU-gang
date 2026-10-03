@@ -1,4 +1,4 @@
-import { StyleSheet, Text, type TextProps } from 'react-native';
+import { Text, type TextProps } from 'react-native';
 
 import { colors, fonts, typeScale, type TypeVariant } from '../theme/tokens';
 
@@ -31,7 +31,3 @@ export function AppText({ variant = 'body', color = colors.ink, bold, scale = 1,
     />
   );
 }
-
-export const textStyles = StyleSheet.create({
-  center: { textAlign: 'center' },
-});

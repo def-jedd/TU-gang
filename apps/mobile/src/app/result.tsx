@@ -57,7 +57,17 @@ export default function ResultScreen() {
           {status === 'success' && response ? <ProviderBadge provider={response.provider} t={t} /> : null}
         </View>
 
-        {status === 'loading' ? <LoadingState key={JSON.stringify(lastRequest)} t={t} onCancel={tutor.cancel} /> : null}
+        {status === 'loading' ? (
+          <LoadingState
+            key={JSON.stringify(lastRequest)}
+            t={t}
+            onCancel={() => {
+              tutor.cancel();
+              // Nothing to fall back to on a first question: return to Ask.
+              if (!response) goHome();
+            }}
+          />
+        ) : null}
 
         {status === 'error' ? <ErrorState t={t} error={error} onRetry={tutor.retry} onBack={goHome} /> : null}
 
