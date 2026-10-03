@@ -1,3 +1,5 @@
+export type Language = 'bikol_daet' | 'tagalog' | 'english';
+
 // Shared API contract (frozen with Teammate 1). Keep in sync with apps/mobile/src/types/tutor.ts.
 
 export const DIFFICULTIES = ['very_simple', 'simple', 'normal'] as const;
@@ -12,7 +14,7 @@ export type Provider = 'quick' | 'approved_fallback' | 'mock';
 export type ExplainRequest = {
   question: string;
   topic?: string | null;
-  language: 'bikol_daet';
+  language: Language;
   difficulty: Difficulty;
   style: Style;
   action: Action;
@@ -21,7 +23,7 @@ export type ExplainRequest = {
 export type ExplainResponse = {
   request_id: string;
   topic: string | null;
-  language: 'bikol_daet';
+  language: Language;
   explanation: string;
   example: string;
   key_points: string[];

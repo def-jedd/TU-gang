@@ -9,7 +9,7 @@
 import type { IconName } from '../components/Icon';
 import type { UiLang } from '../i18n/copy';
 import type { CardCategory } from '../theme/tokens';
-import type { Difficulty, TeachingStyle } from '../types/tutor';
+import type { Difficulty, Language, TeachingStyle } from '../types/tutor';
 
 type Localized = Record<UiLang, string>;
 
@@ -24,6 +24,7 @@ export type CardDef = {
 export type TopicCard = CardDef & { category: 'topic'; topic: string };
 export type LevelCard = CardDef & { category: 'level'; value: Difficulty };
 export type StyleCard = CardDef & { category: 'style'; value: TeachingStyle };
+export type LanguageCard = CardDef & { category: 'language'; value: Language };
 
 // Topic labels keep the English academic term on purpose (Cummins'
 // interdependence: the concept is learned in Bikol, the term carries over to
@@ -142,12 +143,21 @@ export const ACTION_CARDS: CardDef[] = [
   },
 ];
 
-export const LANGUAGE_CARDS: CardDef[] = [
+export const LANGUAGE_CARDS: LanguageCard[] = [
   {
     code: 'LANG_BIKOL_DAET',
     category: 'language',
+    value: 'bikol_daet',
     icon: 'map-marker-radius',
-    label: { en: 'Bikol · Daet', bik: 'Bikol · Daet' },
+    label: { en: 'Bikol', bik: 'Bikol' },
+  },
+  {
+    code: 'LANG_TAGALOG', category: 'language', value: 'tagalog',
+    icon: 'flag-variant', label: { en: 'Tagalog', bik: 'Tagalog' },
+  },
+  {
+    code: 'LANG_ENGLISH', category: 'language', value: 'english',
+    icon: 'earth', label: { en: 'English', bik: 'English' },
   },
 ];
 

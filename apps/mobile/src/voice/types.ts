@@ -38,7 +38,8 @@ export type VoiceControl =
   | { action: 'explain_differently' }
   | { action: 'set_topic'; value: string }
   | { action: 'set_difficulty'; value: Difficulty }
-  | { action: 'set_style'; value: TeachingStyle };
+  | { action: 'set_style'; value: TeachingStyle }
+  | { action: 'set_language'; value: Language };
 
 export type VoiceErrorKind = 'mic_denied' | 'network' | 'session' | 'agent_left' | 'unavailable';
 

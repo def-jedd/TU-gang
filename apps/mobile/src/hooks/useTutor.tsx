@@ -15,7 +15,7 @@ import {
 import { explain, TutorError } from '../services/api';
 import { DEFAULT_UI_LANG } from '../services/config';
 import { TEXT_SCALES } from '../theme/tokens';
-import type { Difficulty, ExplainRequest, ExplainResponse, TeachingStyle } from '../types/tutor';
+import type { Difficulty, ExplainRequest, ExplainResponse, Language, TeachingStyle } from '../types/tutor';
 
 export type TutorStatus = 'idle' | 'loading' | 'success' | 'error';
 
@@ -44,7 +44,7 @@ type TutorContextValue = RequestState & {
   submit: () => boolean;
   explainDifferently: () => boolean;
   /** Re-ask the last question with new settings (from the answer screen). */
-  reaskWith: (change: { difficulty?: Difficulty; style?: TeachingStyle }) => void;
+  reaskWith: (change: { difficulty?: Difficulty; style?: TeachingStyle; language?: Language }) => void;
   retry: () => void;
   cancel: () => void;
   /** Single entry point for NFC tags, the card simulator and deep links. */
@@ -126,9 +126,10 @@ export function TutorProvider({ children }: { children: ReactNode }) {
   }, [run]);
 
   const reaskWith = useCallback(
-    (change: { difficulty?: Difficulty; style?: TeachingStyle }) => {
+    (change: { difficulty?: Difficulty; style?: TeachingStyle; language?: Language }) => {
       if (change.difficulty) update({ type: 'DIFFICULTY', value: change.difficulty });
       if (change.style) update({ type: 'STYLE', value: change.style });
+      if (change.language) update({ type: 'LANGUAGE', value: change.language });
       const last = lastRequestRef.current;
       if (last) run({ ...last, ...change, action: 'explain' });
     },

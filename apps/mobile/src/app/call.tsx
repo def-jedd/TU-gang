@@ -116,7 +116,7 @@ export default function CallScreen() {
             </View>
           ) : null}
           {provider ? <ProviderBadge provider={provider} t={t} /> : null}
-          <LanguageBadge t={t} />
+          <LanguageBadge t={t} language={draft.language} />
         </View>
         <Pressable
           onPress={() => voice.setShowCaptions(!showCaptions)}

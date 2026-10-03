@@ -138,6 +138,28 @@ export async function mockExplain(request: ExplainRequest, signal?: AbortSignal)
     throw new TutorError('network', 'Simulated network failure (mock "test error")');
   }
 
+  // The prepared mock lessons are Bikol only. Keep other language previews
+  // clearly labeled instead of showing Bikol text under an English/Tagalog badge.
+  if (request.language !== 'bikol_daet') {
+    const tagalog = request.language === 'tagalog';
+    return {
+      request_id: `mock-${Date.now().toString(36)}`,
+      topic: request.topic,
+      language: request.language,
+      explanation: tagalog
+        ? 'Demo lamang ito. Ikonekta ang tutor API para sa tunay na paliwanag sa Tagalog.'
+        : 'This is demo data. Connect the tutor API for a real explanation in English.',
+      example: tagalog
+        ? 'Kapag nakakonekta na, lalabas dito ang halimbawa para sa iyong tanong.'
+        : 'When connected, an example for your question will appear here.',
+      key_points: tagalog
+        ? ['Demo lamang ito.', 'Hindi ito sagot mula sa AI.', 'Ikonekta ang tutor API.']
+        : ['This is demo data.', 'This is not an AI answer.', 'Connect the tutor API.'],
+      source_ids: [],
+      provider: 'mock',
+    };
+  }
+
   const topic = pickTopic(request);
   const lesson = topic ? LESSONS[topic] : null;
   const differently = request.action === 'explain_differently';

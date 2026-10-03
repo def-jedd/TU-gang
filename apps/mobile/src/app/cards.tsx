@@ -37,7 +37,7 @@ export default function CardsScreen() {
     (card.category === 'topic' && 'topic' in card && card.topic === draft.topic) ||
     (card.category === 'level' && 'value' in card && card.value === draft.difficulty) ||
     (card.category === 'style' && 'value' in card && card.value === draft.style) ||
-    (card.category === 'language' && card.code === 'LANG_BIKOL_DAET');
+    (card.category === 'language' && 'value' in card && card.value === draft.language);
 
   const deck = (title: string, icon: IconName, palette: CardCategory, cards: CardDef[]) => (
     <View style={styles.section}>

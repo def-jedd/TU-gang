@@ -6,7 +6,7 @@
  * otherwise the request will fail validation.
  */
 
-export type Language = 'bikol_daet';
+export type Language = 'bikol_daet' | 'tagalog' | 'english';
 export type Difficulty = 'very_simple' | 'simple' | 'normal';
 export type TeachingStyle = 'teacher' | 'friend' | 'ate_kuya';
 export type TutorAction = 'explain' | 'explain_differently';

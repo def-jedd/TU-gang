@@ -62,6 +62,9 @@ export const DEFAULT_UI_LANG: UiLang = process.env.EXPO_PUBLIC_UI_LANG === 'bik'
  */
 export const VOICE_MODE: 'agora' | 'simulated' = process.env.EXPO_PUBLIC_VOICE_MODE === 'agora' ? 'agora' : 'simulated';
 
+/** Show the not-yet-supported Philippine languages in the answer-language picker. */
+export const SHOW_UPCOMING_LANGUAGES = process.env.EXPO_PUBLIC_SHOW_UPCOMING_LANGUAGES === 'true';
+
 /** Voice-first by default; `text` makes cards/Explain use the reading flow. */
 export const INTERACTION_MODE: 'voice' | 'text' = process.env.EXPO_PUBLIC_INTERACTION === 'text' ? 'text' : 'voice';
 

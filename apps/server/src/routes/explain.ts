@@ -13,7 +13,7 @@ export const explainRouter = Router();
 const answerShape = z.object({
   request_id: z.string().min(1).max(100),
   topic: z.string().nullable().optional(),
-  language: z.literal('bikol_daet'),
+  language: z.enum(['bikol_daet', 'tagalog', 'english']),
   explanation: z.string(),
   example: z.string(),
   key_points: z.array(z.string()),

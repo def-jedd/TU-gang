@@ -3,6 +3,7 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AppText } from '@/components/AppText';
+import { AnswerLanguageSelector } from '@/components/AnswerLanguageSelector';
 import { LanguageBadge } from '@/components/Badges';
 import { Button } from '@/components/Button';
 import { CardGrid } from '@/components/CardGrid';
@@ -59,7 +60,7 @@ export default function HomeScreen() {
         </View>
 
         <View style={styles.metaRow}>
-          <LanguageBadge t={t} />
+          <LanguageBadge t={t} language={draft.language} />
           <View style={styles.metaButtons}>
             <Button label={t.typeInstead} icon="keyboard-outline" variant="secondary" size="md" onPress={() => router.push('/ask')} />
             <Button
@@ -90,6 +91,11 @@ export default function HomeScreen() {
           </AppText>
         </Pressable>
 
+        <AnswerLanguageSelector
+          value={draft.language}
+          onChange={(value) => update({ type: 'LANGUAGE', value })}
+          speakable
+        />
         <TeachingStyleSelector
           title={t.voiceTitle}
           speakable

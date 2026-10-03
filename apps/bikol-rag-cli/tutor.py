@@ -71,6 +71,8 @@ def generate_answer(fact_provider, answer_provider, question, references,
                                           style=style, action=action, as_json=True)
         return parse_answer_json(answer_provider.generate(prompt, json_output=True))
 
+    if language != "bikol":
+        raise ValueError("Tagalog and English answers currently require the Gemini provider.")
     sentences = generate_sentences(fact_provider, answer_provider, question, references, difficulty, style, action)
     # Sentences are: direct answer, reason, everyday example. Key points stay
     # empty rather than repeating them, because practice voice reads every field aloud.

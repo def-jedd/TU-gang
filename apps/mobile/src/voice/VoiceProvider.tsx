@@ -148,6 +148,7 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
       if (command.action === 'set_topic') update({ type: 'TOPIC', value: command.value });
       if (command.action === 'set_difficulty') update({ type: 'DIFFICULTY', value: command.value });
       if (command.action === 'set_style') update({ type: 'STYLE', value: command.value });
+      if (command.action === 'set_language') update({ type: 'LANGUAGE', value: command.value });
       if (command.action === 'simpler') {
         update({ type: 'DIFFICULTY', value: simplerThan(draftRef.current.difficulty) });
       }

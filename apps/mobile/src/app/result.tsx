@@ -4,6 +4,7 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnswerView } from '@/components/AnswerView';
+import { AnswerLanguageSelector } from '@/components/AnswerLanguageSelector';
 import { AppText } from '@/components/AppText';
 import { LanguageBadge, ProviderBadge } from '@/components/Badges';
 import { Button } from '@/components/Button';
@@ -63,7 +64,7 @@ export default function ResultScreen() {
         ) : null}
 
         <View style={styles.badges}>
-          <LanguageBadge t={t} />
+          <LanguageBadge t={t} language={shown?.language ?? tutor.draft.language} />
           {status === 'success' && response ? <ProviderBadge provider={response.provider} t={t} /> : null}
         </View>
 
@@ -102,6 +103,11 @@ export default function ResultScreen() {
                 value={answeredRequest?.difficulty ?? tutor.draft.difficulty}
                 onChange={(difficulty) => tutor.reaskWith({ difficulty })}
               />
+              <AnswerLanguageSelector
+                compact
+                value={answeredRequest?.language ?? tutor.draft.language}
+                onChange={(language) => tutor.reaskWith({ language })}
+              />
               <TeachingStyleSelector
                 compact
                 value={answeredRequest?.style ?? tutor.draft.style}
@@ -113,7 +119,7 @@ export default function ResultScreen() {
 
             {__DEV__ && answeredRequest ? (
               <AppText variant="caption" color={colors.inkMuted}>
-                [dev] sent: difficulty={answeredRequest.difficulty} · style={answeredRequest.style} · action=
+                [dev] sent: language={answeredRequest.language} · difficulty={answeredRequest.difficulty} · style={answeredRequest.style} · action=
                 {answeredRequest.action} · topic={answeredRequest.topic ?? 'null'} · id={response.request_id}
               </AppText>
             ) : null}

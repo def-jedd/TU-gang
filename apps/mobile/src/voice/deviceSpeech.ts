@@ -9,31 +9,42 @@
 import * as Speech from 'expo-speech';
 
 import { SPOKEN_LABELS } from '../services/config';
+import type { Language } from '../types/tutor';
 
 type VoiceChoice = { language?: string; voice?: string };
 
-let chosen: Promise<VoiceChoice> | null = null;
+const chosen = new Map<Language, Promise<VoiceChoice>>();
 
-/** Prefer an installed Filipino/Tagalog voice; otherwise let the OS pick. */
-export function preferredVoice(): Promise<VoiceChoice> {
-  chosen ??= Speech.getAvailableVoicesAsync()
+/**
+ * Pick a phone voice for the answer language (Bikol uses Filipino as the
+ * closest). If none is installed, use the phone's default voice: asking for
+ * an uninstalled language makes many Android engines say nothing at all.
+ */
+export function preferredVoice(language: Language = 'bikol_daet'): Promise<VoiceChoice> {
+  const cached = chosen.get(language);
+  if (cached) return cached;
+  const preference = language === 'english' ? /^en([-_]|$)/i : /^(fil|tl)([-_]|$)/i;
+  const choice = Speech.getAvailableVoicesAsync()
     .then((voices) => {
-      const match = voices.find((v) => /^(fil|tl)([-_]|$)/i.test(v.language));
-      // No Filipino voice installed: use the phone's default voice. Asking for
-      // an uninstalled language makes many Android engines say nothing at all.
+      const match = voices.find((v) => preference.test(v.language));
       return match ? { language: match.language, voice: match.identifier } : {};
     })
     .catch(() => ({}));
-  return chosen;
+  chosen.set(language, choice);
+  return choice;
 }
 
-/** Use the phone's default voice from now on (after the chosen one failed). */
-export function fallBackToDefaultVoice() {
-  chosen = Promise.resolve({});
+/** Use the phone's default voice for this language from now on (the chosen one failed). */
+export function fallBackToDefaultVoice(language: Language) {
+  chosen.set(language, Promise.resolve({}));
 }
 
 /** Speak one line; if the chosen voice errors, retry once with the default voice. Resolves false if stopped. */
-export async function speakLine(text: string, options: { rate?: number } = {}): Promise<boolean> {
+export async function speakLine(
+  text: string,
+  options: { rate?: number; language?: Language } = {},
+): Promise<boolean> {
+  const language = options.language ?? 'bikol_daet';
   const attempt = (voice: VoiceChoice) =>
     new Promise<'done' | 'stopped' | 'error'>((resolve) =>
       Speech.speak(text, {
@@ -44,10 +55,10 @@ export async function speakLine(text: string, options: { rate?: number } = {}): 
         onError: () => resolve('error'),
       }),
     );
-  const voice = await preferredVoice();
+  const voice = await preferredVoice(language);
   let result = await attempt(voice);
   if (result === 'error' && (voice.language || voice.voice)) {
-    fallBackToDefaultVoice();
+    fallBackToDefaultVoice(language);
     result = await attempt({});
   }
   if (result === 'error') console.warn('[speech] the phone could not speak:', text.slice(0, 40));
