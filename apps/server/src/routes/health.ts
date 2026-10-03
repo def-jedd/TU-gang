@@ -20,8 +20,11 @@ healthRouter.get('/', async (_req, res) => {
       tutor = { configured: true, reachable: false };
     }
   }
-  res.json({
-    status: 'ok',
+  // Like Jed's server: 503 when answers can't be produced, so the app's
+  // connection dot doesn't show green while /api/explain would fail.
+  const tutorReady = tutor.configured === true && tutor.reachable === true && tutor.status === 'ok';
+  res.status(tutorReady ? 200 : 503).json({
+    status: tutorReady ? 'ok' : 'unavailable',
     version: 'mvp',
     provider, // reported by the tutor (Jed's server); null if not configured/reachable
     tutor,
