@@ -1,0 +1,31 @@
+# What EAS Build uploads from this repo. Read from the repo root and used
+# INSTEAD of .gitignore. EAS does not apply the nested .gitignore files in
+# apps/*, so without this it uploaded the backend's .env (Gemini key), its
+# Python .venv and a local android/ folder (2026-10-04).
+#
+# Allowlist: upload only the mobile app's source. (No trailing slashes on the
+# "!" lines: EAS's matcher then fails to re-include the folders.)
+/*
+!/apps
+/apps/*
+!/apps/mobile
+
+# Generated or local-only inside the app. android/ and ios/ must not be
+# uploaded, or EAS builds a stale local copy instead of running prebuild.
+/apps/mobile/node_modules
+/apps/mobile/android
+/apps/mobile/ios
+/apps/mobile/.expo
+/apps/mobile/dist
+/apps/mobile/web-build
+
+# Secrets, anywhere (belt and braces)
+**/.env
+**/.env.*
+!**/.env.example
+**/*.jks
+**/*.keystore
+**/*.p8
+**/*.p12
+**/*.key
+**/*.pem
