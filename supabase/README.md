@@ -8,7 +8,7 @@ Only the backend uses Supabase. The mobile app never gets a Supabase key.
 
 | Piece | Purpose |
 |---|---|
-| `public.tutoring_examples` | One row per teaching example. Columns match `data/bikol_examples.json` (Teammate 4), plus optional `student_question` and `style`. |
+| `public.tutoring_examples` | One row per teaching example. Columns match Teammate 4's example schema, plus optional `student_question` (English), `bikol_question` and `style`. |
 | `public.match_tutoring_examples(...)` | Retrieval RPC: topic match → semantic (pgvector) → keyword → labeled fallback. |
 | Edge Function `sync-examples` | Upserts the JSON dataset and embeds rows missing an embedding. |
 | Edge Function `retrieve-examples` | Embeds the student question and calls the RPC. This is what `POST /api/explain` calls. |
@@ -63,11 +63,37 @@ What `match_type` means for the prompt builder:
 Use the returned `id`s as `source_ids` in the `/api/explain` response. `retrieval_mode` becomes `keyword_only` if embedding failed.
 The backend can also call the RPC directly (`supabase.rpc('match_tutoring_examples', {...})`) for keyword/topic-only retrieval.
 
-## Known limits (measured with test rows)
+## Current data
 
-- `gte-small` similarities are compressed. Related examples scored 0.81–0.89; unrelated ones 0.71–0.78. Re-tune `min_similarity` against the 10–12 question benchmark once the real 20 examples are loaded.
-- `gte-small` is English-only. Tagalog questions (e.g. "Bakit natutunaw ang yelo?") currently get only `fallback` rows. Translating or keywording the question to English in the backend before retrieval would fix this.
-- Keyword matching is weak (shared words like "ground"). Treat it as a hint, not real retrieval.
+20 rows (`sample_001`–`sample_020`) loaded from the team's SAMPLE-BIKOLANO doc. The Bikol text is verbatim. English fields were written to describe each concept.
+- **All rows are `draft`** until a native speaker confirms them, so pass `reviewed_only: false` for now. With the default `true`, nothing is returned.
+- **`sample_011`, `sample_014` and `sample_019`** (one-half, division, handwashing) are English-only in the source. They're stored, but they won't be retrieved until Bikol is added.
+- **Review flags are in `review_notes`:**
+  - `sample_016`: *lugar* vs *hiwas* for "area".
+  - `sample_017`: *dahelan* vs *kawsa* for "cause".
+  - `sample_013`: *nin marikas*.
+
+To promote a row after review, set `native_corrected_bikol` (the speaker's final text) and `review_status = 'native_reviewed'`.
+
+## Retrieval results on the 20 samples
+
+| Question | Top match (similarity) |
+|---|---|
+| Why does ice melt? | melting 0.92 |
+| Why do things drop to the floor? | gravity 0.87 |
+| How do plants get energy from the sun? | photosynthesis 0.88 |
+| What is a fraction? | fractions 0.87 |
+| How much fence do I need around my yard? | perimeter 0.83 |
+| Why do my wet clothes dry under the sun? | rain 0.84, evaporation 0.83 |
+| Explain black holes simply (not in dataset) | gravity 0.84 |
+| What is the capital of France? | fallback only |
+| Bakit natutunaw ang yelo? (Tagalog) | fallback only |
+
+## Known limits
+
+- **The first result is reliable; results 2–3 often aren't.** `gte-small` gives related and unrelated examples similar scores, around 0.80–0.85 (e.g. friction for "things drop", cause_and_effect for "thunder"). No threshold cleanly separates them. That's acceptable for few-shot *style* examples, but the prompt must tell the AI not to reuse their facts.
+- **`gte-small` is English-only.** Tagalog and Bikol questions only get `fallback` rows. Translating the question to English in the backend before retrieval would fix this.
+- **Keyword matching is weak.** It matches on shared words like "need" or "ground". Treat it as a hint, not real retrieval.
 
 ## Environment variables (backend)
 

@@ -44,6 +44,7 @@ export type Database = {
           ai_draft_bikol: string | null
           bikol_example: string | null
           bikol_explanation: string | null
+          bikol_question: string | null
           created_at: string
           difficulty: string | null
           embedding: string | null
@@ -66,6 +67,7 @@ export type Database = {
           ai_draft_bikol?: string | null
           bikol_example?: string | null
           bikol_explanation?: string | null
+          bikol_question?: string | null
           created_at?: string
           difficulty?: string | null
           embedding?: string | null
@@ -88,6 +90,7 @@ export type Database = {
           ai_draft_bikol?: string | null
           bikol_example?: string | null
           bikol_explanation?: string | null
+          bikol_question?: string | null
           created_at?: string
           difficulty?: string | null
           embedding?: string | null
@@ -127,6 +130,7 @@ export type Database = {
         Returns: {
           bikol_example: string
           bikol_explanation: string
+          bikol_question: string
           difficulty: string
           english_concept: string
           id: string

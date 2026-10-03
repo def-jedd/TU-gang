@@ -18,6 +18,7 @@ const WRITABLE_FIELDS = [
   "difficulty",
   "style",
   "student_question",
+  "bikol_question",
   "english_concept",
   "ai_draft_bikol",
   "native_corrected_bikol",
