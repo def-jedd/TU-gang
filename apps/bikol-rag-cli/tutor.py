@@ -2,12 +2,26 @@
 
 import hashlib
 import json
+import logging
 import re
+from pathlib import Path
 
 import config
-from prompt_builder import build_fact_prompt, build_full_answer_prompt, build_prompt, extract_facts, parse_answer_json
+from prompt_builder import (
+    build_fact_prompt,
+    build_full_answer_prompt,
+    build_prompt,
+    build_tutor_prompt,
+    extract_facts,
+    parse_answer_json,
+)
 from providers import get_provider
+from tutor_output import parse_tutor_output, spoken_style_problems
 
+log = logging.getLogger(__name__)
+
+# <repo>/prompts/tutor_system.txt  (config.BASE_DIR is <repo>/apps/bikol-rag-cli)
+SYSTEM_PROMPT_PATH = Path(config.BASE_DIR).parents[1] / "prompts" / "tutor_system.txt"
 
 VAGUE_CLAIM = re.compile(r"\b(important|mahalaga|importante|helpful|useful)\b|\bhelps? us (?:a lot|in many ways)\b", re.IGNORECASE)
 REASON_CUE = re.compile(r"\b(because|by|so that|dahil|kasi|upang|para|huli ta|tanganing)\b", re.IGNORECASE)
@@ -65,6 +79,14 @@ def readiness_error(providers):
     return None
 
 
+def load_system_prompt():
+    """The spoken-style tutor prompt (prompts/tutor_system.txt)."""
+    try:
+        return SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
+    except FileNotFoundError as error:
+        raise RuntimeError(f"Tutor prompt not found at {SYSTEM_PROMPT_PATH}.") from error
+
+
 def generate_sentences(fact_provider, answer_provider, question, references,
                        difficulty="simple", style=None, action="explain"):
     """Three Bikol sentences: the direct answer, the reason, and an example."""
@@ -73,6 +95,41 @@ def generate_sentences(fact_provider, answer_provider, question, references,
     facts = extract_facts(fact_provider.generate(build_fact_prompt(question, difficulty, action)))
     return [answer_provider.generate(build_prompt(question, references, fact, number == 1, style)).strip()
             for number, fact in enumerate(facts, 1)]
+
+
+def generate_spoken_answer(provider, question, references, difficulty="simple",
+                           style="friend", action="explain", previous=None):
+    """Spoken-style Bikol answer using prompts/tutor_system.txt (Gemini only).
+
+    The model replies with labeled lines (TOPIC / EXPLANATION / EXAMPLE /
+    KEY_POINT_1..3). A badly formatted reply is retried once, then reported.
+    The model's TOPIC label is ignored: the app's topic comes from the request
+    or from retrieval, because the card lookup uses fixed topic ids.
+    """
+    system = load_system_prompt()
+    prompt = build_tutor_prompt(question, references, difficulty, style, action, previous)
+
+    parsed = None
+    for _attempt in range(2):
+        text = provider.generate(prompt, system=system, max_tokens=2048)
+        try:
+            parsed = parse_tutor_output(text)
+            break
+        except ValueError:
+            log.warning("Tutor reply was not in the labeled format; retrying once.")
+    if parsed is None:
+        raise ValueError("The tutor's answer came back in the wrong format. Please try again.")
+
+    problems = spoken_style_problems(parsed)
+    if problems:
+        # Logged for the test runs; not shown to the student.
+        log.warning("Spoken-style problems: %s", "; ".join(problems))
+
+    return {
+        "explanation": parsed["EXPLANATION"],
+        "example": parsed["EXAMPLE"],
+        "key_points": [parsed[f"KEY_POINT_{number}"] for number in (1, 2, 3)],
+    }
 
 
 def generate_answer(fact_provider, answer_provider, question, references,

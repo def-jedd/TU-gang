@@ -23,11 +23,17 @@ from starlette.exceptions import HTTPException
 
 import config
 from answer_check import clearly_english
-from tutor import generate_answer, load_providers, load_retriever, readiness_error
+from tutor import generate_answer, generate_spoken_answer, load_providers, load_retriever, readiness_error
 
 providers = load_providers()
 retriever = None
 retriever_error = None
+
+# The last Bikol answer per (question, topic, language). "Explain differently"
+# needs it because every model call is stateless, and the request contract
+# has no field for the earlier answer. In memory only; cleared on restart.
+_last_answers = {}
+_MAX_REMEMBERED = 200
 
 
 @asynccontextmanager
@@ -99,21 +105,35 @@ def explain(request: ExplainRequest):
 
     references = retriever.retrieve(question, config.TOP_GENERAL_CHUNKS, config.TOP_CUSTOM_CHUNKS)
     answer_language = "bikol" if request.language == "bikol_daet" else request.language
+    spoken = request.language == "bikol_daet" and config.ACTIVE_PROVIDER == "gemini"
+    memory_key = (question.casefold(), request.topic, request.language)
     try:
-        answer = generate_answer(*providers, question, references,
-                                 request.difficulty, request.style, request.action, answer_language)
+        if spoken:
+            # Bikol via Gemini: the spoken-style tutor prompt (prompts/tutor_system.txt).
+            answer = generate_spoken_answer(
+                providers[1], question, references, request.difficulty, request.style,
+                request.action, _last_answers.get(memory_key))
+        else:
+            # Ollama (Bikol only), and Tagalog/English via Gemini: the original JSON flow.
+            answer = generate_answer(*providers, question, references,
+                                     request.difficulty, request.style, request.action, answer_language)
     except (RuntimeError, ValueError) as failure:
         return error(502, str(failure))
     if request.language == "bikol_daet" and clearly_english(
             " ".join([answer["explanation"], answer["example"], *answer["key_points"]])):
         return error(502, "The model answered in English instead of Bikol. Please try again.")
 
+    if spoken:
+        if len(_last_answers) >= _MAX_REMEMBERED:
+            _last_answers.clear()
+        _last_answers[memory_key] = f"{answer['explanation']} {answer['example']}".strip()
+
     matched = next((ref["topic"] for ref in references if ref.get("retrieval_use") == "topic_and_style"), None)
     return {
         "request_id": uuid.uuid4().hex,
         "topic": request.topic or matched,
         "language": request.language,
-        **answer,  # explanation, example, key_points (see tutor.generate_answer)
+        **answer,  # explanation, example, key_points
         "source_ids": [ref["id"] for ref in references],
         "provider": config.ACTIVE_PROVIDER,
     }

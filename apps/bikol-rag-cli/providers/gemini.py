@@ -1,4 +1,4 @@
-"""Gemini GenerateContent adapter for the command-line tutor."""
+"""Gemini GenerateContent adapter for the command-line tutor and the mobile API."""
 
 import os
 
@@ -17,7 +17,14 @@ class GeminiProvider(LLMProvider):
             return "GEMINI_API_KEY is missing. Set it in this terminal before running chat.py."
         return None
 
-    def generate(self, prompt: str, json_output: bool = False) -> str:
+    def generate(self, prompt: str, json_output: bool = False,
+                 system: str | None = None, max_tokens: int | None = None) -> str:
+        """Send one prompt to Gemini.
+
+        system:     sent as Gemini's systemInstruction (the tutor prompt), not
+                    mixed into the user message.
+        max_tokens: overrides the default output cap (600, or 3072 in JSON mode).
+        """
         if not self.api_key:
             raise RuntimeError("GEMINI_API_KEY is missing.")
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model_name}:generateContent"
@@ -26,14 +33,21 @@ class GeminiProvider(LLMProvider):
             # The mobile API needs fields, not prose. A truncated object is
             # unusable, so JSON answers get more room.
             generation_config.update(responseMimeType="application/json", maxOutputTokens=3072)
+        if max_tokens:
+            generation_config["maxOutputTokens"] = max_tokens
+
+        body = {
+            "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+            "generationConfig": generation_config,
+        }
+        if system:
+            body["systemInstruction"] = {"parts": [{"text": system}]}
+
         try:
             response = requests.post(
                 url,
                 headers={"x-goog-api-key": self.api_key, "Content-Type": "application/json"},
-                json={
-                    "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-                    "generationConfig": generation_config,
-                },
+                json=body,
                 timeout=90,
             )
             response.raise_for_status()
