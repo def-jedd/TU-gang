@@ -47,6 +47,26 @@ Note: the `.env.local` backend URL must also be reachable from the phone —
 a laptop LAN IP won't work on guest Wi-Fi either; use the backend's deployed
 URL or a phone hotspot for both devices.
 
+It's **`npx expo start`** or **`npm run tunnel`**. `npm expo …` is not a
+command (npm answers `Unknown command: "expo"`, and no QR code appears).
+
+### Teammates: try it on your phone (no login needed)
+
+One person runs the dev server; everyone else only needs **Expo Go**
+(Play Store / App Store, the version for SDK 57).
+
+1. Open Expo Go → **Scan QR code** (iPhone: use the Camera app) and scan the
+   QR code in the terminal of whoever ran `npm run tunnel`.
+2. That's it. No Expo account needed, and you don't need to sign in as the
+   person running the server. The "not signed in to Expo CLI" banner on
+   Expo Go's home screen only controls the *Development servers* list; ignore it.
+3. With `npm run tunnel` you don't even need the same Wi-Fi.
+
+Why it's open: the dev server serves an anonymous, unsigned manifest
+because this project has no EAS project ID (`extra.eas.projectId` in
+`app.json`). If someone later runs `eas init` / `eas build`, Expo starts
+signing it with that account, so re-check that teammates can still open it.
+
 Other scripts: `npm test` (card → JSON tests), `npm run typecheck`,
 `npm run web` (quick layout checks in a browser).
 
