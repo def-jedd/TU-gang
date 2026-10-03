@@ -14,7 +14,7 @@ out loud. A typed/reading mode remains as a secondary option (**Type**).
 | Tutor's words | `/api/explain` (or mock) | Agora agent → our LLM endpoint → Quick / fallback |
 | Voice | phone's own speech (fil-PH voice) | Agora TTS |
 | Hears the student? | **No**: student steers with buttons/cards | **Yes**: full conversation, interruptible |
-| Badge on screen | "Practice voice · not live AI" | "Live voice · Agora" |
+| Badge on screen | "Practice voice · phone speech" | "Live voice · Agora" |
 
 Switch with `EXPO_PUBLIC_VOICE_MODE=agora` once the backend implements
 [VOICE_CONTRACT.md](VOICE_CONTRACT.md). If the dev build or backend is

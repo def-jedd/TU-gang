@@ -1,3 +1,5 @@
+import Constants from 'expo-constants';
+
 import type { UiLang } from '../i18n/copy';
 
 /**
@@ -6,10 +8,32 @@ import type { UiLang } from '../i18n/copy';
  * credentials or Agora secrets. Those stay on the backend.
  */
 
-const rawBaseUrl = process.env.EXPO_PUBLIC_API_BASE_URL?.trim();
+const API_PORT = process.env.EXPO_PUBLIC_API_PORT?.trim() || '8000';
 
-/** e.g. http://192.168.1.23:3000 — a phone cannot reach your laptop's "localhost". */
-export const API_BASE_URL = rawBaseUrl ? rawBaseUrl.replace(/\/+$/, '') : null;
+/** The computer running `npx expo start`, as the phone sees it (e.g. "192.168.43.12"). */
+function devMachineHost(): string | null {
+  const hostUri = Constants.expoConfig?.hostUri; // "192.168.43.12:8081" in Expo Go
+  if (hostUri) return hostUri.split(':')[0];
+  const web = (globalThis as { location?: { hostname?: string } }).location;
+  return web?.hostname || null;
+}
+
+/**
+ * `auto` = the tutor API runs on the same computer as Expo, so the app follows
+ * that computer's address on any Wi-Fi or hotspot. Otherwise a full URL,
+ * e.g. http://192.168.1.23:8000. A phone cannot reach your laptop's "localhost".
+ */
+function resolveBaseUrl(raw: string | undefined): string | null {
+  const value = raw?.trim();
+  if (!value) return null;
+  if (value.toLowerCase() === 'auto') {
+    const host = devMachineHost();
+    return host ? `http://${host}:${API_PORT}` : null;
+  }
+  return value.replace(/\/+$/, '');
+}
+
+export const API_BASE_URL = resolveBaseUrl(process.env.EXPO_PUBLIC_API_BASE_URL);
 
 /** Mock until a backend URL is configured, or when explicitly forced for rehearsals. */
 export const USE_MOCK = process.env.EXPO_PUBLIC_USE_MOCK === 'true' || API_BASE_URL === null;
