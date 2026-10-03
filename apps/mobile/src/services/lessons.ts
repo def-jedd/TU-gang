@@ -11,8 +11,11 @@ export type LessonPack = {
   lesson_id: string;
   language: Language;
   difficulty: Difficulty;
-  provider: 'gemini';
-  review_status: 'draft';
+  /** 'quick' = checked by Amazon Quick (saved); 'gemini' = AI draft. */
+  provider: 'gemini' | 'quick';
+  review_status: 'draft' | 'quick_reviewed';
+  reviewed_by?: string | null;
+  reviewed_at?: string | null;
   competency: string;
   intentions: { text: string; request_id: string };
   steps: { text: string; request_id: string; check: LessonQuestion }[];

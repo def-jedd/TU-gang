@@ -35,6 +35,7 @@ type Stage =
 const ILAW = ['I', 'L', 'A', 'W'] as const;
 const LETTERS = ['A', 'B', 'C'];
 const LETTER_COLORS = ['#1D5FB4', '#C2410C', '#6D3FB0'];
+const QUICK_COLOR = '#B45309';
 
 export default function LessonScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -233,6 +234,14 @@ export default function LessonScreen() {
             </AppText>
           </View>
         </View>
+        {pack?.provider === 'quick' ? (
+          <View style={styles.quickBadge} accessibilityRole="text">
+            <Icon name="check-decagram" size={20} color={QUICK_COLOR} />
+            <AppText variant="label" color={QUICK_COLOR}>
+              {t.quickChecked}
+            </AppText>
+          </View>
+        ) : null}
 
         {/* Where we are in I-L-A-W, for children and for teachers. */}
         <View style={styles.ilaw} accessibilityRole="progressbar">
@@ -258,7 +267,7 @@ export default function LessonScreen() {
               {t.competencyLabel}: {lesson.competency}
             </AppText>
             <AppText variant="caption" color={colors.inkMuted}>
-              {t.lessonDraft}
+              {pack.provider === 'quick' ? t.lessonQuickChecked : t.lessonDraft}
             </AppText>
           </View>
         ) : null}
@@ -417,4 +426,16 @@ const styles = StyleSheet.create({
   centerItems: { alignItems: 'center' },
   centerText: { textAlign: 'center' },
   footerInfo: { gap: space.sm, marginTop: space.lg },
+  quickBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'flex-start',
+    gap: space.xs,
+    paddingHorizontal: space.md,
+    paddingVertical: space.xs,
+    borderRadius: radius.pill,
+    borderWidth: 2,
+    borderColor: QUICK_COLOR,
+    backgroundColor: '#FFF7E6',
+  },
 });

@@ -222,8 +222,11 @@ export type LessonPack = {
   lesson_id: string;
   language: Language;
   difficulty: Difficulty;
-  provider: 'gemini';
-  review_status: 'draft';
+  /** 'quick' = checked by Amazon Quick (saved); 'gemini' = AI draft. Shown on screen. */
+  provider: 'gemini' | 'quick';
+  review_status: 'draft' | 'quick_reviewed';
+  reviewed_by: string | null;
+  reviewed_at: string | null;
   competency: string;
   intentions: SpokenText;
   steps: { text: string; request_id: string; check: LessonQuestion }[];
@@ -236,7 +239,54 @@ const asSpeech = (q: ChoiceQuestion) => `${q.question} ${q.choices.map((c, i) =>
 
 const inFlight = new Map<string, Promise<Generated>>();
 
-export async function getLesson(lessonId: string, language: Language, difficulty: Difficulty): Promise<LessonPack> {
+// ---- Lessons checked by Amazon Quick (data/quick_lessons, made with
+// npm run quick:export / quick:import). Served before Gemini drafts.
+
+const QUICK_DIR = join(ROOT, 'data/quick_lessons');
+
+export const quickLessonFile = z.object({
+  lesson_id: z.string(),
+  language: z.enum(['bikol_daet', 'tagalog', 'english']),
+  difficulty: z.enum(['very_simple', 'simple', 'normal']),
+  generated_by: z.string(),
+  reviewed_at: z.string(),
+  changes: z.string().optional(),
+  lesson: generated,
+});
+export type QuickLessonFile = z.infer<typeof quickLessonFile>;
+
+export const quickLessonPath = (lessonId: string, language: Language, difficulty: Difficulty) =>
+  join(QUICK_DIR, `${lessonId}.${language}.${difficulty}.json`);
+
+/** The Quick-checked lesson for this language: the same level if there is one, else any level. */
+function quickLesson(lessonId: string, language: Language, difficulty: Difficulty): QuickLessonFile | null {
+  const levels: Difficulty[] = [difficulty, 'simple', 'very_simple', 'normal'];
+  for (const level of new Set(levels)) {
+    try {
+      const parsed = quickLessonFile.safeParse(JSON.parse(readFileSync(quickLessonPath(lessonId, language, level), 'utf8')));
+      if (parsed.success) return parsed.data;
+      console.warn(`[lessons] ignoring broken Quick lesson ${lessonId}.${language}.${level}`);
+    } catch {
+      // no file for this level
+    }
+  }
+  return null;
+}
+
+/** A balanced copy of a lesson (correct answers spread over A/B/C). */
+export function balanceLesson(g: Generated, seed: string): Generated {
+  return {
+    ...g,
+    steps: balanceAnswers(g.steps.map((s) => s.check), `${seed}:steps`).map((check, i) => ({ ...g.steps[i], check })),
+    exam: balanceAnswers(g.exam, `${seed}:exam`),
+  };
+}
+
+export { generated as lessonSchema };
+export type { Generated as LessonContent };
+
+/** The Gemini draft (cached on disk; generated and reviewed on first use). */
+export async function draftLesson(lessonId: string, language: Language, difficulty: Difficulty): Promise<Generated> {
   const e = entry(lessonId);
   if (!e) throw new VoiceError(404, 'Lesson not found');
 
@@ -252,11 +302,9 @@ export async function getLesson(lessonId: string, language: Language, difficulty
     let pending = inFlight.get(key);
     if (!pending) {
       const { system, user } = buildPrompt(e, language, difficulty);
-      pending = askGemini(system, user).then((draft) => review(draft, e)).then((g) => ({
-        ...g,
-        steps: balanceAnswers(g.steps.map((s) => s.check), `${key}:steps`).map((check, i) => ({ ...g.steps[i], check })),
-        exam: balanceAnswers(g.exam, `${key}:exam`),
-      }));
+      pending = askGemini(system, user)
+        .then((draft) => review(draft, e))
+        .then((g) => balanceLesson(g, key));
       inFlight.set(key, pending);
       pending.finally(() => inFlight.delete(key)).catch(() => {});
     }
@@ -265,13 +313,25 @@ export async function getLesson(lessonId: string, language: Language, difficulty
     writeFileSync(cacheFile, JSON.stringify(lesson, null, 1));
     console.log(`[lessons] generated ${key}`);
   }
+  return lesson;
+}
+
+export async function getLesson(lessonId: string, language: Language, requested: Difficulty): Promise<LessonPack> {
+  const e = entry(lessonId);
+  if (!e) throw new VoiceError(404, 'Lesson not found');
+
+  // Prefer the version checked by Amazon Quick; otherwise the Gemini draft.
+  const quick = quickLesson(lessonId, language, requested);
+  const difficulty = quick?.difficulty ?? requested;
+  const lesson = quick?.lesson ?? (await draftLesson(lessonId, language, requested));
+  const provider = quick ? 'quick' : 'gemini';
 
   // Every part gets a request_id so "Listen" (Agora voice) can speak it.
   const spoken = (text: string, part: string): string => {
     const request_id = `lesson-${randomUUID()}`;
     saveAnswer({
       request_id, topic: e.topic ?? null, language, explanation: text, example: '', key_points: [],
-      source_ids: [`${lessonId}#${part}`], provider: 'gemini',
+      source_ids: [`${lessonId}#${part}`], provider,
     });
     return request_id;
   };
@@ -281,8 +341,10 @@ export async function getLesson(lessonId: string, language: Language, difficulty
     lesson_id: lessonId,
     language,
     difficulty,
-    provider: 'gemini',
-    review_status: 'draft',
+    provider,
+    review_status: quick ? 'quick_reviewed' : 'draft',
+    reviewed_by: quick?.generated_by ?? null,
+    reviewed_at: quick?.reviewed_at ?? null,
     competency: e.competency,
     intentions: { text: lesson.intentions, request_id: spoken(lesson.intentions, 'I') },
     steps: lesson.steps.map((s, i) => ({ text: s.text, request_id: spoken(s.text, `L${i}`), check: question(s.check, `L${i}q`) })),
