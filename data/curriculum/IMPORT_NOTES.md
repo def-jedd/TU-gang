@@ -35,3 +35,14 @@ python scripts/validate_curriculum.py
 ```
 
 The extractor reads each table cell separately, so week numbers and neighbouring columns never mix into the competency text. Every extracted competency was also checked against the PDF's own text.
+
+## ⚠ Keep the order: append only
+
+Student progress on NFC profile cards is stored as **bitsets over each grade's entry order**
+(`apps/mobile/src/profiles/profileCard.ts`). Reordering or deleting entries would move
+students' progress onto the wrong lessons. Add new entries at the **end** of a grade file,
+then rebuild the app's copy:
+
+```bash
+python scripts/build_mobile_curriculum.py
+```

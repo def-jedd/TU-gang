@@ -6,6 +6,8 @@ import agoraToken from 'agora-token';
 import { env, publicDir } from '../lib/env.js';
 import type { Language } from '../types/tutor.js';
 import { client, makeTts, VoiceError } from './agora.js';
+import { bikolExamples } from './bikolExamples.js';
+import { curriculumEntry } from './lessons.js';
 
 /**
  * Live voice CALLS (two-way): the student talks, Agora's agent hears them
@@ -21,6 +23,8 @@ export type Difficulty = 'very_simple' | 'simple' | 'normal';
 export type Style = 'teacher' | 'friend' | 'ate_kuya';
 
 export type CallContext = {
+  /** DepEd lesson id (data/curriculum): the call becomes a guided ILAW lesson. */
+  lesson: string | null;
   topic: string | null;
   question: string | null;
   language: Language;
@@ -73,40 +77,34 @@ const ASR_LANGUAGE: Record<Language, 'fil-PH' | 'en-US'> = {
   english: 'en-US',
 };
 
-// Speaker-reviewed Bikol tutoring lines from Jed's dataset. Without them Gemini
-// drifts into Tagalog (seen in testing). Wording only, never facts.
-const CHUNKS_PATH = join(publicDir, '../../bikol-rag-cli/data/processed/bikol_chunks.json');
-type Chunk = { role?: string; topic?: string; text?: string };
-let chunks: Chunk[] | undefined;
-
-function bikolExamples(topic: string | null, count = 5): string {
-  if (chunks === undefined) {
-    try {
-      const raw = JSON.parse(readFileSync(CHUNKS_PATH, 'utf8')) as Chunk[] | { chunks: Chunk[] };
-      chunks = (Array.isArray(raw) ? raw : raw.chunks).filter((c) => c.role === 'tutoring_style' && c.text);
-    } catch {
-      chunks = [];
-      console.warn(`[call] no Bikol examples at ${CHUNKS_PATH}; Bikol calls may drift into Tagalog`);
-    }
-  }
-  const wanted = topic ? topicName(topic) : '';
-  const picked = [...chunks].sort((a, b) => Number(b.topic === wanted) - Number(a.topic === wanted)).slice(0, count);
-  if (!picked.length) return '';
-  const lines = picked.map((c) => c.text).join('\n\n');
-  return `\nBIKOL EXAMPLES (wording and style only; not facts for other topics)\n${lines}\n`;
-}
-
 const SIMPLER: Record<Difficulty, Difficulty> = { normal: 'simple', simple: 'very_simple', very_simple: 'very_simple' };
 
 const topicName = (topic: string) => topic.replace(/^TOPIC_/i, '').replace(/[_-]+/g, ' ').toLowerCase();
 
 export function buildSystemPrompt(ctx: CallContext, template = readFileSync(PROMPT_PATH, 'utf8')): string {
-  const topicRule = ctx.topic
-    ? `The student chose the topic "${topicName(ctx.topic)}". Teach that first, then answer any question they ask, even about other things.`
-    : 'No topic yet. Let the student ask about anything a student should learn.';
+  const lesson = ctx.lesson ? curriculumEntry(ctx.lesson) : null;
+  const topicRule = lesson
+    ? [
+        `This call is a LESSON. You are a tutor, not a search engine. The DepEd Grade ${lesson.grade} ` +
+          `${lesson.subject.replace(/_/g, ' ')} competency to teach is:`,
+        `"${lesson.competency}"`,
+        'Follow the ILAW steps, one short turn at a time:',
+        '1. Intentions: in one sentence, say what the student will be able to do today.',
+        '2. Learning: teach in two or three small steps. After EACH step, ask one short question and stop talking ' +
+          'to wait for the answer. If it is right, praise briefly and go on. If it is wrong, explain kindly and ask an easier question.',
+        '3. Assessment: when the steps are done, give an oral quiz of three questions, one at a time, waiting for ' +
+          'each answer. Then say how many they got right.',
+        '4. Ways forward: one-sentence recap and one small thing to practise at home.',
+        'If the student asks about something else, answer briefly, then bring them back to the lesson.',
+      ].join('\n')
+    : ctx.topic
+      ? `The student chose the topic "${topicName(ctx.topic)}". Teach it in small steps. After each step, ask one short ` +
+        'question and wait for the answer before going on. Then answer any question they ask, even about other things.'
+      : 'No topic yet. Let the student ask about anything a student should learn. After you explain something, ask one ' +
+        'short question to check they understood, and wait for the answer.';
   return template
     .replaceAll('{{LANGUAGE_RULE}}', LANGUAGE_RULE[ctx.language])
-    .replaceAll('{{EXAMPLES}}', ctx.language === 'bikol_daet' ? bikolExamples(ctx.topic) : '')
+    .replaceAll('{{EXAMPLES}}', ctx.language === 'bikol_daet' ? bikolExamples(ctx.topic ? topicName(ctx.topic) : null) : '')
     .replaceAll('{{TOPIC_RULE}}', topicRule)
     .replaceAll('{{DIFFICULTY}}', ctx.difficulty)
     .replaceAll('{{STYLE}}', ctx.style);
@@ -121,6 +119,7 @@ const systemMessages = (ctx: CallContext) => [{ role: 'system', content: buildSy
 
 /** What the tutor should say first once the student is in the call. */
 export function openingInstruction(ctx: CallContext): string | null {
+  if (ctx.lesson && curriculumEntry(ctx.lesson)) return 'Start the lesson now: say the Intentions, then teach step one and ask its question.';
   if (ctx.question) return `The student asks: "${ctx.question}". Answer it now.`;
   if (ctx.topic) return `Explain "${topicName(ctx.topic)}" to the student now.`;
   return null; // the greeting already asked what they want to learn
@@ -255,6 +254,7 @@ export async function controlCall(id: string, control: CallControl): Promise<voi
     case 'set_topic':
       ctx.topic = control.value;
       ctx.question = null;
+      ctx.lesson = null;
       await updatePrompt(call);
       await instruct(call, `The student picked a new topic card: "${topicName(control.value)}". Explain it now.`, true);
       return;

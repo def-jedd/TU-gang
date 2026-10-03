@@ -4,6 +4,7 @@ import express, { type ErrorRequestHandler } from 'express';
 import { env, publicDir } from './lib/env.js';
 import { explainRouter } from './routes/explain.js';
 import { healthRouter } from './routes/health.js';
+import { lessonsRouter } from './routes/lessons.js';
 import { voiceRouter } from './routes/voice.js';
 import { stopAllListens, VoiceError } from './services/agora.js';
 import { stopAllCalls } from './services/conversation.js';
@@ -14,6 +15,7 @@ app.use(express.json({ limit: '16kb' }));
 
 app.use('/api/health', healthRouter);
 app.use('/api/explain', explainRouter);
+app.use('/api/lessons', lessonsRouter);
 app.use('/api/voice', voiceRouter);
 
 if (env.ENABLE_VOICE_TEST_PAGE) {

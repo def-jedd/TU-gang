@@ -1,7 +1,7 @@
 import { File, Paths } from 'expo-file-system';
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 
-import { cleanName, markDone, mergeProfiles, newProfileId, type Avatar, type Profile } from './profileCard';
+import { cleanName, markDone, mergeProfiles, newProfileId, normalizeProfile, recordExam, type Avatar, type Profile } from './profileCard';
 
 /**
  * Students on THIS phone. Progress is saved here automatically, and onto the
@@ -19,8 +19,10 @@ type ProfilesValue = {
   remove: (id: string) => void;
   /** A profile card was tapped: merge it into this phone and switch to it. */
   importFromCard: (card: Profile) => Profile;
-  /** The active student finished a lesson (topic or curriculum id). */
+  /** Track 1 — the active student READ/heard a lesson (topic or curriculum id). */
   markLessonDone: (lesson: string) => void;
+  /** Track 2 — the active student took a lesson's exam (score 0–100). */
+  recordExamResult: (lesson: string, score: number) => void;
 };
 
 const Ctx = createContext<ProfilesValue | null>(null);
@@ -39,7 +41,9 @@ async function load(): Promise<Saved> {
     const file = storeFile();
     if (!file?.exists) return empty;
     const data = JSON.parse(await file.text()) as Saved;
-    return Array.isArray(data.profiles) ? data : empty;
+    if (!Array.isArray(data.profiles)) return empty;
+    // Saves from before exams existed have no `passed`/`scores`.
+    return { ...data, profiles: data.profiles.map(normalizeProfile) };
   } catch {
     return empty;
   }
@@ -99,6 +103,8 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
         grade: Math.min(9, Math.max(1, Math.round(input.grade))),
         avatar: input.avatar,
         done: [],
+        passed: [],
+        scores: {},
       };
       upsert(profile, true);
       return profile;
@@ -137,6 +143,15 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     [upsert],
   );
 
+  const recordExamResult = useCallback(
+    (lesson: string, score: number) => {
+      const current = dataRef.current;
+      const active = current.profiles.find((p) => p.id === current.activeId);
+      if (active) upsert(recordExam(active, lesson, score), true);
+    },
+    [upsert],
+  );
+
   const value = useMemo<ProfilesValue>(
     () => ({
       ready,
@@ -147,8 +162,9 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       remove,
       importFromCard,
       markLessonDone,
+      recordExamResult,
     }),
-    [data, ready, setActive, create, remove, importFromCard, markLessonDone],
+    [data, ready, setActive, create, remove, importFromCard, markLessonDone, recordExamResult],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

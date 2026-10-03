@@ -99,6 +99,7 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
       agentRef.current?.stop();
       const d = draftRef.current;
       const context: VoiceContext = {
+        lesson: null,
         topic: d.topic,
         question: d.question.trim() || null,
         language: d.language,

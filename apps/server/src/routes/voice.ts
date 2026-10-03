@@ -67,6 +67,7 @@ const style = z.enum(['teacher', 'friend', 'ate_kuya']);
 const topic = z.string().trim().min(1).max(60).regex(/^[A-Za-z0-9_ -]+$/);
 
 const callSchema = z.object({
+  lesson: z.string().regex(/^g[1-9]-[a-z_]+-w\d{1,2}-\d{1,3}$/).nullable().default(null),
   topic: topic.nullable().default(null),
   question: z.string().trim().min(1).max(300).nullable().default(null),
   language: language.default('bikol_daet'),
