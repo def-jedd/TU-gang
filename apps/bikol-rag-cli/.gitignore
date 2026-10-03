@@ -1,0 +1,5 @@
+__pycache__/
+data/embeddings/
+data/processed/
+data/raw/
+data/models/
