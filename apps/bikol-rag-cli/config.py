@@ -1,6 +1,24 @@
 import os
+from pathlib import Path
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def load_local_env():
+    """Load simple KEY=VALUE settings from this CLI's untracked .env file."""
+    path = Path(BASE_DIR) / ".env"
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        if key.strip() in {"GEMINI_API_KEY", "BIKOL_PROVIDER", "GEMINI_MODEL"}:
+            os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+load_local_env()
 
 CHUNKS_PATH = os.path.join(BASE_DIR, "data", "processed", "bikol_chunks.json")
 EMBEDDINGS_PATH = os.path.join(BASE_DIR, "data", "embeddings", "embeddings.npy")
@@ -10,9 +28,12 @@ EMBEDDING_MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
 FACT_MODEL_NAME = os.getenv("BIKOL_FACT_MODEL", "gemma3:4b")
 GENERATION_MODEL_NAME = os.getenv("BIKOL_LLM_MODEL", "bikol-tutor-q4")
 
-# "ollama" (local placeholder) or "kiro" (Kiro CLI headless; see providers/kiro.py).
+GEMINI_MODEL_NAME = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
+
+# "gemini" (the team's hosted model; needs GEMINI_API_KEY), "ollama" (local
+# placeholder) or "kiro" (Kiro CLI headless; see providers/kiro.py).
 # The API reports this value as `provider`, so the app always shows who answered.
-ACTIVE_PROVIDER = os.getenv("BIKOL_PROVIDER", "ollama")
+ACTIVE_PROVIDER = os.getenv("BIKOL_PROVIDER", "ollama").lower()
 
 TOP_GENERAL_CHUNKS = 1
 TOP_CUSTOM_CHUNKS = 3

@@ -2,6 +2,7 @@
 
 import config
 from answer_check import clearly_english
+from prompt_builder import build_full_answer_prompt
 from tutor import generate_sentences, load_providers, load_retriever, readiness_error
 
 
@@ -38,17 +39,23 @@ def main():
             print(f"[{item['source']}] {preview} - {item['score']:.2f} ({item['retrieval_use']})")
 
         try:
-            sentences = generate_sentences(fact_provider, answer_provider, question, references)
-            response = "\n".join(f"{number}. {sentence}" for number, sentence in enumerate(sentences, 1))
+            if fact_provider is None:
+                # Hosted one-call flow (Gemini): a full answer with section labels.
+                response = answer_provider.generate(build_full_answer_prompt(question, references))
+            else:
+                # The local flow drafts academic facts first, then expresses
+                # each fact in Bikol using the retrieved examples.
+                sentences = generate_sentences(fact_provider, answer_provider, question, references)
+                response = "\n".join(f"{number}. {sentence}" for number, sentence in enumerate(sentences, 1))
         except (RuntimeError, ValueError) as error:
             print(f"\n{error}\n")
             continue
 
         if clearly_english(response):
-            print("\nOllama returned English. This is not a Bikol tutor answer.")
+            print(f"\n{config.ACTIVE_PROVIDER} returned English. This is not a Bikol tutor answer.")
             print("English draft for debugging:\n")
         else:
-            print("\nTutor (draft; native review needed):\n")
+            print(f"\nTutor via {config.ACTIVE_PROVIDER} (draft; native review needed):\n")
         print(response + "\n")
         print("-" * 40 + "\n")
 

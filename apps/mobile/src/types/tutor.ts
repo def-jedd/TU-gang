@@ -11,7 +11,7 @@ export type Difficulty = 'very_simple' | 'simple' | 'normal';
 export type TeachingStyle = 'teacher' | 'friend' | 'ate_kuya';
 export type TutorAction = 'explain' | 'explain_differently';
 /** `ollama` = local placeholder model; `kiro` = Kiro CLI (the planned agent model). */
-export type Provider = 'ollama' | 'kiro' | 'quick' | 'approved_fallback' | 'mock';
+export type Provider = 'gemini' | 'ollama' | 'kiro' | 'quick' | 'approved_fallback' | 'mock';
 
 /** Request body. Key order matches the agreed JSON so logs are easy to diff. */
 export type ExplainRequest = {

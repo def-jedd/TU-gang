@@ -23,7 +23,7 @@ from starlette.exceptions import HTTPException
 
 import config
 from answer_check import clearly_english
-from tutor import generate_sentences, load_providers, load_retriever, readiness_error
+from tutor import generate_answer, load_providers, load_retriever, readiness_error
 
 providers = load_providers()
 retriever = None
@@ -97,23 +97,19 @@ def explain(request: ExplainRequest):
 
     references = retriever.retrieve(question, config.TOP_GENERAL_CHUNKS, config.TOP_CUSTOM_CHUNKS)
     try:
-        sentences = generate_sentences(*providers, question, references,
-                                       request.difficulty, request.style, request.action)
+        answer = generate_answer(*providers, question, references,
+                                 request.difficulty, request.style, request.action)
     except (RuntimeError, ValueError) as failure:
         return error(502, str(failure))
-    if clearly_english(" ".join(sentences)):
+    if clearly_english(" ".join([answer["explanation"], answer["example"], *answer["key_points"]])):
         return error(502, "The model answered in English instead of Bikol. Please try again.")
 
     matched = next((ref["topic"] for ref in references if ref.get("retrieval_use") == "topic_and_style"), None)
-    # Sentences are: direct answer, reason, everyday example. Key points stay
-    # empty rather than repeating them, because practice voice reads every field aloud.
     return {
         "request_id": uuid.uuid4().hex,
         "topic": request.topic or matched,
         "language": request.language,
-        "explanation": " ".join(sentences[:2]),
-        "example": sentences[2],
-        "key_points": [],
+        **answer,  # explanation, example, key_points (see tutor.generate_answer)
         "source_ids": [ref["id"] for ref in references],
         "provider": config.ACTIVE_PROVIDER,
     }

@@ -35,6 +35,8 @@ export function LanguageBadge({ t }: { t: Copy }) {
  */
 export function ProviderBadge({ provider, t }: { provider: ExplainResponse['provider']; t: Copy }) {
   switch (provider) {
+    case 'gemini':
+      return <Pill icon="creation" label={t.providerGemini} fg={colors.success} bg={colors.successTint} />;
     case 'kiro':
       return <Pill icon="lightning-bolt" label={t.providerKiro} fg={colors.success} bg={colors.successTint} />;
     case 'ollama':

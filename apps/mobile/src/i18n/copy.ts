@@ -52,6 +52,7 @@ const en = {
   goBack: 'Go back',
   nothingYet: 'No question yet.',
 
+  providerGemini: 'Answered by Gemini AI',
   providerOllama: 'Answered by local AI (Ollama)',
   providerKiro: 'Answered by Kiro AI',
   providerQuick: 'Answered by Amazon Quick',
@@ -165,6 +166,7 @@ const bik: Copy = {
   goBack: 'Magbalik',
   nothingYet: 'Mayo pang hapot.',
 
+  providerGemini: 'Simbag hale sa Gemini AI',
   providerOllama: 'Simbag hale sa local na AI (Ollama)',
   providerKiro: 'Simbag hale sa Kiro AI',
   providerQuick: 'Simbag hale sa Amazon Quick',

@@ -4,9 +4,9 @@ Hackathon plan for a Bikol-first educational tutor. A student asks an open-ended
 
 ## Working retrieval prototype
 
-The [command-line prototype](apps/bikol-rag-cli/README.md) is a working copy of the team's existing Ollama CLI. It now indexes the [20 reviewed tutoring examples](data/bikol_examples.json) using their English descriptions and passes selected Bikol responses as teaching-style references. The original CLI folder on the Desktop is unchanged. Supabase and Amazon Quick are not connected yet.
+The [command-line prototype](apps/bikol-rag-cli/README.md) is a working copy of the team's existing Ollama CLI. It now indexes the [20 reviewed tutoring examples](data/bikol_examples.json) using their English descriptions and passes selected Bikol responses as teaching-style references. It can generate through local Ollama or Gemini when configured. The original CLI folder on the Desktop is unchanged. Supabase and Amazon Quick are not connected yet.
 
-The [mobile app](apps/mobile/README.md) talks to this same tutor through `apps/bikol-rag-cli/server.py`, which serves the shared contract below. Ollama is the placeholder model; Kiro is the planned one, and switching is one environment variable ([details](apps/bikol-rag-cli/README.md#switching-to-kiro)).
+The [mobile app](apps/mobile/README.md) talks to this same tutor through `apps/bikol-rag-cli/server.py`, which serves the shared contract below. Gemini is the team's chosen model and Ollama the local placeholder; switching is one environment variable ([details](apps/bikol-rag-cli/README.md#choosing-the-model)).
 
 ## Team handoffs
 
