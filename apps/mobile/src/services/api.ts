@@ -43,7 +43,7 @@ export async function checkHealth(): Promise<HealthResult> {
   }
 }
 
-async function requestJson(
+export async function requestJson(
   url: string,
   init: RequestInit,
   timeoutMs: number,
@@ -66,6 +66,8 @@ async function requestJson(
     } catch {
       throw abortReason() ?? new TutorError('network', `Could not reach ${url}`);
     }
+
+    if (response.status === 204) return null; // e.g. DELETE /api/voice/sessions/:id
 
     let json: unknown = null;
     try {

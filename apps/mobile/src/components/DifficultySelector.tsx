@@ -7,13 +7,18 @@ type Props = {
   value: Difficulty;
   onChange: (value: Difficulty) => void;
   compact?: boolean;
+  /** Override the heading (e.g. "Who do you want to talk to?" on the voice home). */
+  title?: string;
+  /** Speak labels aloud on tap (voice-first screens). */
+  speakable?: boolean;
 };
 
-export function DifficultySelector({ value, onChange, compact }: Props) {
+export function DifficultySelector({ value, onChange, compact, title, speakable }: Props) {
   const { t, uiLang } = useTutor();
   return (
     <ChoiceGroup
-      title={t.difficultyTitle}
+      title={title ?? t.difficultyTitle}
+      speakable={speakable ? t.hearThis : undefined}
       titleIcon="stairs"
       palette="level"
       value={value}

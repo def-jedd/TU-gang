@@ -3,6 +3,8 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 import { AppState } from 'react-native';
 
 import { useTutor, type CardOutcome } from '../hooks/useTutor';
+import { INTERACTION_MODE } from '../services/config';
+import { useVoice } from '../voice/VoiceProvider';
 import { UID_TO_CARD } from './cards';
 import { parseCardCode } from './cardReducer';
 import { nfcReader } from './reader';
@@ -39,6 +41,7 @@ function cardCodeFromTag(tag: ScannedTag): string | null {
  */
 export function NfcProvider({ children }: { children: ReactNode }) {
   const { applyCard } = useTutor();
+  const voice = useVoice();
   const pathname = usePathname();
   const [availability, setAvailability] = useState<NfcAvailability>('checking');
   const [scanning, setScanning] = useState(false);
@@ -47,17 +50,35 @@ export function NfcProvider({ children }: { children: ReactNode }) {
   // The native listener is registered once; these refs let it always call the
   // latest callbacks without re-registering on every render.
   const applyRef = useRef(applyCard);
+  const voiceRef = useRef(voice);
   const pathRef = useRef(pathname);
   useEffect(() => {
     applyRef.current = applyCard;
+    voiceRef.current = voice;
     pathRef.current = pathname;
-  }, [applyCard, pathname]);
+  }, [applyCard, voice, pathname]);
 
   const tapCard = useCallback((code: string) => {
-    const outcome = applyRef.current(code);
+    const outcome = routeCard(code);
     setLastScan({ code, outcome, at: Date.now() });
-    if (outcome.kind === 'submitted' && pathRef.current !== '/result') router.push('/result');
     return outcome;
+
+    function routeCard(raw: string): CardOutcome {
+      const call = voiceRef.current;
+      // During a call, every card steers the tutor (e.g. "Very simple" → re-explain).
+      if (call.active) return call.applyCardInCall(raw);
+
+      // Voice-first: "Explain" starts a call about the cards picked so far.
+      if (INTERACTION_MODE === 'voice' && parseCardCode(raw)?.type === 'SUBMIT') {
+        call.startCall();
+        if (pathRef.current !== '/call') router.push('/call');
+        return { kind: 'submitted' };
+      }
+
+      const result = applyRef.current(raw);
+      if (result.kind === 'submitted' && pathRef.current !== '/result') router.push('/result');
+      return result;
+    }
   }, []);
 
   const handleTag = useCallback(

@@ -4,10 +4,12 @@ import { colors, radius, space, touch } from '../theme/tokens';
 import { AppText } from './AppText';
 import { Icon, type IconName } from './Icon';
 
-type Variant = 'primary' | 'accent' | 'secondary';
+type Variant = 'primary' | 'accent' | 'secondary' | 'call' | 'hangup';
 
 const PALETTE: Record<Variant, { face: string; lip: string; text: string; border?: string }> = {
   primary: { face: colors.primary, lip: colors.primaryLip, text: colors.onPrimary },
+  call: { face: colors.call, lip: colors.callLip, text: colors.onPrimary },
+  hangup: { face: colors.hangup, lip: colors.hangupLip, text: colors.onPrimary },
   accent: { face: colors.accent, lip: colors.accentLip, text: colors.onAccent },
   secondary: { face: colors.surface, lip: colors.borderStrong, text: colors.ink, border: colors.borderStrong },
 };

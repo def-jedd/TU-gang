@@ -7,13 +7,18 @@ type Props = {
   value: TeachingStyle;
   onChange: (value: TeachingStyle) => void;
   compact?: boolean;
+  /** Override the heading (e.g. "Who do you want to talk to?" on the voice home). */
+  title?: string;
+  /** Speak labels aloud on tap (voice-first screens). */
+  speakable?: boolean;
 };
 
-export function TeachingStyleSelector({ value, onChange, compact }: Props) {
+export function TeachingStyleSelector({ value, onChange, compact, title, speakable }: Props) {
   const { t, uiLang } = useTutor();
   return (
     <ChoiceGroup
-      title={t.styleTitle}
+      title={title ?? t.styleTitle}
+      speakable={speakable ? t.hearThis : undefined}
       titleIcon="account-voice"
       palette="style"
       value={value}

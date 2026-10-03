@@ -16,6 +16,7 @@ import type { Copy } from '@/i18n/copy';
 import { buildExplainRequest, type LearningDraft } from '@/nfc/cardReducer';
 import { ACTION_CARDS, LANGUAGE_CARDS, LEVEL_CARDS, STYLE_CARDS, TOPIC_CARDS, type CardDef } from '@/nfc/cards';
 import { useNfc, type LastScan } from '@/nfc/NfcProvider';
+import { INTERACTION_MODE } from '@/services/config';
 import { category, colors, radius, space, type CardCategory } from '@/theme/tokens';
 
 export default function CardsScreen() {
@@ -70,7 +71,13 @@ export default function CardsScreen() {
         <View style={styles.trayWrap}>
           <CardTray draft={draft} t={t} lang={uiLang} />
           <ScanFeedback scan={lastScan} t={t} />
-          <Button label={t.explainButton} icon="lightbulb-on" onPress={() => tapCard('ACTION_EXPLAIN')} />
+          {/* Same path as tapping the physical ACTION_EXPLAIN card. */}
+          <Button
+            label={INTERACTION_MODE === 'voice' ? t.callAboutIt : t.explainButton}
+            icon={INTERACTION_MODE === 'voice' ? 'phone' : 'lightbulb-on'}
+            variant={INTERACTION_MODE === 'voice' ? 'call' : 'primary'}
+            onPress={() => tapCard('ACTION_EXPLAIN')}
+          />
         </View>
 
         {deck(t.deckTopics, 'shape', 'topic', TOPIC_CARDS)}

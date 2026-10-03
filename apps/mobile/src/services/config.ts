@@ -19,6 +19,25 @@ export const REQUEST_TIMEOUT_MS = Number(process.env.EXPO_PUBLIC_REQUEST_TIMEOUT
 export const DEFAULT_UI_LANG: UiLang = process.env.EXPO_PUBLIC_UI_LANG === 'bik' ? 'bik' : 'en';
 
 /**
+ * Voice engine for calls:
+ * - `simulated` (default): practice voice — device speech, works in Expo Go,
+ *   cannot hear the student. Always labelled as practice.
+ * - `agora`: live Agora Conversational AI agent. Needs the dev build AND the
+ *   backend's /api/voice/sessions route; falls back to practice (with an
+ *   on-screen notice) when either is missing.
+ */
+export const VOICE_MODE: 'agora' | 'simulated' = process.env.EXPO_PUBLIC_VOICE_MODE === 'agora' ? 'agora' : 'simulated';
+
+/** Voice-first by default; `text` makes cards/Explain use the reading flow. */
+export const INTERACTION_MODE: 'voice' | 'text' = process.env.EXPO_PUBLIC_INTERACTION === 'text' ? 'text' : 'voice';
+
+/** Speak button labels aloud when tapped (for students who can't read them). */
+export const SPOKEN_LABELS = process.env.EXPO_PUBLIC_SPOKEN_LABELS !== 'false';
+
+/** Show words on screen during calls by default (teachers, judges, read-along). */
+export const CAPTIONS_DEFAULT = process.env.EXPO_PUBLIC_CAPTIONS === 'true';
+
+/**
  * Features that stay HIDDEN until they really work end-to-end.
  * `listen`: flip on only after the Agora/TTS route passes the native-speaker
  * pronunciation check (Teammates 3 & 4). Never show a button that fakes it.

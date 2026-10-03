@@ -33,6 +33,12 @@ export const colors = {
   warnTint: '#FFF0E0',
   success: '#2F7D32',
   successTint: '#E7F4E4',
+
+  // Phone-call conventions every child already knows: green = call, red = hang up.
+  call: '#2F7D32',
+  callLip: '#1F5C22',
+  hangup: '#C62828',
+  hangupLip: '#8E1B1B',
 } as const;
 
 export type CategoryPalette = { solid: string; lip: string; tint: string; ink: string };

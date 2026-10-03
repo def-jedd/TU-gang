@@ -10,6 +10,7 @@ import { iconFont } from '@/components/Icon';
 import { TutorProvider } from '@/hooks/useTutor';
 import { NfcProvider } from '@/nfc/NfcProvider';
 import { colors } from '@/theme/tokens';
+import { VoiceProvider } from '@/voice/VoiceProvider';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -32,16 +33,18 @@ export default function RootLayout() {
 
   return (
     <TutorProvider>
-      <NfcProvider>
-        <StatusBar style="dark" />
-        <Stack
-          screenOptions={{
-            headerShown: false,
-            contentStyle: { backgroundColor: colors.bg },
-            animation: 'slide_from_right',
-          }}
-        />
-      </NfcProvider>
+      <VoiceProvider>
+        <NfcProvider>
+          <StatusBar style="dark" />
+          <Stack
+            screenOptions={{
+              headerShown: false,
+              contentStyle: { backgroundColor: colors.bg },
+              animation: 'slide_from_right',
+            }}
+          />
+        </NfcProvider>
+      </VoiceProvider>
     </TutorProvider>
   );
 }

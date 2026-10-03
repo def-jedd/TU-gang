@@ -9,7 +9,10 @@
     "userInterfaceStyle": "light",
     "ios": {
       "icon": "./assets/expo.icon",
-      "bundleIdentifier": "com.tugang.tutor"
+      "bundleIdentifier": "com.tugang.tutor",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "TU-gang uses the microphone so you can talk with your tutor."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +22,11 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.tugang.tutor"
+      "package": "com.tugang.tutor",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "output": "single",
