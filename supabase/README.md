@@ -24,14 +24,31 @@ Only the English side is embedded (`topic`, `student_question`, `english_concept
 
 ## Load the dataset
 
+`sync-examples` takes rows in the **database column names** below. The team's `data/bikol_examples.json` uses different names, so map them first:
+
+| `data/bikol_examples.json` | Database column |
+|---|---|
+| `student_question_en` | `student_question` |
+| `student_question_bikol` | `bikol_question` |
+| `english_explanation` + `english_analogy` | `english_concept` (joined with a space) |
+| `bikol_explanation` | `native_corrected_bikol` (if reviewed) or `ai_draft_bikol` (if draft) |
+| `bikol_analogy` | `bikol_example` |
+| `review_note` | `review_notes` |
+| `topic`, `subject`, `difficulty`, `style`, `review_status`, `region_label` | same name |
+
 ```bash
 curl -X POST "$SUPABASE_URL/functions/v1/sync-examples" \
   -H "apikey: $SUPABASE_SECRET_KEY" -H "content-type: application/json" \
-  -d "{\"examples\": $(cat data/bikol_examples.json)}"
-# -> {"upserted":20,"embedded":20,"failed":[],"model":"gte-small"}
+  -d '{"examples": [ ...mapped rows... ]}'
+# -> {"upserted":20,"embedded":8,"remaining":12,"failed":[],"model":"gte-small"}
+
+# Embedding runs in batches of 8 (more hits the function's compute limit).
+# Call again with an empty body until "remaining" is 0:
+curl -X POST "$SUPABASE_URL/functions/v1/sync-examples" \
+  -H "apikey: $SUPABASE_SECRET_KEY" -H "content-type: application/json" -d '{}'
 ```
 
-Re-running is safe: rows upsert by `id`, and only missing embeddings are generated. Send `"force": true` to re-embed everything.
+Re-running is safe: rows upsert by `id`, and only missing embeddings are generated. `"force": true` clears all embeddings so they're rebuilt over the next calls.
 Required per example: `id`, `topic`, `english_concept`. Rows with no Bikol text are stored but never retrieved.
 
 ## Retrieve examples (from Express)
@@ -42,7 +59,7 @@ curl -X POST "$SUPABASE_URL/functions/v1/retrieve-examples" \
   -d '{"question":"Why do we have earthquakes?","topic":null,"difficulty":"simple","style":"ate_kuya"}'
 ```
 
-Optional: `match_count` (1–10, default 3), `reviewed_only` (default `true`; set `false` while everything is still a draft), `min_similarity` (default `0.80`).
+Optional: `match_count` (1–10, default 3), `reviewed_only` (default `true`; `false` also returns drafts), `min_similarity` (default `0.80`).
 
 ```json
 {
@@ -65,27 +82,26 @@ The backend can also call the RPC directly (`supabase.rpc('match_tutoring_exampl
 
 ## Current data
 
-20 rows (`sample_001`–`sample_020`) loaded from the team's SAMPLE-BIKOLANO doc. The Bikol text is verbatim. English fields were written to describe each concept.
-- **All rows are `draft`** until a native speaker confirms them, so pass `reviewed_only: false` for now. With the default `true`, nothing is returned.
-- **`sample_011`, `sample_014` and `sample_019`** (one-half, division, handwashing) are English-only in the source. They're stored, but they won't be retrieved until Bikol is added.
-- **Review flags are in `review_notes`:**
-  - `sample_016`: *lugar* vs *hiwas* for "area".
-  - `sample_017`: *dahelan* vs *kawsa* for "cause".
-  - `sample_013`: *nin marikas*.
+20 rows (`sample_001`–`sample_020`) synced from the team's `data/bikol_examples.json` (built from `data/SAMPLE_BIKOLANO.md`).
+- **All 20 are `native_reviewed`.** The Bikol was provided by the team's Bikol-speaking member. The regional variety isn't specified, so `region_label` is empty; don't claim "Daet" in the demo unless that's confirmed.
+- **Every row has Bikol**: question, explanation and example.
+- **Topics match Jedrick's prototype**, e.g. `halves` and `equivalent_fractions` instead of one `fractions` topic. NFC topic cards should use these names.
 
-To promote a row after review, set `native_corrected_bikol` (the speaker's final text) and `review_status = 'native_reviewed'`.
+If the Bikol changes, re-sync from `data/bikol_examples.json` (mapping above) so Supabase and the repo stay identical.
 
-## Retrieval results on the 20 samples
+## Retrieval results (reviewed data, default settings)
 
 | Question | Top match (similarity) |
 |---|---|
 | Why does ice melt? | melting 0.92 |
 | Why do things drop to the floor? | gravity 0.87 |
 | How do plants get energy from the sun? | photosynthesis 0.88 |
-| What is a fraction? | fractions 0.87 |
-| How much fence do I need around my yard? | perimeter 0.83 |
-| Why do my wet clothes dry under the sun? | rain 0.84, evaporation 0.83 |
+| What does half mean? | halves 0.89 |
+| How do I share 6 pencils with 3 friends? | division 0.87 |
+| Why should I wash my hands? | handwashing 0.89 |
+| How much fence do I need around my yard? | perimeter 0.82 |
 | Explain black holes simply (not in dataset) | gravity 0.84 |
+| NFC topic `halves` | halves (exact topic) |
 | What is the capital of France? | fallback only |
 | Bakit natutunaw ang yelo? (Tagalog) | fallback only |
 

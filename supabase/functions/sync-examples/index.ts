@@ -2,7 +2,8 @@
 // Body: { "examples"?: Example[], "force"?: boolean }
 //
 // 1. Upserts examples (the data/bikol_examples.json array) if provided.
-// 2. Embeds every row that has no embedding yet (or all rows if force=true).
+// 2. Embeds up to 8 rows that have no embedding yet (force=true clears all first).
+//    Response includes "remaining"; call again with {} until it is 0.
 import { withSupabase } from "npm:@supabase/server@1";
 import {
   embed,
@@ -30,6 +31,8 @@ const WRITABLE_FIELDS = [
 ] as const;
 
 type ExampleInput = Record<string, unknown>;
+
+const EMBED_BATCH_SIZE = 8;
 
 function pickWritable(example: ExampleInput, index: number) {
   for (const field of ["id", "topic", "english_concept"]) {
@@ -76,11 +79,22 @@ export default {
       }
     }
 
-    let query = db
+    // Embedding is CPU-heavy; ~20 rows in one call exceeded the worker's compute
+    // limit. Do a batch per call and report what's left (call again until 0).
+    // "force" re-embeds everything by clearing embeddings first.
+    if (body.force) {
+      const { error } = await db
+        .from("tutoring_examples")
+        .update({ embedding: null, embedding_model: null })
+        .not("id", "is", null);
+      if (error) return json({ error: error.message }, 500);
+    }
+    const { data: pending, error: selectError } = await db
       .from("tutoring_examples")
-      .select("id, topic, student_question, english_concept");
-    if (!body.force) query = query.is("embedding", null);
-    const { data: pending, error: selectError } = await query;
+      .select("id, topic, student_question, english_concept")
+      .is("embedding", null)
+      .order("id")
+      .limit(EMBED_BATCH_SIZE);
     if (selectError) return json({ error: selectError.message }, 500);
 
     const failed: Array<{ id: string; error: string }> = [];
@@ -99,6 +113,11 @@ export default {
       }
     }
 
-    return json({ upserted, embedded, failed, model: EMBEDDING_MODEL });
+    const { count: remaining } = await db
+      .from("tutoring_examples")
+      .select("id", { count: "exact", head: true })
+      .is("embedding", null);
+
+    return json({ upserted, embedded, remaining: remaining ?? null, failed, model: EMBEDDING_MODEL });
   }),
 };
