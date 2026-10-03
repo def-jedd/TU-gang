@@ -25,7 +25,8 @@
       "package": "com.tugang.tutor",
       "permissions": [
         "android.permission.RECORD_AUDIO",
-        "android.permission.MODIFY_AUDIO_SETTINGS"
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.NFC"
       ]
     },
     "web": {
@@ -52,6 +53,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "ae46cd0f-87a0-4256-81c9-1874b4193235"
+      }
+    },
+    "owner": "jjoshua-sek"
   }
 }
