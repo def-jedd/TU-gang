@@ -1,4 +1,5 @@
 import { router } from 'expo-router';
+import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -14,6 +15,8 @@ import { TeachingStyleSelector } from '@/components/TeachingStyleSelector';
 import { useTutor } from '@/hooks/useTutor';
 import { topicCard } from '@/nfc/cards';
 import { FEATURES } from '@/services/config';
+import { listenSupported } from '@/voice/listen';
+import { useListen } from '@/voice/useListen';
 import { colors, radius, space, TEXT_SCALES, touch } from '@/theme/tokens';
 
 export default function ResultScreen() {
@@ -24,6 +27,13 @@ export default function ResultScreen() {
   const shown = status === 'loading' || status === 'error' ? lastRequest : (answeredRequest ?? lastRequest);
   const topic = topicCard(shown?.topic ?? null);
   const goHome = () => (router.canGoBack() ? router.back() : router.replace('/'));
+
+  // Listen only for real answers: a mock request_id doesn't exist on the voice server.
+  const listenEnabled =
+    FEATURES.listen && listenSupported() && status === 'success' && !!response && response.provider !== 'mock';
+  const listen = useListen(listenEnabled ? (response?.request_id ?? null) : null, listenEnabled);
+  const [tappedFor, setTappedFor] = useState<string | null>(null);
+  const listenTapped = !!response && tappedFor === response.request_id;
 
   return (
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
@@ -120,9 +130,28 @@ export default function ResultScreen() {
             onPress={tutor.explainDifferently}
             style={styles.flex}
           />
-          {/* Hidden until the voice route really works — see FEATURES in services/config.ts. */}
-          {FEATURES.listen ? (
-            <Button label={t.listen} icon="volume-high" variant="secondary" onPress={() => {}} style={styles.listen} />
+          {/* Agora Listen (Kiev's voice server). Hidden unless enabled, supported and the answer is real. */}
+          {listenEnabled ? (
+            <Button
+              label={
+                listen.state === 'playing'
+                  ? t.listenStop
+                  : listen.state === 'preparing' && listenTapped
+                    ? t.listenPreparing
+                    : listen.state === 'error'
+                      ? t.listenRetry
+                      : t.listen
+              }
+              icon={listen.state === 'playing' ? 'stop' : 'volume-high'}
+              variant="secondary"
+              loading={listen.state === 'preparing' && listenTapped}
+              onPress={() => {
+                if (listen.state === 'playing') return listen.stop();
+                setTappedFor(response?.request_id ?? null);
+                listen.play();
+              }}
+              style={styles.listen}
+            />
           ) : null}
         </View>
       ) : null}
