@@ -48,26 +48,45 @@ Write only the one Bikol sentence. No introduction or translation note.
 """
 
 
-def build_full_answer_prompt(student_question, retrieved_chunks):
-    """One-call prompt for a hosted model; examples teach style, not facts."""
+def build_full_answer_prompt(student_question, retrieved_chunks, language="bikol"):
+    """Build a hosted-model prompt with examples suited to the answer language."""
+    language = language.lower()
+    if language not in ("bikol", "tagalog", "english"):
+        raise ValueError(f"Unsupported answer language: {language}")
     tutoring = [chunk for chunk in retrieved_chunks if chunk.get("role") == "tutoring_style"]
-    language = [chunk for chunk in retrieved_chunks if chunk.get("role") == "language_style"]
-    examples = "\n\n".join(
-        f"Example {index} [{chunk['id']}; {chunk.get('retrieval_use', 'style_only')}]:\n{chunk['text']}"
-        for index, chunk in enumerate(tutoring, 1)
-    )
-    public = "\n".join(f"- {chunk['text']}" for chunk in language)
-    return f"""You are a patient educational tutor. Answer the student's new question in natural Bikol, using the speaker-reviewed teaching interactions below as examples of how to explain. The exact regional variety of these examples has not been specified.
 
-First understand the concept accurately. Teach it rather than translating an English answer word for word. Use an English academic term if a reliable Bikol term is unclear. Do not copy the examples' facts into an unrelated answer. If uncertain about a factual claim, say so. These examples demonstrate teaching style and are not factual sources for the new question.
+    if language == "bikol":
+        examples = "\n\n".join(
+            f"Example {index} [{chunk['id']}; {chunk.get('retrieval_use', 'style_only')}]:\n{chunk['text']}"
+            for index, chunk in enumerate(tutoring, 1)
+        )
+        public = "\n".join(
+            f"- {chunk['text']}" for chunk in retrieved_chunks if chunk.get("role") == "language_style"
+        )
+        intro = "Answer in natural Bikol. Use the speaker-reviewed Bikol teaching interactions below for teaching and wording style. Their exact regional variety is unspecified."
+        examples_heading = "Speaker-reviewed Bikol teaching examples"
+        public_section = f"Optional unreviewed public Bikol language references (wording only):\n{public or 'None'}\n\n"
+        final = "Write a concise Bikol explanation, relatable Bikol example sentences, and exactly three short Bikol key points. Do not include an English translation."
+    else:
+        name = "Tagalog" if language == "tagalog" else "English"
+        examples = "\n\n".join(
+            f"Example {index} [{chunk['id']}; {chunk.get('retrieval_use', 'style_only')}]:\n"
+            f"Student: {chunk['english_question']}\nTutor: {chunk['english_answer']}"
+            for index, chunk in enumerate(tutoring, 1)
+        )
+        intro = f"Answer in natural {name}. The examples below are English teaching examples for structure and simplicity; they have not been reviewed as {name} language examples."
+        examples_heading = "English teaching examples"
+        public_section = ""
+        final = f"Write a concise {name} explanation, relatable {name} example sentences, and exactly three short {name} key points. Write only in {name}, except for necessary technical terms. Do not add a translation."
 
-Speaker-reviewed teaching examples:
+    return f"""You are a patient educational tutor. {intro}
+
+First understand the concept accurately. Teach it rather than translating an English answer word for word. Do not copy the examples' facts into an unrelated answer. If uncertain about a factual claim, say so. These examples demonstrate teaching style and are not factual sources for the new question.
+
+{examples_heading}:
 {examples}
 
-Optional unreviewed public language references (wording only):
-{public or 'None'}
+{public_section}New student question: {student_question}
 
-New student question: {student_question}
-
-Write a concise Bikol explanation, relatable Bikol example sentences, and exactly three short Bikol key points. If the student asks for a specific number of example sentences, provide that number; otherwise provide one. Follow other reasonable format requests from the student. Use clear section labels. Do not include an English translation.
+{final} If the student asks for a specific number of example sentences, provide that number; otherwise provide one. Follow other reasonable format requests from the student. Use clear section labels.
 """

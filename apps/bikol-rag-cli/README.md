@@ -7,7 +7,7 @@ This is a working copy of the user's existing `Simple CLI rag/bikol-rag-cli` pro
 1. `prepare_data.py` reads the 20 reviewed records. It stores the English question and explanation as `retrieval_text`, and the Bikol teaching interaction as `text` for the prompt.
 2. `build_embeddings.py` embeds `retrieval_text` with the existing multilingual MiniLM model and records a SHA-256 corpus hash.
 3. `retrieval.py` selects topic-matched reviewed examples first and fills remaining slots with labeled teaching-style examples. An unseen question still gets examples, but they are **not factual sources** for that topic.
-4. `prompt_builder.py` uses those examples for phrasing and explicitly says their regional variety is unspecified.
+4. `prompt_builder.py` uses the Bikol side of each reviewed example for Bikol answers. For Tagalog and English answers, it uses the paired English examples as teaching-format references. The current dataset has no reviewed Tagalog wording.
 5. The existing Ollama two-stage generation is retained, and an optional Gemini path generates an answer in one API call. `providers/quick.py` is still a stub: this CLI does **not** call Amazon Quick.
 
 The original ten custom examples are kept as `data/custom/legacy_tutoring_examples.json` for inspection but are not ingested. The earlier `language_examples.json` drafts are also not ingested. This avoids silently mixing reviewed examples with unverified regional labels or draft sentences.
@@ -35,7 +35,19 @@ cd /d "C:\Users\richelle franconas\Desktop\Hackathon\apps\bikol-rag-cli"
 "C:\Users\richelle franconas\Desktop\Simple CLI rag\bikol-rag-cli\.venv\Scripts\python.exe" chat.py
 ```
 
-Gemini mode uses one API call per question with the retrieved examples; the local embedding model still selects the examples. The default Gemini model is `gemini-3.5-flash-lite`, which worked in a live test. `gemini-3.8-flash` returned HTTP 503 during that test. A process environment variable takes precedence over `.env` when both are set.
+Gemini mode uses one API call per question with the retrieved examples; the local embedding model still selects the examples. A process environment variable takes precedence over `.env` when both are set.
+
+### Choose the answer language
+
+When the CLI starts, it asks you to choose Bikol, Tagalog, or English by number or name. You can switch languages between questions with `/language tagalog`, `/language english`, or `/language bikol`. Tagalog and English currently require Gemini; the Ollama flow remains Bikol only. The choice controls the **answer language**, not a regional dialect. Questions can be entered in English or Tagalog, although retrieval for Tagalog questions has not yet been evaluated extensively.
+
+```text
+Language (number or name): 2
+Answer language: Tagalog
+You: Why does ice melt?
+```
+
+Generated Tagalog and English answers are drafts. The retrieved English examples show teaching structure; they are not native-reviewed Tagalog examples or factual sources for unrelated questions.
 
 If you edit `data/SAMPLE_BIKOLANO.md`, have the edited entries reviewed again, then run `python scripts/build_dataset.py --reviewed` from the repository root before rebuilding the corpus and embeddings. The hash check in `chat.py` rejects stale embeddings.
 

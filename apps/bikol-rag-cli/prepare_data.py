@@ -77,6 +77,10 @@ def main():
         chunks.append({
             "id": item["id"],
             "text": f"Student: {question}\nTutor: {explanation} {analogy}".strip(),
+            "english_question": item["student_question_en"],
+            "english_answer": " ".join(filter(None, (
+                item["english_explanation"], item.get("english_analogy"),
+            ))),
             "retrieval_text": " ".join(filter(None, (
                 item["topic"].replace("_", " "), item["student_question_en"],
                 item["english_explanation"], item.get("english_analogy"),
