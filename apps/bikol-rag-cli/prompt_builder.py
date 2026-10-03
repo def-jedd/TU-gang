@@ -90,3 +90,25 @@ First understand the concept accurately. Teach it rather than translating an Eng
 
 {final} If the student asks for a specific number of example sentences, provide that number; otherwise provide one. Follow other reasonable format requests from the student. Use clear section labels.
 """
+def build_tutor_prompt(student_question, retrieved_chunks, difficulty="simple",
+                       style="friend", action="explain", previous=None):
+    """User message for the app tutor. The system prompt lives in prompts/tutor_system.txt."""
+    tutoring = [c for c in retrieved_chunks if c.get("role") == "tutoring_style"]
+    examples = "\n\n".join(
+        f"Example {i} [{c['id']}; {c.get('retrieval_use', 'style_only')}]:\n{c['text']}"
+        for i, c in enumerate(tutoring, 1)
+    )
+    again = ""
+    if action == "explain_differently":
+        again = ("\nThe student did not understand the earlier answer. Use a different "
+                 "angle and a different example. Same facts, new wording.\n"
+                 f"Earlier answer (do not repeat it):\n{previous or 'not available'}\n")
+    return f"""Level: {difficulty}
+Style: {style}
+Action: {action}
+
+Speaker-reviewed Bikol examples (teaching style and phrasing only, not factual sources):
+{examples}
+{again}
+Student question: {student_question}
+"""
