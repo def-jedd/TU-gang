@@ -25,7 +25,7 @@ class GeminiProvider(LLMProvider):
         if json_output:
             # The mobile API needs fields, not prose. A truncated object is
             # unusable, so JSON answers get more room.
-            generation_config.update(responseMimeType="application/json", maxOutputTokens=1024)
+            generation_config.update(responseMimeType="application/json", maxOutputTokens=3072)
         try:
             response = requests.post(
                 url,

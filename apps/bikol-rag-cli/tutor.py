@@ -2,10 +2,23 @@
 
 import hashlib
 import json
+import re
 
 import config
 from prompt_builder import build_fact_prompt, build_full_answer_prompt, build_prompt, extract_facts, parse_answer_json
 from providers import get_provider
+
+
+VAGUE_CLAIM = re.compile(r"\b(important|mahalaga|importante|helpful|useful)\b|\bhelps? us (?:a lot|in many ways)\b", re.IGNORECASE)
+REASON_CUE = re.compile(r"\b(because|by|so that|dahil|kasi|upang|para|huli ta|tanganing)\b", re.IGNORECASE)
+
+
+def needs_more_detail(answer):
+    """Catch short, generic praise before sending an answer to the student."""
+    explanation = answer["explanation"]
+    if not VAGUE_CLAIM.search(explanation):
+        return False
+    return len(explanation.split()) < 10 or not REASON_CUE.search(explanation)
 
 
 def load_retriever():
@@ -69,7 +82,17 @@ def generate_answer(fact_provider, answer_provider, question, references,
         # Hosted one-call flow (Gemini): the model returns the fields as JSON.
         prompt = build_full_answer_prompt(question, references, language=language, difficulty=difficulty,
                                           style=style, action=action, as_json=True)
-        return parse_answer_json(answer_provider.generate(prompt, json_output=True))
+        answer = parse_answer_json(answer_provider.generate(prompt, json_output=True))
+        if needs_more_detail(answer):
+            repair_prompt = (prompt + "\nYour previous draft explanation was too vague: "
+                             + json.dumps(answer["explanation"], ensure_ascii=False)
+                             + "\nRewrite the complete JSON answer. State the actual cause or process and a "
+                               "specific result in the explanation. Keep the facts accurate and use the "
+                               "requested answer language. Do not say only that something is important.\n")
+            answer = parse_answer_json(answer_provider.generate(repair_prompt, json_output=True))
+            if needs_more_detail(answer):
+                raise ValueError("The tutor did not explain the reason clearly. Please try again.")
+        return answer
 
     if language != "bikol":
         raise ValueError("Tagalog and English answers currently require the Gemini provider.")

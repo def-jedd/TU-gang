@@ -62,6 +62,21 @@ class PromptTests(unittest.TestCase):
         self.assertIn("three short Tagalog key points", prompt)
         self.assertTrue(prompt.endswith(ANSWER_JSON_KEYS))
 
+    def test_prompt_requires_a_concrete_reason_even_at_simple_levels(self):
+        prompt = build_full_answer_prompt("Why do plants need sunlight?", [], difficulty="very_simple", as_json=True)
+        self.assertIn("name the cause, describe what happens, and connect it to the result", prompt)
+        self.assertIn("simplify the words, not the reasoning or completeness", prompt)
+        self.assertIn("Use as many short sentences and paragraphs as needed", prompt)
+
+    def test_prompt_covers_every_part_without_a_sentence_cap(self):
+        prompt = build_full_answer_prompt(
+            "How does a plant make food, and why does it need sunlight?", [], language="bikol", as_json=True)
+        self.assertIn("Answer each in order, with its own paragraph if the topics differ", prompt)
+        self.assertIn("relevant steps, causes, reasons, evidence, or consequences", prompt)
+        self.assertIn("not the length your new answer should have", prompt)
+        self.assertIn("Prefer a real observation or event over a metaphor", prompt)
+        self.assertNotIn("two to four short sentences", prompt)
+
 
 class TutorDispatchTests(unittest.TestCase):
     def test_gemini_uses_its_own_model_and_no_fact_model(self):
@@ -81,6 +96,39 @@ class TutorDispatchTests(unittest.TestCase):
         prompt, json_output = provider.calls[0]
         self.assertTrue(json_output)
         self.assertIn("friendly classmate", prompt)
+
+    def test_vague_answer_is_rewritten_once_with_a_reason(self):
+        class TwoReplies(FakeProvider):
+            def __init__(self):
+                super().__init__("")
+                self.replies = [
+                    {"explanation": "It is very important.", "example": "It helps us.", "key_points": []},
+                    {"explanation": "Sunlight gives plants energy to make sugar from water and air.",
+                     "example": "A plant by a window gets sunlight.", "key_points": ["Plants need light."]},
+                ]
+
+            def generate(self, prompt, json_output=False):
+                self.calls.append((prompt, json_output))
+                return json.dumps(self.replies.pop(0))
+
+        provider = TwoReplies()
+        answer = tutor.generate_answer(None, provider, "Why do plants need sunlight?", [], language="english")
+        self.assertIn("make sugar", answer["explanation"])
+        self.assertEqual(len(provider.calls), 2)
+        self.assertIn("too vague", provider.calls[1][0])
+
+    def test_specific_short_answer_does_not_retry(self):
+        provider = FakeProvider(json.dumps({"explanation": "Gravity pulls objects toward Earth.",
+                                            "example": "A dropped mango falls.", "key_points": []}))
+        tutor.generate_answer(None, provider, "Why do objects fall?", [], language="english")
+        self.assertEqual(len(provider.calls), 1)
+
+    def test_second_vague_answer_is_not_shown_to_student(self):
+        provider = FakeProvider(json.dumps({"explanation": "It is very important.",
+                                            "example": "It helps us.", "key_points": []}))
+        with self.assertRaisesRegex(ValueError, "did not explain the reason clearly"):
+            tutor.generate_answer(None, provider, "Why do plants need sunlight?", [], language="english")
+        self.assertEqual(len(provider.calls), 2)
 
     def test_two_stage_flow_keeps_its_mapping(self):
         facts = FakeProvider("1. A\n2. B\n3. C")
