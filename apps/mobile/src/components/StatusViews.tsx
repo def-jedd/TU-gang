@@ -1,9 +1,10 @@
+import { ClaySurface } from './ClaySurface';
 import { useEffect, useState } from 'react';
 import { AccessibilityInfo, Animated, Easing, StyleSheet, View } from 'react-native';
 
 import type { Copy } from '../i18n/copy';
 import type { TutorError } from '../services/errors';
-import { colors, radius, space } from '../theme/tokens';
+import { layout, colors, radius, space } from '../theme/tokens';
 import { AppText } from './AppText';
 import { Button } from './Button';
 import { Icon } from './Icon';
@@ -57,11 +58,11 @@ export function LoadingState({ t, onCancel }: { t: Copy; onCancel: () => void })
       </View>
 
       {/* Skeleton in the shape of the answer, so the layout doesn't jump when it lands. */}
-      <View style={styles.skeleton}>
+      <ClaySurface style={styles.skeleton}>
         <View style={[styles.bar, { width: '92%' }]} />
         <View style={[styles.bar, { width: '84%' }]} />
         <View style={[styles.bar, { width: '68%' }]} />
-      </View>
+      </ClaySurface>
 
       {slow ? <Button label={t.cancel} icon="close" variant="secondary" size="md" onPress={onCancel} /> : null}
     </View>
@@ -136,7 +137,7 @@ const styles = StyleSheet.create({
     padding: space.lg,
     backgroundColor: colors.surface,
     borderRadius: radius.lg,
-    borderWidth: 2,
+    borderWidth: layout.border,
     borderColor: colors.border,
   },
   bar: { height: 18, borderRadius: 9, backgroundColor: colors.surfaceSunken },

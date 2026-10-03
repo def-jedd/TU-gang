@@ -1,3 +1,5 @@
+import { ClaySurface } from '@/components/ClaySurface';
+import { ScreenBackdrop } from '@/components/ScreenBackdrop';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
@@ -11,7 +13,7 @@ import { SpeakableTitle } from '@/components/SpeakableTitle';
 import { useTutor } from '@/hooks/useTutor';
 import { AVATARS, MAX_NAME, type Avatar } from '@/profiles/profileCard';
 import { useProfiles } from '@/profiles/ProfileProvider';
-import { category, colors, fonts, radius, space } from '@/theme/tokens';
+import { layout, category, colors, fonts, typeScale, radius, space } from '@/theme/tokens';
 import { speakLabel } from '@/voice/deviceSpeech';
 
 const GRADES = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -37,7 +39,7 @@ export default function NewProfileScreen() {
   };
 
   return (
-    <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+    <ScreenBackdrop><SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ScreenHeader backLabel={t.back} title={t.newStudent} />
       <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
         <View style={styles.group}>
@@ -72,7 +74,7 @@ export default function NewProfileScreen() {
                   accessibilityLabel={`${t.gradeTitle} ${g}`}
                   accessibilityState={{ checked: selected }}
                   style={[styles.gradeButton, selected && styles.gradeSelected]}>
-                  <AppText variant="display" color={selected ? colors.onPrimary : category.level.ink}>
+                  <AppText variant="display" color={colors.ink}>
                     {g}
                   </AppText>
                 </Pressable>
@@ -94,33 +96,34 @@ export default function NewProfileScreen() {
                   accessibilityLabel={a.replace(/-/g, ' ')}
                   accessibilityState={{ checked: selected }}
                   style={[styles.avatarButton, selected && styles.avatarSelected]}>
-                  <Icon name={a as IconName} size={36} color={selected ? colors.onPrimary : category.style.solid} />
+                  <ClaySurface selected={selected} intensity="subtle" radius={radius.pill} style={StyleSheet.absoluteFill} pointerEvents="none" />
+                  <Icon name={a as IconName} size={36} color={colors.primary} />
                 </Pressable>
               );
             })}
           </View>
         </View>
       </ScrollView>
-      <View style={styles.footer}>
+      <ClaySurface style={styles.footer}>
         <Button label={t.createStudent} icon="account-plus" onPress={submit} disabled={!ready} />
-      </View>
-    </SafeAreaView>
+      </ClaySurface>
+    </SafeAreaView></ScreenBackdrop>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
-  scroll: { padding: space.lg, paddingTop: space.sm, gap: space.xl, paddingBottom: space.xxl },
+  safe: { flex: 1, backgroundColor: 'transparent' },
+  scroll: { padding: layout.screen, paddingTop: space.sm, gap: space.xl, paddingBottom: space.xxl },
   group: { gap: space.sm },
   input: {
     fontFamily: fonts.body,
-    fontSize: 22,
+    fontSize: typeScale.body.fontSize,
     color: colors.ink,
-    backgroundColor: colors.surface,
-    borderWidth: 2,
+    backgroundColor: 'transparent',
+    borderWidth: layout.border,
     borderColor: colors.borderStrong,
     borderRadius: radius.md,
-    paddingHorizontal: space.lg,
+    paddingHorizontal: layout.screen,
     paddingVertical: space.md,
   },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: space.sm },
@@ -128,30 +131,30 @@ const styles = StyleSheet.create({
     width: 64,
     height: 64,
     borderRadius: radius.md,
-    borderWidth: 2,
-    borderBottomWidth: 5,
-    borderColor: category.level.solid,
-    backgroundColor: category.level.tint,
+    borderWidth: layout.border,
+    borderBottomWidth: 0,
+    borderColor: colors.border,
+    backgroundColor: 'transparent',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  gradeSelected: { backgroundColor: category.level.solid, borderColor: category.level.lip },
+  gradeSelected: { backgroundColor: 'transparent', borderColor: 'transparent' },
   avatarButton: {
     width: 64,
     height: 64,
     borderRadius: 32,
-    borderWidth: 3,
-    borderColor: category.style.solid,
-    backgroundColor: category.style.tint,
+    borderWidth: layout.border,
+    borderColor: colors.border,
+    backgroundColor: 'transparent',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  avatarSelected: { backgroundColor: category.style.solid, borderColor: category.style.lip },
+  avatarSelected: { backgroundColor: 'transparent', borderColor: 'transparent' },
   footer: {
     paddingHorizontal: space.lg,
     paddingVertical: space.md,
     borderTopWidth: 1,
     borderTopColor: colors.border,
-    backgroundColor: colors.bg,
+    backgroundColor: 'transparent',
   },
 });

@@ -61,11 +61,15 @@ the app can open but cannot reach the API ("can't reach the tutor").
    EAS uploads only `apps/mobile` source (see `/.easignore`; never relax it,
    since EAS ignores the nested `.gitignore` files and would upload `.env` files).
 
-### Expo Go (no install, no NFC)
+### Expo Go (no custom build, no NFC)
 
-`npm run tunnel:go`, then Expo Go → **Scan QR code**. No Expo account or
-login needed. The project owner's server signs the manifest and anyone
-else's serves it unsigned; both open on any phone.
+On a physical iPhone, sign in to Expo CLI (`npx expo login`) and Expo Go with
+the **same Expo account** before scanning the QR code with the Camera app.
+Expo Go for SDK 57 requires this on iOS; `npx expo whoami` checks the CLI side.
+Then run `npm run start:go` on the same Wi-Fi, or `npm run tunnel:go` if the
+phone cannot reach the development server over Wi-Fi. A tunnel can open the
+app, but the local tutor API still needs a network path from the phone.
+Android Expo Go does not currently require this sign-in.
 
 Other scripts: `npm test` (card → JSON tests), `npm run typecheck`,
 `npm run web` (quick layout checks in a browser).

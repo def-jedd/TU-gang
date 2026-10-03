@@ -1,9 +1,10 @@
+import { ClaySurface } from './ClaySurface';
 import { StyleSheet, View } from 'react-native';
 
 import type { Copy, UiLang } from '../i18n/copy';
 import type { LearningDraft } from '../nfc/cardReducer';
 import { LEVEL_CARDS, STYLE_CARDS, topicCard, type CardDef } from '../nfc/cards';
-import { category, colors, radius, space, type CardCategory } from '../theme/tokens';
+import { layout, category, colors, radius, space, type CardCategory } from '../theme/tokens';
 import { AppText } from './AppText';
 import { Icon, type IconName } from './Icon';
 
@@ -24,7 +25,7 @@ function Slot({ title, emptyLabel, palette, emptyIcon, card, fallbackText, lang 
   const label = card ? card.label[lang] : fallbackText ?? emptyLabel;
 
   return (
-    <View
+    <ClaySurface
       style={[
         styles.slot,
         filled
@@ -40,7 +41,7 @@ function Slot({ title, emptyLabel, palette, emptyIcon, card, fallbackText, lang 
       <AppText variant="label" color={filled ? colorsFor.ink : colors.inkMuted} numberOfLines={2} style={styles.center}>
         {label}
       </AppText>
-    </View>
+    </ClaySurface>
   );
 }
 
@@ -87,7 +88,7 @@ const styles = StyleSheet.create({
     flex: 1,
     minHeight: 132,
     borderRadius: radius.md,
-    borderWidth: 2,
+    borderWidth: layout.border,
     padding: space.sm,
     alignItems: 'center',
     justifyContent: 'center',

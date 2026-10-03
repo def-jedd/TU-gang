@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1080px; height: 1920px; overflow: hidden;
+        background: radial-gradient(circle at 50% 30%, #FFF8EC 0%, #F7E9CE 55%, #EFD9AE 100%);
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      }
+      #root { width: 100%; height: 100%; position: relative; }
+
+      .blob { position: absolute; border-radius: 50%; filter: blur(2px); opacity: 0.55; }
+      .blob.b1 { width: 320px; height: 320px; top: 120px; left: -80px; background: #FFD79A; }
+      .blob.b2 { width: 260px; height: 260px; bottom: 160px; right: -70px; background: #FFC46B; }
+      .blob.b3 { width: 180px; height: 180px; top: 760px; right: 120px; background: #FFE6B8; }
+
+      #brand {
+        position: absolute; inset: 0; display: flex; flex-direction: column;
+        align-items: center; justify-content: center; gap: 24px;
+      }
+      #logo {
+        width: 220px; height: 220px; border-radius: 56px;
+        background: linear-gradient(135deg, #FF8A3D, #FF6B3D);
+        display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 30px 60px rgba(255,107,61,0.35);
+        color: #fff; font-size: 120px; font-weight: 800;
+      }
+      #brandName { font-size: 96px; font-weight: 800; color: #2A2015; letter-spacing: -0.03em; }
+      #brandName span { color: #FF6B3D; }
+      #brandTag { font-size: 40px; font-weight: 600; color: #8A6E45; }
+
+      #phone {
+        position: absolute; top: 180px; left: 50%; transform: translateX(-50%);
+        width: 640px; height: 1360px; background: #FFFFFF; border-radius: 68px;
+        box-shadow: 0 40px 90px rgba(140,100,40,0.28);
+        border: 14px solid #231B12; overflow: hidden;
+      }
+      .screen { position: absolute; inset: 0; padding: 56px 48px; background: #FFFDF8; }
+      .appbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 44px; }
+      .appbar .name { font-size: 44px; font-weight: 800; color: #2A2015; }
+      .appbar .name span { color: #FF6B3D; }
+      .pill { font-size: 26px; font-weight: 700; color: #8A6E45; background: #FFF0D6; padding: 12px 22px; border-radius: 999px; }
+
+      .prompt { font-size: 40px; font-weight: 700; color: #4A3A24; margin-bottom: 26px; }
+      .field {
+        background: #FFF3DD; border: 3px solid #F0D9A8; border-radius: 28px;
+        padding: 32px 30px; font-size: 36px; color: #6B5636; min-height: 110px;
+      }
+      .caret { color: #FF6B3D; font-weight: 800; }
+      .askbtn {
+        margin-top: 28px; background: linear-gradient(135deg, #FF8A3D, #FF6B3D);
+        color: #fff; font-size: 38px; font-weight: 800; text-align: center;
+        padding: 30px; border-radius: 28px; box-shadow: 0 16px 30px rgba(255,107,61,0.35);
+      }
+
+      .answer {
+        margin-top: 40px; background: #FFF8EC; border-left: 10px solid #FF6B3D;
+        border-radius: 20px; padding: 34px 32px;
+      }
+      .answer .lbl { font-size: 26px; font-weight: 800; color: #FF6B3D; letter-spacing: 0.08em; margin-bottom: 16px; }
+      .answer .body { font-size: 36px; line-height: 1.4; color: #3A2E1C; font-weight: 600; }
+
+      #nfc {
+        position: absolute; bottom: 150px; left: 50%; transform: translateX(-50%);
+        width: 560px; background: linear-gradient(135deg, #231B12, #3A2C1A);
+        color: #FFE6B8; border-radius: 40px; padding: 40px 44px;
+        box-shadow: 0 30px 70px rgba(0,0,0,0.4); display: flex; align-items: center; gap: 30px;
+      }
+      #nfc .wave { font-size: 76px; }
+      #nfc .txt .t1 { font-size: 42px; font-weight: 800; color: #fff; }
+      #nfc .txt .t2 { font-size: 30px; font-weight: 600; color: #FFC46B; margin-top: 6px; }
+
+      #outro {
+        position: absolute; inset: 0; display: flex; flex-direction: column;
+        align-items: center; justify-content: center; gap: 20px; opacity: 0;
+      }
+      #outro .big { font-size: 110px; font-weight: 800; color: #2A2015; }
+      #outro .big span { color: #FF6B3D; }
+      #outro .sub { font-size: 42px; font-weight: 600; color: #8A6E45; }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="5"
+      data-fps="30"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+
+      <div id="brand" class="clip" data-start="0" data-duration="5" data-track-index="0">
+        <div id="logo">T</div>
+        <div id="brandName">TU<span>-gang</span></div>
+        <div id="brandTag">Bikol-first learning tutor</div>
+      </div>
+
+      <div id="phone" class="clip" data-start="0" data-duration="5" data-track-index="1">
+        <div class="screen">
+          <div class="appbar">
+            <div class="name">TU<span>-gang</span></div>
+            <div class="pill">Bikol &middot; Daet</div>
+          </div>
+          <div class="prompt">Ano an gusto mong manudan?</div>
+          <div class="field" id="qfield">Ano an photosynthesis?<span class="caret">|</span></div>
+          <div class="askbtn" id="askbtn">Hapoton an tutor</div>
+
+          <div class="answer" id="answerCard">
+            <div class="lbl">PALIWANAG</div>
+            <div class="body">An photosynthesis iyo an paagi kan mga tanom na ginigibong kakanon an saldang, tubig, asin hangin.</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="nfc" class="clip" data-start="0" data-duration="5" data-track-index="2">
+        <div class="wave">&#128246;</div>
+        <div class="txt">
+          <div class="t1">Tap a learning card</div>
+          <div class="t2">TOPIC &middot; PHOTOSYNTHESIS</div>
+        </div>
+      </div>
+
+      <div id="outro" class="clip" data-start="0" data-duration="5" data-track-index="3">
+        <div class="big">TU<span>-gang</span></div>
+        <div class="sub">Learn in your language.</div>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      gsap.set("#phone", { opacity: 0, y: 120, scale: 0.92 });
+      gsap.set("#answerCard", { opacity: 0, y: 30 });
+      gsap.set("#nfc", { opacity: 0, y: 160 });
+      gsap.set(".blob", { scale: 0.6, opacity: 0 });
+
+      // 0.0-0.9  brand intro
+      tl.from("#logo", { scale: 0.3, opacity: 0, rotate: -25, duration: 0.6, ease: "back.out(1.8)" }, 0);
+      tl.from("#brandName", { y: 40, opacity: 0, duration: 0.5, ease: "power3.out" }, 0.25);
+      tl.from("#brandTag", { y: 24, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.4);
+      tl.to(".blob", { scale: 1, opacity: 0.55, duration: 0.8, stagger: 0.08, ease: "power2.out" }, 0.1);
+
+      // 1.0-1.7  brand exits, phone enters
+      tl.to("#brand", { opacity: 0, scale: 0.9, duration: 0.4, ease: "power2.in" }, 1.0);
+      tl.to("#phone", { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 1.1);
+
+      // 1.9-2.3  ask button press
+      tl.to("#askbtn", { scale: 0.94, duration: 0.12, ease: "power1.in" }, 1.9);
+      tl.to("#askbtn", { scale: 1, duration: 0.2, ease: "back.out(2)" }, 2.02);
+
+      // 2.3  answer reveals
+      tl.to("#answerCard", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 2.3);
+
+      // 2.95  NFC card slides up + pulse
+      tl.to("#nfc", { opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.6)" }, 2.95);
+      tl.to("#nfc .wave", { scale: 1.25, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut" }, 3.4);
+
+      // 3.95  exit
+      tl.to(["#phone", "#nfc"], { opacity: 0, y: -80, duration: 0.4, ease: "power2.in" }, 3.95);
+      tl.to(".blob", { opacity: 0, duration: 0.4 }, 3.95);
+
+      // 4.15  outro
+      tl.to("#outro", { opacity: 1, duration: 0.5, ease: "power2.out" }, 4.15);
+      tl.from("#outro .big", { scale: 0.8, duration: 0.6, ease: "back.out(1.6)" }, 4.2);
+      tl.from("#outro .sub", { y: 24, opacity: 0, duration: 0.5, ease: "power2.out" }, 4.4);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

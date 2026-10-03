@@ -6,6 +6,8 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 
+import { View } from 'react-native';
+import { BottomNav } from '@/components/BottomNav';
 import { iconFont } from '@/components/Icon';
 import { TutorProvider } from '@/hooks/useTutor';
 import { NfcProvider } from '@/nfc/NfcProvider';
@@ -38,13 +40,13 @@ export default function RootLayout() {
       <VoiceProvider>
         <NfcProvider>
           <StatusBar style="dark" />
-          <Stack
+          <View style={{flex:1}}><Stack
             screenOptions={{
               headerShown: false,
               contentStyle: { backgroundColor: colors.bg },
               animation: 'slide_from_right',
             }}
-          />
+          /><BottomNav /></View>
         </NfcProvider>
       </VoiceProvider>
       </ProfileProvider>

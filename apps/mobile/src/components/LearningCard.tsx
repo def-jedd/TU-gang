@@ -1,8 +1,10 @@
+import { ClaySurface } from './ClaySurface';
 import { Pressable, StyleSheet, View } from 'react-native';
 
 import type { UiLang } from '../i18n/copy';
 import type { CardDef } from '../nfc/cards';
-import { category, colors, radius, space } from '../theme/tokens';
+import { layout, typeScale, colors, radius, space } from '../theme/tokens';
+import { LearningArtwork } from './LearningArtwork';
 import { AppText } from './AppText';
 import { Icon } from './Icon';
 
@@ -19,14 +21,13 @@ type Props = {
   showCode?: boolean;
 };
 
-const LIP = 5;
+const LIP = 0;
 
 /**
  * The on-screen twin of a physical NFC card: same colour, icon and words as
  * the printed card, so a child who can't read the label still recognises it.
  */
 export function LearningCard({ card, lang, selected = false, done = false, onPress, size = 'deck', showCode }: Props) {
-  const palette = category[card.category];
   const label = card.label[lang];
   const hint = card.hint?.[lang];
 
@@ -37,50 +38,51 @@ export function LearningCard({ card, lang, selected = false, done = false, onPre
       accessibilityRole="button"
       accessibilityLabel={hint ? `${label}. ${hint}` : label}
       accessibilityState={{ selected }}
-      style={[styles.outer, { backgroundColor: selected ? palette.lip : palette.solid + '55' }]}>
+      style={[styles.outer, { backgroundColor: 'transparent' }]}>
       {({ pressed }) => (
-        <View
+        <ClaySurface tint={card.icon === 'sprout' ? 'mint' : card.icon === 'chart-pie' ? 'peach' : card.icon === 'apple' ? 'blue' : 'lavender'} selected={selected} radius={radius.sm}
           style={[
             styles.face,
             size === 'tile' && styles.faceTile,
             {
-              backgroundColor: selected ? palette.solid : palette.tint,
-              borderColor: palette.solid,
-              transform: [{ translateY: pressed ? LIP - 1 : 0 }],
+              backgroundColor: 'transparent',
+              borderColor: 'transparent',
+              opacity: pressed ? 0.85 : 1,
+              transform: [{ translateY: 0 }],
             },
           ]}>
           <View style={styles.topRow}>
-            <View style={[styles.iconBadge, { backgroundColor: selected ? colors.surface : palette.solid }]}>
-              <Icon name={card.icon} size={30} color={selected ? palette.solid : colors.onPrimary} />
+            <View style={[styles.iconBadge, { backgroundColor: 'transparent' }]}>
+              <LearningArtwork card={card} />
             </View>
             {selected ? (
-              <Icon name="check-circle" size={26} color={colors.onPrimary} />
+              <Icon name="check-circle" size={26} color={colors.primary} />
             ) : done ? (
               <Icon name="star-circle" size={30} color={colors.accentLip} />
             ) : (
-              <Icon name="nfc-variant" size={20} color={palette.solid} />
+              <Icon name="nfc-variant" size={20} color={colors.primary} />
             )}
           </View>
 
-          <AppText variant="label" color={selected ? colors.onPrimary : palette.ink} numberOfLines={2}>
+          <AppText variant="label" color={colors.ink}>
             {label}
           </AppText>
           {hint ? (
-            <AppText variant="caption" color={selected ? colors.onPrimary : colors.inkSoft} numberOfLines={2}>
+            <AppText variant="caption" color={colors.inkSoft} >
               {hint}
             </AppText>
           ) : null}
           {showCode ? (
             <AppText
               variant="caption"
-              color={selected ? colors.onPrimary : colors.inkMuted}
+              color={colors.inkMuted}
               style={styles.code}
               numberOfLines={1}
               adjustsFontSizeToFit>
               {card.code}
             </AppText>
           ) : null}
-        </View>
+        </ClaySurface>
       )}
     </Pressable>
   );
@@ -95,24 +97,25 @@ const styles = StyleSheet.create({
   face: {
     flex: 1,
     borderRadius: radius.lg,
-    borderWidth: 2,
-    padding: space.md,
-    gap: space.xs,
-    minHeight: 132,
+    borderWidth: 0,
+    padding: space.sm,
+    gap: space.sm,
+    minHeight: layout.card,
   },
-  faceTile: { minHeight: 120 },
+  faceTile: { minHeight: 194 },
   topRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    alignItems: 'flex-start', flexWrap: 'wrap', gap: 8,
     marginBottom: space.xs,
   },
   iconBadge: {
-    width: 52,
-    height: 52,
-    borderRadius: 26,
+    width: '100%',
+    height: 102,
+    borderRadius: radius.sm,
+    overflow: 'hidden',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  code: { fontSize: 12, letterSpacing: 0.3, marginTop: 'auto' },
+  code: { fontSize: typeScale.caption.fontSize, letterSpacing: 0.3, marginTop: 'auto' },
 });

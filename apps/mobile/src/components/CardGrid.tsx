@@ -1,3 +1,4 @@
+import { ClaySurface } from './ClaySurface';
 import { Children, type ReactNode } from 'react';
 import { StyleSheet, View } from 'react-native';
 
@@ -13,7 +14,7 @@ export function CardGrid({ children, columns = 2 }: { children: ReactNode; colum
   for (let i = 0; i < items.length; i += columns) rows.push(items.slice(i, i + columns));
 
   return (
-    <View style={styles.grid}>
+    <ClaySurface intensity="regular" style={styles.grid}>
       {rows.map((row, r) => (
         <View key={r} style={styles.row}>
           {row}
@@ -22,12 +23,12 @@ export function CardGrid({ children, columns = 2 }: { children: ReactNode; colum
           ))}
         </View>
       ))}
-    </View>
+    </ClaySurface>
   );
 }
 
 const styles = StyleSheet.create({
-  grid: { gap: space.md },
+  grid: { gap: space.md, padding: space.sm },
   row: { flexDirection: 'row', gap: space.md, alignItems: 'stretch' },
   pad: { flex: 1 },
 });

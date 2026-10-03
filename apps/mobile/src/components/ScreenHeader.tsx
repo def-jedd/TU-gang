@@ -1,8 +1,9 @@
+import { ClaySurface } from './ClaySurface';
 import { router } from 'expo-router';
 import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { colors, radius, space, touch } from '../theme/tokens';
+import { layout, colors, radius, space, touch } from '../theme/tokens';
 import { AppText } from './AppText';
 import { Icon } from './Icon';
 
@@ -23,11 +24,12 @@ export function ScreenHeader({ backLabel, title, right }: Props) {
         accessibilityRole="button"
         accessibilityLabel={backLabel}
         style={({ pressed }) => [styles.back, pressed && styles.pressed]}>
+<ClaySurface intensity="subtle" selected={false} radius={radius.md} pointerEvents="none" style={StyleSheet.absoluteFill} />
         <Icon name="arrow-left" size={26} color={colors.ink} />
         <AppText variant="label">{backLabel}</AppText>
       </Pressable>
       {title ? (
-        <AppText variant="title" style={styles.title} numberOfLines={1} accessibilityRole="header">
+        <AppText variant="title" color={colors.ink} style={styles.title}  accessibilityRole="header">
           {title}
         </AppText>
       ) : (
@@ -41,10 +43,11 @@ export function ScreenHeader({ backLabel, title, right }: Props) {
 const styles = StyleSheet.create({
   bar: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     alignItems: 'center',
     gap: space.sm,
-    paddingHorizontal: space.lg,
-    paddingVertical: space.sm,
+    paddingHorizontal: layout.screen,
+    paddingVertical: space.md,
   },
   back: {
     flexDirection: 'row',
@@ -53,10 +56,10 @@ const styles = StyleSheet.create({
     minHeight: touch.min,
     paddingHorizontal: space.md,
     borderRadius: radius.pill,
-    backgroundColor: colors.surface,
-    borderWidth: 2,
+    backgroundColor: 'transparent',
+    borderWidth: layout.border,
     borderColor: colors.border,
   },
-  pressed: { backgroundColor: colors.surfaceSunken },
-  title: { flex: 1 },
+  pressed: { opacity: 0.8, transform: [{ scale: 0.985 }] },
+  title: { flex: 1, minWidth: layout.headerTitleMin },
 });

@@ -1,3 +1,5 @@
+import { ClaySurface } from '@/components/ClaySurface';
+import { ScreenBackdrop } from '@/components/ScreenBackdrop';
 import { router } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -13,7 +15,7 @@ import { PHASE_LOOK, TutorAvatar } from '@/components/TutorAvatar';
 import { useTutor } from '@/hooks/useTutor';
 import type { Copy } from '@/i18n/copy';
 import { TOPIC_CARDS } from '@/nfc/cards';
-import { colors, radius, space } from '@/theme/tokens';
+import { layout, touch, colors, radius, space } from '@/theme/tokens';
 import type { Caption, VoiceErrorKind, VoicePhase } from '@/voice/types';
 import { useVoice } from '@/voice/VoiceProvider';
 
@@ -90,30 +92,30 @@ export default function CallScreen() {
   const busy = phase === 'connecting' || phase === 'thinking';
 
   return (
-    <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
-      <View style={styles.topBar}>
+    <ScreenBackdrop persona={draft.style}><SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+      <ClaySurface style={styles.topBar}>
         <View style={styles.badges}>
           {kind === 'simulated' && voice.voice === 'agora' ? (
-            <View style={[styles.pill, styles.pillLive]}>
+            <ClaySurface style={[styles.pill, styles.pillLive]}>
               <Icon name="waveform" size={16} color={colors.success} />
-              <AppText variant="caption" color={colors.success} bold>
+              <AppText variant="caption" color={colors.success} bold style={styles.badgeText}>
                 {t.agoraVoice}
               </AppText>
-            </View>
+            </ClaySurface>
           ) : kind === 'simulated' ? (
-            <View style={styles.pill}>
+            <ClaySurface style={styles.pill}>
               <Icon name="flask" size={16} color={colors.warn} />
-              <AppText variant="caption" color={colors.warn} bold>
+              <AppText variant="caption" color={colors.warn} bold style={styles.badgeText}>
                 {t.practiceVoice}
               </AppText>
-            </View>
+            </ClaySurface>
           ) : kind === 'agora' ? (
-            <View style={[styles.pill, styles.pillLive]}>
+            <ClaySurface style={[styles.pill, styles.pillLive]}>
               <Icon name="waveform" size={16} color={colors.success} />
-              <AppText variant="caption" color={colors.success} bold>
+              <AppText variant="caption" color={colors.success} bold style={styles.badgeText}>
                 {t.liveVoice}
               </AppText>
-            </View>
+            </ClaySurface>
           ) : null}
           {provider ? <ProviderBadge provider={provider} t={t} /> : null}
           <LanguageBadge t={t} language={draft.language} />
@@ -124,13 +126,14 @@ export default function CallScreen() {
           accessibilityLabel={showCaptions ? t.captionsOff : t.captionsOn}
           accessibilityState={{ checked: showCaptions }}
           style={[styles.ccButton, showCaptions && styles.ccOn]}>
+<ClaySurface intensity="subtle" selected={showCaptions} radius={radius.md} pointerEvents="none" style={StyleSheet.absoluteFill} />
           <Icon
             name={showCaptions ? 'closed-caption' : 'closed-caption-outline'}
             size={30}
-            color={showCaptions ? colors.onPrimary : colors.ink}
+            color={colors.primary}
           />
         </Pressable>
-      </View>
+      </ClaySurface>
 
       <ScrollView contentContainerStyle={styles.scroll}>
         <View style={styles.stage}>
@@ -139,14 +142,14 @@ export default function CallScreen() {
             phase={phase}
             agentLevel={voice.agentLevel}
             studentLevel={voice.studentLevel}
-            size={220}
+            size={layout.avatarCall}
           />
-          <View style={[styles.phase, { backgroundColor: look.tint }]} accessibilityLiveRegion="polite">
+          <ClaySurface style={[styles.phase, { backgroundColor: 'transparent' }]} accessibilityLiveRegion="polite">
             <Icon name={look.icon} size={30} color={look.color} />
             <AppText variant="title" color={colors.ink} style={styles.center}>
               {phaseLabel(t, phase, canHear)}
             </AppText>
-          </View>
+          </ClaySurface>
           {notice ? (
             <AppText variant="caption" color={colors.inkSoft} style={styles.center}>
               {notice === 'needs_build' ? t.noticeNeedsBuild : t.noticeNoBackend}
@@ -160,7 +163,7 @@ export default function CallScreen() {
         </View>
 
         {showCaptions && (agentCaption || studentCaption) ? (
-          <View style={styles.captions}>
+          <ClaySurface intensity="strong" style={styles.captions}>
             {studentCaption ? (
               <View style={styles.studentBubble}>
                 <Icon name="account-voice" size={20} color={colors.success} />
@@ -174,7 +177,7 @@ export default function CallScreen() {
                 {agentCaption.text}
               </AppText>
             ) : null}
-          </View>
+          </ClaySurface>
         ) : null}
 
         {phase === 'error' || (!active && phase === 'ended') ? (
@@ -244,11 +247,11 @@ export default function CallScreen() {
       </ScrollView>
 
       {active ? (
-        <View style={styles.footer}>
+        <ClaySurface style={styles.footer}>
           <Button label={t.controlEnd} icon="phone-hangup" variant="hangup" onPress={hangUp} />
-        </View>
+        </ClaySurface>
       ) : null}
-    </SafeAreaView>
+    </SafeAreaView></ScreenBackdrop>
   );
 }
 
@@ -278,8 +281,9 @@ function CallControl({
         pressed && styles.controlPressed,
         disabled && styles.controlDisabled,
       ]}>
-      <Icon name={icon} size={34} color={active ? colors.onPrimary : colors.primary} />
-      <AppText variant="caption" bold color={active ? colors.onPrimary : colors.ink} numberOfLines={2} style={styles.center}>
+<ClaySurface intensity="subtle" selected={!!active} radius={radius.md} pointerEvents="none" style={StyleSheet.absoluteFill} />
+      <Icon name={icon} size={34} color={colors.primary} />
+      <AppText variant="caption" bold color={colors.ink} style={styles.center}>
         {label}
       </AppText>
     </Pressable>
@@ -287,17 +291,17 @@ function CallControl({
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: 'transparent' },
   flex: { flex: 1 },
-  center: { textAlign: 'center' },
+  center: { textAlign: 'center', flexShrink: 1 },
   topBar: {
     flexDirection: 'row',
     alignItems: 'flex-start',
     gap: space.sm,
-    paddingHorizontal: space.lg,
+    paddingHorizontal: layout.screen,
     paddingTop: space.sm,
   },
-  badges: { flex: 1, flexDirection: 'row', flexWrap: 'wrap', gap: space.xs },
+  badges: { flex: 1, minWidth: 0, flexDirection: 'row', flexWrap: 'wrap', gap: space.xs },
   pill: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -305,36 +309,39 @@ const styles = StyleSheet.create({
     paddingHorizontal: space.md,
     paddingVertical: space.xs + 2,
     borderRadius: radius.pill,
-    backgroundColor: colors.warnTint,
+    backgroundColor: 'transparent',
+    maxWidth: '100%',
+    flexShrink: 1,
   },
-  pillLive: { backgroundColor: colors.successTint },
+  badgeText: { flexShrink: 1, minWidth: 0 },
+  pillLive: { backgroundColor: 'transparent' },
   ccButton: {
-    width: 56,
-    height: 56,
+    width: touch.min,
+    height: touch.min,
     borderRadius: radius.pill,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.surface,
-    borderWidth: 2,
+    backgroundColor: 'transparent',
+    borderWidth: layout.border,
     borderColor: colors.border,
   },
-  ccOn: { backgroundColor: colors.primary, borderColor: colors.primaryLip },
-  scroll: { padding: space.lg, gap: space.lg, paddingBottom: space.xxl },
+  ccOn: { backgroundColor: 'transparent', borderColor: 'transparent' },
+  scroll: { padding: layout.screen, gap: space.lg, paddingBottom: space.xxl },
   stage: { alignItems: 'center', gap: space.md },
   phase: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: space.sm,
-    paddingHorizontal: space.lg,
+    paddingHorizontal: layout.screen,
     paddingVertical: space.sm,
     borderRadius: radius.pill,
   },
   captions: {
     gap: space.md,
-    padding: space.lg,
+    padding: layout.screen,
     borderRadius: radius.lg,
-    backgroundColor: colors.surface,
-    borderWidth: 2,
+    backgroundColor: 'transparent',
+    borderWidth: layout.border,
     borderColor: colors.border,
   },
   studentBubble: {
@@ -346,29 +353,32 @@ const styles = StyleSheet.create({
     backgroundColor: colors.successTint,
   },
   after: { gap: space.md },
-  controls: { flexDirection: 'row', gap: space.sm },
+  controls: { flexDirection: 'row', flexWrap: 'wrap', gap: space.sm },
   control: {
     flex: 1,
-    minHeight: 92,
+    flexBasis: '40%',
+    minWidth: layout.controlMin,
+    minHeight: layout.control,
     borderRadius: radius.md,
-    borderWidth: 2,
-    borderBottomWidth: 5,
-    borderColor: colors.border,
-    borderBottomColor: colors.borderStrong,
-    backgroundColor: colors.surface,
+    borderWidth: layout.border,
+    borderBottomWidth: 0,
+    borderColor: 'transparent',
+    borderBottomColor: 'transparent',
+    backgroundColor: 'transparent',
     alignItems: 'center',
     justifyContent: 'center',
     gap: space.xs,
     padding: space.xs,
   },
-  controlActive: { backgroundColor: colors.primary, borderColor: colors.primaryLip, borderBottomColor: colors.primaryLip },
+  controlActive: { backgroundColor: 'transparent', borderColor: 'transparent', borderBottomColor: 'transparent' },
   controlPressed: { opacity: 0.8 },
   controlDisabled: { opacity: 0.45 },
   footer: {
-    paddingHorizontal: space.lg,
+    paddingHorizontal: layout.screen,
     paddingVertical: space.md,
-    backgroundColor: colors.bg,
-    borderTopWidth: 1,
+    backgroundColor: 'transparent',
+    
+    borderTopWidth: 0,
     borderTopColor: colors.border,
   },
 });

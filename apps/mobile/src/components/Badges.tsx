@@ -1,4 +1,5 @@
-import { StyleSheet, View } from 'react-native';
+import { ClaySurface } from './ClaySurface';
+import { StyleSheet } from 'react-native';
 
 import type { Copy } from '../i18n/copy';
 import { category, colors, radius, space } from '../theme/tokens';
@@ -8,12 +9,12 @@ import { Icon, type IconName } from './Icon';
 
 function Pill({ icon, label, fg, bg, a11y }: { icon: IconName; label: string; fg: string; bg: string; a11y?: string }) {
   return (
-    <View style={[styles.pill, { backgroundColor: bg }]} accessible accessibilityLabel={a11y ?? label}>
+    <ClaySurface style={[styles.pill, { backgroundColor: bg }]} accessible accessibilityLabel={a11y ?? label}>
       <Icon name={icon} size={18} color={fg} />
-      <AppText variant="caption" color={fg} bold>
+      <AppText variant="caption" color={fg} bold style={{ flexShrink: 1 }}>
         {label}
       </AppText>
-    </View>
+    </ClaySurface>
   );
 }
 
@@ -63,5 +64,6 @@ const styles = StyleSheet.create({
     paddingVertical: space.xs + 2,
     borderRadius: radius.pill,
     alignSelf: 'flex-start',
+    maxWidth: '100%',
   },
 });

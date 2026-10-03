@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 
 import { checkHealth, type HealthResult } from '../services/api';
 import { API_BASE_URL, VOICE_MODE } from '../services/config';
-import { colors, space } from '../theme/tokens';
+import { layout, radius, colors, space } from '../theme/tokens';
 import { AppText } from './AppText';
 
 /** Dev-only: which backend + voice engine this build uses, and whether it answers. */
@@ -26,7 +26,7 @@ export function DevConnection() {
   return (
     <View style={styles.dev}>
       <View style={[styles.dot, { backgroundColor: dot }]} />
-      <AppText variant="caption" color={colors.inkMuted} style={styles.text}>
+      <AppText variant="caption" color={colors.ink} style={styles.text}>
         [dev] {API_BASE_URL ?? 'no backend'} — {text} · voice: {VOICE_MODE}
       </AppText>
     </View>
@@ -34,7 +34,7 @@ export function DevConnection() {
 }
 
 const styles = StyleSheet.create({
-  dev: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
-  dot: { width: 10, height: 10, borderRadius: 5 },
+  dev: { flexDirection: 'row', alignItems: 'flex-start', gap: space.sm, paddingTop: space.md, borderTopWidth: layout.hairline, borderTopColor: colors.border },
+  dot: { width: layout.dot, height: layout.dot, borderRadius: radius.pill, marginTop: space.sm },
   text: { flex: 1 },
 });
