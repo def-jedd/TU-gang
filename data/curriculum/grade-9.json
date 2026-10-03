@@ -1,5 +1,941 @@
 {
   "grade": 9,
   "term": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "g9-araling_panlipunan-w1-1",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga konsepto at batayan ng pag-aaral ng ekonomiks tungo sa likas-kayang pag-unlad",
+      "topic": "economics",
+      "title": {
+        "en": "What Is Economics?"
+      },
+      "student_question": "What is economics and why do we study it?",
+      "icon": "cash-multiple",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w1-2",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natataya ang kahalagahan ng pagsusulong ng likas-kayang pag-unlad bilang mekanismo sa pagtamo ng pambansa at pandaigdigang kaunlaran",
+      "topic": "sustainable_development",
+      "title": {
+        "en": "Sustainable Development"
+      },
+      "student_question": "Why is sustainable development important for our country?",
+      "icon": "leaf",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w2-1",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Nasusuri ang ugnayan ng alokasyon at sistemang pang-ekonomiya bilang mekanismo sa pagtugon sa hamon ng kakapusan",
+      "topic": "scarcity",
+      "title": {
+        "en": "Scarcity and Economic Systems"
+      },
+      "student_question": "How do countries decide how to use limited resources?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w3-1",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga salik ng produksiyon at ang implikasyon nito sa pang-araw-araw na pamumuhay",
+      "topic": "factors_of_production",
+      "title": {
+        "en": "Factors of Production"
+      },
+      "student_question": "What do we need to produce goods?",
+      "icon": "factory",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w4-1",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang mga katangian ng isang entreprenyur at mga organisasyon ng negosyo",
+      "topic": "entrepreneurship",
+      "title": {
+        "en": "Entrepreneurs and Businesses"
+      },
+      "student_question": "What makes a good entrepreneur?",
+      "icon": "account-star",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w5-1",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Nasusuri ang konsepto at ang mga salik na nakakaapekto sa pagkonsumo",
+      "topic": "consumption",
+      "title": {
+        "en": "Consumption"
+      },
+      "student_question": "What affects what people buy?",
+      "icon": "cart",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Week 5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w6-1",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Naipamamalas ang talino sa pagkonsumo sa pamamagitan ng paggamit ng mga katangian ng isang matalinong mamimili",
+      "topic": "smart_consumer",
+      "title": {
+        "en": "Smart Shopping"
+      },
+      "student_question": "How can I be a smart shopper?",
+      "icon": "cart-check",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w6-2",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Naisusulong ang mga karapatan at mga tungkulin ng isang mamimili",
+      "topic": "consumer_rights",
+      "title": {
+        "en": "Consumer Rights"
+      },
+      "student_question": "What are my rights and duties as a consumer?",
+      "icon": "shield-account",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w7-1",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Natatalakay ang konsepto ng demand",
+      "topic": "demand",
+      "title": {
+        "en": "Demand"
+      },
+      "student_question": "What is demand?",
+      "icon": "trending-up",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Weeks 7–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w7-2",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Nasusuri ang mga salik na nakakaapekto sa demand sa pang-araw-araw na pamumuhay",
+      "topic": "demand",
+      "title": {
+        "en": "What Affects Demand"
+      },
+      "student_question": "Why do people buy more or less of something?",
+      "icon": "trending-up",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Weeks 7–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w9-1",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Natatalakay ang konsepto ng suplay",
+      "topic": "supply",
+      "title": {
+        "en": "Supply"
+      },
+      "student_question": "What is supply?",
+      "icon": "package-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Weeks 9–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-araling_panlipunan-w9-2",
+      "grade": 9,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Nasusuri ang mga salik na nakakaapekto sa suplay sa pang-araw-araw na pamumuhay",
+      "topic": "supply",
+      "title": {
+        "en": "What Affects Supply"
+      },
+      "student_question": "Why do sellers offer more or less of a product?",
+      "icon": "package-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Araling Panlipunan, First Term, Weeks 9–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-english-w1-1",
+      "grade": 9,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Analyze literary texts as expressions of individual or communal values within: o Structural context:\n▪ Conflict:\n▪ Character vs Character\n▪ Character vs Society\n▪ Character vs Nature/environment\n▪ Character\n▪ Characterization\n▪ Plot:\n▪ Parallel\n▪ Episodic\n▪ Spectacle, dialogue, and music\n▪ Point of view and narrative techniques\n▪ Patterns and motifs\n▪ Point of view and narrative techniques",
+      "topic": "literary_analysis",
+      "title": {
+        "en": "Analyzing Literature"
+      },
+      "student_question": "How does a story show the values of a person or a community?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 14 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-english-w1-2",
+      "grade": 9,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify one’s meaning and purpose in selecting the type of literary text for composition.",
+      "topic": "creative_writing",
+      "title": {
+        "en": "Choosing What to Write"
+      },
+      "student_question": "How do I choose what kind of story or poem to write?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 15 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-english-w1-3",
+      "grade": 9,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Compose literary texts using appropriate structure.",
+      "topic": "creative_writing",
+      "title": {
+        "en": "Writing Literature"
+      },
+      "student_question": "How do I give my story or poem a good structure?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 15 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-gmrc_values-w1-1",
+      "grade": 9,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang mapanuring pag-iisip sa pamamagitan ng pagsasaalang-alang sa impluwensiya ng pagpapahalaga sa pagpapalalim ng kamalayan sa sarili a. Naiisa-isa ang mga paraan ng pagpapalalim ng kamalayan sa sarili batay sa mga pagpapahalaga b. Naipaliliwanag na ang pagpapalalim ng kamalayan sa sarili batay sa mga pagpapahalaga ay makatutulong upang maisabuhay ang mga katangian at gawi ng lahing pinagmulan na makabubuti sa kaniyang kaganapan bilang tao c. Naisasakilos ang mga paraan ng pagpapalalim ng kamalayan sa sarili batay sa mga pagpapahalaga",
+      "topic": "critical_thinking",
+      "title": {
+        "en": "Critical Thinking"
+      },
+      "student_question": "How do my values affect the way I think?",
+      "icon": "head-lightbulb",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Values Education (last updated July 20, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-gmrc_values-w2-1",
+      "grade": 9,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang matalinong pagpapasiya sa pamamagitan ng paghahanda ng sarili sa mga pangangailangan (requirements) at hamon ng pipiliing karera a. Natutukoy ang mga salik sa pagpili ng karera ayon sa gabay ng pamilya b. Naipaliliwanag na ang mga salik sa pagpili ng karera ay dapat isasaalang-alang upang matiyak ang kahandaan sa pagpapasiya sa nais tahakin na landas sa hinaharap tungo sa matagumpay at makahulugang pamumuhay c. Nakalilikha ng personal na plano sa karera na may pagsasaalang-alang sa mga salik ayon sa gabay ng pamilya",
+      "topic": "decision_making",
+      "title": {
+        "en": "Wise Decisions"
+      },
+      "student_question": "How can I prepare myself to make wise decisions?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Values Education (last updated July 20, 2026), First Term, Weeks 2–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-gmrc_values-w3-1",
+      "grade": 9,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagiging responsable sa pamamagitan ng paghahanda sa sarili sa mga posibleng hamon ng binubuong personal na misyon sa buhay a. Nakakikilala ng mga paraan upang mabuo ang personal na misyon sa buhay ayon sa kakayahan b. Naipaliliwanag na ang pagbuo sa personal na misyon sa buhay ay nagbibigay-kahulugan at direksiyon na mamuhay nang makabuluhan upang itaguyod ang kabutihan at kaunlaran ng sarili at lipunan c. Nailalapat ang mga paraan upang mabuo ang personal na misyon sa buhay ayon sa kakayahan",
+      "topic": "responsibility",
+      "title": {
+        "en": "Being Responsible"
+      },
+      "student_question": "How can I prepare for challenges as a teenager?",
+      "icon": "clipboard-check",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Values Education (last updated July 20, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-gmrc_values-w4-1",
+      "grade": 9,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Nakapagsasanay ng integridad sa pamamagitan ng matapat na paggawa ng kaniyang tungkulin sa lahat ng pagkakataon a. Nailalarawan ang paggawa na ginagabayan ng pananampalataya o paniniwala b. Napatutunayan na ang paggawa na may gabay ng pananampalataya o paniniwala ay moral na tungkulin bilang pakikibahagi upang makamit ang kaganapan ng kaniyang pagkatao c. Nailalapat ang paggawa batay sa pananampalataya o paniniwala sa mga nakaatang na gawain sa tahanan at paaralan",
+      "topic": "integrity",
+      "title": {
+        "en": "Integrity"
+      },
+      "student_question": "What does it mean to have integrity?",
+      "icon": "shield-check",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Values Education (last updated July 20, 2026), First Term, Weeks 4–5, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-gmrc_values-w5-1",
+      "grade": 9,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa maingat na paghusga sa pamamagitan ng pananahimik, pagninilay, at pananalangin bago magpasiya a. Natutukoy ang papel ng konsensiya sa mapanagutang pagpapasiya na nakaugat sa pananampalataya o paniniwala b. Naipaliliwanag na ang mapanagutang pagpapasiya gabay ang pananampalataya o paniniwala ay ang maingat na paghusga ng isip na piliin ang mabuti at iwasan ang masama sa kongkretong situwasyon c. Nailalapat ang mapanagutang pagpapasiya na nakaugat sa pananampalataya o paniniwala",
+      "topic": "prudence",
+      "title": {
+        "en": "Thinking Before Deciding"
+      },
+      "student_question": "Why should I pause and reflect before I decide?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Values Education (last updated July 20, 2026), First Term, Weeks 5–6, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-gmrc_values-w6-1",
+      "grade": 9,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagiging mabuting katiwala sa pamamagitan ng panghihikayat sa kapuwa na bantayan ang sariling pagkonsumo ng pagkain, damit, tubig, at kuryente sa bahay, paaralan, at pamayanan\na. Nakakikilala ng mga paraan ng pagbabawas ng sariling pagkonsumo ng resorses bilang pag-iingat sa kalikasan b. Naipaliliwanag na ang pagbabawas ng sariling pagkonsumo ng resorses bilang pag-iingat sa kalikasan ay tungkulin ng bawat isa tungo sa pagkakaroon ng balanse, sustenable at malusog na kapaligiran c. Naisasakilos ang mga paraan ng pagbabawas ng sariling pagkonsumo ng resorses bilang pag-iingat sa kalikasan",
+      "topic": "stewardship",
+      "title": {
+        "en": "Caring for Our Health"
+      },
+      "student_question": "How can I encourage others to take care of their health?",
+      "icon": "hand-coin",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Values Education (last updated July 20, 2026), First Term, Weeks 6–7, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-gmrc_values-w7-1",
+      "grade": 9,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagiging mapanagutan sa pamamagitan ng pagtalima sa mga netiquette o alituntunin ng pakikipag- ugnayan sa social media a. Nakapagpapahayag ng sapat at angkop na kamalayan sa pagiging mabuting digital citizen b. Naipaliliwanag na ang sariling kamalayan sa pagiging mabuting digital citizen ay nakatutulong sa pagtataguyod ng kultura ng paggalang, kaligtasan, at kapayapaan sa social media c. Nailalapat ang mga paraan upang mapaunlad ang sariling kamalayan sa pagiging mabuting digital citizen",
+      "topic": "netiquette",
+      "title": {
+        "en": "Online Responsibility"
+      },
+      "student_question": "How should I behave responsibly online?",
+      "icon": "web",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Values Education (last updated July 20, 2026), First Term, Weeks 7–8, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-gmrc_values-w8-1",
+      "grade": 9,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang paggalang sa buhay sa pamamagitan ng pagsangguni sa mga wasto at pinagkakatiwalaang tao a. Nakapagpapahayag ng mga paraan ng paggabay ng pamilya sa pagkilala sa sariling seksuwalidad b. Napatutunayan na ang paggabay ng pamilya sa pagkilala sa sariling seksuwalidad ay mahalagang tungkulin bilang paghahanda sa kaakibat nitong mga katangian, gampanin, at kahihinatnan ng mga pasiya na may kaugnayan sa kaniyang pagkakakilanlan c. Naisasakilos ang mga paraan ng pagkilala sa sariling seksuwalidad ayon sa gabay ng pamilya",
+      "topic": "respect_for_life",
+      "title": {
+        "en": "Asking Trusted People"
+      },
+      "student_question": "Who should I ask for help when I have problems?",
+      "icon": "account-supervisor",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Values Education (last updated July 20, 2026), First Term, Weeks 8–9, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w1-1",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Illustrate and describe point, line, ray, line segment, angle, and plane using models and geometric notations.",
+      "topic": "geometry_basics",
+      "title": {
+        "en": "Points, Lines, and Planes"
+      },
+      "student_question": "What are points, lines, rays, and planes?",
+      "icon": "vector-line",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w1-2",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Construct perpendicular and parallel lines.",
+      "topic": "lines",
+      "title": {
+        "en": "Parallel and Perpendicular Lines"
+      },
+      "student_question": "How do I construct parallel and perpendicular lines?",
+      "icon": "vector-line",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w2-1",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify the relationships between angles formed by parallel lines cut by a transversal.",
+      "topic": "angles",
+      "title": {
+        "en": "Transversals"
+      },
+      "student_question": "What angles are formed when a line crosses two parallel lines?",
+      "icon": "angle-acute",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w2-2",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Determine angle measures involving angle pairs, parallel and perpendicular lines, and parallel lines cut by a transversal.",
+      "topic": "angles",
+      "title": {
+        "en": "Finding Angle Measures"
+      },
+      "student_question": "How do I find unknown angles formed by parallel lines?",
+      "icon": "angle-acute",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w3-1",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify relations that are functions based on the definitions of relations and functions.",
+      "topic": "functions",
+      "title": {
+        "en": "Relations and Functions"
+      },
+      "student_question": "What makes a relation a function?",
+      "icon": "function-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w3-2",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Determine the domain and the range of a function expressed in different representations.",
+      "topic": "functions",
+      "title": {
+        "en": "Domain and Range"
+      },
+      "student_question": "What are the domain and range of a function?",
+      "icon": "function-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w3-3",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Express the relationship between two variables as a function.",
+      "topic": "functions",
+      "title": {
+        "en": "Writing Functions"
+      },
+      "student_question": "How can I show the relationship between two variables as a function?",
+      "icon": "function-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w3-4",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Determine the slopes (as rate of change) and the zeros of linear functions represented in:\na. graphs\nb. equations\nc. tables of values",
+      "topic": "linear_functions",
+      "title": {
+        "en": "Slope"
+      },
+      "student_question": "What is the slope of a line?",
+      "icon": "chart-line",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w5-1",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Graph a linear function and determine its:\na. domain\nb. range\nc. intercepts\nd. slope",
+      "topic": "linear_functions",
+      "title": {
+        "en": "Graphing Linear Functions"
+      },
+      "student_question": "How do I graph a linear function?",
+      "icon": "chart-line",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w5-2",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Represent linear relationships found in real-life situations using different representations.",
+      "topic": "linear_functions",
+      "title": {
+        "en": "Linear Relationships in Real Life"
+      },
+      "student_question": "How can a straight-line graph describe real life?",
+      "icon": "chart-line",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w6-1",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Solve problems involving linear functions.",
+      "topic": "linear_functions",
+      "title": {
+        "en": "Linear Function Problems"
+      },
+      "student_question": "How do I solve problems with linear functions?",
+      "icon": "chart-line",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w6-2",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Determine conditions that guarantee parallelism and perpendicularity of lines.",
+      "topic": "lines",
+      "title": {
+        "en": "Parallel and Perpendicular Conditions"
+      },
+      "student_question": "How can I tell if two lines are parallel or perpendicular?",
+      "icon": "vector-line",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w7-1",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Classify quadrilaterals based on formal definitions.",
+      "topic": "quadrilaterals",
+      "title": {
+        "en": "Classifying Quadrilaterals"
+      },
+      "student_question": "How do we classify four-sided shapes?",
+      "icon": "square-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Weeks 7–8, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w7-2",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Use properties of parallelograms to find measures of angles, sides, perpendicular height, and diagonals.",
+      "topic": "parallelograms",
+      "title": {
+        "en": "Properties of Parallelograms"
+      },
+      "student_question": "What are the properties of a parallelogram?",
+      "icon": "square-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Weeks 7–8, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w9-1",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Solve problems involving parallelograms, rectangles, squares, or rhombuses by applying their different properties.",
+      "topic": "parallelograms",
+      "title": {
+        "en": "Parallelogram Problems"
+      },
+      "student_question": "How do I solve problems about rectangles and rhombuses?",
+      "icon": "square-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-mathematics-w10-1",
+      "grade": 9,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Prove properties of parallelograms by applying the relevant theorems.",
+      "topic": "parallelograms",
+      "title": {
+        "en": "Proving Properties"
+      },
+      "student_question": "How do we prove the properties of parallelograms?",
+      "icon": "square-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w1-1",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify inertia as the tendency for an object to stay at rest or in motion unless acted on by an unbalanced net force.",
+      "topic": "inertia",
+      "title": {
+        "en": "Inertia"
+      },
+      "student_question": "Why do we lurch forward when a jeepney suddenly stops?",
+      "icon": "car-brake-alert",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 1–2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w1-2",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Demonstrate in practical situations and describe that acceleration is a change in speed and/or direction as the result of a net force.",
+      "topic": "acceleration",
+      "title": {
+        "en": "Acceleration"
+      },
+      "student_question": "What is acceleration?",
+      "icon": "speedometer",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 1–2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w1-3",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Investigate the relationship among force, acceleration, and mass.",
+      "topic": "force",
+      "title": {
+        "en": "Force, Mass, and Acceleration"
+      },
+      "student_question": "How are force, mass, and acceleration related?",
+      "icon": "weight",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 1–2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w1-4",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Explain that when any two objects interact, there are equal but opposite forces exerted between them, which is evident in many practical situations and applications.",
+      "topic": "action_reaction",
+      "title": {
+        "en": "Action and Reaction"
+      },
+      "student_question": "Why does a boat move back when I step off it?",
+      "icon": "swap-horizontal",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 1–2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w1-5",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Observe and identify action-reaction pairs in everyday situations such as stepping off a boat, or a book on a table, and draw force diagrams to explain how the pairs affect the motion of objects.",
+      "topic": "action_reaction",
+      "title": {
+        "en": "Action-Reaction Pairs"
+      },
+      "student_question": "Where do I see action and reaction forces every day?",
+      "icon": "swap-horizontal",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 1–2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w3-1",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify that electricity is a flow of electrons and show appreciation for the need to observe safe measures in handling electricity.",
+      "topic": "electricity",
+      "title": {
+        "en": "Electricity and Safety"
+      },
+      "student_question": "What is electricity and how can I use it safely?",
+      "icon": "flash",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 3–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w3-2",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Participate in guided investigations to infer the relationship among current, voltage, and resistance in assembled series and parallel circuits with varying number of loads and battery.",
+      "topic": "electricity",
+      "title": {
+        "en": "Current, Voltage, and Resistance"
+      },
+      "student_question": "How are current, voltage, and resistance related?",
+      "icon": "flash",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 3–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w3-3",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Draw diagrams of and assemble series and parallel circuits, showing switch, battery, loads/resistors, ammeter, and voltmeter.",
+      "topic": "electric_circuits",
+      "title": {
+        "en": "Series and Parallel Circuits"
+      },
+      "student_question": "What is the difference between series and parallel circuits?",
+      "icon": "electric-switch",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 3–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w3-4",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Collaborate in a class discussion to recognize the advantages and limitations of using series or parallel circuits.",
+      "topic": "electric_circuits",
+      "title": {
+        "en": "Choosing a Circuit"
+      },
+      "student_question": "When is a parallel circuit better than a series circuit?",
+      "icon": "electric-switch",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 3–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w3-5",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Describe electromagnetic radiation (EMR) as energy that is created by the vibrations of electrically charged particles which allows it to travel through materials or space as transverse waves.",
+      "topic": "electromagnetic_waves",
+      "title": {
+        "en": "Electromagnetic Radiation"
+      },
+      "student_question": "What is electromagnetic radiation?",
+      "icon": "radio-tower",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 3–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w3-6",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Compare the relative wavelengths and frequencies of different types of electromagnetic waves, including radio waves, microwaves, infrared, visible light, ultra-violet, x-rays, and gamma radiation.",
+      "topic": "electromagnetic_waves",
+      "title": {
+        "en": "Kinds of Electromagnetic Waves"
+      },
+      "student_question": "How are radio waves, light, and X-rays different?",
+      "icon": "radio-tower",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 3–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w3-7",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify practical applications of electromagnetic radiation, such as radio waves used in telecommunications, and x-rays and gamma rays in medicine.",
+      "topic": "electromagnetic_waves",
+      "title": {
+        "en": "Uses of Electromagnetic Waves"
+      },
+      "student_question": "How do we use radio waves and microwaves?",
+      "icon": "radio-tower",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 3–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w3-8",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Gather information from secondary sources to explain the harmful effects that EMR can have on living things.",
+      "topic": "electromagnetic_waves",
+      "title": {
+        "en": "Dangers of Radiation"
+      },
+      "student_question": "How can some radiation harm living things?",
+      "icon": "radioactive",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 3–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w9-1",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Identify and explain evidence that current continents are separate parts of what was a single continent millions of years ago.",
+      "topic": "continental_drift",
+      "title": {
+        "en": "Continental Drift"
+      },
+      "student_question": "Were the continents once joined together?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 9–11, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w9-2",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Participate in a collaborative group or class task to examine and describe the topographical and geological evidence for plate boundaries occurring in the area where the Philippines is located.",
+      "topic": "plate_tectonics",
+      "title": {
+        "en": "Earth's Plates"
+      },
+      "student_question": "How do mountains and trenches form?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 9–11, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g9-science-w9-3",
+      "grade": 9,
+      "subject": "science",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Describe the types of plate boundaries found around the Earth.",
+      "topic": "plate_tectonics",
+      "title": {
+        "en": "Plate Boundaries"
+      },
+      "student_question": "What happens where Earth's plates meet?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 9 Science (last updated April 17, 2026), First Term, Weeks 9–11, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    }
+  ]
 }

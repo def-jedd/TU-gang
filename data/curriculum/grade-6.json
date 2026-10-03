@@ -1,5 +1,1434 @@
 {
   "grade": 6,
   "term": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "g6-araling_panlipunan-w1-1",
+      "grade": 6,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natatalakay ang pagkakatatag, layunin, aral, at paglaganap ng Katipunan",
+      "topic": "katipunan",
+      "title": {
+        "en": "The Katipunan"
+      },
+      "student_question": "What was the Katipunan and why was it formed?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Araling Panlipunan, First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-araling_panlipunan-w2-1",
+      "grade": 6,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Nasusuri ang mga pangyayaring naganap sa panahon ng Himagsikang Pilipino (1892-1896)",
+      "topic": "philippine_revolution",
+      "title": {
+        "en": "The Philippine Revolution"
+      },
+      "student_question": "What happened during the Philippine Revolution?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Araling Panlipunan, First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-araling_panlipunan-w3-1",
+      "grade": 6,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nasusuri ang mga bunga ng pangyayari sa panahon ng Himagsikang Pilipino (1892-1896)",
+      "topic": "philippine_revolution",
+      "title": {
+        "en": "Effects of the Revolution"
+      },
+      "student_question": "What were the results of the Philippine Revolution?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Araling Panlipunan, First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-araling_panlipunan-w4-1",
+      "grade": 6,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Napahahalagahan ang deklarasyon ng kasarinlan ng Pilipinas at ang pagkakatatag ng Unang Republika",
+      "topic": "philippine_independence",
+      "title": {
+        "en": "Philippine Independence"
+      },
+      "student_question": "Why is the declaration of Philippine independence important?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Araling Panlipunan, First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-araling_panlipunan-w5-1",
+      "grade": 6,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Natatalakay ang partisipasyon ng kababaihan sa Himagsikang Pilipino",
+      "topic": "women_in_history",
+      "title": {
+        "en": "Women in the Revolution"
+      },
+      "student_question": "How did women help in the Philippine Revolution?",
+      "icon": "human-female",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Araling Panlipunan, First Term, Week 5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-araling_panlipunan-w6-1",
+      "grade": 6,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Natatalakay ang konsepto ng imperyalismo",
+      "topic": "imperialism",
+      "title": {
+        "en": "Imperialism"
+      },
+      "student_question": "What is imperialism?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Araling Panlipunan, First Term, Week 6, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-araling_panlipunan-w7-1",
+      "grade": 6,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Nasusuri ang pakikibaka ng mga Pilipino sa panahon ng Digmaang Pilipino-Amerikano",
+      "topic": "philippine_american_war",
+      "title": {
+        "en": "Philippine-American War"
+      },
+      "student_question": "How did Filipinos fight during the Philippine-American War?",
+      "icon": "sword-cross",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Araling Panlipunan, First Term, Weeks 7–8, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-araling_panlipunan-w9-1",
+      "grade": 6,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Nasusuri ang imperyalistang pamamaraang ginamit ng mga Amerikano sa pananakop sa Pilipinas",
+      "topic": "american_colonization",
+      "title": {
+        "en": "American Rule"
+      },
+      "student_question": "How did the Americans take control of the Philippines?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Araling Panlipunan, First Term, Weeks 9–10, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w1-1",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Identifying type of plot:\n■ Flashback",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w1-2",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Using kind of verbs:\n■ Intransitive\n○ Using complement:\n■ Noun\n■ Pronoun\n■ Adjective",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w1-3",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w1-4",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Derive meaning based on the visual elements:\n○ Identifying the purpose of the visual text.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Meaning in Pictures"
+      },
+      "student_question": "What can a picture tell me without words?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w2-1",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Identifying type of plot: ■ Flashback ○ Identifying the main idea.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w2-2",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Using adverbs:\n■ Order of adverbs (manner, place, frequency, time, purpose)",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w2-3",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w2-4",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Derive meaning based on the visual elements:\n○ Identifying the purpose of the visual text.\n○ Analyzing how visual elements contribute to the meaning of a text.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Meaning in Pictures"
+      },
+      "student_question": "What can a picture tell me without words?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w3-1",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Sequencing events:\n■ At least 8 events\n○ Identifying the main idea.\n○ Summarizing story events.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w3-2",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Using tenses of verbs:\n■ Perfect:\n● Present\n● Past\n● Future",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w3-3",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w3-4",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Derive meaning based on the visual elements:\n○ Analyzing how visual elements contribute to the meaning of a text.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Meaning in Pictures"
+      },
+      "student_question": "What can a picture tell me without words?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w4-1",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Inferring:\n■ Author’s purpose, message, target audience\n○ Making predictions:\n■ Possible ending\n○ Drawing conclusions.\n○ Applying the important story elements to one’s schema:\n■ Learning vicariously from the text.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w4-2",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use words with literal (denotative) and implied (connotative) meanings in sentences:\n○ Using context clues:\n■ Punctuation\n○ Using general references (print and online):\n■ Almanac",
+      "topic": "word_meanings",
+      "title": {
+        "en": "Literal and Hidden Meanings"
+      },
+      "student_question": "Can a word mean something different from its usual meaning?",
+      "icon": "text-search",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w4-3",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Composing compound-complex sentences.",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w4-4",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w4-5",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Evaluate cultural appropriateness of visual elements.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Respectful Pictures"
+      },
+      "student_question": "How do I know if a picture respects people's culture?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w5-1",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Analyzing figures of speech to get and clarify meaning:\n■ Hyperbole\n■ Irony",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w5-2",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use words with literal (denotative) and implied (connotative) meanings in sentences:\n○ Using context clues:\n■ Punctuation\n○ Using general references (print and online):\n■ Almanac",
+      "topic": "word_meanings",
+      "title": {
+        "en": "Literal and Hidden Meanings"
+      },
+      "student_question": "Can a word mean something different from its usual meaning?",
+      "icon": "text-search",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w5-3",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Using adjectives:\n■ Using prepositional phrases as adjective (adjectival phrase)",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w5-4",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w5-5",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use appropriate non-verbal cues for clarity of context, purpose, and meaning:\n○ Using facial expressions.\n○ Using gestures.\n○ Using eye contact.\n○ Using haptics.\n○ Using posture.\n○ Using proxemics and blocking.",
+      "topic": "body_language",
+      "title": {
+        "en": "Body Language"
+      },
+      "student_question": "How do gestures and facial expressions help me speak clearly?",
+      "icon": "human-greeting",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w5-6",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Derive meaning based on the visual elements: ○ Identifying the purpose of the visual text.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Purpose of a Picture"
+      },
+      "student_question": "Why did someone make this picture or poster?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-english-w5-7",
+      "grade": 6,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Create a visual text drawn from visual elements learned.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Making a Visual Text"
+      },
+      "student_question": "How can I make a poster that tells a message?",
+      "icon": "draw",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w1-1",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Discuss fishery arts and its branches/fields.",
+      "topic": "fishery",
+      "title": {
+        "en": "Fishery Arts"
+      },
+      "student_question": "What is fishery and what are its branches?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w1-2",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Perform web conferencing in a safe and responsible manner.",
+      "topic": "video_calls",
+      "title": {
+        "en": "Video Calls"
+      },
+      "student_question": "How do I join an online meeting safely?",
+      "icon": "video",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: ICT (last updated April 7, 2026), First Term, Weeks 1–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w2-1",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Discuss the importance and benefits in fish raising.",
+      "topic": "fish_raising",
+      "title": {
+        "en": "Why Raise Fish"
+      },
+      "student_question": "Why is raising fish important?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 2–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w2-2",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify the government agencies and non-government organizations that support fish raising and fisheries.",
+      "topic": "fish_raising",
+      "title": {
+        "en": "Groups That Help Fish Raisers"
+      },
+      "student_question": "Which agencies help people who raise fish?",
+      "icon": "gavel",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 2–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w2-3",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Discuss the successful fish raisers in the community and their characteristics.",
+      "topic": "successful_farmers",
+      "title": {
+        "en": "Successful Fish Raisers"
+      },
+      "student_question": "What makes a fish raiser successful?",
+      "icon": "account-star",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 2–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w4-1",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Discuss the requirements for natural fish raising.",
+      "topic": "fish_raising",
+      "title": {
+        "en": "Raising Fish Naturally"
+      },
+      "student_question": "What do fish need to grow well?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w4-2",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Discuss the anatomy of fish.",
+      "topic": "fish_anatomy",
+      "title": {
+        "en": "Parts of a Fish"
+      },
+      "student_question": "What are the parts of a fish?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w4-3",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use online forms builder in a safe and responsible manner.",
+      "topic": "online_forms",
+      "title": {
+        "en": "Online Forms"
+      },
+      "student_question": "How do I make an online form safely?",
+      "icon": "form-select",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: ICT (last updated April 7, 2026), First Term, Weeks 4–6, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w5-1",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Discuss the diseases, causes, sign and symptoms, preventions, and control measures of fish diseases.",
+      "topic": "fish_diseases",
+      "title": {
+        "en": "Fish Diseases"
+      },
+      "student_question": "How do we keep fish from getting sick?",
+      "icon": "medical-bag",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w6-1",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Perform the procedure for natural fish raising with safety precautions.",
+      "topic": "fish_raising",
+      "title": {
+        "en": "Caring for Fish Safely"
+      },
+      "student_question": "How do I raise fish safely?",
+      "icon": "fish",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w7-1",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Perform uploading and sharing of files in cloud storage in a safe and responsible manner.",
+      "topic": "cloud_storage",
+      "title": {
+        "en": "Cloud Storage"
+      },
+      "student_question": "How do I upload and share files safely online?",
+      "icon": "cloud-upload",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: ICT (last updated April 7, 2026), First Term, Weeks 7–10, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w8-1",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Perform harvesting fishes with safety precautions.",
+      "topic": "harvesting",
+      "title": {
+        "en": "Harvesting Fish"
+      },
+      "student_question": "How do we harvest fish safely?",
+      "icon": "basket",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 8–9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-epp_tle-w10-1",
+      "grade": 6,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Perform selling of fishes with safety precautions.",
+      "topic": "selling_produce",
+      "title": {
+        "en": "Selling Fish"
+      },
+      "student_question": "How do I sell fish safely and properly?",
+      "icon": "store",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-gmrc_values-w1-1",
+      "grade": 6,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagpapahalaga sa sarili sa pamamagitan ng pagbabahagi ng talento at pagpapaunlad ng mga gawi a. Natutukoy ang mga sariling kilos ng pagkilala sa sarili bilang nilikha na may dignidad b. Napatutunayan na ang pagkilala sa sarili bilang nilikha na may dignidad ay nagmumula sa kaniyang pagkabukod-tangi sa lahat ng nilalang at ito ang batayan ng paggalang sa sarili at kapuwa c. Nailalapat ang mga sariling kilos ng pagkilala sa sarili bilang nilikha na may dignidad (hal. pagpapaunlad ng sariling talento)",
+      "topic": "self_worth",
+      "title": {
+        "en": "Sharing My Talents"
+      },
+      "student_question": "How can sharing my talents help me grow?",
+      "icon": "account-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 GMRC (last updated July 20, 2026), First Term, Weeks 1–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-gmrc_values-w3-1",
+      "grade": 6,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagiging-totoo sa pamamagitan ng pagpapaunlad ng sariling katangian, kakayahan, at mga pagpapahalaga a. Naiisa-isa ang mga paraan ng paglinang ng positibong pagtingin sa sarili b. Naipaliliwanag na ang paglinang ng positibong pagtingin sa sarili ay tungkulin ng bawat isa katuwang ang pamilya upang mapatatag ang sariling pagkatao, mga katangian, kakayahan, at pagpapahalaga c. Naisasakilos ang mga paraan ng paglinang ng positibong pagtingin sa sarili",
+      "topic": "sincerity",
+      "title": {
+        "en": "Being True to Myself"
+      },
+      "student_question": "How can I grow my good traits and abilities?",
+      "icon": "handshake",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 GMRC (last updated July 20, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-gmrc_values-w4-1",
+      "grade": 6,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang maingat na paghuhusga sa pamamagitan ng pagtitimbang-timbang ng mga opsiyon upang matukoy ang higit na magpapabuti sa kaniya bilang tao a. Natutukoy ang mga hakbang sa mapanagutang pagpapasiya b. Naipaliliwanag na ang mapanagutang pagpapasiya ng sarili kasama ang kapuwa ay naglilinang ng kasanayang pumili na magpapabuti sa kaniya bilang tao o makatutulong sa pagkamit ng higit na makabubuti sa karamihan c. Nailalapat ang mga hakbang sa mapanagutang pagpapasiya",
+      "topic": "prudence",
+      "title": {
+        "en": "Making Wise Choices"
+      },
+      "student_question": "How do I choose the best option before I decide?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 GMRC (last updated July 20, 2026), First Term, Weeks 4–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-gmrc_values-w5-1",
+      "grade": 6,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pananampalataya sa pamamagitan ng palagiang pananalangin kasama ang pamilya a. Natutukoy ang mga paraan ng sariling pakikipag- ugnayan sa Diyos bilang indikasyon ng pananampalataya b. Naipaliliwanag na ang sariling pakikipag-ugnayan sa Diyos bilang indikasyon ng pananampalataya ay nagdudulot ng mas malalim na pagkilala, pag-unawa, at pagtitiwala sa Kaniya na nagpapatatag ng kalooban sa harap ng anumang hamon sa buhay c. Naisasakilos ang mga sariling paraan ng pakikipag- ugnayan sa Diyos bilang indikasyon ng pananampalataya",
+      "topic": "faith",
+      "title": {
+        "en": "Praying as a Family"
+      },
+      "student_question": "Why is it good to pray together as a family?",
+      "icon": "hands-pray",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 GMRC (last updated July 20, 2026), First Term, Weeks 5–6, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-gmrc_values-w6-1",
+      "grade": 6,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Nakapagsasanay ng pagiging mapagmalasakit sa pamamagitan ng pagbibigay-priyoridad sa kapakanan ng kasapi ng pamilya (hal. paggising nang mas maaga para ipagluto ang magulang) a. Nakatutukoy ng mga sariling kilos ng pagmamahal sa pamilya bilang indikasyon ng pananampalataya sa Diyos b. Napatutunayan na ang sariling kilos ng pagmamahal bilang indikasyon ng pananampalataya sa Diyos ay pagkalinga sa kapuwa na nagpapadaloy ng kaniyang mabuting pagkatao c. Nailalapat ang sariling kilos ng pagmamahal sa pamilya bilang indikasyon ng pananampalataya sa Diyos",
+      "topic": "compassion",
+      "title": {
+        "en": "Caring for Family"
+      },
+      "student_question": "How can I put my family's needs first?",
+      "icon": "hand-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 GMRC (last updated July 20, 2026), First Term, Weeks 6–7, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-gmrc_values-w7-1",
+      "grade": 6,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagiging mapagmalasakit sa pamamagitan ng palagiang pagtatasa ng mga situwasyon na mangangailangan ng pagtitipid ng enerhiya a. Naiisa-isa ang mga paraan ng sariling pagtitipid ng enerhiya upang mapangalagaan ang kalikasan b. Naipaliliwanag na ang sariling pagtitipid ng enerhiya upang mapangalagaan ang kalikasan ay nakatutulong sa pagbawas ng paggamit nito (hal. fossil fuel) at pagpapanatili ng kalusugan ng mga nilalang na may buhay c. Naisasakilos ang paraan ng sariling pagtitipid ng enerhiya upang mapangalagaan ang kalikasan (hal. pagtanggal ng plug sa outlet ng appliance pagkatapos gamitin ito)",
+      "topic": "compassion",
+      "title": {
+        "en": "Helping in Danger"
+      },
+      "student_question": "How can I help others when there is danger?",
+      "icon": "hand-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 GMRC (last updated July 20, 2026), First Term, Weeks 7–8, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-gmrc_values-w8-1",
+      "grade": 6,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagiging mapagpasalamat sa pamamagitan ng gawaing nagtatampok sa kanilang mga kontribusyon a. Naiisa-isa ang mga kontribusyon ng mga Pilipinong may mahahalagang ambag sa bayan (mga indibidwal, grupo, at organisasyon) b. Napatutunayan na ang sariling pagkilala sa mga Pilipinong may mahalagang kontribusyon sa bayan (mga indibidwal, grupo, at organisasyon) ay nagdudulot ng inspirasyon upang tularan ang kanilang mga mabuting halimbawa at nagawa sa bayan c. Nailalapat ang mga sariling paraan ng pagkilala sa mga Pilipinong may mahahalagang kontribusyon sa bayan (mga indibidwal, grupo, at organisasyon)",
+      "topic": "gratitude",
+      "title": {
+        "en": "Thanking Our Helpers"
+      },
+      "student_question": "How can we thank people and groups who help us?",
+      "icon": "heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 GMRC (last updated July 20, 2026), First Term, Weeks 8–9, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-gmrc_values-w9-1",
+      "grade": 6,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang kagandahang-loob sa pamamagitan ng mga angkop na salita o gesture, pag-alaala at pag-alalay kung kinakailangan a. Nakakikilala ng mga wastong paraan ng pakikipag-ugnayan sa mga mas matanda (elders) at nakatatanda o may gulang (elderly) sa pamilya b. Naipaliliwanag na ang ugnayan ng sarili sa mga mas matanda (elders) at nakatatanda o may gulang (elderly) sa pamilya ay sumasalamin ng pagpapahalaga at pagkilala sa kanilang dignidad, karanasan, at karunungan na magsisilbing gabay sa mga pagpapasiya at pagbuo ng mga pananaw sa iba’t ibang isyu c. Nailalapat ang mga wastong paraan ng pakikipag-ugnayan sa mga mas matanda (elders) at nakatatanda o may gulang (elderly) sa pamilya",
+      "topic": "courtesy",
+      "title": {
+        "en": "Kindness to Elders"
+      },
+      "student_question": "How can I show kindness to the elderly?",
+      "icon": "account-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 GMRC (last updated July 20, 2026), First Term, Weeks 9–10, PDF page 7 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w1-1",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Explore whether or not a shape tessellates.",
+      "topic": "tessellation",
+      "title": {
+        "en": "Tessellations"
+      },
+      "student_question": "Which shapes can cover a floor without gaps?",
+      "icon": "view-grid",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w1-2",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Tessellate a surface using different shapes, including triangles, squares, and rectangles.",
+      "topic": "tessellation",
+      "title": {
+        "en": "Making Tessellations"
+      },
+      "student_question": "How can I make a pattern with triangles and squares?",
+      "icon": "view-grid",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w2-1",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Draw resulting images of shapes that undergo translation, reflection, rotation",
+      "topic": "transformations",
+      "title": {
+        "en": "Moving Shapes"
+      },
+      "student_question": "What happens to a shape when I flip, slide, or turn it?",
+      "icon": "rotate-right",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w3-1",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Add and subtract decimals with decimal parts of up to 4 decimal places.",
+      "topic": "decimals",
+      "title": {
+        "en": "Adding Decimals"
+      },
+      "student_question": "How do I add and subtract decimals?",
+      "icon": "decimal",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w3-2",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Solve multi-step problems involving addition and/or subtraction of decimals, including problems involving money.",
+      "topic": "decimals",
+      "title": {
+        "en": "Decimal Word Problems"
+      },
+      "student_question": "How do I solve word problems with decimals?",
+      "icon": "decimal",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w4-1",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Mentally multiply decimals of up to 2 decimal places by 0.1, 0.01, 0.001, 10, 100, and 1000",
+      "topic": "decimals",
+      "title": {
+        "en": "Multiplying Decimals Mentally"
+      },
+      "student_question": "How can I multiply decimals by 10 or 0.1 in my head?",
+      "icon": "decimal",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w4-2",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Solve multi-step problems involving multiplication of decimals that may or may not also involve addition or subtraction of decimals, including problems involving money.",
+      "topic": "decimals",
+      "title": {
+        "en": "Multiplying Decimals"
+      },
+      "student_question": "How do I solve problems by multiplying decimals?",
+      "icon": "decimal",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w5-1",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Divide:\na. 1- to 2-digit whole numbers resulting in a repeating (non-terminating) decimal quotient. (e.\ng., 1/3 = 0.3333 … )\nb. a whole number by a decimal of 1 decimal place",
+      "topic": "decimals",
+      "title": {
+        "en": "Dividing Decimals"
+      },
+      "student_question": "How do I divide decimals?",
+      "icon": "decimal",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w5-2",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Mentally divide:\na. decimals of up to 4 decimal places by 0.1, 0.01, and 0.001\nb. decimals of up to 2 decimal places by 10, 100, and 1000",
+      "topic": "decimals",
+      "title": {
+        "en": "Dividing Decimals Mentally"
+      },
+      "student_question": "How can I divide decimals by 10 or 100 in my head?",
+      "icon": "decimal",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w6-1",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Solve problems involving division of decimals that may or may not involve the other operations with decimals and/or whole numbers.",
+      "topic": "decimals",
+      "title": {
+        "en": "Decimal Division Problems"
+      },
+      "student_question": "How do I solve problems by dividing decimals?",
+      "icon": "decimal",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w6-2",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Obtain products that result from multiplying different combinations of fractions, whole numbers, and mixed numbers.",
+      "topic": "fractions",
+      "title": {
+        "en": "Multiplying Mixed Numbers"
+      },
+      "student_question": "How do I multiply fractions and mixed numbers?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w6-3",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Solve multi-step problems involving multiplication that may or may not involve addition or subtraction of different combinations of fractions, whole numbers, and mixed numbers.",
+      "topic": "fractions",
+      "title": {
+        "en": "Fraction Word Problems"
+      },
+      "student_question": "How do I solve word problems with fractions?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w8-1",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Divide different combinations of fractions, whole numbers, and mixed numbers.",
+      "topic": "fractions",
+      "title": {
+        "en": "Dividing Mixed Numbers"
+      },
+      "student_question": "How do I divide fractions and mixed numbers?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w8-2",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Solve multi-step problems involving division of different combinations of fractions, whole numbers, and mixed numbers that may or may not involve any of the other operations of fractions.",
+      "topic": "fractions",
+      "title": {
+        "en": "Fraction Division Problems"
+      },
+      "student_question": "How do I solve word problems by dividing fractions?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w9-1",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Describe the relationship between quantities using ratio for:\na. part-whole relationships\nb. part-part relationships.\"",
+      "topic": "ratio",
+      "title": {
+        "en": "Ratio"
+      },
+      "student_question": "What is a ratio?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Weeks 9–10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w9-2",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Express one number as a fraction of another given their ratio, and vice versa.",
+      "topic": "ratio",
+      "title": {
+        "en": "Ratios and Fractions"
+      },
+      "student_question": "How is a ratio like a fraction?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Weeks 9–10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w9-3",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Identify and write equivalent ratios.",
+      "topic": "ratio",
+      "title": {
+        "en": "Equivalent Ratios"
+      },
+      "student_question": "What are equivalent ratios?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Weeks 9–10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-mathematics-w9-4",
+      "grade": 6,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Solve problems involving ratio.",
+      "topic": "ratio",
+      "title": {
+        "en": "Ratio Problems"
+      },
+      "student_question": "How do I solve problems with ratios?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Mathematics (last updated April 17, 2026), First Term, Weeks 9–10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w1-1",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Describe changes of state for solids, liquids, and gases as melting, evaporation, freezing, condensation using diagrams and flowcharts.",
+      "topic": "melting",
+      "title": {
+        "en": "Changes of State"
+      },
+      "student_question": "What happens when water melts, evaporates, or freezes?",
+      "icon": "snowflake-melt",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Weeks 1–2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w1-2",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Explain the role of heat energy in change of state processes.",
+      "topic": "heat_energy",
+      "title": {
+        "en": "Heat and Changes of State"
+      },
+      "student_question": "How does heat make matter change?",
+      "icon": "fire",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Weeks 1–2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w3-1",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Explain why physical changes are reversible, and chemical changes are irreversible.",
+      "topic": "physical_chemical_change",
+      "title": {
+        "en": "Physical and Chemical Changes"
+      },
+      "student_question": "Why can melted ice turn back but burnt paper cannot?",
+      "icon": "flask",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w4-1",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Describe useful everyday examples of uniform and non-uniform mixtures, such as solutions and suspensions.",
+      "topic": "mixtures",
+      "title": {
+        "en": "Mixtures"
+      },
+      "student_question": "What is a mixture?",
+      "icon": "cup-water",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Weeks 4–6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w4-2",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Describe air as a mixture of oxygen, carbon dioxide, nitrogen, and water vapor.",
+      "topic": "air",
+      "title": {
+        "en": "What Is Air Made Of?"
+      },
+      "student_question": "What gases make up the air we breathe?",
+      "icon": "weather-windy",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Weeks 4–6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w4-3",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Demonstrate various techniques in separating mixtures, such as decantation, winnowing, scooping, picking, evaporation, filtering, sieving, and using magnets.",
+      "topic": "separating_mixtures",
+      "title": {
+        "en": "Separating Mixtures"
+      },
+      "student_question": "How can we separate rice from stones or sand from water?",
+      "icon": "filter",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Weeks 4–6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w4-4",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Explain the benefits of each mixture separation technique in preparing useful products.",
+      "topic": "separating_mixtures",
+      "title": {
+        "en": "Why Separate Mixtures"
+      },
+      "student_question": "How does separating mixtures help us make things?",
+      "icon": "filter",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Weeks 4–6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w7-1",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Apply the features of a fair test: a. change one factor, b. measure one factor, and c. keep all other factors the same.",
+      "topic": "fair_test",
+      "title": {
+        "en": "Fair Test"
+      },
+      "student_question": "What makes an experiment a fair test?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Weeks 7–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w7-2",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Recognize the features of a fair test and that scientific investigations also involve a) doing at least three trials, or use replication, and b) observing, measuring, and recording accurately.",
+      "topic": "fair_test",
+      "title": {
+        "en": "Repeating Experiments"
+      },
+      "student_question": "Why do scientists repeat experiments?",
+      "icon": "flask",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Weeks 7–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w9-1",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Identify from pictures and diagrams the parts of the circulatory system as heart, blood, and blood vessels, and describe how they work.",
+      "topic": "circulatory_system",
+      "title": {
+        "en": "Circulatory System"
+      },
+      "student_question": "How does my heart pump blood around my body?",
+      "icon": "heart-pulse",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w10-1",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Describe the different ways that plants reproduce, such as pollination, seed production, and plant propagation.",
+      "topic": "plant_reproduction",
+      "title": {
+        "en": "How Plants Reproduce"
+      },
+      "student_question": "How do plants make new plants?",
+      "icon": "flower",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w10-2",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Plan a simple scientific investigation that includes the features of a fair test, replication, and accurate measurement to determine which type of plant propagation, such as cutting, budding, layering, grafting, works best for garden plants.",
+      "topic": "scientific_investigation",
+      "title": {
+        "en": "Planning a Fair Test"
+      },
+      "student_question": "How do I plan a fair experiment about plants?",
+      "icon": "flask",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g6-science-w11-1",
+      "grade": 6,
+      "subject": "science",
+      "term": 1,
+      "week": 11,
+      "competency_code": null,
+      "competency": "Describe the differences between animals with a backbone (vertebrates) and animals without backbones (invertebrates) by using common local examples of each group.",
+      "topic": "vertebrates_invertebrates",
+      "title": {
+        "en": "Animals With and Without Backbones"
+      },
+      "student_question": "Which animals have backbones and which do not?",
+      "icon": "bone",
+      "source": "DepEd Three-Term Budget of Work, Grade 6 Science (last updated April 8, 2026), First Term, Week 11, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    }
+  ]
 }

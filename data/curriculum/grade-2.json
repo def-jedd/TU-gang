@@ -1,5 +1,1400 @@
 {
   "grade": 2,
   "term": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "g2-english-w1-1",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Recognize rhymes in chants, poems, and stories heard.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Rhyming Words"
+      },
+      "student_question": "Which words rhyme in a chant or poem?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w1-2",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify alphabet letter names.",
+      "topic": "alphabet",
+      "title": {
+        "en": "Letter Names"
+      },
+      "student_question": "What are the names of the letters of the alphabet?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w1-3",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. oneself and family",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about things around me?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w1-4",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use common expressions and polite greetings appropriate to a given situation.",
+      "topic": "greetings",
+      "title": {
+        "en": "Polite Greetings"
+      },
+      "student_question": "What polite words should I use when I greet people?",
+      "icon": "hand-wave",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w1-5",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences.\na. oneself",
+      "topic": "telling_events",
+      "title": {
+        "en": "Sharing My Experiences"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w2-1",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Recognize rhymes in chants, poems, and stories heard.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Rhyming Words"
+      },
+      "student_question": "Which words rhyme in a chant or poem?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w2-2",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify alphabet letter names.",
+      "topic": "alphabet",
+      "title": {
+        "en": "Letter Names"
+      },
+      "student_question": "What are the names of the letters of the alphabet?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w2-3",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Read words accurately and automatically according to word patterns (initial, final, medial): CVC words",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading CVC Words"
+      },
+      "student_question": "How do I read short words like cat and dog?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w2-4",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. oneself",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about things around me?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w2-5",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify words with different functions.\na. words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns)\ni. common and proper nouns",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Kinds of Words"
+      },
+      "student_question": "What jobs do different words do in a sentence?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w2-6",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Read words correctly for meaning (based on word patterns).",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading Words Correctly"
+      },
+      "student_question": "How do word patterns help me read words?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w2-7",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Write words legibly and correctly (based on word patterns).",
+      "topic": "handwriting",
+      "title": {
+        "en": "Writing Words"
+      },
+      "student_question": "How can I write words neatly and correctly?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w2-8",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences. a. oneself",
+      "topic": "telling_events",
+      "title": {
+        "en": "Talking About Myself"
+      },
+      "student_question": "How can I tell others about my experiences?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-1",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Recognize rhymes in chants, poems, and stories heard.",
+      "topic": "rhymes",
+      "title": {
+        "en": "Rhyming Words"
+      },
+      "student_question": "Which words rhyme in a chant or poem?",
+      "icon": "music",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-2",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Segment onset and rime.",
+      "topic": "syllables",
+      "title": {
+        "en": "Onset and Rime"
+      },
+      "student_question": "How do I split a word into its first sound and the rest?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-3",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify alphabet letter names.",
+      "topic": "alphabet",
+      "title": {
+        "en": "Letter Names"
+      },
+      "student_question": "What are the names of the letters of the alphabet?",
+      "icon": "alphabetical",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-4",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Read words accurately and automatically according to word patterns (initial, final, medial): CVC words",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading CVC Words"
+      },
+      "student_question": "How do I read short words like cat and dog?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-5",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. oneself",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about things around me?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-6",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use content-specific words in Mathematics (basic symbols and terminologies).",
+      "topic": "math_words",
+      "title": {
+        "en": "Math Words"
+      },
+      "student_question": "What do math words and symbols like plus and minus mean?",
+      "icon": "calculator",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-7",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify words with different functions.\na. words that label persons, places, things, animals, events, ideas, and emotions (naming words - nouns)\ni. Gender\nb. words that replace persons, places, things, animals, events, ideas, and emotions: personal pronouns",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Kinds of Words"
+      },
+      "student_question": "What jobs do different words do in a sentence?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-8",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Read words correctly for meaning (based on word patterns).",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading Words Correctly"
+      },
+      "student_question": "How do word patterns help me read words?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-9",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Write words legibly and correctly (based on word patterns).",
+      "topic": "handwriting",
+      "title": {
+        "en": "Writing Words"
+      },
+      "student_question": "How can I write words neatly and correctly?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-10",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important elements from stories (characters, setting, events).\nb. Sequence at least three events.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-11",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences.\na. oneself",
+      "topic": "telling_events",
+      "title": {
+        "en": "Sharing My Experiences"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w3-12",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Compose texts to react to the character, setting, or events in a story.",
+      "topic": "responding_to_stories",
+      "title": {
+        "en": "Writing About a Story"
+      },
+      "student_question": "How can I write what I think about a story's characters?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-1",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Segment onset and rime.",
+      "topic": "syllables",
+      "title": {
+        "en": "Onset and Rime"
+      },
+      "student_question": "How do I split a word into its first sound and the rest?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-2",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify Grade 2 level-appropriate sight words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Sight Words"
+      },
+      "student_question": "What are sight words and why should I know them?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-3",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Read words accurately and automatically according to word patterns (initial, final, medial): CVC words",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading CVC Words"
+      },
+      "student_question": "How do I read short words like cat and dog?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-4",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify high-frequency words accurately.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-5",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. oneself",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about things around me?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-6",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use content-specific words in Mathematics (basic symbols and terminologies).",
+      "topic": "math_words",
+      "title": {
+        "en": "Math Words"
+      },
+      "student_question": "What do math words and symbols like plus and minus mean?",
+      "icon": "calculator",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-7",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify words with different functions.\na. words that label actions (doing words - verbs)",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Kinds of Words"
+      },
+      "student_question": "What jobs do different words do in a sentence?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-8",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Read words correctly for meaning (based on word patterns).",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading Words Correctly"
+      },
+      "student_question": "How do word patterns help me read words?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-9",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Write words legibly and correctly (based on word patterns).",
+      "topic": "handwriting",
+      "title": {
+        "en": "Writing Words"
+      },
+      "student_question": "How can I write words neatly and correctly?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-10",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important elements from stories (characters, setting, events).\nb. Sequence at least three events.\nc. Identify the problem and solution in stories.\nd. Infer the character’s feelings and traits.\ne. Relate story events to one’s experience.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-11",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use own words in retelling myths, legends, fables, and narrative poems.",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Legends and Fables"
+      },
+      "student_question": "How can I retell a legend or fable in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-12",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences.\na. oneself",
+      "topic": "telling_events",
+      "title": {
+        "en": "Sharing My Experiences"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-13",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use basic sight words, high frequency, and content-specific words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Using Common Words"
+      },
+      "student_question": "How can I use common words when I write?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w4-14",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Compose texts to react to the character, setting, or events in a story.",
+      "topic": "responding_to_stories",
+      "title": {
+        "en": "Writing About a Story"
+      },
+      "student_question": "How can I write what I think about a story's characters?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-1",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Segment onset and rime.",
+      "topic": "syllables",
+      "title": {
+        "en": "Onset and Rime"
+      },
+      "student_question": "How do I split a word into its first sound and the rest?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-2",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify Grade 2 level-appropriate sight words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Sight Words"
+      },
+      "student_question": "What are sight words and why should I know them?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-3",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Read words accurately and automatically according to word patterns (initial, final, medial): CVC words",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading CVC Words"
+      },
+      "student_question": "How do I read short words like cat and dog?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-4",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify high-frequency words accurately.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-5",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. oneself",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about things around me?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-6",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use content-specific words in Mathematics (basic symbols and terminologies).",
+      "topic": "math_words",
+      "title": {
+        "en": "Math Words"
+      },
+      "student_question": "What do math words and symbols like plus and minus mean?",
+      "icon": "calculator",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-7",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify words with different functions.\na. words that label actions (doing words - verbs)\nb. words that describe persons, places, things, animals, events, ideas, and emotions (describing words - adjectives)",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Kinds of Words"
+      },
+      "student_question": "What jobs do different words do in a sentence?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-8",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Read words correctly for meaning (based on word patterns).",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading Words Correctly"
+      },
+      "student_question": "How do word patterns help me read words?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-9",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Write words legibly and correctly (based on word patterns).",
+      "topic": "handwriting",
+      "title": {
+        "en": "Writing Words"
+      },
+      "student_question": "How can I write words neatly and correctly?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-10",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important elements from stories (characters, setting, events).\nb. Sequence at least three events.\nc. Identify the problem and solution in stories.\nd. Infer the character’s feelings and traits.\ne. Relate story events to one’s experience.\nf. Identify cause and effect of events.\ng. Predict possible ending.\nh. Give a summary.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-11",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use own words in retelling myths, legends, fables, and narrative poems.",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Legends and Fables"
+      },
+      "student_question": "How can I retell a legend or fable in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-12",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences.\na. oneself",
+      "topic": "telling_events",
+      "title": {
+        "en": "Sharing My Experiences"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-13",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use basic sight words, high frequency, and content-specific words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Using Common Words"
+      },
+      "student_question": "How can I use common words when I write?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-14",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Compose texts to react to the character, setting, or events in a story.",
+      "topic": "responding_to_stories",
+      "title": {
+        "en": "Writing About a Story"
+      },
+      "student_question": "How can I write what I think about a story's characters?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-english-w5-15",
+      "grade": 2,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Make a summary of narrative text.",
+      "topic": "summarizing",
+      "title": {
+        "en": "Summarizing a Story"
+      },
+      "student_question": "How do I tell the most important parts of a story?",
+      "icon": "text-short",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-gmrc_values-w1-1",
+      "grade": 2,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagpapahalaga sa sarili sa pamamagitan ng paggamit ng batayang impormasyon sa mga angkop na situwasyon a. Natutukoy ang mga batayang impormasyon tungkol sa sariling pamilya b. Napatutunayan na ang mga batayang impormasyon tungkol sa sariling pamilya ay mahalaga sa pagkakaroon ng kamalayan sa sariling pagkakakilanlan c. Naipahahayag ang mga batayang impormasyon tungkol sa sariling pamilya (hal. pagguhit ng family portrait at pagkuwento tungkol sa pamilya)",
+      "topic": "self_worth",
+      "title": {
+        "en": "Valuing Myself"
+      },
+      "student_question": "How can I show that I value myself?",
+      "icon": "account-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 GMRC (last updated July 20, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-gmrc_values-w3-1",
+      "grade": 2,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagpapahalaga sa sarili sa pamamagitan ng pagtupad sa mga alituntuning pangkalusugan at pangkaligtasan a. Natutukoy ang mga paraan ng pangangalaga sa kalusugan na natutuhan sa pamilya b. Naipaliliwanag na ang pangangalaga sa kalusugan gabay ang pamilya ay mahalaga sa pagpapanatili ng malusog na isip at katawan c. Naisasakilos ang wastong pangangalaga sa kalusugan na gabay ang pamilya",
+      "topic": "healthy_habits",
+      "title": {
+        "en": "Healthy Habits"
+      },
+      "student_question": "Why should I follow health rules every day?",
+      "icon": "heart-pulse",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 GMRC (last updated July 20, 2026), First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-gmrc_values-w4-1",
+      "grade": 2,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging totoo sa pamamagitan ng wastong pagpapahayag ng tunay na damdamin sa mga pangyayari o situwasyon a. Naiisa-isa ang iba't ibang damdamin b. Naiuugnay ang pag-unawa sa sariling damdamin sa paglinang ng pansariling disiplina na makikita sa kaniyang mga kilos at pakikipag-ugnayan c. Nailalapat ang mga wastong pagtugon sa iba’t ibang nararanasang damdamin",
+      "topic": "sincerity",
+      "title": {
+        "en": "Being Truthful"
+      },
+      "student_question": "How can I honestly say what I feel?",
+      "icon": "handshake",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 GMRC (last updated July 20, 2026), First Term, Weeks 4–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-gmrc_values-w6-1",
+      "grade": 2,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging madasalin sa pamamagitan ng pagbabahagi ng sariling panalangin a. Nakapagbibigay ng mga mabuting dulot ng pansariling panalangin b. Napatutunayan na ang pansariling panalangin ay paraan ng pakikipag-ugnayan upang maipahayag ang pagkilala, pasasalamat, at pagmamahal sa Diyos c. Nakabubuo ng sariling panalangin para sa ikabubuti ng sarili at kapuwa",
+      "topic": "prayer",
+      "title": {
+        "en": "Sharing a Prayer"
+      },
+      "student_question": "How can I share my own prayer with others?",
+      "icon": "hands-pray",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 GMRC (last updated July 20, 2026), First Term, Week 6, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-gmrc_values-w7-1",
+      "grade": 2,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging masinop sa pamamagitan ng pagtitiyak na walang naaaksaya at nasasayang na gamit o mga bagay sa kapaligiran na maaaring mapakinabangan a. Nakakikilala ng mga wastong paraan ng pagtitipid na nakabubuti sa kapaligiran b. Napatutunayan na ang pagtitipid na nakabubuti sa kapaligiran ay pagganap sa tungkuling gamitin nang wasto at sulitin ang mga bagay c. Naisasakilos ang mga wastong paraan ng pagtitipid na nakabubuti sa kapaligiran",
+      "topic": "not_wasting",
+      "title": {
+        "en": "Not Wasting Things"
+      },
+      "student_question": "Why should I take care not to waste things?",
+      "icon": "recycle",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 GMRC (last updated July 20, 2026), First Term, Week 7, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-gmrc_values-w8-1",
+      "grade": 2,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging masunurin sa pamamagitan ng pagsunod sa iba’t ibang alituntunin sa pamayanan a. Natutukoy ang mga tungkulin ng batang Pilipino sa pamayanan b. Napatutunayan na ang mga sariling tungkulin ng batang Pilipino sa pamayanan ay makatutulong upang hubugin ang pagmamahal sa kaniyang bayan c. Nailalapat ang mga tungkulin sa pamayanan ng batang Pilipino sa iba’t ibang situwasyon",
+      "topic": "obedience",
+      "title": {
+        "en": "Following Rules"
+      },
+      "student_question": "Why should I follow the rules in my community?",
+      "icon": "clipboard-check",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 GMRC (last updated July 20, 2026), First Term, Week 8, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-gmrc_values-w9-1",
+      "grade": 2,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Nakapagsasanay ng tiwala sa sarili sa pamamagitan ng pagpapakita ng kakayahan o talento a. Natutukoy ang sariling kakayahan o talento sa tulong ng pamilya b. Napatutunayan na ang pagkilala ng sariling kakayahan o talento sa tulong ng pamilya ay naglilinang sa kaniyang taglay na kalakasan tungo sa pagkakaroon ng tiwala sa sarili c. Nakapagbabahagi ng sariling kakayahan o talento na natuklasan sa tulong ng pamilya",
+      "topic": "self_confidence",
+      "title": {
+        "en": "Showing My Talents"
+      },
+      "student_question": "How can I feel confident showing my talents?",
+      "icon": "star",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 GMRC (last updated July 20, 2026), First Term, Weeks 9–10, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-makabansa-w1-1",
+      "grade": 2,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang konsepto ng komunidad",
+      "topic": "community",
+      "title": {
+        "en": "What Is a Community?"
+      },
+      "student_question": "What is a community?",
+      "icon": "home-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 MAKABANSA, First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-makabansa-w2-1",
+      "grade": 2,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Nailalarawan ang sariling komunidad batay sa:\na. Lokasyon\nb. Lawak o Sukat\nc. Palatandaang heograpikal",
+      "topic": "community",
+      "title": {
+        "en": "My Community"
+      },
+      "student_question": "What does my community look like?",
+      "icon": "map-marker",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 MAKABANSA, First Term, Weeks 2–5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-makabansa-w6-1",
+      "grade": 2,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Nakikilala ang mga bumubuo sa kinabibilangang komunidad",
+      "topic": "community",
+      "title": {
+        "en": "People in My Community"
+      },
+      "student_question": "Who are the people in my community?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 MAKABANSA, First Term, Weeks 6–8, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-makabansa-w9-1",
+      "grade": 2,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Nabibigyang halaga ang mga bumubuo sa kinabibilangang komunidad",
+      "topic": "community",
+      "title": {
+        "en": "Valuing My Community"
+      },
+      "student_question": "Why are the people in my community important?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 MAKABANSA, First Term, Weeks 9–10, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w1-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Represent and describe circles, half circles and quarter circles.",
+      "topic": "circles",
+      "title": {
+        "en": "Circles"
+      },
+      "student_question": "What are circles, half circles, and quarter circles?",
+      "icon": "circle-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w1-2",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Compose and decompose composite figures made up of squares, rectangles, triangles, circles, half circles, and quarter circles, using cut-outs and square grids.",
+      "topic": "shapes",
+      "title": {
+        "en": "Combining Shapes"
+      },
+      "student_question": "How can I make a big shape from smaller shapes?",
+      "icon": "shape-plus",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w2-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Describe and draw the effect of a one-direction multi-step slide (or translation) in basic shapes and figures.",
+      "topic": "slides",
+      "title": {
+        "en": "Sliding Shapes"
+      },
+      "student_question": "What happens to a shape when I slide it?",
+      "icon": "arrow-right-bold",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w3-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Count up to 1000.",
+      "topic": "counting",
+      "title": {
+        "en": "Counting to 1000"
+      },
+      "student_question": "How do I count up to 1000?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w4-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Read and write numerals up to 1000.",
+      "topic": "numbers",
+      "title": {
+        "en": "Writing Numbers"
+      },
+      "student_question": "How do I read and write numbers up to 1000?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w5-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Recognize and represent numbers up to 1000 using a variety of concrete and pictorial models, and numerals.",
+      "topic": "place_value",
+      "title": {
+        "en": "Showing Big Numbers"
+      },
+      "student_question": "How can I show a number up to 1000 using blocks?",
+      "icon": "cube-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w6-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Count by 2s, 5s, 10s, 20s, 50s, and 100s (not beyond 1000).",
+      "topic": "skip_counting",
+      "title": {
+        "en": "Skip Counting"
+      },
+      "student_question": "How do I count by 2s, 5s, and 10s?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w6-2",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Order numbers up to 1000 from smallest to largest, and vice versa.",
+      "topic": "comparing_numbers",
+      "title": {
+        "en": "Ordering Numbers"
+      },
+      "student_question": "How do I put numbers in order up to 1000?",
+      "icon": "sort-numeric-ascending",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w7-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Describe the position of objects using ordinal numbers up to 20th.",
+      "topic": "ordinal_numbers",
+      "title": {
+        "en": "Ordinal Numbers"
+      },
+      "student_question": "What do words like fifth and twentieth mean?",
+      "icon": "format-list-numbered",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w7-2",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Determine:\na. the place value of a digit in a 3-digit number\nb. the value of a digit\nc. the digit of a number, given its place value",
+      "topic": "place_value",
+      "title": {
+        "en": "Place Value"
+      },
+      "student_question": "What is the value of each digit in a number?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w8-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Illustrate addition of 2-digit and by 1-digit numbers as “counting up” on the number line.",
+      "topic": "addition",
+      "title": {
+        "en": "Adding on a Number Line"
+      },
+      "student_question": "How can I add by counting up on a number line?",
+      "icon": "plus",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w8-2",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Add numbers with sums up to 1000 in expanded form.",
+      "topic": "addition",
+      "title": {
+        "en": "Adding Big Numbers"
+      },
+      "student_question": "How do I add numbers up to 1000?",
+      "icon": "plus",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w8-3",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Add numbers with sums up to 1000, with or without regrouping.",
+      "topic": "addition",
+      "title": {
+        "en": "Adding With Regrouping"
+      },
+      "student_question": "What does it mean to carry when adding?",
+      "icon": "plus",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Weeks 8–9, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w9-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Illustrate and apply the following properties of addition using sums up to 1000:\na. the sum of zero and any number is equal to the number\nb. changing the order of the addends does not change the sum\nc. changing the grouping of the addends does not change the sum.",
+      "topic": "addition",
+      "title": {
+        "en": "Rules of Adding"
+      },
+      "student_question": "Does the order of numbers matter when I add?",
+      "icon": "plus",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w9-2",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Determine and write the value of a number of bills, or a number of coins, or a combination of bills and coins up to ₱1000 (centavo coins only, peso coins only, peso bills only, combined peso coins and peso bills).",
+      "topic": "money",
+      "title": {
+        "en": "Counting Money"
+      },
+      "student_question": "How do I count the value of coins and bills?",
+      "icon": "cash",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w10-1",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Compare the values of different denominations of peso coins and bills up to ₱1000.",
+      "topic": "money",
+      "title": {
+        "en": "Comparing Money"
+      },
+      "student_question": "Which is worth more, a coin or a bill?",
+      "icon": "cash-multiple",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g2-mathematics-w10-2",
+      "grade": 2,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Solve problems involving addition with sums up to 1000, including problems involving money, with and without regrouping.",
+      "topic": "money",
+      "title": {
+        "en": "Money Problems"
+      },
+      "student_question": "How do I solve problems about buying things?",
+      "icon": "cash",
+      "source": "DepEd Three-Term Budget of Work, Grade 2 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    }
+  ]
 }
