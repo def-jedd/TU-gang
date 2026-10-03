@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+  </head>
+  <body>
+    <script>
+      // Headless listener: joins the channel without a mic, records the agent's audio.
+      window.state = { joined: false, agentAudio: false, lastLoudAt: 0, firstLoudAt: 0, error: null };
+      let recorder;
+      let chunks = [];
+
+      window.listen = async ({ appId, channel, token, uid }) => {
+        AgoraRTC.setLogLevel(3);
+        const client = AgoraRTC.createClient({ mode: 'rtc', codec: 'vp8' });
+        client.on('user-published', async (user, mediaType) => {
+          if (mediaType !== 'audio') return;
+          await client.subscribe(user, mediaType);
+          const track = user.audioTrack;
+          track.play();
+          const stream = new MediaStream([track.getMediaStreamTrack()]);
+          recorder = new MediaRecorder(stream, { mimeType: 'audio/webm;codecs=opus' });
+          recorder.ondataavailable = (e) => e.data.size && chunks.push(e.data);
+          recorder.start(250);
+          window.state.agentAudio = true;
+          setInterval(() => {
+            const level = track.getVolumeLevel();
+            if (level > 0.02) {
+              const now = Date.now();
+              if (!window.state.firstLoudAt) window.state.firstLoudAt = now;
+              window.state.lastLoudAt = now;
+            }
+          }, 100);
+        });
+        await client.join(appId, channel, token, uid);
+        window.state.joined = true;
+        window.client = client;
+      };
+
+      window.finish = async () => {
+        if (!recorder) return null;
+        await new Promise((resolve) => {
+          recorder.onstop = resolve;
+          recorder.stop();
+        });
+        await window.client.leave();
+        const blob = new Blob(chunks, { type: 'audio/webm' });
+        const buf = new Uint8Array(await blob.arrayBuffer());
+        let binary = '';
+        for (let i = 0; i < buf.length; i += 0x8000) {
+          binary += String.fromCharCode(...buf.subarray(i, i + 0x8000));
+        }
+        return btoa(binary);
+      };
+    </script>
+  </body>
+</html>
