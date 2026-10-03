@@ -1,8 +1,10 @@
+import { PersonaPortrait } from './PersonaPortrait';
+import { ClaySurface } from './ClaySurface';
 import { useEffect, useMemo, useState } from 'react';
 import { AccessibilityInfo, Animated, Easing, StyleSheet, View } from 'react-native';
 
 import { STYLE_CARDS } from '../nfc/cards';
-import { category, colors } from '../theme/tokens';
+import { layout, colors } from '../theme/tokens';
 import type { TeachingStyle } from '../types/tutor';
 import type { VoicePhase } from '../voice/types';
 import { Icon, type IconName } from './Icon';
@@ -11,8 +13,8 @@ import { Icon, type IconName } from './Icon';
 export const PHASE_LOOK: Record<VoicePhase, { icon: IconName; color: string; tint: string }> = {
   idle: { icon: 'phone', color: colors.inkSoft, tint: colors.surfaceSunken },
   connecting: { icon: 'phone-ring', color: colors.inkSoft, tint: colors.surfaceSunken },
-  listening: { icon: 'ear-hearing', color: colors.success, tint: colors.successTint },
-  user_speaking: { icon: 'microphone', color: colors.success, tint: colors.successTint },
+  listening: { icon: 'ear-hearing', color: colors.primary, tint: colors.primaryTint },
+  user_speaking: { icon: 'microphone', color: colors.primary, tint: colors.primaryTint },
   thinking: { icon: 'dots-horizontal', color: colors.accentLip, tint: colors.accentTint },
   speaking: { icon: 'volume-high', color: colors.primary, tint: colors.primaryTint },
   ended: { icon: 'phone-hangup', color: colors.inkMuted, tint: colors.surfaceSunken },
@@ -74,30 +76,30 @@ export function TutorAvatar({ style, phase, agentLevel, studentLevel, size = 200
   }, [phase, pulse, agentLevel, studentLevel, reduceMotion]);
 
   const face = size * 0.72;
-  const badge = size * 0.3;
+  const badge = size * 0.26;
 
   return (
     <View style={{ width: size, height: size, alignItems: 'center', justifyContent: 'center' }} accessible={false}>
       <Animated.View
         style={[
           styles.halo,
-          { width: size, height: size, borderRadius: size / 2, backgroundColor: look.tint, borderColor: look.color },
+          { width: size, height: size, borderRadius: size / 2, backgroundColor: colors.primaryTint, borderColor: colors.border },
           { transform: [{ scale }] },
         ]}
       />
-      <View
+      <ClaySurface intensity="subtle" radius={face / 2}
         style={[
           styles.face,
           {
             width: face,
             height: face,
             borderRadius: face / 2,
-            backgroundColor: category.style.tint,
-            borderColor: category.style.solid,
+            backgroundColor: 'transparent',
+            borderColor: colors.border,
           },
         ]}>
-        <Icon name={card.icon} size={face * 0.55} color={category.style.solid} />
-      </View>
+        <PersonaPortrait persona={card.value as TeachingStyle} size={face} />
+      </ClaySurface>
       <View
         style={[
           styles.badge,
@@ -110,15 +112,15 @@ export function TutorAvatar({ style, phase, agentLevel, studentLevel, size = 200
 }
 
 const styles = StyleSheet.create({
-  halo: { position: 'absolute', borderWidth: 4, opacity: 0.9 },
-  face: { borderWidth: 4, alignItems: 'center', justifyContent: 'center' },
+  halo: { position: 'absolute', borderWidth: layout.border, opacity: 0.35 },
+  face: { borderWidth: layout.border, alignItems: 'center', justifyContent: 'center' },
   badge: {
     position: 'absolute',
     right: '4%',
     bottom: '4%',
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 4,
+    borderWidth: layout.border,
     borderColor: colors.bg,
   },
 });

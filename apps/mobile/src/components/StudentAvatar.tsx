@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 
 import type { Profile } from '../profiles/profileCard';
-import { category } from '../theme/tokens';
+import { layout, category } from '../theme/tokens';
 import { Icon, type IconName } from './Icon';
 
 /** A student's picture: how a pre-reader recognises "me" on screen and on the card. */
@@ -16,7 +16,7 @@ export function StudentAvatar({ avatar, size = 56 }: { avatar: Profile['avatar']
 const styles = StyleSheet.create({
   avatar: {
     backgroundColor: category.style.tint,
-    borderWidth: 3,
+    borderWidth: layout.border,
     borderColor: category.style.solid,
     alignItems: 'center',
     justifyContent: 'center',

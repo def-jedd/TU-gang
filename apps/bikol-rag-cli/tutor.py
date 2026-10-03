@@ -88,17 +88,17 @@ def load_system_prompt():
 
 
 def generate_sentences(fact_provider, answer_provider, question, references,
-                       difficulty="simple", style=None, action="explain"):
+                       difficulty="simple", style=None, action="explain", history=None):
     """Three Bikol sentences: the direct answer, the reason, and an example."""
     # Academic content is generated without references. Only the second
     # pass sees Bikol examples, clearly labeled as style material.
-    facts = extract_facts(fact_provider.generate(build_fact_prompt(question, difficulty, action)))
+    facts = extract_facts(fact_provider.generate(build_fact_prompt(question, difficulty, action, history=history)))
     return [answer_provider.generate(build_prompt(question, references, fact, number == 1, style)).strip()
             for number, fact in enumerate(facts, 1)]
 
 
 def generate_spoken_answer(provider, question, references, difficulty="simple",
-                           style="friend", action="explain", previous=None):
+                           style="friend", action="explain", previous=None, history=None):
     """Spoken-style Bikol answer using prompts/tutor_system.txt (Gemini only).
 
     The model replies with labeled lines (TOPIC / EXPLANATION / EXAMPLE /
@@ -107,7 +107,7 @@ def generate_spoken_answer(provider, question, references, difficulty="simple",
     or from retrieval, because the card lookup uses fixed topic ids.
     """
     system = load_system_prompt()
-    prompt = build_tutor_prompt(question, references, difficulty, style, action, previous)
+    prompt = build_tutor_prompt(question, references, difficulty, style, action, previous, history=history)
 
     parsed = None
     for _attempt in range(2):
@@ -133,12 +133,12 @@ def generate_spoken_answer(provider, question, references, difficulty="simple",
 
 
 def generate_answer(fact_provider, answer_provider, question, references,
-                    difficulty="simple", style=None, action="explain", language="bikol"):
+                    difficulty="simple", style=None, action="explain", language="bikol", history=None):
     """The app's answer fields: explanation, example, key_points."""
     if fact_provider is None:
         # Hosted one-call flow (Gemini): the model returns the fields as JSON.
         prompt = build_full_answer_prompt(question, references, language=language, difficulty=difficulty,
-                                          style=style, action=action, as_json=True)
+                                          style=style, action=action, as_json=True, history=history)
         answer = parse_answer_json(answer_provider.generate(prompt, json_output=True))
         if needs_more_detail(answer):
             repair_prompt = (prompt + "\nYour previous draft explanation was too vague: "
@@ -153,7 +153,7 @@ def generate_answer(fact_provider, answer_provider, question, references,
 
     if language != "bikol":
         raise ValueError("Tagalog and English answers currently require the Gemini provider.")
-    sentences = generate_sentences(fact_provider, answer_provider, question, references, difficulty, style, action)
+    sentences = generate_sentences(fact_provider, answer_provider, question, references, difficulty, style, action, history=history)
     # Sentences are: direct answer, reason, everyday example. Key points stay
     # empty rather than repeating them, because practice voice reads every field aloud.
     return {"explanation": " ".join(sentences[:2]), "example": sentences[2], "key_points": []}

@@ -13,6 +13,7 @@ export type Provider = 'gemini' | 'quick' | 'approved_fallback' | 'mock';
 
 export type ExplainRequest = {
   question: string;
+  history?: { role: 'user' | 'assistant'; content: string }[];
   topic?: string | null;
   language: Language;
   difficulty: Difficulty;

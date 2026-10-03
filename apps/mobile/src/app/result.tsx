@@ -1,28 +1,30 @@
+import { ClaySurface } from '@/components/ClaySurface';
+import { ScreenBackdrop } from '@/components/ScreenBackdrop';
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnswerView } from '@/components/AnswerView';
-import { AnswerLanguageSelector } from '@/components/AnswerLanguageSelector';
 import { AppText } from '@/components/AppText';
 import { LanguageBadge, ProviderBadge } from '@/components/Badges';
 import { Button } from '@/components/Button';
-import { DifficultySelector } from '@/components/DifficultySelector';
 import { Icon, type IconName } from '@/components/Icon';
+import { QuestionInput } from '@/components/QuestionInput';
 import { ScreenHeader } from '@/components/ScreenHeader';
 import { ErrorState, LoadingState } from '@/components/StatusViews';
-import { TeachingStyleSelector } from '@/components/TeachingStyleSelector';
 import { useTutor } from '@/hooks/useTutor';
 import { topicCard } from '@/nfc/cards';
 import { FEATURES } from '@/services/config';
 import { listenSupported } from '@/voice/listen';
 import { useListen } from '@/voice/useListen';
 import { useProfiles } from '@/profiles/ProfileProvider';
-import { colors, radius, space, TEXT_SCALES, touch } from '@/theme/tokens';
+import { layout, colors, radius, space, TEXT_SCALES, touch } from '@/theme/tokens';
 
 export default function ResultScreen() {
   const tutor = useTutor();
+  const [followUpText,setFollowUpText]=useState('');
+  const sendFollowUp=()=>{if(tutor.followUp(followUpText))setFollowUpText('');};
   const { t, status, response, error, lastRequest, answeredRequest, textScale } = tutor;
 
   // While re-asking, keep showing what is being asked; otherwise what was answered.
@@ -45,7 +47,7 @@ export default function ResultScreen() {
   }, [answeredTopic, markLessonDone]);
 
   return (
-    <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+    <ScreenBackdrop><SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ScreenHeader
         backLabel={t.back}
         right={
@@ -58,9 +60,12 @@ export default function ResultScreen() {
         }
       />
 
-      <ScrollView contentContainerStyle={styles.scroll}>
+      <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
+        <Button label={t.newConversation} icon="chat-plus" size="md" variant="secondary" disabled={!tutor.conversationReady} onPress={()=>{tutor.newConversation();setFollowUpText('');router.replace('/ask');}} />
+        {tutor.conversation.filter(turn=>status!=='success' || turn.response.request_id!==response?.request_id).map(turn=><View key={turn.id} style={{gap:12}}><ClaySurface tint="blue" style={styles.question}><AppText style={styles.flex}>{turn.request.question}</AppText></ClaySurface><AnswerView response={turn.response} t={t} scale={textScale} /></View>)}
+
         {shown ? (
-          <View style={styles.question} accessible accessibilityLabel={`${t.yourQuestion}: ${shown.question}`}>
+          <ClaySurface style={styles.question} accessible accessibilityLabel={`${t.yourQuestion}: ${shown.question}`}>
             <Icon name={topic?.icon ?? 'chat-question'} size={28} color={colors.primary} />
             <View style={styles.flex}>
               <AppText variant="caption" color={colors.inkSoft}>
@@ -68,7 +73,7 @@ export default function ResultScreen() {
               </AppText>
               <AppText variant="heading">{shown.question}</AppText>
             </View>
-          </View>
+          </ClaySurface>
         ) : null}
 
         <View style={styles.badges}>
@@ -101,28 +106,10 @@ export default function ResultScreen() {
           <>
             <AnswerView response={response} t={t} scale={textScale} />
 
-            <View style={styles.adjust}>
-              <View style={styles.adjustTitle}>
-                <Icon name="tune-variant" size={22} color={colors.inkSoft} />
-                <AppText variant="heading">{t.changeHow}</AppText>
-              </View>
-              <DifficultySelector
-                compact
-                value={answeredRequest?.difficulty ?? tutor.draft.difficulty}
-                onChange={(difficulty) => tutor.reaskWith({ difficulty })}
-              />
-              <AnswerLanguageSelector
-                compact
-                value={answeredRequest?.language ?? tutor.draft.language}
-                onChange={(language) => tutor.reaskWith({ language })}
-              />
-              <TeachingStyleSelector
-                compact
-                value={answeredRequest?.style ?? tutor.draft.style}
-                onChange={(style) => tutor.reaskWith({ style })}
-              />
-            </View>
 
+
+            <QuestionInput label={t.followUpQuestion} placeholder={t.followUpPlaceholder} clearLabel={t.clearQuestion} value={followUpText} onChangeText={setFollowUpText} onSubmit={sendFollowUp} />
+            <Button label={t.sendFollowUp} icon="send" disabled={!followUpText.trim() || !tutor.conversationReady} onPress={sendFollowUp} />
             <Button label={t.askAnother} icon="chat-plus" variant="secondary" size="md" onPress={goHome} />
 
             {__DEV__ && answeredRequest ? (
@@ -136,7 +123,7 @@ export default function ResultScreen() {
       </ScrollView>
 
       {status === 'success' ? (
-        <View style={styles.footer}>
+        <ClaySurface style={styles.footer}>
           <Button
             label={t.explainDifferently}
             icon="swap-horizontal"
@@ -167,9 +154,9 @@ export default function ResultScreen() {
               style={styles.listen}
             />
           ) : null}
-        </View>
+        </ClaySurface>
       ) : null}
-    </SafeAreaView>
+    </SafeAreaView></ScreenBackdrop>
   );
 }
 
@@ -198,17 +185,17 @@ function TextSizeControl({
     </Pressable>
   );
   return (
-    <View style={styles.sizeGroup}>
+    <ClaySurface style={styles.sizeGroup}>
       {step(-1, smallerLabel, 'format-font-size-decrease', atMin)}
       {step(1, biggerLabel, 'format-font-size-increase', atMax)}
-    </View>
+    </ClaySurface>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: 'transparent' },
   flex: { flex: 1 },
-  scroll: { padding: space.lg, paddingTop: space.sm, gap: space.lg, paddingBottom: space.xxl },
+  scroll: { padding: layout.screen, paddingTop: space.sm, gap: space.lg, paddingBottom: space.xxl },
   question: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -219,19 +206,12 @@ const styles = StyleSheet.create({
   },
   badges: { flexDirection: 'row', flexWrap: 'wrap', gap: space.sm },
   empty: { gap: space.lg, alignItems: 'stretch', paddingVertical: space.xl },
-  adjust: {
-    gap: space.lg,
-    padding: space.lg,
-    borderRadius: radius.lg,
-    backgroundColor: colors.surfaceSunken,
-  },
-  adjustTitle: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
   footer: {
     flexDirection: 'row',
     gap: space.sm,
     paddingHorizontal: space.lg,
     paddingVertical: space.md,
-    backgroundColor: colors.bg,
+    backgroundColor: 'transparent',
     borderTopWidth: 1,
     borderTopColor: colors.border,
   },
@@ -241,8 +221,8 @@ const styles = StyleSheet.create({
     width: touch.min,
     height: touch.min,
     borderRadius: radius.pill,
-    backgroundColor: colors.surface,
-    borderWidth: 2,
+    backgroundColor: 'transparent',
+    borderWidth: layout.border,
     borderColor: colors.border,
     alignItems: 'center',
     justifyContent: 'center',
@@ -250,3 +230,4 @@ const styles = StyleSheet.create({
   sizePressed: { backgroundColor: colors.surfaceSunken },
   sizeDisabled: { opacity: 0.4 },
 });
+

@@ -1,7 +1,8 @@
+import { ClaySurface } from './ClaySurface';
 import { StyleSheet, View } from 'react-native';
 
 import type { Copy } from '../i18n/copy';
-import { colors, radius, space } from '../theme/tokens';
+import { layout, colors, radius, space } from '../theme/tokens';
 import type { ExplainResponse } from '../types/tutor';
 import { AppText } from './AppText';
 import { Icon, type IconName } from './Icon';
@@ -42,28 +43,28 @@ function SectionTitle({ icon, label, tint, fg }: { icon: IconName; label: string
 export function AnswerView({ response, t, scale }: Props) {
   return (
     <View style={styles.wrap}>
-      <View style={styles.card}>
+      <ClaySurface intensity="strong" radius={radius.lg} style={styles.card}>
         <SectionTitle icon="lightbulb-on-outline" label={t.explanation} tint={colors.primaryTint} fg={colors.primary} />
         {paragraphs(response.explanation).map((p, i) => (
           <AppText key={i} variant="reading" scale={scale} selectable>
             {p}
           </AppText>
         ))}
-      </View>
+      </ClaySurface>
 
       {response.example ? (
-        <View style={[styles.card, styles.exampleCard]}>
+        <ClaySurface intensity="strong" radius={radius.lg} style={[styles.card, styles.exampleCard]}>
           <SectionTitle icon="home-heart" label={t.example} tint={colors.accent} fg={colors.onAccent} />
           {paragraphs(response.example).map((p, i) => (
             <AppText key={i} variant="body" scale={scale} selectable>
               {p}
             </AppText>
           ))}
-        </View>
+        </ClaySurface>
       ) : null}
 
       {response.key_points.length > 0 ? (
-        <View style={styles.card}>
+        <ClaySurface intensity="strong" radius={radius.lg} style={styles.card}>
           <SectionTitle icon="star" label={t.keyPoints} tint={colors.successTint} fg={colors.success} />
           {response.key_points.map((point, i) => (
             <View key={i} style={styles.point}>
@@ -77,7 +78,7 @@ export function AnswerView({ response, t, scale }: Props) {
               </AppText>
             </View>
           ))}
-        </View>
+        </ClaySurface>
       ) : null}
     </View>
   );
@@ -86,11 +87,11 @@ export function AnswerView({ response, t, scale }: Props) {
 const styles = StyleSheet.create({
   wrap: { gap: space.lg },
   card: {
-    backgroundColor: colors.surface,
+    backgroundColor: 'transparent',
     borderRadius: radius.lg,
-    borderWidth: 2,
+    borderWidth: layout.border,
     borderColor: colors.border,
-    padding: space.lg,
+    padding: space.xl,
     gap: space.md,
   },
   exampleCard: { backgroundColor: colors.accentTint, borderColor: colors.accent },

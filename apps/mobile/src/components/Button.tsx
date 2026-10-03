@@ -1,6 +1,8 @@
-import { ActivityIndicator, Pressable, StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import { ClaySurface } from './ClaySurface';
+import { ActivityIndicator, Pressable, StyleSheet, type StyleProp, type ViewStyle } from 'react-native';
 
-import { colors, radius, space, touch } from '../theme/tokens';
+import { gradients, colors, radius, space, touch } from '../theme/tokens';
 import { AppText } from './AppText';
 import { Icon, type IconName } from './Icon';
 
@@ -10,11 +12,11 @@ const PALETTE: Record<Variant, { face: string; lip: string; text: string; border
   primary: { face: colors.primary, lip: colors.primaryLip, text: colors.onPrimary },
   call: { face: colors.call, lip: colors.callLip, text: colors.onPrimary },
   hangup: { face: colors.hangup, lip: colors.hangupLip, text: colors.onPrimary },
-  accent: { face: colors.accent, lip: colors.accentLip, text: colors.onAccent },
-  secondary: { face: colors.surface, lip: colors.borderStrong, text: colors.ink, border: colors.borderStrong },
+  accent: { face: colors.primary, lip: colors.primaryLip, text: colors.onPrimary },
+  secondary: { face: colors.surface, lip: colors.borderStrong, text: colors.ink, border: colors.border },
 };
 
-const LIP = 5;
+const LIP = 0;
 
 type Props = {
   label: string;
@@ -28,12 +30,7 @@ type Props = {
   style?: StyleProp<ViewStyle>;
 };
 
-/**
- * Chunky button with a visible "lip" underneath, like a physical key. The
- * face sinks into the lip when pressed — a strong, language-free signal that
- * this thing can be pushed. The outer bounds never change, so nothing around
- * it jumps.
- */
+/** Shared raised clay action surface with quiet pressed feedback and stable bounds. */
 export function Button({
   label,
   onPress,
@@ -57,29 +54,31 @@ export function Button({
       accessibilityLabel={label}
       accessibilityHint={accessibilityHint}
       accessibilityState={{ disabled: !!inactive, busy: !!loading }}
-      style={[styles.outer, { backgroundColor: palette.lip, opacity: disabled ? 0.45 : 1 }, style]}>
+      style={[styles.outer, { backgroundColor: 'transparent', opacity: disabled ? 0.45 : 1 }, style]}>
       {({ pressed }) => (
-        <View
+        <ClaySurface intensity="subtle" pressable radius={radius.pill}
           style={[
             styles.face,
             {
               minHeight: height - LIP,
-              backgroundColor: palette.face,
-              borderColor: palette.border ?? palette.face,
-              transform: [{ translateY: pressed && !inactive ? LIP - 1 : 0 }],
+              backgroundColor: 'transparent',
+              opacity: pressed && !inactive ? 0.85 : 1,
+              borderColor: 'transparent',
+              transform: [{ scale: pressed && !inactive ? 0.985 : 1 }],
             },
           ]}>
+          <LinearGradient pointerEvents="none" colors={variant === 'secondary' ? ['#FFFFFF', '#EAF2FC'] : variant === 'hangup' ? gradients.destructive : gradients.action} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={[StyleSheet.absoluteFill, { borderRadius: radius.pill, borderWidth: 2, borderTopColor: '#C2E3FF', borderLeftColor: '#B4D8F6', borderRightColor: '#286FA4', borderBottomColor: '#286FA4' }]} />
           {loading ? (
             <ActivityIndicator color={palette.text} />
           ) : (
             <>
               {icon && <Icon name={icon} size={size === 'lg' ? 28 : 24} color={palette.text} />}
-              <AppText variant={size === 'lg' ? 'title' : 'label'} color={palette.text} numberOfLines={2} style={styles.label}>
+              <AppText variant="label" color={palette.text} style={styles.label}>
                 {label}
               </AppText>
             </>
           )}
-        </View>
+        </ClaySurface>
       )}
     </Pressable>
   );
@@ -87,14 +86,14 @@ export function Button({
 
 const styles = StyleSheet.create({
   outer: {
-    borderRadius: radius.md,
+    borderRadius: radius.pill,
     paddingBottom: LIP,
   },
   face: {
-    borderRadius: radius.md,
-    borderWidth: 2,
+    borderRadius: radius.pill,
+    borderWidth: 0,
     paddingHorizontal: space.lg,
-    paddingVertical: space.sm,
+    paddingVertical: 12,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',

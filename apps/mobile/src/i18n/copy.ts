@@ -13,6 +13,10 @@
 export type UiLang = 'en' | 'bik';
 
 const en = {
+  newConversation: 'New conversation',
+  followUpQuestion: 'Ask a follow-up',
+  followUpPlaceholder: 'What would you like to know next?',
+  sendFollowUp: 'Send follow-up',
   tagline: 'Your learning sibling',
   askTitle: 'What do you want to learn?',
   questionLabel: 'Your question',
@@ -200,6 +204,10 @@ export type Copy = { [K in keyof typeof en]: string };
 
 // DRAFT — see header. Central Bikol spellings; Daet usage not yet confirmed.
 const bik: Copy = {
+  newConversation: 'Bagong pag-olay',
+  followUpQuestion: 'Maghapot pa',
+  followUpPlaceholder: 'Ano pa an gusto mong maaraman?',
+  sendFollowUp: 'Ipadara an hapot',
   tagline: 'An saimong tugang sa pag-adal',
   askTitle: 'Ano an gusto mong maaraman?',
   questionLabel: 'An saimong hapot',

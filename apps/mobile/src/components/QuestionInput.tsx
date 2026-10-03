@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { ClaySurface } from './ClaySurface';
+import { useId, useState } from 'react';
 import { Pressable, StyleSheet, TextInput, View } from 'react-native';
 
 import { MAX_QUESTION_LENGTH } from '../nfc/cardReducer';
-import { colors, fonts, radius, space, touch } from '../theme/tokens';
+import { layout, typeScale, colors, fonts, radius, space, touch } from '../theme/tokens';
 import { AppText } from './AppText';
 import { Icon } from './Icon';
 
@@ -16,15 +17,16 @@ type Props = {
 };
 
 export function QuestionInput({ label, placeholder, clearLabel, value, onChangeText, onSubmit }: Props) {
+  const labelId=useId();
   const [focused, setFocused] = useState(false);
   const nearLimit = value.length > MAX_QUESTION_LENGTH * 0.8;
 
   return (
     <View style={styles.wrap}>
-      <AppText variant="label" color={colors.inkSoft} nativeID="question-label">
+      <AppText variant="label" color={colors.inkSoft} nativeID={labelId}>
         {label}
       </AppText>
-      <View style={[styles.field, focused && styles.fieldFocused]}>
+      <ClaySurface intensity="strong" selected={focused} style={[styles.field, focused && styles.fieldFocused]}>
         <Icon name="chat-question" size={26} color={focused ? colors.primary : colors.inkMuted} />
         <TextInput
           value={value}
@@ -41,7 +43,7 @@ export function QuestionInput({ label, placeholder, clearLabel, value, onChangeT
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
           accessibilityLabel={label}
-          accessibilityLabelledBy="question-label"
+          accessibilityLabelledBy={labelId}
           style={styles.input}
           maxFontSizeMultiplier={1.6}
         />
@@ -55,7 +57,7 @@ export function QuestionInput({ label, placeholder, clearLabel, value, onChangeT
             <Icon name="close-circle" size={26} color={colors.inkMuted} />
           </Pressable>
         ) : null}
-      </View>
+      </ClaySurface>
       {nearLimit ? (
         <AppText variant="caption" color={colors.inkMuted} style={styles.counter}>
           {value.length} / {MAX_QUESTION_LENGTH}
@@ -71,26 +73,38 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     gap: space.sm,
-    minHeight: 96,
-    backgroundColor: colors.surface,
-    borderWidth: 2,
-    borderColor: colors.borderStrong,
+    minHeight: 152,
+    backgroundColor: 'transparent',
+    borderWidth: layout.border,
+    borderColor: colors.border,
     borderRadius: radius.md,
-    paddingHorizontal: space.md,
-    paddingVertical: space.md,
+    paddingHorizontal: space.lg,
+    paddingVertical: space.lg,
   },
-  fieldFocused: { borderColor: colors.primary, borderWidth: 3, padding: space.md - 1 },
+  fieldFocused: { borderColor: colors.primary },
   input: {
     flex: 1,
+    position: 'relative',
+    zIndex: 1,
+    minWidth: 0,
+    backgroundColor: colors.surface,
+    borderRadius: radius.sm,
+    paddingHorizontal: space.sm,
     fontFamily: fonts.body,
-    fontSize: 20,
-    lineHeight: 28,
+    fontSize: typeScale.body.fontSize,
+    lineHeight: typeScale.body.lineHeight,
     color: colors.ink,
-    minHeight: 64,
+    minHeight: 112,
     paddingTop: 0,
     paddingBottom: 0,
     textAlignVertical: 'top',
+    outlineWidth: 0,
+    outlineStyle: 'solid',
+    outlineColor: 'transparent',
   },
-  clear: { minHeight: touch.min / 2, justifyContent: 'flex-start' },
+  clear: { width: touch.min, minHeight: touch.min, alignItems: 'center', justifyContent: 'flex-start' },
   counter: { textAlign: 'right' },
 });
+
+
+

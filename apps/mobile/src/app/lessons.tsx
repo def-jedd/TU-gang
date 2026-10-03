@@ -4,13 +4,16 @@ import { Pressable, ScrollView, SectionList, StyleSheet, View } from 'react-nati
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AppText } from '@/components/AppText';
+import { ClaySurface } from '@/components/ClaySurface';
 import { Icon } from '@/components/Icon';
+import { LessonArtwork } from '@/components/LessonArtwork';
+import { ScreenBackdrop } from '@/components/ScreenBackdrop';
 import { ScreenHeader } from '@/components/ScreenHeader';
-import { lessonIcon, lessonsFor, lessonTitle, subjectInfo, subjectsFor, type Lesson } from '@/curriculum';
+import { lessonsFor, lessonTitle, subjectInfo, subjectsFor, type Lesson } from '@/curriculum';
 import { useTutor } from '@/hooks/useTutor';
 import { useProfiles } from '@/profiles/ProfileProvider';
 import { PASS_MARK } from '@/profiles/profileCard';
-import { colors, radius, space } from '@/theme/tokens';
+import { colors, layout, radius, shadow, space } from '@/theme/tokens';
 import { speakLabel } from '@/voice/deviceSpeech';
 
 const GRADES = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -40,90 +43,87 @@ export default function LessonsScreen() {
   }, [all, subject]);
 
   return (
-    <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
-      <ScreenHeader backLabel={t.back} title={t.lessonsTitle} />
-      <SectionList
-        sections={sections}
-        keyExtractor={(lesson) => lesson.id}
-        contentContainerStyle={styles.list}
-        stickySectionHeadersEnabled={false}
-        ListHeaderComponent={
-          <View style={styles.top}>
-            <AppText color={colors.inkSoft}>{t.lessonsIntro}</AppText>
+    <ScreenBackdrop>
+      <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+        <ScreenHeader backLabel={t.back} title={t.lessonsTitle} />
+        <SectionList
+          sections={sections}
+          keyExtractor={(lesson) => lesson.id}
+          contentContainerStyle={styles.list}
+          stickySectionHeadersEnabled={false}
+          ListHeaderComponent={
+            <View style={styles.top}>
+              <AppText color={colors.inkSoft}>{t.lessonsIntro}</AppText>
 
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips}>
-              {GRADES.map((g) => (
-                <Chip
-                  key={g}
-                  label={`${t.gradeTitle} ${g}`}
-                  selected={g === grade}
-                  onPress={() => {
-                    setGrade(g);
-                    speakLabel(`${t.gradeTitle} ${g}`);
-                  }}
-                />
-              ))}
-            </ScrollView>
+              <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips}>
+                {GRADES.map((g) => (
+                  <Chip
+                    key={g}
+                    label={`${t.gradeTitle} ${g}`}
+                    selected={g === grade}
+                    onPress={() => {
+                      setGrade(g);
+                      speakLabel(`${t.gradeTitle} ${g}`);
+                    }}
+                  />
+                ))}
+              </ScrollView>
 
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips}>
-              {subjects.map((s) => {
-                const info = subjectInfo(s);
-                return (
+              <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips}>
+                {subjects.map((s) => (
                   <Chip
                     key={s}
-                    label={info.label[uiLang]}
-                    icon={info.icon}
-                    color={info.color}
+                    label={subjectInfo(s).label[uiLang]}
+                    subject={s}
                     selected={s === subject}
                     onPress={() => {
                       setPicked(s);
-                      speakLabel(info.label[uiLang]);
+                      speakLabel(subjectInfo(s).label[uiLang]);
                     }}
                   />
-                );
-              })}
-            </ScrollView>
+                ))}
+              </ScrollView>
 
-            {student ? (
-              <View style={styles.progress} accessibilityLabel={`${readCount} ${t.lessonsRead}, ${passedCount} ${t.examsPassed}`}>
-                <Track icon="book-open-variant" color={colors.primary} label={t.lessonsRead} value={readCount} total={all.length} />
-                <Track icon="star" color="#B7791F" label={t.examsPassed} value={passedCount} total={all.length} />
-              </View>
-            ) : (
-              <AppText variant="caption" color={colors.warn}>
-                {t.chooseStudentToSave}
-              </AppText>
-            )}
-          </View>
-        }
-        renderSectionHeader={({ section }) => (
-          <AppText variant="label" color={colors.inkSoft} style={styles.week}>
-            {t.week} {section.week}
-          </AppText>
-        )}
-        renderItem={({ item }) => (
-          <LessonRow
-            lesson={item}
-            title={lessonTitle(item, uiLang)}
-            read={read.has(item.id)}
-            score={student?.scores[item.id]}
-            onPress={() => router.push({ pathname: '/lesson', params: { id: item.id } })}
-          />
-        )}
-      />
-    </SafeAreaView>
+              {student ? (
+                <ClaySurface tint="mint" radius={radius.md} style={styles.progress}>
+                  <View accessible accessibilityLabel={`${readCount} ${t.lessonsRead}, ${passedCount} ${t.examsPassed}`} style={styles.progressInner}>
+                    <Track icon="book-open-variant" color={colors.primary} label={t.lessonsRead} value={readCount} total={all.length} />
+                    <Track icon="star" color={colors.star} label={t.examsPassed} value={passedCount} total={all.length} />
+                  </View>
+                </ClaySurface>
+              ) : (
+                <AppText variant="caption" color={colors.warn}>
+                  {t.chooseStudentToSave}
+                </AppText>
+              )}
+            </View>
+          }
+          renderSectionHeader={({ section }) => (
+            <AppText variant="label" color={colors.inkSoft} style={styles.week}>
+              {t.week} {section.week}
+            </AppText>
+          )}
+          renderItem={({ item }) => (
+            <LessonRow
+              lesson={item}
+              title={lessonTitle(item, uiLang)}
+              read={read.has(item.id)}
+              score={student?.scores[item.id]}
+              onPress={() => router.push({ pathname: '/lesson', params: { id: item.id } })}
+            />
+          )}
+        />
+      </SafeAreaView>
+    </ScreenBackdrop>
   );
 }
 
-function Chip({ label, selected, onPress, icon, color = colors.primary }: { label: string; selected: boolean; onPress: () => void; icon?: Parameters<typeof Icon>[0]['name']; color?: string }) {
+function Chip({ label, selected, onPress, subject }: { label: string; selected: boolean; onPress: () => void; subject?: string }) {
   return (
-    <Pressable
-      onPress={onPress}
-      accessibilityRole="radio"
-      accessibilityState={{ checked: selected }}
-      style={[styles.chip, { borderColor: color }, selected && { backgroundColor: color }]}>
-      {icon ? <Icon name={icon} size={20} color={selected ? colors.onPrimary : color} /> : null}
-      <AppText variant="label" color={selected ? colors.onPrimary : color}>
+    <Pressable onPress={onPress} accessibilityRole="radio" accessibilityState={{ checked: selected }} style={({ pressed }) => [styles.chip, pressed && styles.pressed]}>
+      <ClaySurface selected={selected} intensity="subtle" radius={radius.pill} pointerEvents="none" style={StyleSheet.absoluteFill} />
+      {subject ? <LessonArtwork subject={subject} size={28} /> : null}
+      <AppText variant="label" color={colors.ink}>
         {label}
       </AppText>
     </Pressable>
@@ -135,7 +135,7 @@ function Track({ icon, color, label, value, total }: { icon: Parameters<typeof I
     <View style={styles.track}>
       <Icon name={icon} size={22} color={color} />
       <View style={styles.flex}>
-        <AppText variant="caption" color={colors.inkSoft}>
+        <AppText variant="caption" color={colors.ink}>
           {value} / {total} {label}
         </AppText>
         <View style={styles.bar}>
@@ -147,19 +147,13 @@ function Track({ icon, color, label, value, total }: { icon: Parameters<typeof I
 }
 
 function LessonRow({ lesson, title, read, score, onPress }: { lesson: Lesson; title: string; read: boolean; score?: number; onPress: () => void }) {
-  const info = subjectInfo(lesson.subject);
   const passed = score !== undefined && score >= PASS_MARK;
   return (
-    <Pressable
-      onPress={onPress}
-      accessibilityRole="button"
-      accessibilityLabel={title}
-      style={({ pressed }) => [styles.row, pressed && styles.pressed]}>
-      <View style={[styles.rowIcon, { backgroundColor: info.color }]}>
-        <Icon name={lessonIcon(lesson)} size={26} color={colors.onPrimary} />
-      </View>
+    <Pressable onPress={onPress} accessibilityRole="button" accessibilityLabel={title} style={({ pressed }) => [styles.row, pressed && styles.pressed]}>
+      <ClaySurface tint={passed ? 'mint' : undefined} intensity="subtle" radius={radius.md} pointerEvents="none" style={StyleSheet.absoluteFill} />
+      <LessonArtwork lesson={lesson} size={52} />
       <View style={styles.flex}>
-        <AppText variant="heading" numberOfLines={2}>
+        <AppText variant="heading" color={colors.ink} numberOfLines={2}>
           {title}
         </AppText>
         <AppText variant="caption" color={colors.inkSoft} numberOfLines={2}>
@@ -167,8 +161,8 @@ function LessonRow({ lesson, title, read, score, onPress }: { lesson: Lesson; ti
         </AppText>
       </View>
       <View style={styles.status}>
-        <Icon name={read ? 'book-open-variant' : 'book-outline'} size={22} color={read ? colors.primary : colors.border} />
-        <Icon name={passed ? 'star' : 'star-outline'} size={24} color={passed ? '#B7791F' : colors.border} />
+        <Icon name={read ? 'book-open-variant' : 'book-outline'} size={22} color={read ? colors.primary : colors.borderStrong} />
+        <Icon name={passed ? 'star' : 'star-outline'} size={24} color={passed ? colors.star : colors.borderStrong} />
         {score !== undefined ? (
           <AppText variant="caption" color={colors.inkSoft}>
             {score}%
@@ -180,25 +174,24 @@ function LessonRow({ lesson, title, read, score, onPress }: { lesson: Lesson; ti
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
-  flex: { flex: 1 },
-  list: { padding: space.lg, paddingTop: space.sm, gap: space.sm, paddingBottom: space.xxl },
+  safe: { flex: 1, backgroundColor: 'transparent' },
+  flex: { flex: 1, minWidth: 0 },
+  list: { padding: layout.screen, paddingTop: space.xs, paddingBottom: space.xxl },
   top: { gap: space.md, marginBottom: space.sm },
-  chips: { gap: space.sm, paddingVertical: 2 },
+  chips: { gap: space.sm, paddingVertical: space.xs, paddingHorizontal: 2 },
   chip: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: space.xs,
+    minHeight: 44,
     paddingHorizontal: space.md,
-    paddingVertical: space.sm,
     borderRadius: radius.pill,
-    borderWidth: 2,
-    backgroundColor: colors.surface,
   },
-  progress: { gap: space.sm, padding: space.md, borderRadius: radius.md, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border },
+  progress: { padding: space.md },
+  progressInner: { gap: space.sm },
   track: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
-  bar: { height: 8, borderRadius: 4, backgroundColor: colors.border, overflow: 'hidden', marginTop: 2 },
-  fill: { height: 8, borderRadius: 4 },
+  bar: { height: 10, borderRadius: 5, backgroundColor: colors.surfaceSunken, overflow: 'hidden', marginTop: 2 },
+  fill: { height: 10, borderRadius: 5 },
   week: { marginTop: space.md, marginBottom: space.xs },
   row: {
     flexDirection: 'row',
@@ -207,11 +200,8 @@ const styles = StyleSheet.create({
     padding: space.md,
     marginBottom: space.sm,
     borderRadius: radius.md,
-    backgroundColor: colors.surface,
-    borderWidth: 2,
-    borderColor: colors.border,
+    ...shadow.card,
   },
-  rowIcon: { width: 48, height: 48, borderRadius: 24, alignItems: 'center', justifyContent: 'center' },
   status: { alignItems: 'center', gap: 2, minWidth: 40 },
-  pressed: { opacity: 0.85 },
+  pressed: { opacity: 0.85, transform: [{ scale: 0.985 }] },
 });

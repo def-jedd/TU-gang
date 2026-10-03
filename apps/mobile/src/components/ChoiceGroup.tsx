@@ -1,7 +1,9 @@
+import { ClaySurface } from './ClaySurface';
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { category, colors, radius, space, touch, type CardCategory } from '../theme/tokens';
+import { layout, category, colors, radius, space, type CardCategory } from '../theme/tokens';
 import { speakLabel } from '../voice/deviceSpeech';
+import { ChoiceArtwork } from './ChoiceArtwork';
 import { AppText } from './AppText';
 import { Icon, type IconName } from './Icon';
 import { SpeakableTitle } from './SpeakableTitle';
@@ -43,13 +45,13 @@ export function ChoiceGroup<T extends string>({
   const colorsFor = category[palette];
 
   return (
-    <View style={styles.group}>
+    <ClaySurface tint={palette === 'style' ? 'peach' : palette === 'level' ? 'mint' : 'lavender'} intensity="subtle" style={[styles.group, palette !== 'style' && { shadowOpacity: 0, elevation: 0, backgroundColor: 'transparent' }]}>
       {speakable ? (
         <SpeakableTitle text={title} hearLabel={speakable} icon={titleIcon} iconColor={colorsFor.ink} />
       ) : (
         <View style={styles.titleRow}>
-          <Icon name={titleIcon} size={22} color={colorsFor.ink} />
-          <AppText variant="heading" color={colors.ink} accessibilityRole="header">
+          <Icon name={titleIcon} size={18} color={colorsFor.ink} />
+          <AppText variant="heading" color={colors.ink} style={{ flexShrink: 1 }} accessibilityRole="header">
             {title}
           </AppText>
         </View>
@@ -70,58 +72,64 @@ export function ChoiceGroup<T extends string>({
               style={({ pressed }) => [
                 styles.option,
                 compact && styles.optionCompact,
+                palette !== 'style' && { flexDirection: 'row', minHeight: 48, gap: 6 },
+                palette === 'style' && !compact && { minHeight: 110 },
                 {
-                  backgroundColor: selected ? colorsFor.solid : colors.surface,
-                  borderColor: selected ? colorsFor.lip : colors.border,
-                  borderBottomColor: selected ? colorsFor.lip : colors.borderStrong,
+                  backgroundColor: 'transparent',
+                  borderColor: 'transparent',
+                  borderBottomColor: 'transparent',
                 },
                 pressed && styles.pressed,
               ]}>
-              <Icon name={option.icon} size={compact ? 24 : 30} color={selected ? colors.onPrimary : colorsFor.solid} />
+              <ClaySurface tint={palette === 'style' ? 'peach' : 'mint'} selected={selected} intensity="subtle" radius={radius.sm} style={StyleSheet.absoluteFill} pointerEvents="none" />
+              <ChoiceArtwork icon={option.icon} value={option.value} palette={palette} compact={compact} />
               <AppText
                 variant="label"
-                color={selected ? colors.onPrimary : colors.ink}
+                color={colors.ink}
                 style={styles.optionLabel}
-                numberOfLines={2}>
+              >
                 {option.label}
               </AppText>
               {selected && !compact ? (
                 <View style={styles.check}>
-                  <Icon name="check-circle" size={20} color={colorsFor.solid} />
+                  <Icon name="check-circle" size={20} color={colors.primary} />
                 </View>
               ) : null}
             </Pressable>
           );
         })}
       </View>
-    </View>
+    </ClaySurface>
   );
 }
 
 const styles = StyleSheet.create({
-  group: { gap: space.sm },
+  group: { gap: space.sm, padding: space.md, borderRadius: radius.lg },
   titleRow: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
-  row: { flexDirection: 'row', gap: space.sm },
+  row: { flexDirection: 'row', flexWrap: 'wrap', gap: space.sm },
   option: {
     flex: 1,
-    minHeight: 92,
+    flexBasis: '28%',
+    minWidth: 72,
+    minHeight: 48,
     borderRadius: radius.md,
-    borderWidth: 2,
-    borderBottomWidth: 5,
+    borderWidth: layout.border,
+    borderBottomWidth: 0,
     paddingVertical: space.sm,
     paddingHorizontal: space.xs,
     alignItems: 'center',
     justifyContent: 'center',
     gap: space.xs,
   },
-  optionCompact: { minHeight: touch.min + 12, paddingVertical: space.xs },
-  optionLabel: { textAlign: 'center' },
+  optionCompact: { minHeight: 48, paddingVertical: space.xs },
+  optionLabel: { flex: 1, textAlign: 'center', flexShrink: 1 },
   pressed: { opacity: 0.85 },
   check: {
+    zIndex: 1,
     position: 'absolute',
-    top: -9,
-    right: -6,
-    backgroundColor: colors.surface,
-    borderRadius: 12,
+    top: space.xs,
+    right: space.xs,
+    backgroundColor: colors.onPrimary,
+    borderRadius: radius.pill,
   },
 });

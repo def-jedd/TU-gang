@@ -1,3 +1,4 @@
+import { ClaySurface } from './ClaySurface';
 import { StyleSheet, View } from 'react-native';
 
 import { useTutor } from '../hooks/useTutor';
@@ -30,7 +31,7 @@ export function NfcStatusBanner() {
   })();
 
   return (
-    <View style={[styles.banner, { backgroundColor: view.bg }]} accessibilityLiveRegion="polite">
+    <ClaySurface style={[styles.banner, { backgroundColor: view.bg }]} accessibilityLiveRegion="polite">
       <View style={styles.row}>
         <Icon name={view.icon} size={32} color={view.fg} />
         <AppText style={styles.text} color={colors.ink}>
@@ -46,7 +47,7 @@ export function NfcStatusBanner() {
       {availability === 'ready' && !continuous ? (
         <Button label={t.nfcScanButton} icon="nfc-tap" size="md" onPress={scanOnce} loading={scanning} />
       ) : null}
-    </View>
+    </ClaySurface>
   );
 }
 

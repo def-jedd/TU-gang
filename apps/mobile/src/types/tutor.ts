@@ -13,9 +13,13 @@ export type TutorAction = 'explain' | 'explain_differently';
 /** `ollama` = local placeholder model; `kiro` = Kiro CLI (the planned agent model). */
 export type Provider = 'gemini' | 'ollama' | 'kiro' | 'quick' | 'approved_fallback' | 'mock';
 
+export type ConversationMessage = { role: 'user' | 'assistant'; content: string };
+
 /** Request body. Key order matches the agreed JSON so logs are easy to diff. */
 export type ExplainRequest = {
   question: string;
+  /** Optional recent exchanges; older clients can omit this. */
+  history?: ConversationMessage[];
   /** Filled in when a topic card (NFC or on-screen) is used; null for free-text questions. */
   topic: string | null;
   language: Language;

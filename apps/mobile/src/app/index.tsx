@@ -1,3 +1,8 @@
+import { Image } from 'react-native';
+import { SheetArtwork } from '@/components/SheetArtwork';
+import { BikolLandscape } from '@/components/BikolLandscape';
+import { ClaySurface } from '@/components/ClaySurface';
+import { ScreenBackdrop } from '@/components/ScreenBackdrop';
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -7,22 +12,23 @@ import { AppText } from '@/components/AppText';
 import { AnswerLanguageSelector } from '@/components/AnswerLanguageSelector';
 import { LanguageBadge } from '@/components/Badges';
 import { Button } from '@/components/Button';
-import { CardGrid } from '@/components/CardGrid';
+
 import { DevConnection } from '@/components/DevConnection';
 import { DifficultySelector } from '@/components/DifficultySelector';
 import { Icon } from '@/components/Icon';
 import { LearningCard } from '@/components/LearningCard';
-import { lessonIcon, lessonsFor, lessonTitle, subjectInfo } from '@/curriculum';
+import { LessonArtwork } from '@/components/LessonArtwork';
+import { lessonsFor, lessonTitle, subjectInfo } from '@/curriculum';
 import { SpeakableTitle } from '@/components/SpeakableTitle';
 import { TeachingStyleSelector } from '@/components/TeachingStyleSelector';
-import { TutorAvatar } from '@/components/TutorAvatar';
+import { PersonaPortrait } from '@/components/PersonaPortrait';
 import { UiLangToggle } from '@/components/UiLangToggle';
 import { useTutor } from '@/hooks/useTutor';
 import { STYLE_CARDS, TOPIC_CARDS } from '@/nfc/cards';
 import { useNfc } from '@/nfc/NfcProvider';
 import { useProfiles } from '@/profiles/ProfileProvider';
 import { StudentAvatar } from '@/components/StudentAvatar';
-import { category, colors, radius, space } from '@/theme/tokens';
+import { layout, shadow, category, colors, radius, space } from '@/theme/tokens';
 import type { VoiceContext } from '@/voice/types';
 import { useVoice } from '@/voice/VoiceProvider';
 
@@ -47,9 +53,7 @@ export default function HomeScreen() {
   const tutor = STYLE_CARDS.find((c) => c.value === draft.style) ?? STYLE_CARDS[0];
   const tutorName = tutor.label[uiLang];
   // The first lesson of the student's grade whose quiz isn't passed yet.
-  const gradeLessons = lessonsFor(student?.grade ?? 1);
-  const upNext = gradeLessons.find((l) => !student?.passed.includes(l.id)) ?? null;
-  const upNextInfo = upNext ? subjectInfo(upNext.subject) : null;
+  const upNext = lessonsFor(student?.grade ?? 1).find((l) => !student?.passed.includes(l.id)) ?? null;
 
   const call = (override?: Partial<VoiceContext>) => {
     voice.startCall(override);
@@ -57,18 +61,18 @@ export default function HomeScreen() {
   };
 
   return (
-    <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+    <ScreenBackdrop persona={draft.style}><SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ScrollView contentContainerStyle={styles.scroll}>
         <View style={styles.header}>
           <View style={styles.brand}>
-            <View style={styles.logo}>
-              <Icon name="cards" size={28} color={colors.onPrimary} />
+            <View style={[styles.logo, { backgroundColor: 'transparent' }]}>
+              <SheetArtwork name="books-sprout" width={52} />
             </View>
             <View style={styles.flex}>
-              <AppText variant="display" accessibilityRole="header">
+              <AppText variant="display" color={colors.ink} accessibilityRole="header">
                 TU-gang
               </AppText>
-              <AppText variant="caption" color={colors.inkSoft}>
+              <AppText variant="caption" color={colors.ink}>
                 {t.tagline}
               </AppText>
             </View>
@@ -82,6 +86,7 @@ export default function HomeScreen() {
           accessibilityRole="button"
           accessibilityLabel={student ? `${student.name}, ${t.gradeTitle} ${student.grade}` : t.whoIsLearning}
           style={({ pressed }) => [styles.student, pressed && styles.pressed]}>
+<ClaySurface tint="lavender" intensity="subtle" selected={false} radius={radius.md} pointerEvents="none" style={StyleSheet.absoluteFill} />
           {student ? (
             <StudentAvatar avatar={student.avatar} size={48} />
           ) : (
@@ -100,27 +105,49 @@ export default function HomeScreen() {
           <Icon name="account-switch" size={26} color={colors.primary} />
         </Pressable>
 
+        {/* Tap the tutor's face to call — the biggest target on the screen. */}
+        <Pressable
+          onPress={() => call({ topic: null, question: null })}
+          accessibilityRole="button"
+          accessibilityLabel={`${t.callButton}: ${tutorName}`}
+          style={({ pressed }) => [styles.avatarWrap, pressed && styles.pressed]}>
+          <ClaySurface intensity="subtle" radius={radius.lg} pointerEvents="none" style={StyleSheet.absoluteFill} />
+          <View pointerEvents="none" style={[StyleSheet.absoluteFill, { borderRadius: radius.lg, overflow: 'hidden' }]}><BikolLandscape /></View>
+          <View style={{ position: 'absolute', left: 4, bottom: 2 }}><PersonaPortrait persona={draft.style} size={180} /></View>
+          <Image source={require('../../assets/clay-dog.png')} resizeMode="contain" accessible={false} style={{position:'absolute',right:12,bottom:4,width:84,height:100}}/><ClaySurface tint="peach" intensity="strong" style={{ position: 'absolute', top: 18, right: 14, padding: 12, maxWidth: 142 }}><AppText variant="title" color={colors.ink}>
+            {tutorName}
+          </AppText></ClaySurface>
+        </Pressable>
+
+      <ClaySurface tint="mint" style={styles.footer}>
+        <Button
+          label={t.callButton}
+          icon="phone"
+          variant="call"
+          onPress={() => call({ topic: null, question: null })}
+        />
+      </ClaySurface>
+
         {/* Guided DepEd lessons (ILAW) with quizzes: the tutor-led path. */}
-        {upNext && upNextInfo ? (
+        {upNext ? (
           <View style={styles.section}>
-            <SpeakableTitle text={t.nextLesson} hearLabel={t.hearThis} icon="school" iconColor={upNextInfo.color} />
+            <SpeakableTitle text={t.nextLesson} hearLabel={t.hearThis} icon="school" iconColor={category.level.ink} />
             <Pressable
               onPress={() => router.push({ pathname: '/lesson', params: { id: upNext.id } })}
               accessibilityRole="button"
               accessibilityLabel={`${t.nextLesson}: ${lessonTitle(upNext, uiLang)}`}
-              style={({ pressed }) => [styles.nextLesson, { borderColor: upNextInfo.color }, pressed && styles.pressed]}>
-              <View style={[styles.nextIcon, { backgroundColor: upNextInfo.color }]}>
-                <Icon name={lessonIcon(upNext)} size={32} color={colors.onPrimary} />
-              </View>
+              style={({ pressed }) => [styles.nextLesson, pressed && styles.pressed]}>
+              <ClaySurface tint="peach" intensity="strong" radius={radius.lg} pointerEvents="none" style={StyleSheet.absoluteFill} />
+              <LessonArtwork lesson={upNext} size={64} />
               <View style={styles.flex}>
-                <AppText variant="caption" color={upNextInfo.color} bold>
-                  {upNextInfo.label[uiLang]} · {t.week} {upNext.week}
+                <AppText variant="caption" color={colors.inkSoft} bold>
+                  {subjectInfo(upNext.subject).label[uiLang]} · {t.week} {upNext.week}
                 </AppText>
-                <AppText variant="heading" numberOfLines={2}>
+                <AppText variant="heading" color={colors.ink} numberOfLines={2}>
                   {lessonTitle(upNext, uiLang)}
                 </AppText>
               </View>
-              <Icon name="play-circle" size={40} color={upNextInfo.color} />
+              <Icon name="play-circle" size={44} color={colors.primary} />
             </Pressable>
             <Button label={t.allLessons} icon="book-education" variant="secondary" size="md" onPress={() => router.push('/lessons')} />
           </View>
@@ -140,48 +167,11 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        {/* Tap the tutor's face to call — the biggest target on the screen. */}
-        <Pressable
-          onPress={() => call({ topic: null, question: null })}
-          accessibilityRole="button"
-          accessibilityLabel={`${t.callButton}: ${tutorName}`}
-          style={({ pressed }) => [styles.avatarWrap, pressed && styles.pressed]}>
-          <TutorAvatar
-            style={draft.style}
-            phase="idle"
-            agentLevel={voice.agentLevel}
-            studentLevel={voice.studentLevel}
-            size={168}
-          />
-          <AppText variant="title" color={category.style.ink}>
-            {tutorName}
-          </AppText>
-        </Pressable>
-
-        <AnswerLanguageSelector
-          value={draft.language}
-          onChange={(value) => update({ type: 'LANGUAGE', value })}
-          speakable
-        />
-        <TeachingStyleSelector
-          title={t.voiceTitle}
-          speakable
-          value={draft.style}
-          onChange={(value) => update({ type: 'STYLE', value })}
-        />
-        <DifficultySelector
-          title={t.levelTitle}
-          speakable
-          compact
-          value={draft.difficulty}
-          onChange={(value) => update({ type: 'DIFFICULTY', value })}
-        />
-
         <View style={styles.section}>
           <SpeakableTitle text={t.pickTopicVoice} hearLabel={t.hearThis} icon="gesture-tap" iconColor={category.topic.ink} />
-          <CardGrid>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{gap:12,paddingBottom:12,paddingTop:4}}>
             {TOPIC_CARDS.map((card) => (
-              <LearningCard
+              <View key={card.code} style={{width:174}}><LearningCard
                 key={card.code}
                 card={card}
                 lang={uiLang}
@@ -193,37 +183,48 @@ export default function HomeScreen() {
                   call({ topic: card.topic, question: null });
                 }}
               />
-            ))}
-          </CardGrid>
+            </View>))}
+          </ScrollView>
         </View>
+
+        <TeachingStyleSelector
+          title={t.voiceTitle}
+          speakable
+          value={draft.style}
+          onChange={(value) => update({ type: 'STYLE', value })}
+        />
+        <AnswerLanguageSelector
+          value={draft.language}
+          onChange={(value) => update({ type: 'LANGUAGE', value })}
+          speakable
+        />
+        <DifficultySelector
+          title={t.levelTitle}
+          speakable
+          compact
+          value={draft.difficulty}
+          onChange={(value) => update({ type: 'DIFFICULTY', value })}
+        />
 
         {__DEV__ ? <DevConnection /> : null}
       </ScrollView>
 
-      <View style={styles.footer}>
-        <Button
-          label={t.callButton}
-          icon="phone"
-          variant="call"
-          onPress={() => call({ topic: null, question: null })}
-        />
-      </View>
-    </SafeAreaView>
+    </SafeAreaView></ScreenBackdrop>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
-  flex: { flex: 1 },
-  scroll: { padding: space.lg, gap: space.xl, paddingBottom: space.xxl },
-  header: { flexDirection: 'row', alignItems: 'center', gap: space.md },
-  brand: { flex: 1, flexDirection: 'row', alignItems: 'center', gap: space.md },
+  safe: { flex: 1, backgroundColor: 'transparent' },
+  flex: { flex: 1, minWidth: 0 },
+  scroll: { padding: layout.screen, gap: space.md, paddingBottom: space.xxl },
+  header: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: space.md },
+  brand: { flex: 1, minWidth: layout.brandMin, flexDirection: 'row', alignItems: 'center', gap: space.sm },
   logo: {
-    width: 52,
-    height: 52,
+    width: 44,
+    height: 44,
     borderRadius: radius.md,
     backgroundColor: colors.primary,
-    borderBottomWidth: 4,
+    borderBottomWidth: 0,
     borderBottomColor: colors.primaryLip,
     alignItems: 'center',
     justifyContent: 'center',
@@ -232,42 +233,37 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: space.md,
-    padding: space.md,
-    borderRadius: radius.lg,
-    backgroundColor: colors.surface,
-    borderWidth: 2,
+    padding: space.sm,
+    borderRadius: radius.md,
+    backgroundColor: 'transparent',
+    borderWidth: layout.border,
     borderColor: colors.border,
   },
   studentEmpty: {
     width: 48,
     height: 48,
     borderRadius: 24,
-    borderWidth: 2,
+    borderWidth: layout.border,
     borderStyle: 'dashed',
     borderColor: colors.borderStrong,
     alignItems: 'center',
     justifyContent: 'center',
   },
   metaRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: space.sm, flexWrap: 'wrap' },
-  metaButtons: { flexDirection: 'row', gap: space.sm },
-  avatarWrap: { alignItems: 'center', gap: space.sm },
+  metaButtons: { flexDirection: 'row', flexWrap: 'wrap', gap: space.sm, flexShrink: 1 },
+  avatarWrap: { flexDirection: 'row-reverse', alignItems: 'center', justifyContent: 'space-between', gap: space.lg, padding: space.xl, minHeight: 206, borderRadius: radius.lg, ...shadow.card },
   pressed: { opacity: 0.85 },
   section: { gap: space.md },
-  nextLesson: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: space.md,
-    padding: space.md,
-    borderRadius: radius.lg,
-    borderWidth: 3,
-    backgroundColor: colors.surface,
-  },
-  nextIcon: { width: 56, height: 56, borderRadius: 28, alignItems: 'center', justifyContent: 'center' },
+  nextLesson: { flexDirection: 'row', alignItems: 'center', gap: space.md, padding: space.md, borderRadius: radius.lg, ...shadow.card },
   footer: {
-    paddingHorizontal: space.lg,
+    paddingHorizontal: layout.screen,
     paddingVertical: space.md,
-    backgroundColor: colors.bg,
-    borderTopWidth: 1,
+    backgroundColor: 'transparent',
+    
+    borderTopWidth: 0,
     borderTopColor: colors.border,
   },
 });
+
+
+

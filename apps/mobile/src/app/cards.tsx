@@ -1,3 +1,5 @@
+import { ClaySurface } from '@/components/ClaySurface';
+import { ScreenBackdrop } from '@/components/ScreenBackdrop';
 import { useLocalSearchParams } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -17,7 +19,7 @@ import { buildExplainRequest, type LearningDraft } from '@/nfc/cardReducer';
 import { ACTION_CARDS, LANGUAGE_CARDS, LEVEL_CARDS, STYLE_CARDS, TOPIC_CARDS, type CardDef } from '@/nfc/cards';
 import { useNfc, type LastScan } from '@/nfc/NfcProvider';
 import { INTERACTION_MODE } from '@/services/config';
-import { category, colors, radius, space, type CardCategory } from '@/theme/tokens';
+import { layout, category, colors, radius, space, type CardCategory } from '@/theme/tokens';
 
 export default function CardsScreen() {
   const { t, uiLang, draft } = useTutor();
@@ -63,12 +65,12 @@ export default function CardsScreen() {
   );
 
   return (
-    <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+    <ScreenBackdrop><SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ScreenHeader backLabel={t.back} title={t.cardsTitle} />
       <ScrollView contentContainerStyle={styles.scroll}>
         <NfcStatusBanner />
 
-        <View style={styles.trayWrap}>
+        <ClaySurface style={styles.trayWrap}>
           <CardTray draft={draft} t={t} lang={uiLang} />
           <ScanFeedback scan={lastScan} t={t} />
           {/* Same path as tapping the physical ACTION_EXPLAIN card. */}
@@ -78,7 +80,7 @@ export default function CardsScreen() {
             variant={INTERACTION_MODE === 'voice' ? 'call' : 'primary'}
             onPress={() => tapCard('ACTION_EXPLAIN')}
           />
-        </View>
+        </ClaySurface>
 
         {deck(t.deckTopics, 'shape', 'topic', TOPIC_CARDS)}
         {deck(t.deckLevels, 'stairs', 'level', LEVEL_CARDS)}
@@ -87,7 +89,7 @@ export default function CardsScreen() {
 
         {__DEV__ ? <RequestPreview draft={draft} /> : null}
       </ScrollView>
-    </SafeAreaView>
+    </SafeAreaView></ScreenBackdrop>
   );
 }
 
@@ -123,7 +125,7 @@ function RequestPreview({ draft }: { draft: LearningDraft }) {
   const [open, setOpen] = useState(false);
   const built = buildExplainRequest(draft);
   return (
-    <View style={styles.preview}>
+    <ClaySurface style={styles.preview}>
       <Pressable
         onPress={() => setOpen((v) => !v)}
         accessibilityRole="button"
@@ -140,20 +142,20 @@ function RequestPreview({ draft }: { draft: LearningDraft }) {
           {built.ok ? JSON.stringify(built.request, null, 2) : '(no question yet — add a topic card)'}
         </AppText>
       ) : null}
-    </View>
+    </ClaySurface>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: 'transparent' },
   flex: { flex: 1 },
-  scroll: { padding: space.lg, paddingTop: space.sm, gap: space.xl, paddingBottom: space.xxxl },
+  scroll: { padding: layout.screen, paddingTop: space.sm, gap: space.xl, paddingBottom: space.xxxl },
   trayWrap: {
     gap: space.md,
     padding: space.md,
     borderRadius: radius.lg,
-    backgroundColor: colors.surface,
-    borderWidth: 2,
+    backgroundColor: 'transparent',
+    borderWidth: layout.border,
     borderColor: colors.border,
   },
   feedback: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
@@ -163,7 +165,7 @@ const styles = StyleSheet.create({
     borderRadius: radius.md,
     borderWidth: 1,
     borderColor: colors.border,
-    backgroundColor: colors.surface,
+    backgroundColor: 'transparent',
     padding: space.md,
     gap: space.sm,
   },

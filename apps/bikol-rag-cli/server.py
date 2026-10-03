@@ -52,8 +52,14 @@ app = FastAPI(title="Bikol tutor API", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 
+class ConversationMessage(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str = Field(min_length=1, max_length=4000)
+
+
 class ExplainRequest(BaseModel):
     question: str = Field("", max_length=500)
+    history: list[ConversationMessage] = Field(default_factory=list, max_length=12)
     topic: str | None = Field(None, max_length=64)
     language: Literal["bikol_daet", "tagalog", "english"] = "bikol_daet"
     difficulty: Literal["very_simple", "simple", "normal"] = "simple"
@@ -103,7 +109,10 @@ def explain(request: ExplainRequest):
     if request.language != "bikol_daet" and config.ACTIVE_PROVIDER != "gemini":
         return error(422, "Tagalog and English answers currently require the Gemini provider.")
 
-    references = retriever.retrieve(question, config.TOP_GENERAL_CHUNKS, config.TOP_CUSTOM_CHUNKS)
+    history = [message.model_dump() for message in request.history]
+    previous_questions = " ".join(message["content"] for message in history[-4:] if message["role"] == "user")
+    retrieval_question = f"{previous_questions} {question}" if previous_questions else question
+    references = retriever.retrieve(retrieval_question, config.TOP_GENERAL_CHUNKS, config.TOP_CUSTOM_CHUNKS)
     answer_language = "bikol" if request.language == "bikol_daet" else request.language
     spoken = request.language == "bikol_daet" and config.ACTIVE_PROVIDER == "gemini"
     memory_key = (question.casefold(), request.topic, request.language)
@@ -112,11 +121,12 @@ def explain(request: ExplainRequest):
             # Bikol via Gemini: the spoken-style tutor prompt (prompts/tutor_system.txt).
             answer = generate_spoken_answer(
                 providers[1], question, references, request.difficulty, request.style,
-                request.action, _last_answers.get(memory_key))
+                request.action, _last_answers.get(memory_key), history=history)
         else:
             # Ollama (Bikol only), and Tagalog/English via Gemini: the original JSON flow.
             answer = generate_answer(*providers, question, references,
-                                     request.difficulty, request.style, request.action, answer_language)
+                                     request.difficulty, request.style, request.action, answer_language,
+                                     history=history)
     except (RuntimeError, ValueError) as failure:
         return error(502, str(failure))
     if request.language == "bikol_daet" and clearly_english(

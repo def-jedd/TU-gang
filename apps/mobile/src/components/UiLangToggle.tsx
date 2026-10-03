@@ -1,4 +1,5 @@
-import { Pressable, StyleSheet, View } from 'react-native';
+import { ClaySurface } from './ClaySurface';
+import { Pressable, StyleSheet } from 'react-native';
 
 import type { UiLang } from '../i18n/copy';
 import { colors, radius, space, touch } from '../theme/tokens';
@@ -11,7 +12,7 @@ const OPTIONS: { lang: UiLang; label: string; a11y: string }[] = [
 
 export function UiLangToggle({ value, onChange }: { value: UiLang; onChange: (lang: UiLang) => void }) {
   return (
-    <View style={styles.toggle} accessibilityRole="radiogroup" accessibilityLabel="App language">
+    <ClaySurface style={styles.toggle} accessibilityRole="radiogroup" accessibilityLabel="App language">
       {OPTIONS.map(({ lang, label, a11y }) => {
         const selected = value === lang;
         return (
@@ -22,32 +23,33 @@ export function UiLangToggle({ value, onChange }: { value: UiLang; onChange: (la
             accessibilityLabel={a11y}
             accessibilityState={{ checked: selected }}
             style={[styles.option, selected && styles.selected]}>
-            <AppText variant="label" color={selected ? colors.onPrimary : colors.inkSoft}>
+            <ClaySurface intensity="subtle" selected={selected} radius={radius.sm} style={StyleSheet.absoluteFill} pointerEvents="none" />
+            <AppText variant="label" color={colors.ink}>
               {label}
             </AppText>
           </Pressable>
         );
       })}
-    </View>
+    </ClaySurface>
   );
 }
 
 const styles = StyleSheet.create({
   toggle: {
     flexDirection: 'row',
-    backgroundColor: colors.surface,
-    borderRadius: radius.pill,
-    borderWidth: 2,
+    backgroundColor: 'transparent',
+    borderRadius: radius.sm,
+    borderWidth: 0,
     borderColor: colors.border,
-    padding: 3,
+    padding: space.xs,
   },
   option: {
-    minHeight: touch.min - 10,
-    minWidth: 52,
-    paddingHorizontal: space.md,
-    borderRadius: radius.pill,
+    minHeight: touch.min,
+    minWidth: 40,
+    paddingHorizontal: space.sm,
+    borderRadius: radius.sm,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  selected: { backgroundColor: colors.primary },
+  selected: { backgroundColor: 'transparent' },
 });

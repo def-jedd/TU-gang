@@ -1,3 +1,5 @@
+import { ScreenBackdrop } from './ScreenBackdrop';
+import { ClaySurface } from './ClaySurface';
 import { useMemo, useState } from 'react';
 import { FlatList, Modal, Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -5,12 +7,10 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { PHILIPPINE_LANGUAGE_NAMES } from '../data/philippineLanguages';
 import { useTutor } from '../hooks/useTutor';
 import { LANGUAGE_CARDS } from '../nfc/cards';
-import { category, colors, radius, space, touch } from '../theme/tokens';
-import { SHOW_UPCOMING_LANGUAGES } from '../services/config';
+import { typeScale, fonts, layout, category, colors, radius, space, touch } from '../theme/tokens';
 import type { Language } from '../types/tutor';
 import { speakLabel } from '../voice/deviceSpeech';
 import { AppText } from './AppText';
-import { ChoiceGroup } from './ChoiceGroup';
 import { Icon, type IconName } from './Icon';
 import { SpeakableTitle } from './SpeakableTitle';
 
@@ -48,23 +48,6 @@ export function AnswerLanguageSelector({ value, onChange, compact, speakable }: 
 
   const close = () => { setOpen(false); setQuery(''); };
 
-  // Focus for now: English, Tagalog, Bikolano as three big speakable picture
-  // buttons (no reading or typing). The searchable list with upcoming
-  // dialects returns with EXPO_PUBLIC_SHOW_UPCOMING_LANGUAGES=true.
-  if (!SHOW_UPCOMING_LANGUAGES) {
-    return (
-      <ChoiceGroup
-        title={t.answerLanguageTitle}
-        titleIcon="translate"
-        palette="language"
-        value={value}
-        onChange={onChange}
-        compact={compact}
-        speakable={speakable ? t.hearThis : undefined}
-        options={LANGUAGE_CARDS.map((card) => ({ value: card.value, label: card.label[uiLang], icon: card.icon }))}
-      />
-    );
-  }
   const choose = (language: Language, label: string) => {
     onChange(language);
     if (speakable) speakLabel(label);
@@ -72,13 +55,13 @@ export function AnswerLanguageSelector({ value, onChange, compact, speakable }: 
   };
 
   return (
-    <View style={styles.group}>
+    <ClaySurface tint="lavender" intensity="strong" style={styles.group}>
       {speakable ? (
         <SpeakableTitle text={t.answerLanguageTitle} hearLabel={t.hearThis} icon="translate" iconColor={category.language.ink} />
       ) : (
         <View style={styles.titleRow}>
           <Icon name="translate" size={22} color={category.language.ink} />
-          <AppText variant="heading" accessibilityRole="header">{t.answerLanguageTitle}</AppText>
+          <AppText variant="heading" style={{ flexShrink: 1 }} accessibilityRole="header">{t.answerLanguageTitle}</AppText>
         </View>
       )}
       <Pressable
@@ -92,7 +75,7 @@ export function AnswerLanguageSelector({ value, onChange, compact, speakable }: 
         <Icon name="chevron-down" size={26} color={category.language.ink} />
       </Pressable>
       <Modal visible={open} animationType="slide" onRequestClose={close}>
-        <SafeAreaView style={styles.modal}>
+        <ScreenBackdrop><SafeAreaView style={styles.modal}>
           <View style={styles.modalHeader}>
             <AppText variant="title" style={styles.modalTitle} accessibilityRole="header">{t.answerLanguageTitle}</AppText>
             <Pressable onPress={close} accessibilityRole="button" accessibilityLabel={t.languageClose} style={styles.close}>
@@ -140,31 +123,31 @@ export function AnswerLanguageSelector({ value, onChange, compact, speakable }: 
               );
             }}
           />
-        </SafeAreaView>
+        </SafeAreaView></ScreenBackdrop>
       </Modal>
-    </View>
+    </ClaySurface>
   );
 }
 
 const styles = StyleSheet.create({
-  group: { gap: space.sm },
+  group: { gap: space.md, padding: space.lg },
   titleRow: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
   trigger: {
     minHeight: touch.min, flexDirection: 'row', alignItems: 'center', gap: space.md,
-    backgroundColor: colors.surface, borderWidth: 2, borderColor: category.language.solid,
+    backgroundColor: colors.surface, borderWidth: layout.border, borderColor: category.language.solid,
     borderRadius: radius.md, paddingHorizontal: space.lg, paddingVertical: space.sm,
   },
   triggerCompact: { minHeight: touch.min },
   triggerLabel: { flex: 1 },
   pressed: { opacity: 0.75 },
-  modal: { flex: 1, backgroundColor: colors.bg },
+  modal: { flex: 1, backgroundColor: 'transparent' },
   modalHeader: { flexDirection: 'row', alignItems: 'center', paddingHorizontal: space.lg, paddingTop: space.md },
   modalTitle: { flex: 1 },
   close: { width: touch.min, height: touch.min, alignItems: 'center', justifyContent: 'center' },
   search: {
     minHeight: touch.min, marginHorizontal: space.lg, marginVertical: space.md,
     paddingHorizontal: space.lg, borderWidth: 1, borderColor: colors.borderStrong,
-    borderRadius: radius.md, backgroundColor: colors.surface, color: colors.ink, fontSize: 18,
+    borderRadius: radius.md, backgroundColor: colors.surface, color: colors.ink, fontSize: typeScale.body.fontSize, fontFamily: fonts.body, lineHeight: typeScale.body.lineHeight,
   },
   list: { paddingHorizontal: space.lg, paddingBottom: space.xl },
   section: { marginTop: space.lg, marginBottom: space.sm },
@@ -176,3 +159,4 @@ const styles = StyleSheet.create({
   rowLabel: { flex: 1 },
   source: { marginTop: space.xl },
 });
+

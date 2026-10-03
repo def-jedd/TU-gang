@@ -1,7 +1,10 @@
 import * as Haptics from 'expo-haptics';
-import { createContext, useCallback, useContext, useMemo, useRef, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Platform } from 'react-native';
 
+import { useProfiles } from '../profiles/ProfileProvider';
+import { appendTurn, contextMessages, type ConversationTurn } from '../conversation/history';
+import { loadConversation, saveConversation } from '../conversation/storage';
 import { COPY, type Copy, type UiLang } from '../i18n/copy';
 import {
   INITIAL_DRAFT,
@@ -39,6 +42,10 @@ export type CardOutcome =
 
 type TutorContextValue = RequestState & {
   draft: LearningDraft;
+  conversation: ConversationTurn[];
+  conversationReady: boolean;
+  newConversation: () => void;
+  followUp: (question: string) => boolean;
   update: (action: DraftAction) => void;
   /** Builds the request from the draft and starts it. False if there is no question yet. */
   submit: () => boolean;
@@ -64,6 +71,12 @@ const tap = (style = Haptics.ImpactFeedbackStyle.Light) => {
 };
 
 export function TutorProvider({ children }: { children: ReactNode }) {
+  const { active, ready: profilesReady } = useProfiles();
+  const studentKey=active?.id ?? 'guest';
+  const [conversation,setConversation]=useState<ConversationTurn[]>([]);
+  const conversationRef=useRef<ConversationTurn[]>([]);
+  const [loadedStudent,setLoadedStudent]=useState<string | null>(null);
+  const readyKey=useRef<string | null>(null);
   const [draft, setDraft] = useState<LearningDraft>(INITIAL_DRAFT);
   // Mirror of `draft` that is updated synchronously, so two quick card taps
   // (e.g. TOPIC then ACTION_EXPLAIN) never submit a stale draft.
@@ -81,13 +94,37 @@ export function TutorProvider({ children }: { children: ReactNode }) {
   const [uiLang, setUiLang] = useState<UiLang>(DEFAULT_UI_LANG);
   const [scaleIndex, setScaleIndex] = useState(0);
 
+  useEffect(()=>{
+    if(!profilesReady)return;
+    let cancelled=false;
+    inflight.current?.abort(); inflight.current=null; readyKey.current=null;
+    loadConversation(studentKey).then(turns=>{
+      if(cancelled)return;
+      conversationRef.current=turns;setConversation(turns);readyKey.current=studentKey;setLoadedStudent(studentKey);
+      const last=turns.at(-1);
+      lastRequestRef.current=last?.request ?? null;
+      setRequest({status:last?'success':'idle',response:last?.response ?? null,error:null,lastRequest:last?.request ?? null,answeredRequest:last?.request ?? null});
+      const next={...draftRef.current,...(last?{language:last.request.language,difficulty:last.request.difficulty,style:last.request.style}:{}),question:'',topic:null};draftRef.current=next;setDraft(next);
+    });
+    return()=>{cancelled=true;readyKey.current=null;inflight.current?.abort();inflight.current=null;};
+  },[studentKey,profilesReady]);
+
+  const newConversation=useCallback(()=>{
+    if(readyKey.current!==studentKey)return;
+    inflight.current?.abort();inflight.current=null;lastRequestRef.current=null;
+    conversationRef.current=[];setConversation([]);saveConversation(studentKey,[]);
+    setRequest({status:'idle',response:null,error:null,lastRequest:null,answeredRequest:null});
+    const next={...draftRef.current,question:'',topic:null};draftRef.current=next;setDraft(next);
+  },[studentKey]);
+
   const update = useCallback((action: DraftAction) => {
     const next = draftReducer(draftRef.current, action);
     draftRef.current = next;
     setDraft(next);
   }, []);
 
-  const run = useCallback((req: ExplainRequest) => {
+  const run = useCallback((input: ExplainRequest) => {
+    const req={...input,history:contextMessages(conversationRef.current)};
     inflight.current?.abort();
     const controller = new AbortController();
     inflight.current = controller;
@@ -97,6 +134,8 @@ export function TutorProvider({ children }: { children: ReactNode }) {
     explain(req, controller.signal)
       .then((response) => {
         if (inflight.current !== controller) return; // a newer request replaced this one
+        const turns=appendTurn(conversationRef.current,req,response);
+        conversationRef.current=turns;setConversation(turns);saveConversation(studentKey,turns);
         setRequest({ status: 'success', response, error: null, lastRequest: req, answeredRequest: req });
         tap(Haptics.ImpactFeedbackStyle.Medium);
       })
@@ -109,14 +148,20 @@ export function TutorProvider({ children }: { children: ReactNode }) {
       .finally(() => {
         if (inflight.current === controller) inflight.current = null;
       });
-  }, []);
+  }, [studentKey]);
 
   const submit = useCallback(() => {
+    if(readyKey.current!==studentKey)return false;
     const built = buildExplainRequest(draftRef.current);
     if (!built.ok) return false;
     run(built.request);
     return true;
-  }, [run]);
+  }, [run,studentKey]);
+
+  const followUp=useCallback((question:string)=>{
+    if(!question.trim() || readyKey.current!==studentKey || inflight.current)return false;
+    update({type:'QUESTION',value:question});return submit();
+  },[studentKey,update,submit]);
 
   const explainDifferently = useCallback(() => {
     const last = lastRequestRef.current;
@@ -169,11 +214,12 @@ export function TutorProvider({ children }: { children: ReactNode }) {
         tap(Haptics.ImpactFeedbackStyle.Medium);
         return { kind: 'submitted' };
       }
+      if(action.type==='RESET')newConversation();
       update(action);
       tap();
       return { kind: 'applied', action };
     },
-    [explainDifferently, submit, update],
+    [explainDifferently, submit, update, newConversation],
   );
 
   const stepTextScale = useCallback((direction: 1 | -1) => {
@@ -182,8 +228,9 @@ export function TutorProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<TutorContextValue>(
     () => ({
-      ...request,
+      ...(loadedStudent===studentKey ? request : {status:'idle' as const,response:null,error:null,lastRequest:null,answeredRequest:null}),
       draft,
+      conversation: loadedStudent===studentKey ? conversation : [], conversationReady: loadedStudent===studentKey && profilesReady, newConversation, followUp,
       update,
       submit,
       explainDifferently,
@@ -197,7 +244,7 @@ export function TutorProvider({ children }: { children: ReactNode }) {
       textScale: TEXT_SCALES[scaleIndex],
       stepTextScale,
     }),
-    [request, draft, update, submit, explainDifferently, reaskWith, retry, cancel, applyCard, uiLang, scaleIndex, stepTextScale],
+    [request, draft, conversation, loadedStudent, profilesReady, studentKey, newConversation, followUp, update, submit, explainDifferently, reaskWith, retry, cancel, applyCard, uiLang, scaleIndex, stepTextScale],
   );
 
   return <TutorContext.Provider value={value}>{children}</TutorContext.Provider>;
@@ -208,3 +255,5 @@ export function useTutor(): TutorContextValue {
   if (!ctx) throw new Error('useTutor must be used inside <TutorProvider>');
   return ctx;
 }
+
+

@@ -1,6 +1,7 @@
+import { ClaySurface } from './ClaySurface';
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { colors, radius, touch } from '../theme/tokens';
+import { space, colors, radius, touch } from '../theme/tokens';
 import { speakLabel } from '../voice/deviceSpeech';
 import { AppText } from './AppText';
 import { Icon, type IconName } from './Icon';
@@ -20,7 +21,7 @@ type Props = {
 export function SpeakableTitle({ text, hearLabel, icon, iconColor = colors.inkSoft }: Props) {
   return (
     <View style={styles.row}>
-      {icon ? <Icon name={icon} size={24} color={iconColor} /> : null}
+      {icon ? <Icon name={icon} size={18} color={iconColor} /> : null}
       <AppText variant="heading" style={styles.text} accessibilityRole="header">
         {text}
       </AppText>
@@ -30,20 +31,21 @@ export function SpeakableTitle({ text, hearLabel, icon, iconColor = colors.inkSo
         accessibilityLabel={hearLabel}
         hitSlop={8}
         style={({ pressed }) => [styles.speaker, pressed && styles.pressed]}>
-        <Icon name="volume-high" size={24} color={colors.primary} />
+<ClaySurface intensity="subtle" selected={false} radius={radius.pill} pointerEvents="none" style={StyleSheet.absoluteFill} />
+        <Icon name="volume-high" size={20} color={colors.primary} />
       </Pressable>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  row: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  row: { flexDirection: 'row', alignItems: 'center', gap: space.sm },
   text: { flex: 1 },
   speaker: {
-    width: touch.min - 8,
-    height: touch.min - 8,
+    width: touch.min,
+    height: touch.min,
     borderRadius: radius.pill,
-    backgroundColor: colors.primaryTint,
+    backgroundColor: 'transparent',
     alignItems: 'center',
     justifyContent: 'center',
   },

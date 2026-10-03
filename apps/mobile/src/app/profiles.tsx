@@ -1,3 +1,5 @@
+import { ClaySurface } from '@/components/ClaySurface';
+import { ScreenBackdrop } from '@/components/ScreenBackdrop';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useRef, useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -13,7 +15,7 @@ import { useNfc } from '@/nfc/NfcProvider';
 import { lessonIds } from '@/curriculum';
 import { encodeProfileCard, type Profile } from '@/profiles/profileCard';
 import { useProfiles } from '@/profiles/ProfileProvider';
-import { colors, radius, space } from '@/theme/tokens';
+import { layout, colors, radius, space } from '@/theme/tokens';
 
 type WriteState = { profileId: string; phase: 'waiting' | 'saved' | 'partly' | 'error'; message?: string } | null;
 
@@ -62,7 +64,7 @@ export default function ProfilesScreen() {
     ]);
 
   return (
-    <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
+    <ScreenBackdrop><SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ScreenHeader backLabel={t.back} title={t.profilesTitle} />
       <ScrollView contentContainerStyle={styles.scroll}>
         <AppText color={colors.inkSoft}>{t.profilesIntro}</AppText>
@@ -72,7 +74,7 @@ export default function ProfilesScreen() {
         {profiles.map((profile) => {
           const isActive = active?.id === profile.id;
           return (
-            <View key={profile.id} style={[styles.card, isActive && styles.cardActive]}>
+            <ClaySurface selected={isActive} key={profile.id} style={[styles.card, isActive && styles.cardActive]}>
               <View style={styles.row}>
                 <Pressable
                   onPress={() => {
@@ -100,7 +102,7 @@ export default function ProfilesScreen() {
                 </Pressable>
               </View>
               <Button label={t.saveToCard} icon="nfc-variant" variant="secondary" size="md" onPress={() => saveToCard(profile)} />
-            </View>
+            </ClaySurface>
           );
         })}
 
@@ -109,7 +111,7 @@ export default function ProfilesScreen() {
 
       {write ? (
         <View style={styles.overlay} accessibilityLiveRegion="assertive">
-          <View style={styles.sheet}>
+          <ClaySurface style={styles.sheet}>
             <Icon
               name={write.phase === 'waiting' ? 'nfc-tap' : write.phase === 'error' ? 'alert-circle-outline' : 'check-circle'}
               size={72}
@@ -129,27 +131,27 @@ export default function ProfilesScreen() {
             ) : (
               <Button label="OK" icon="check" size="md" onPress={() => setWrite(null)} />
             )}
-          </View>
+          </ClaySurface>
         </View>
       ) : null}
-    </SafeAreaView>
+    </SafeAreaView></ScreenBackdrop>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: 'transparent' },
   flex: { flex: 1 },
   center: { textAlign: 'center' },
-  scroll: { padding: space.lg, paddingTop: space.sm, gap: space.lg, paddingBottom: space.xxl },
+  scroll: { padding: layout.screen, paddingTop: space.sm, gap: space.lg, paddingBottom: space.xxl },
   card: {
     gap: space.md,
     padding: space.lg,
     borderRadius: radius.lg,
-    borderWidth: 2,
+    borderWidth: layout.border,
     borderColor: colors.border,
-    backgroundColor: colors.surface,
+    backgroundColor: 'transparent',
   },
-  cardActive: { borderColor: colors.success, backgroundColor: colors.successTint },
+  cardActive: { borderColor: colors.primary, backgroundColor: 'transparent' },
   row: { flexDirection: 'row', alignItems: 'center', gap: space.md },
   remove: { padding: space.xs },
   overlay: {
@@ -159,7 +161,7 @@ const styles = StyleSheet.create({
     padding: space.xl,
   },
   sheet: {
-    backgroundColor: colors.surface,
+    backgroundColor: 'transparent',
     borderRadius: radius.lg,
     padding: space.xl,
     gap: space.lg,

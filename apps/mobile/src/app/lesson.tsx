@@ -5,16 +5,20 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AppText } from '@/components/AppText';
+import { ClaySurface } from '@/components/ClaySurface';
 import { Button } from '@/components/Button';
 import { HearButton } from '@/components/HearButton';
 import { Icon } from '@/components/Icon';
+import { LessonArtwork } from '@/components/LessonArtwork';
+import { ScreenBackdrop } from '@/components/ScreenBackdrop';
+import { SheetArtwork } from '@/components/SheetArtwork';
 import { ScreenHeader } from '@/components/ScreenHeader';
-import { lessonById, lessonIcon, lessonTitle, nextLesson, subjectInfo } from '@/curriculum';
+import { lessonById, lessonTitle, nextLesson, subjectInfo } from '@/curriculum';
 import { useTutor } from '@/hooks/useTutor';
 import { useProfiles } from '@/profiles/ProfileProvider';
 import { PASS_MARK } from '@/profiles/profileCard';
 import { examScore, fetchLesson, type LessonPack, type LessonQuestion } from '@/services/lessons';
-import { colors, radius, space } from '@/theme/tokens';
+import { colors, layout, radius, shadow, space } from '@/theme/tokens';
 import type { Language } from '@/types/tutor';
 import { useVoice } from '@/voice/VoiceProvider';
 
@@ -75,9 +79,11 @@ export default function LessonScreen() {
 
   if (!lesson) {
     return (
-      <SafeAreaView style={styles.safe}>
-        <ScreenHeader backLabel={t.back} title={t.lessonsTitle} />
-      </SafeAreaView>
+      <ScreenBackdrop>
+        <SafeAreaView style={styles.safe}>
+          <ScreenHeader backLabel={t.back} title={t.lessonsTitle} />
+        </SafeAreaView>
+      </ScreenBackdrop>
     );
   }
 
@@ -119,7 +125,7 @@ export default function LessonScreen() {
   } else if (!pack) {
     body = (
       <View style={styles.center}>
-        <Icon name="book-open-page-variant" size={56} color={info.color} />
+        <SheetArtwork name="bubble-loading" width={120} height={76} />
         <AppText variant="heading" style={styles.centerText}>
           {t.lessonLoading}
         </AppText>
@@ -180,7 +186,7 @@ export default function LessonScreen() {
     const passed = score >= PASS_MARK;
     body = (
       <View style={[styles.part, styles.centerItems]} accessibilityLiveRegion="polite">
-        <Icon name={passed ? 'star-circle' : 'emoticon-happy-outline'} size={88} color={passed ? '#B7791F' : colors.primary} />
+        <SheetArtwork name={passed ? 'stars' : 'smiling-sun'} width={120} height={96} />
         <AppText variant="display">
           {stage.correct} / {pack.exam.length}
         </AppText>
@@ -220,13 +226,12 @@ export default function LessonScreen() {
 
   const current = stage.kind === 'score' ? 'A' : stage.kind;
   return (
+    <ScreenBackdrop>
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <ScreenHeader backLabel={t.back} title={info.label[uiLang]} />
       <ScrollView contentContainerStyle={styles.scroll}>
         <View style={styles.titleRow}>
-          <View style={[styles.lessonIcon, { backgroundColor: info.color }]}>
-            <Icon name={lessonIcon(lesson)} size={30} color={colors.onPrimary} />
-          </View>
+          <LessonArtwork lesson={lesson} size={60} />
           <View style={styles.flex}>
             <AppText variant="title">{title}</AppText>
             <AppText variant="caption" color={colors.inkSoft}>
@@ -249,11 +254,11 @@ export default function LessonScreen() {
             const on = letter === current;
             const doneBefore = ILAW.indexOf(letter) < ILAW.indexOf(current);
             return (
-              <View key={letter} style={[styles.ilawPill, on && { backgroundColor: info.color }, doneBefore && styles.ilawDone]}>
-                <AppText variant="label" color={on ? colors.onPrimary : doneBefore ? colors.success : colors.inkSoft}>
-                  {letter}
+              <ClaySurface key={letter} selected={on} tint={doneBefore ? 'mint' : undefined} intensity="subtle" radius={radius.pill} style={styles.ilawPill}>
+                <AppText variant="label" color={on ? colors.ink : doneBefore ? colors.success : colors.inkSoft}>
+                  {doneBefore ? `${letter} ✓` : letter}
                 </AppText>
-              </View>
+              </ClaySurface>
             );
           })}
         </View>
@@ -273,6 +278,7 @@ export default function LessonScreen() {
         ) : null}
       </ScrollView>
     </SafeAreaView>
+    </ScreenBackdrop>
   );
 }
 
@@ -300,12 +306,12 @@ function Part({
   return (
     <View style={styles.part}>
       <SectionTitle text={title} />
-      <View style={styles.textCard}>
-        <AppText variant="heading" style={styles.lessonText}>
+      <ClaySurface radius={radius.lg} style={styles.textCard}>
+        <AppText variant="reading" color={colors.ink}>
           {text}
         </AppText>
         <HearButton requestId={requestId} text={text} language={language} autoPlay />
-      </View>
+      </ClaySurface>
       {children}
     </View>
   );
@@ -343,7 +349,7 @@ function Question({
       {question.choices.map((choice, i) => {
         const isAnswer = i === question.answer;
         const isPicked = i === picked;
-        const border = answered && isAnswer ? colors.success : answered && isPicked ? colors.warn : LETTER_COLORS[i];
+        const tint = answered && isAnswer ? 'mint' : answered && isPicked ? 'peach' : undefined;
         return (
           <Pressable
             key={i}
@@ -352,19 +358,14 @@ function Question({
             accessibilityRole="radio"
             accessibilityState={{ checked: isPicked, disabled: answered }}
             accessibilityLabel={`${LETTERS[i]}: ${choice}`}
-            style={[
-              styles.choice,
-              { borderColor: border },
-              answered && isAnswer && styles.choiceRight,
-              answered && isPicked && !isAnswer && styles.choiceWrong,
-              answered && !isAnswer && !isPicked && styles.choiceDim,
-            ]}>
+            style={({ pressed }) => [styles.choice, answered && !isAnswer && !isPicked && styles.choiceDim, pressed && styles.pressed]}>
+            <ClaySurface tint={tint} intensity={tint ? 'strong' : 'regular'} radius={radius.md} pointerEvents="none" style={StyleSheet.absoluteFill} />
             <View style={[styles.letter, { backgroundColor: LETTER_COLORS[i] }]}>
               <AppText variant="title" color={colors.onPrimary}>
                 {LETTERS[i]}
               </AppText>
             </View>
-            <AppText variant="heading" style={styles.flex}>
+            <AppText variant="title" color={colors.ink} style={styles.flex}>
               {choice}
             </AppText>
             {answered && isAnswer ? <Icon name="check-circle" size={28} color={colors.success} /> : null}
@@ -373,55 +374,44 @@ function Question({
         );
       })}
       {answered ? (
-        <View style={[styles.feedback, right ? styles.feedbackRight : styles.feedbackWrong]} accessibilityLiveRegion="assertive">
-          <AppText variant="heading" color={right ? colors.success : colors.warn}>
-            {right ? t.correct : `${t.notYet} ${LETTERS[question.answer]}`}
-          </AppText>
-          <AppText>{question.why}</AppText>
-        </View>
+        <ClaySurface tint={right ? 'mint' : 'peach'} radius={radius.md} style={styles.feedback} accessibilityLiveRegion="assertive">
+          <View style={styles.feedbackHead}>
+            <SheetArtwork name={right ? 'status-success' : 'status-warning'} width={92} height={22} />
+            <AppText variant="heading" color={right ? colors.success : colors.warn}>
+              {right ? t.correct : `${t.notYet} ${LETTERS[question.answer]}`}
+            </AppText>
+          </View>
+          <AppText color={colors.ink}>{question.why}</AppText>
+        </ClaySurface>
       ) : null}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
-  flex: { flex: 1 },
-  scroll: { padding: space.lg, paddingTop: space.sm, gap: space.lg, paddingBottom: space.xxl },
+  safe: { flex: 1, backgroundColor: 'transparent' },
+  flex: { flex: 1, minWidth: 0 },
+  scroll: { padding: layout.screen, paddingTop: space.xs, gap: space.lg, paddingBottom: space.xxl },
   titleRow: { flexDirection: 'row', alignItems: 'center', gap: space.md },
-  lessonIcon: { width: 56, height: 56, borderRadius: 28, alignItems: 'center', justifyContent: 'center' },
   ilaw: { flexDirection: 'row', gap: space.sm },
-  ilawPill: {
-    flex: 1,
-    alignItems: 'center',
-    paddingVertical: space.xs,
-    borderRadius: radius.pill,
-    borderWidth: 2,
-    borderColor: colors.border,
-    backgroundColor: colors.surface,
-  },
-  ilawDone: { borderColor: colors.success, backgroundColor: colors.successTint },
+  ilawPill: { flex: 1, alignItems: 'center', paddingVertical: space.sm },
   part: { gap: space.md },
-  textCard: { gap: space.md, padding: space.lg, borderRadius: radius.lg, backgroundColor: colors.surface, borderWidth: 2, borderColor: colors.border },
-  lessonText: { lineHeight: 30 },
+  textCard: { gap: space.md, padding: space.lg },
   question: { gap: space.sm },
   choice: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: space.md,
     padding: space.md,
-    minHeight: 64,
+    minHeight: 72,
     borderRadius: radius.md,
-    borderWidth: 3,
-    backgroundColor: colors.surface,
+    ...shadow.card,
   },
-  choiceRight: { backgroundColor: colors.successTint },
-  choiceWrong: { backgroundColor: '#FDECEA' },
-  choiceDim: { opacity: 0.5 },
-  letter: { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center' },
-  feedback: { gap: space.xs, padding: space.md, borderRadius: radius.md, borderWidth: 2 },
-  feedbackRight: { borderColor: colors.success, backgroundColor: colors.successTint },
-  feedbackWrong: { borderColor: colors.warn, backgroundColor: '#FDECEA' },
+  choiceDim: { opacity: 0.55 },
+  pressed: { opacity: 0.85, transform: [{ scale: 0.985 }] },
+  letter: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
+  feedback: { gap: space.xs, padding: space.md },
+  feedbackHead: { flexDirection: 'row', alignItems: 'center', gap: space.sm, flexWrap: 'wrap' },
   center: { alignItems: 'center', gap: space.lg, paddingVertical: space.xxl },
   centerItems: { alignItems: 'center' },
   centerText: { textAlign: 'center' },

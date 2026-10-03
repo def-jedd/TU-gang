@@ -1,22 +1,22 @@
-Tano ta nahuhulog an mga bagay? An grabidad kan daga nagbubutong nin mga bagay pababa. Kun binutasan mo an sarong bola, ini nahuhulog pasiring sa daga.
+Tano ta nahuhulog an mga bagay? ang grabidad ning mundo ay naghihila ning mga bagay paibaba. Pag ang bola ay binotasan ay mahuhulig ini pasiring sa daga.
 
-Paano naggigibo nin kakanon an mga tinanom? An mga tinanom naggagamit nin liwanag kan saldang, tubig, asin carbon dioxide tanganing makagibo nin asukar para sa enerhiya asin pagtalubo. Isipon an sarong dahon bilang sarong sadit na lugar nin paggibo nin kakanon.
+Paano naggigibo nin kakanon an mga tinanom? Ang tanom nin sirang nin aldaw, tubig asin karbon dioxide para ini ay makagibo ning asukar para sa enerhiya at pagdakula kan sarong bagay. Romdomin onisipon nindo na ang safit na dahon ay nagiging pagkakan
 
-Tano ta natunaw an yelo? An yelo natunaw kun ini nagkukua nin init hale sa palibot kaini. An yelo na nawalat sa lamesa luway-luway na nagigin likidong tubig.
+Bakin ta ang yelo ay natutunaw? Natutunaw ini pirmi huli ta sa rason na mainit ang palibot na lugar. Pag ang yelo ay winalat o nakapirmi sa lamesa, ini ay dikit dikit na natutunaw tapos nagiging tubig ulit
 
-Saen minaduman an sarong laboy? An init ginigibo an nagkapirang likidong tubig na magin alisngaw nin tubig na naghahalo sa aire. Iyan an dahilan kun tano ta an sarong laboy puedeng mawara dawa mayo nin siisay man na nagpupunas kaiyan.
+Sain napasiring ang puddle? kapag mainit ang lugar o ang palibot, ang puddle ay nagiging tubig asin asin nag eebapora na naghahalo na sa duros na basta na lang nawawara kapag dae pinunasan
 
-Tano ta nag-uuran? An alisngaw nin tubig naglilipot asin nagpoporma nin saradit na turo sa mga panganoron. Kun an igo na mga turo magkasararo asin nagigin magabat, sinda nahuhulog bilang uran.
+Bakin nauran? Ang singaw nin tubig ay nagpoporma nin saradit na uran sa ulap. Kapag ini ay sobrang gabat na. ini ay napoporma o nabubuo ning makusog na uran.
 
-Tano ta nangyayari an mga linog? An darakulang pidaso kan panluwas na layer kan Kinaban puedeng biglang mag-isol sa sarong fault. An hiro na iyan nagpapadara nin enerhiya sa daga asin nagpapayugyog kaiyan.
+Bakin nangyayadi ang lindol o ang pag uga kan daga? Kapag ang kadakukalan nin kadagaan ay naghiro . maading ini ang dahilan kan paghiro ning daga.
 
-Tano ta nagpuputok an mga bulkan? An mainit na natunaw na gapo asin gas pwedeng magbilog nin presyon sa irarom kan daga. Kun sinda nakadulag sa paagi nin sarong bulkan, nangyayari an sarong pagtuga.
+Bakin nasabog ang bulakan? Kapag natunaw ang mainit na bato asin gas ay maading magporma ini ning presyon sa irarom. kapag ini ay naka alpas pwede ining pumutok
 
-Tano ta minaontok an nagliligid na bola? An pag-iriwal kan bola asin kan daga nagpapaluway kaini. An bola parati mas harayo an pagligid sa sarong makinis na salog kisa sa magaspang na doot. |
+Bakin ta ang bolang nag-iikot ay napondo? napondo ini hurita nagkikiskis ang bola ang sa salog. Ang bola ay mas maurag ang gulong sa mahalnas na salog
 
-Ano an pwersa? An pwersa sarong pagtulod o pagguyod na pwedeng magbago kan paghiro kan sarong bagay. An pagtulod nin tukawan sa ibong kan kwarto sarong halimbawa.
+ano ang ibig sabihin kan kusog? Ang kusog ay ang paghila asin pagtulak sa mga bagay. arog na lang kang tukawan kapag hiniro mo ini patulak asin pahila.
 
-Ano an enerhiya? | An enerhiya iyo an nagtutugot sa mga bagay na maghiro, mag-init, o magbago. An saimong hawak nakakakua nin enerhiya hale sa kakanon kun ika nagdadalagan o nagtutugtog 
+Ani ang ibig sabihon kan kusog o sigla? Ang kusog ay nagtatao nin kontrol para humiro. Ang kalawasan mo ay nakakakua ning kusog sa pagdalagan o pagkawat o sidot kung ika ay nagkakan.
 
 Ano an boot sabihon kan kabanga? | An kabanga saro sa duwang pantay na parte kan sarong kabilogan. Kun babangaon mo nin pantay an sarong saging sa duwang tawo, an lambang saro magkakaigwa nin kabanga.
 

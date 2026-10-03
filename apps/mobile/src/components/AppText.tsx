@@ -22,7 +22,7 @@ export function AppText({ variant = 'body', color = colors.ink, bold, scale = 1,
       style={[
         base,
         { color },
-        bold && { fontFamily: isBody ? fonts.bodyBold : fonts.displayBold },
+        bold && { fontWeight: '700', fontFamily: isBody ? fonts.bodyBold : fonts.displayBold },
         scale !== 1 && { fontSize: base.fontSize * scale, lineHeight: base.lineHeight * scale },
         style,
       ]}
