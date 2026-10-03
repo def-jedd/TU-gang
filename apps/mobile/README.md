@@ -19,6 +19,18 @@ Scan the QR code with **Expo Go** (Android) or the Camera app (iOS). With no
 backend configured the app uses the built-in **mock**, and every answer is
 labelled **"Demo data · not live AI"**.
 
+**Phone stuck on "Loading…" / never opens?** Venue and guest Wi-Fi usually
+block devices from reaching each other. Use the tunnel instead (ngrok is
+already a dev dependency — no global install needed):
+
+```bash
+npm run tunnel
+```
+
+Note: the `.env.local` backend URL must also be reachable from the phone —
+a laptop LAN IP won't work on guest Wi-Fi either; use the backend's deployed
+URL or a phone hotspot for both devices.
+
 Other scripts: `npm test` (card → JSON tests), `npm run typecheck`,
 `npm run web` (quick layout checks in a browser).
 
