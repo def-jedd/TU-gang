@@ -192,6 +192,8 @@ the app is open; on iOS, press **Scan a card** first (system sheet).
 | Another way | `ACTION_EXPLAIN_DIFFERENTLY` | re-explains the last answer |
 | Start over | `ACTION_RESET` | clears everything (ends the call) |
 
+**Voice mode: tapping a topic card starts the tutor talking about it right away** (no Explain card needed; level/tutor cards tapped first still apply).
+
 **During a call, cards steer the tutor:** a topic card switches topic, a
 level card re-explains at that level, a tutor card changes the tone,
 `ACTION_EXPLAIN` repeats, `ACTION_RESET` hangs up.

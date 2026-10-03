@@ -68,11 +68,23 @@ export function NfcProvider({ children }: { children: ReactNode }) {
       // During a call, every card steers the tutor (e.g. "Very simple" → re-explain).
       if (call.active) return call.applyCardInCall(raw);
 
-      // Voice-first: "Explain" starts a call about the cards picked so far.
-      if (INTERACTION_MODE === 'voice' && parseCardCode(raw)?.type === 'SUBMIT') {
-        call.startCall();
-        if (pathRef.current !== '/call') router.push('/call');
-        return { kind: 'submitted' };
+      if (INTERACTION_MODE === 'voice') {
+        const action = parseCardCode(raw);
+        // Voice-first: one topic card is enough. Tapping it starts the tutor
+        // talking about that topic (level/tutor cards tapped before still apply),
+        // just like tapping the topic picture on Home.
+        if (action?.type === 'TOPIC') {
+          applyRef.current(raw); // keep the draft (and Cards tray) in sync
+          call.startCall({ topic: action.value, question: null });
+          if (pathRef.current !== '/call') router.push('/call');
+          return { kind: 'submitted' };
+        }
+        // "Explain" starts a call about the cards picked so far.
+        if (action?.type === 'SUBMIT') {
+          call.startCall();
+          if (pathRef.current !== '/call') router.push('/call');
+          return { kind: 'submitted' };
+        }
       }
 
       const result = applyRef.current(raw);
