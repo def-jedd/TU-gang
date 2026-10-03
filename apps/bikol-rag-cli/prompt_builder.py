@@ -108,7 +108,7 @@ def build_full_answer_prompt(student_question, retrieved_chunks, language="bikol
         examples_heading = "Speaker-reviewed Bikol teaching examples"
         public_section = f"Optional unreviewed public Bikol language references (wording only):\n{public or 'None'}\n\n"
         only = "Do not include an English translation."
-        final = f"Write a concise Bikol explanation, relatable Bikol example sentences, and exactly three short Bikol key points. {only}"
+        final = f"Write a complete, focused Bikol explanation, a useful Bikol example when appropriate, and exactly three short Bikol key points. {only}"
     else:
         name = "Tagalog" if language == "tagalog" else "English"
         examples = "\n\n".join(
@@ -120,7 +120,7 @@ def build_full_answer_prompt(student_question, retrieved_chunks, language="bikol
         examples_heading = "English teaching examples"
         public_section = ""
         only = f"Write only in {name}, except for necessary technical terms. Do not add a translation."
-        final = f"Write a concise {name} explanation, relatable {name} example sentences, and exactly three short {name} key points. {only}"
+        final = f"Write a complete, focused {name} explanation, a useful {name} example when appropriate, and exactly three short {name} key points. {only}"
 
     adapt = []
     if action == "explain_differently":
@@ -133,17 +133,22 @@ def build_full_answer_prompt(student_question, retrieved_chunks, language="bikol
     adaptation = f"{' '.join(adapt)}\n\n" if adapt else ""
 
     if as_json:
-        output = (f"Write a concise {name} explanation, one relatable {name} example, and exactly three short "
-                  f"{name} key points. Write for listening: short sentences, no lists, symbols, or section "
-                  f"labels inside the text. {only}\n{ANSWER_JSON_KEYS}")
+        output = (f"Write a complete, focused {name} explanation. Use as many short sentences and paragraphs as needed "
+                  f"to answer every part; do not stop at a summary. Include a useful {name} example only if it adds "
+                  f"understanding, and exactly three short {name} key points. Write for listening: use plain "
+                  f"sentences and no lists or section labels inside the text. {only}\n{ANSWER_JSON_KEYS}")
     else:
         output = (f"{final} If the student asks for a specific number of example sentences, provide that number; "
-                  "otherwise provide one. Follow other reasonable format requests from the student. Use clear "
+                  "otherwise provide one if useful. Follow other reasonable format requests from the student. Use clear "
                   "section labels.\n")
 
     return f"""You are a patient educational tutor. {intro}
 
 First understand the concept accurately. Teach it rather than translating an English answer word for word. Do not copy the examples' facts into an unrelated answer. If uncertain about a factual claim, say so. These examples demonstrate teaching style and are not factual sources for the new question.
+
+Before writing, silently identify every distinct thing the student asks. Answer each in order, with its own paragraph if the topics differ. Match the depth to the question: explain relevant steps, causes, reasons, evidence, or consequences instead of giving only a conclusion. A question about how something began needs its development or sequence, not just a supposed purpose. Use specific, well-established facts when confident; do not invent names, dates, mechanisms, or intentions. The retrieved examples show language and teaching style, not the length your new answer should have. Before returning, check that every part of the student's question has actually been explained.
+
+In the explanation, answer the student's actual question first, then say WHY or HOW in concrete terms: name the cause, describe what happens, and connect it to the result. If the student asks why something matters, name a specific benefit or consequence and explain how it happens. Never use "it is important", "mahalaga ito", or "importante ini" as a substitute for a reason. For simple levels, simplify the words, not the reasoning or completeness. An example must clarify a fact from the answer. Prefer a real observation or event over a metaphor; never use an analogy that changes the mechanism. If no example is helpful, set the example field to an empty string. Make the key points restate useful facts from the explanation, not generic praise or filler. If the question is too unclear to answer, briefly ask what the student means instead of guessing.
 
 {examples_heading}:
 {examples}
