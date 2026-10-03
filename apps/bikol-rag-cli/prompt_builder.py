@@ -46,3 +46,28 @@ English fact: {fact}
 
 Write only the one Bikol sentence. No introduction or translation note.
 """
+
+
+def build_full_answer_prompt(student_question, retrieved_chunks):
+    """One-call prompt for a hosted model; examples teach style, not facts."""
+    tutoring = [chunk for chunk in retrieved_chunks if chunk.get("role") == "tutoring_style"]
+    language = [chunk for chunk in retrieved_chunks if chunk.get("role") == "language_style"]
+    examples = "\n\n".join(
+        f"Example {index} [{chunk['id']}; {chunk.get('retrieval_use', 'style_only')}]:\n{chunk['text']}"
+        for index, chunk in enumerate(tutoring, 1)
+    )
+    public = "\n".join(f"- {chunk['text']}" for chunk in language)
+    return f"""You are a patient educational tutor. Answer the student's new question in natural Bikol, using the speaker-reviewed teaching interactions below as examples of how to explain. The exact regional variety of these examples has not been specified.
+
+First understand the concept accurately. Teach it rather than translating an English answer word for word. Use an English academic term if a reliable Bikol term is unclear. Do not copy the examples' facts into an unrelated answer. If uncertain about a factual claim, say so. These examples demonstrate teaching style and are not factual sources for the new question.
+
+Speaker-reviewed teaching examples:
+{examples}
+
+Optional unreviewed public language references (wording only):
+{public or 'None'}
+
+New student question: {student_question}
+
+Write a concise Bikol explanation, relatable Bikol example sentences, and exactly three short Bikol key points. If the student asks for a specific number of example sentences, provide that number; otherwise provide one. Follow other reasonable format requests from the student. Use clear section labels. Do not include an English translation.
+"""

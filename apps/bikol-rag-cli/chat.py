@@ -8,7 +8,7 @@ from sentence_transformers import SentenceTransformer
 
 import config
 from answer_check import clearly_english
-from prompt_builder import build_fact_prompt, build_prompt, extract_facts
+from prompt_builder import build_fact_prompt, build_full_answer_prompt, build_prompt, extract_facts
 from providers import get_provider
 from retrieval import Retriever
 
@@ -32,9 +32,15 @@ def load_retriever():
 
 
 def main():
-    fact_provider = get_provider(config.ACTIVE_PROVIDER, config.FACT_MODEL_NAME)
-    answer_provider = get_provider(config.ACTIVE_PROVIDER, config.GENERATION_MODEL_NAME)
-    for provider in (fact_provider, answer_provider):
+    if config.ACTIVE_PROVIDER == "gemini":
+        fact_provider = None
+        answer_provider = get_provider("gemini", config.GEMINI_MODEL_NAME)
+        providers = (answer_provider,)
+    else:
+        fact_provider = get_provider(config.ACTIVE_PROVIDER, config.FACT_MODEL_NAME)
+        answer_provider = get_provider(config.ACTIVE_PROVIDER, config.GENERATION_MODEL_NAME)
+        providers = (fact_provider, answer_provider)
+    for provider in providers:
         readiness_error = provider.check_ready()
         if readiness_error:
             print(readiness_error)
@@ -66,21 +72,24 @@ def main():
             print(f"[{item['source']}] {preview} - {item['score']:.2f} ({item['retrieval_use']})")
 
         try:
-            # Academic content is generated without references. Only the second
-            # pass sees Bikol examples, clearly labeled as style material.
-            facts = extract_facts(fact_provider.generate(build_fact_prompt(question)))
-            sentences = [answer_provider.generate(build_prompt(question, references, fact, number == 1)).strip()
-                         for number, fact in enumerate(facts, 1)]
-            response = "\n".join(f"{number}. {sentence}" for number, sentence in enumerate(sentences, 1))
+            if config.ACTIVE_PROVIDER == "gemini":
+                response = answer_provider.generate(build_full_answer_prompt(question, references))
+            else:
+                # The local Ollama flow drafts academic facts first, then
+                # expresses each fact in Bikol using the retrieved examples.
+                facts = extract_facts(fact_provider.generate(build_fact_prompt(question)))
+                sentences = [answer_provider.generate(build_prompt(question, references, fact, number == 1)).strip()
+                             for number, fact in enumerate(facts, 1)]
+                response = "\n".join(f"{number}. {sentence}" for number, sentence in enumerate(sentences, 1))
         except (RuntimeError, ValueError) as error:
             print(f"\n{error}\n")
             continue
 
         if clearly_english(response):
-            print("\nOllama returned English. This is not a Bikol tutor answer.")
+            print(f"\n{config.ACTIVE_PROVIDER} returned English. This is not a Bikol tutor answer.")
             print("English draft for debugging:\n")
         else:
-            print("\nTutor (draft; native review needed):\n")
+            print(f"\nTutor via {config.ACTIVE_PROVIDER} (draft; native review needed):\n")
         print(response + "\n")
         print("-" * 40 + "\n")
 
