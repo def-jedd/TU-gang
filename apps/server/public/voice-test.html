@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bikol tutor · Listen test</title>
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; color: #1b1b1b; }
+      h1 { font-size: 1.4rem; }
+      select, button { font-size: 1rem; padding: 0.5rem 0.8rem; }
+      button { margin-right: 0.5rem; cursor: pointer; }
+      #preview { margin: 1rem 0; padding: 0.8rem; background: #f4f4f4; border-radius: 6px; min-height: 2.5rem; }
+      #meter { height: 10px; background: #eee; border-radius: 5px; overflow: hidden; margin: 1rem 0; }
+      #meter div { height: 100%; width: 0; background: #2f8f4e; transition: width 0.1s; }
+      #log { font-family: ui-monospace, monospace; font-size: 0.85rem; white-space: pre-wrap; background: #111; color: #cfc; padding: 0.8rem; border-radius: 6px; min-height: 6rem; }
+      .note { color: #666; font-size: 0.9rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Listen test: Agora TTS (MiniMax 2.8)</h1>
+    <p class="note">Dev-only page. Uses the same <code>/api/voice/*</code> endpoints the mobile app will call. Every Listen starts a billable Agora agent, which stops automatically.</p>
+
+    <label>Example: <select id="example"></select></label>
+    <div id="preview"></div>
+    <button id="listen">▶ Listen</button>
+    <button id="stop" disabled>■ Stop</button>
+    <div id="meter"><div></div></div>
+    <div id="log"></div>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const log = (msg) => { $('log').textContent += `${msg}\n`; };
+      const api = async (path, body) => {
+        const res = await fetch(path, {
+          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body ?? {}),
+        });
+        const json = await res.json();
+        if (!res.ok) throw new Error(json.error || `HTTP ${res.status}`);
+        return json;
+      };
+
+      // Exposed for scripts/voice-smoke.mjs
+      window.testState = { phase: 'idle', firstAudioMs: null, lastLoudAt: 0, error: null };
+      let client = null, sessionId = null, meterTimer = null, examples = [];
+
+      async function loadExamples() {
+        const res = await fetch('/api/voice/test-examples');
+        examples = await res.json();
+        $('example').innerHTML = examples
+          .map((e) => `<option value="${e.id}">${e.id} · ${e.topic} (${e.review_status})</option>`).join('');
+        showPreview();
+      }
+      function showPreview() {
+        const e = examples.find((x) => x.id === $('example').value);
+        $('preview').textContent = e ? `${e.preview}…` : '';
+      }
+      $('example').addEventListener('change', showPreview);
+
+      async function listen() {
+        $('listen').disabled = true; $('stop').disabled = false; $('log').textContent = '';
+        const t0 = performance.now();
+        const ms = () => `${Math.round(performance.now() - t0)} ms`;
+        window.testState = { phase: 'starting', firstAudioMs: null, lastLoudAt: 0, error: null };
+        try {
+          log('Starting agent…');
+          const requestId = new URLSearchParams(location.search).get('request_id');
+          const s = await api('/api/voice/start', requestId ? { request_id: requestId } : { example_id: $('example').value });
+          sessionId = s.session_id;
+          log(`Agent started (${ms()}) · ${s.chunk_count} speak chunk(s)`);
+
+          AgoraRTC.setLogLevel(3);
+          client = AgoraRTC.createClient({ mode: 'rtc', codec: 'vp8' });
+          // Ask the agent to speak as soon as it is in the channel (its audio
+          // track appears), or after 8 s as a fallback.
+          let spoke = false;
+          const speak = async () => {
+            if (spoke || !sessionId) return;
+            spoke = true;
+            window.testState.phase = 'speaking';
+            const r = await api(`/api/voice/${sessionId}/speak`);
+            log(`Speak accepted (${ms()}) · ${r.chunks_sent} chunk(s) queued`);
+          };
+          const fallback = setTimeout(() => speak().catch(fail), 8000);
+          client.on('user-published', async (user, mediaType) => {
+            if (mediaType !== 'audio') return;
+            await client.subscribe(user, 'audio');
+            user.audioTrack.play();
+            log(`Agent audio connected (${ms()})`);
+            clearTimeout(fallback);
+            speak().catch(fail);
+            meterTimer = setInterval(() => {
+              const level = user.audioTrack.getVolumeLevel();
+              $('meter').firstElementChild.style.width = `${Math.min(100, level * 250)}%`;
+              if (level > 0.02) {
+                if (window.testState.firstAudioMs === null) {
+                  window.testState.firstAudioMs = Math.round(performance.now() - t0);
+                  log(`First speech heard (${ms()})`);
+                }
+                window.testState.lastLoudAt = Date.now();
+              }
+            }, 100);
+          });
+          await client.join(s.app_id, s.channel, s.token, s.uid);
+          log(`Joined channel (${ms()}) · waiting for agent…`);
+        } catch (error) {
+          await fail(error);
+        }
+      }
+
+      async function fail(error) {
+        window.testState.error = error.message;
+        log(`ERROR: ${error.message}`);
+        await stop();
+      }
+
+      async function stop() {
+        clearInterval(meterTimer);
+        $('meter').firstElementChild.style.width = '0';
+        if (sessionId) { await api(`/api/voice/${sessionId}/stop`).catch(() => {}); log('Agent stopped'); }
+        if (client) await client.leave().catch(() => {});
+        sessionId = null; client = null;
+        window.testState.phase = 'stopped';
+        $('listen').disabled = false; $('stop').disabled = true;
+      }
+
+      $('listen').addEventListener('click', listen);
+      $('stop').addEventListener('click', stop);
+      window.addEventListener('beforeunload', () => {
+        if (sessionId) navigator.sendBeacon(`/api/voice/${sessionId}/stop`);
+      });
+      loadExamples().catch((e) => log(`Could not load examples: ${e.message}`));
+    </script>
+  </body>
+</html>

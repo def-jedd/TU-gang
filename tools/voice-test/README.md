@@ -39,3 +39,5 @@ Score each voice from 1 (unintelligible) to 5 (natural Daet Bikol).
 | minimax-2.8-filipino-boost | | | | |
 
 **Decision rule:** enable Listen only if a voice gets at least 4 for "understandable" and your speaker is comfortable presenting it. Otherwise ship text-only, or use a clearly labeled recorded native-speaker sample (with permission).
+
+**Round 1 result (2026-10-03):** the team approved both MiniMax voices and did not approve OpenAI `tts-1` nova. The server uses `minimax-english` by default (`VOICE_TTS` in `apps/server/.env.local`).
