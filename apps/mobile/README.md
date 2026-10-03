@@ -20,7 +20,8 @@ Switch with `EXPO_PUBLIC_VOICE_MODE=agora` once the backend implements
 [VOICE_CONTRACT.md](VOICE_CONTRACT.md). If the dev build or backend is
 missing, the app falls back to practice voice **and says so on screen**.
 
-Owner: UI + NFC (Teammate 1). Backend lives in `apps/server` (Teammate 3).
+Owner: UI + NFC (Teammate 1). The tutor API is
+[`apps/bikol-rag-cli/server.py`](../bikol-rag-cli/README.md#serve-the-mobile-app).
 
 ## Run it (2 minutes)
 
@@ -51,8 +52,10 @@ Other scripts: `npm test` (card → JSON tests), `npm run typecheck`,
 
 ## Connect to the backend
 
-1. `cp .env.example .env.local`
-2. Set `EXPO_PUBLIC_API_BASE_URL=http://<laptop-LAN-IP>:<port>` — **not**
+1. Start the tutor API: `python server.py` in `apps/bikol-rag-cli` (setup in
+   [its README](../bikol-rag-cli/README.md#serve-the-mobile-app)). It prints
+   the exact `EXPO_PUBLIC_API_BASE_URL=…` line for this laptop.
+2. `cp .env.example .env.local` and paste that line — **not**
    `localhost`; the phone is a different device. Phone and laptop must be on
    the same Wi-Fi (hotspot works well at venues).
 3. Restart `npx expo start` (env vars are read at bundle time).
@@ -83,7 +86,7 @@ POST /api/explain
 - `action` is `explain` or `explain_differently`.
 - Response: `request_id, topic, language, explanation, example, key_points[], source_ids[], provider`.
   `example`, `key_points`, `source_ids` may be empty. `provider` must be
-  `quick` | `approved_fallback` | `mock`; the UI shows it on every answer.
+  `ollama` | `kiro` | `quick` | `approved_fallback` | `mock`; the UI shows it on every answer.
 - Errors: any non-2xx with `{ "error": "readable message" }`.
 
 ## Rehearsal hooks (mock only)

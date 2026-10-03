@@ -31,10 +31,14 @@ export function LanguageBadge({ t }: { t: Copy }) {
 
 /**
  * Always says who wrote the answer. Mock data is impossible to mistake for
- * live AI, and Quick is only claimed when the backend says so.
+ * live AI, and a provider is only claimed when the backend says so.
  */
 export function ProviderBadge({ provider, t }: { provider: ExplainResponse['provider']; t: Copy }) {
   switch (provider) {
+    case 'kiro':
+      return <Pill icon="lightning-bolt" label={t.providerKiro} fg={colors.success} bg={colors.successTint} />;
+    case 'ollama':
+      return <Pill icon="laptop" label={t.providerOllama} fg={colors.inkSoft} bg={colors.surfaceSunken} />;
     case 'quick':
       return <Pill icon="lightning-bolt" label={t.providerQuick} fg={colors.success} bg={colors.successTint} />;
     case 'approved_fallback':

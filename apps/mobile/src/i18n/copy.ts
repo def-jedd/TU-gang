@@ -52,6 +52,8 @@ const en = {
   goBack: 'Go back',
   nothingYet: 'No question yet.',
 
+  providerOllama: 'Answered by local AI (Ollama)',
+  providerKiro: 'Answered by Kiro AI',
   providerQuick: 'Answered by Amazon Quick',
   providerFallback: 'Answered by backup tutor',
   providerMock: 'Demo data · not live AI',
@@ -163,6 +165,8 @@ const bik: Copy = {
   goBack: 'Magbalik',
   nothingYet: 'Mayo pang hapot.',
 
+  providerOllama: 'Simbag hale sa local na AI (Ollama)',
+  providerKiro: 'Simbag hale sa Kiro AI',
   providerQuick: 'Simbag hale sa Amazon Quick',
   providerFallback: 'Simbag hale sa backup na tutor',
   providerMock: 'Demo data · bakong live AI',

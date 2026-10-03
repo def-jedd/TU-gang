@@ -99,7 +99,7 @@ export async function requestJson(
   }
 }
 
-const PROVIDERS: readonly Provider[] = ['quick', 'approved_fallback', 'mock'];
+const PROVIDERS: readonly Provider[] = ['ollama', 'kiro', 'quick', 'approved_fallback', 'mock'];
 
 const isString = (value: unknown): value is string => typeof value === 'string';
 

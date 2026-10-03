@@ -2,15 +2,16 @@
  * Shared API contract for POST /api/explain.
  *
  * FROZEN with the backend owner (Teammate 3). If a field changes here it must
- * change in apps/server/src/types/tutor.ts in the same hour — otherwise the
- * request will fail validation.
+ * change in apps/bikol-rag-cli/server.py (ExplainRequest) in the same hour —
+ * otherwise the request will fail validation.
  */
 
 export type Language = 'bikol_daet';
 export type Difficulty = 'very_simple' | 'simple' | 'normal';
 export type TeachingStyle = 'teacher' | 'friend' | 'ate_kuya';
 export type TutorAction = 'explain' | 'explain_differently';
-export type Provider = 'quick' | 'approved_fallback' | 'mock';
+/** `ollama` = local placeholder model; `kiro` = Kiro CLI (the planned agent model). */
+export type Provider = 'ollama' | 'kiro' | 'quick' | 'approved_fallback' | 'mock';
 
 /** Request body. Key order matches the agreed JSON so logs are easy to diff. */
 export type ExplainRequest = {

@@ -6,6 +6,8 @@ Hackathon plan for a Bikol-first educational tutor. A student asks an open-ended
 
 The [command-line prototype](apps/bikol-rag-cli/README.md) is a working copy of the team's existing Ollama CLI. It now indexes the [20 reviewed tutoring examples](data/bikol_examples.json) using their English descriptions and passes selected Bikol responses as teaching-style references. The original CLI folder on the Desktop is unchanged. Supabase and Amazon Quick are not connected yet.
 
+The [mobile app](apps/mobile/README.md) talks to this same tutor through `apps/bikol-rag-cli/server.py`, which serves the shared contract below. Ollama is the placeholder model; Kiro is the planned one, and switching is one environment variable ([details](apps/bikol-rag-cli/README.md#switching-to-kiro)).
+
 ## Team handoffs
 
 | Owner | Guide | First handoff |

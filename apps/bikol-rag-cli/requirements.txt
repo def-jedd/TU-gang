@@ -2,3 +2,5 @@ datasets
 sentence-transformers
 numpy
 requests
+fastapi
+uvicorn
