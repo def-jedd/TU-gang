@@ -1,0 +1,22 @@
+[
+  {"topic": "gravity", "text": "An gravity iyo an puwersang naghihila sa mga bagay pababa pasiring sa daga."},
+  {"topic": "friction", "text": "An friction iyo an puwersang nagkokontra sa paghiro nin sarong bagay."},
+  {"topic": "heat", "text": "Kun mas mainit an sarong bagay, mas dakol an enerhiya na igwa kaini."},
+  {"topic": "melting", "text": "An yelo natutunaw kapag nakukua kaini an sapat na init."},
+  {"topic": "photosynthesis", "text": "An mga tanom nagagamit nin liwanag kan aldaw, tubig, asin carbon dioxide para makagibo nin sadiri nindang pagkaon."},
+  {"topic": "plants", "text": "Importante an sunlight sa mga tanom ta ginagamit ninda ini sa paggibo nin pagkaon."},
+  {"topic": "force", "text": "An force puwedeng magtulod o maghila sa sarong bagay."},
+  {"topic": "motion", "text": "An sarong bagay naghiro kapag nagbabago an lugar o posisyon kaini."},
+  {"topic": "electricity", "text": "An kuryente nagdadara nin enerhiya sa mga gamit arog kan ilaw asin electric fan."},
+  {"topic": "circuit", "text": "Para umandar an sarong simpleng circuit, kaipuhan sarado an agihan kan kuryente."},
+  {"topic": "fraction", "text": "An fraction nagpapahiling nin parte kan sarong bilog o kabuuan."},
+  {"topic": "percentage", "text": "An percentage nagpapahiling kun gurano kadakol an parte sa kada sarong gatos."},
+  {"topic": "area", "text": "An area iyo an kadakol kan espasyo sa laog nin sarong porma."},
+  {"topic": "perimeter", "text": "An perimeter iyo an kabuuang sukol palibot kan sarong porma."},
+  {"topic": "cells", "text": "An cell iyo an pinakagamay na yunit na bumubuo sa mga buhay na organismo."},
+  {"topic": "respiration", "text": "An lawas nagagamit nin oxygen para makagibo nin enerhiya hali sa pagkaon."},
+  {"topic": "evaporation", "text": "An tubig nagiging singaw kapag nakakua ini nin sapat na init."},
+  {"topic": "condensation", "text": "An singaw nagiging tubig liwat kapag ini nalalamigan."},
+  {"topic": "mass and weight", "text": "An mass nagpapahiling kun gurano kadakol an materyal sa sarong bagay, habang an weight nakadepende sa gravity."},
+  {"topic": "Newton's third law", "text": "Kun nagtutulod ka nin sarong bagay, may kaparehong puwersa na nagtutulod pabalik saimo."}
+]

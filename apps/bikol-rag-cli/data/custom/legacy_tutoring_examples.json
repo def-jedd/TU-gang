@@ -1,0 +1,122 @@
+[
+  {
+    "id": "custom_001",
+    "topic": "gravity",
+    "subject": "science",
+    "difficulty": "simple",
+    "english_concept": "Gravity pulls objects toward Earth.",
+    "natural_bikol": "An gravity iyo an pwersa na nagbubutong sa mga bagay paibaba sa daga, kaya dai kita naglalataw-lataw.",
+    "example": "Pag nag-apon ka nin bola paitaas, mahuhulog giraray ini pababa huli sa gravity.",
+    "source": "human_validated",
+    "region": "Naga, Camarines Sur",
+    "validated": true
+  },
+  {
+    "id": "custom_002",
+    "topic": "photosynthesis",
+    "subject": "science",
+    "difficulty": "simple",
+    "english_concept": "Plants use sunlight to make food.",
+    "natural_bikol": "An photosynthesis iyo an proseso kung pano nagigibo nin kakanon an mga tinanom gamit an sikat nin saldang, tubig, asin carbon dioxide.",
+    "example": "Siring kan pagluto ta nin kakanon sa kusina, an mga dahon kan tinanom nagsisirbing kusina ninda tapos an saldang iyo an kalayo.",
+    "source": "human_validated",
+    "region": "Daet, Camarines Norte",
+    "validated": true
+  },
+  {
+    "id": "custom_003",
+    "topic": "friction",
+    "subject": "science",
+    "difficulty": "simple",
+    "english_concept": "Friction slows things down when they rub together.",
+    "natural_bikol": "An friction iyo an pwersa na nagpapaluway sa paghiro kan sarong bagay pag ini nagkikiskis o minaduot sa ibang bagay.",
+    "example": "Masakit magtulod nin magabat na kahon sa aspaltong tinampo kumpara sa makinis na salog huli sa mas makusog na friction.",
+    "source": "human_validated",
+    "region": "Legazpi, Albay",
+    "validated": true
+  },
+  {
+    "id": "custom_004",
+    "topic": "force",
+    "subject": "science",
+    "difficulty": "simple",
+    "english_concept": "Force is a push or pull on an object.",
+    "natural_bikol": "An force iyo an pagbutong o pagtulod na nagpapahiro, nagpapapundo, o nagpapabago kan direksyon kan sarong bagay.",
+    "example": "Pag sinusipa mo an bola, nagtatao ka nin force para maghiro ini palayo saimo.",
+    "source": "human_validated",
+    "region": "Naga, Camarines Sur",
+    "validated": true
+  },
+  {
+    "id": "custom_005",
+    "topic": "electricity",
+    "subject": "science",
+    "difficulty": "simple",
+    "english_concept": "Electricity is the flow of electrical power or charge.",
+    "natural_bikol": "An kuryente iyo an daloy nin enerhiya na nagtataong buhay sa mga appliances ta sa harong.",
+    "example": "Kaya nagsisindi an bumbilya sa harong pag pinindot mo an switch, huli ta nagdadaloy na an kuryente pasiring duman.",
+    "source": "human_validated",
+    "region": "Daet, Camarines Norte",
+    "validated": true
+  },
+  {
+    "id": "custom_006",
+    "topic": "fractions",
+    "subject": "math",
+    "difficulty": "simple",
+    "english_concept": "Fractions represent equal parts of a whole.",
+    "natural_bikol": "An fraction nagrerepresentar kan saro o dakol pang parte nin sarong buo na binanga sa pantay-pantay na pidaso.",
+    "example": "Kung igwa kang sarong pizza na binanga mo sa apat, dangan kinakan mo an saro, nakakakan ka nin 1/4 (sarong kwarto) kan pizza.",
+    "source": "human_validated",
+    "region": "Legazpi, Albay",
+    "validated": true
+  },
+  {
+    "id": "custom_007",
+    "topic": "percentage",
+    "subject": "math",
+    "difficulty": "simple",
+    "english_concept": "Percentage means parts per hundred.",
+    "natural_bikol": "An porsyento boot sabihon parte kada sanggatos. Pwede ini magamit para magkumpara nin numero.",
+    "example": "Pag nahiling mo na 50% off sa tindahan, boot sabihon banga (kalahati) kan orihinal na presyo an bawas.",
+    "source": "human_validated",
+    "region": "Naga, Camarines Sur",
+    "validated": true
+  },
+  {
+    "id": "custom_008",
+    "topic": "area",
+    "subject": "math",
+    "difficulty": "simple",
+    "english_concept": "Area is the size of a surface.",
+    "natural_bikol": "An area iyo an sukol kan espasyo sa laog nin sarong patag na hugis o porma.",
+    "example": "Arog kan pag-aram kung pirang tiles an kakaipuhanon para lagyan nin salog an sarong kwarto, bibilingon mo an area kaini.",
+    "source": "human_validated",
+    "region": "Daet, Camarines Norte",
+    "validated": true
+  },
+  {
+    "id": "custom_009",
+    "topic": "cells",
+    "subject": "biology",
+    "difficulty": "simple",
+    "english_concept": "Cells are the basic building blocks of living things.",
+    "natural_bikol": "An cells iyo an pinakasadit na yunit o parte na nagbubuo sa gabos na may buhay.",
+    "example": "Siring kan sarong harong na gibo sa manlain-lain na bloke, an hawak ta man gibo sa bilyon-bilyon na cells.",
+    "source": "human_validated",
+    "region": "Legazpi, Albay",
+    "validated": true
+  },
+  {
+    "id": "custom_010",
+    "topic": "states of matter",
+    "subject": "science",
+    "difficulty": "simple",
+    "english_concept": "Matter exists as solid, liquid, or gas.",
+    "natural_bikol": "An matter igwang tulong panginot na porma: solid, liquid, asin gas.",
+    "example": "An yelo solid, an pig-iinom tang tubig liquid, asin an aso haling nagkakalakagang tubig gas.",
+    "source": "human_validated",
+    "region": "Naga, Camarines Sur",
+    "validated": true
+  }
+]
