@@ -9,4 +9,6 @@ export const nfcReader: NfcReader = {
   checkAvailability: async () => 'unsupported',
   listen: async () => () => {},
   openSettings: async () => {},
+  writeText: async () => ({ ok: false, error: 'unavailable' }),
+  cancelWrite: async () => {},
 };

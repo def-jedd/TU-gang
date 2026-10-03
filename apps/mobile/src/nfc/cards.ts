@@ -153,11 +153,11 @@ export const LANGUAGE_CARDS: LanguageCard[] = [
   },
   {
     code: 'LANG_TAGALOG', category: 'language', value: 'tagalog',
-    icon: 'translate', label: { en: 'Tagalog', bik: 'Tagalog' },
+    icon: 'flag-variant', label: { en: 'Tagalog', bik: 'Tagalog' },
   },
   {
     code: 'LANG_ENGLISH', category: 'language', value: 'english',
-    icon: 'translate', label: { en: 'English', bik: 'English' },
+    icon: 'earth', label: { en: 'English', bik: 'English' },
   },
 ];
 

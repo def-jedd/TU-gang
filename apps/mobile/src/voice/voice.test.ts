@@ -65,3 +65,28 @@ describe('Agora data-stream captions', () => {
     assert.deepEqual(parser.push('id|1|1|%%%not-base64%%%'), []);
   });
 });
+
+describe("Kiev's Listen protocol", async () => {
+  const { parseListenStart, isListenDone, LISTEN_SILENCE_DONE_MS } = await import('./listenProtocol.ts');
+
+  it('accepts the documented /api/voice/start response', () => {
+    const s = parseListenStart({
+      session_id: 'abc', app_id: 'app', channel: 'listen-abc', uid: 2001, token: 'tok',
+      agent_uid: 1001, chunk_count: 2, expires_in_seconds: 180,
+    });
+    assert.equal(s.channel, 'listen-abc');
+    assert.equal(s.agent_uid, 1001);
+    assert.equal(s.chunk_count, 2);
+  });
+
+  it('rejects incomplete responses instead of joining a broken channel', () => {
+    assert.throws(() => parseListenStart({ session_id: 'abc', channel: 'x' }));
+    assert.throws(() => parseListenStart(null));
+  });
+
+  it('is done only after the agent was heard and then went quiet', () => {
+    assert.equal(isListenDone(null, 0, 10_000), false); // never heard yet
+    assert.equal(isListenDone(1_000, 5_000, 5_000 + LISTEN_SILENCE_DONE_MS - 1), false);
+    assert.equal(isListenDone(1_000, 5_000, 5_000 + LISTEN_SILENCE_DONE_MS), true);
+  });
+});

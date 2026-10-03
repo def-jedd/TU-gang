@@ -3,6 +3,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import { Animated, Platform } from 'react-native';
 
 import { useTutor, type CardOutcome } from '../hooks/useTutor';
+import { useProfiles } from '../profiles/ProfileProvider';
 import { parseCardCode } from '../nfc/cardReducer';
 import { CAPTIONS_DEFAULT } from '../services/config';
 import type { Provider } from '../types/tutor';
@@ -21,6 +22,8 @@ type CallState = {
   canHear: boolean;
   notice: VoiceNotice;
   provider: Provider | 'unknown' | null;
+  /** Which engine is speaking right now. */
+  voice: 'agora' | 'phone' | null;
 };
 
 type VoiceContextValue = CallState & {
@@ -50,6 +53,7 @@ const IDLE: CallState = {
   canHear: false,
   notice: null,
   provider: null,
+  voice: null,
 };
 
 const MAX_CAPTIONS = 30;
@@ -60,6 +64,11 @@ function buzz(style: Haptics.ImpactFeedbackStyle) {
 
 export function VoiceProvider({ children }: { children: ReactNode }) {
   const { draft, update } = useTutor();
+  const { markLessonDone } = useProfiles();
+  const markDoneRef = useRef(markLessonDone);
+  useEffect(() => {
+    markDoneRef.current = markLessonDone;
+  }, [markLessonDone]);
   const [call, setCall] = useState<CallState>(IDLE);
   const [showCaptions, setShowCaptions] = useState(CAPTIONS_DEFAULT);
   const agentRef = useRef<VoiceAgent | null>(null);
@@ -103,9 +112,15 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
 
       // Every callback checks it still belongs to the current call.
       const mine = () => agentRef.current === agent;
+      let lastPhase: VoicePhase = 'connecting';
       agent.start(context, {
         onPhase(phase) {
           if (!mine()) return;
+          // The tutor finished explaining a topic = one lesson done for this student.
+          if (lastPhase === 'speaking' && phase === 'listening' && draftRef.current.topic) {
+            markDoneRef.current(draftRef.current.topic);
+          }
+          lastPhase = phase;
           // "Your turn" is felt, not just seen: a buzz when the tutor stops talking.
           if (phase === 'listening' && agent.canHear) buzz(Haptics.ImpactFeedbackStyle.Medium);
           setCall((prev) => ({ ...prev, phase }));
@@ -123,6 +138,9 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
         },
         onProvider(provider) {
           if (mine()) setCall((prev) => ({ ...prev, provider }));
+        },
+        onVoice(voice) {
+          if (mine()) setCall((prev) => ({ ...prev, voice }));
         },
         onError(kind) {
           if (!mine()) return;

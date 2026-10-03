@@ -52,6 +52,8 @@ export type VoiceListener = {
   onLevel?(who: 'agent' | 'student', level: number): void;
   /** Who generated the words the agent is speaking (for the honesty badge). */
   onProvider?(provider: Provider | 'unknown'): void;
+  /** Which engine is actually speaking (for the honesty badge). */
+  onVoice?(voice: 'agora' | 'phone'): void;
   onError(kind: VoiceErrorKind, detail?: string): void;
 };
 

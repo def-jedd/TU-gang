@@ -23,17 +23,27 @@ function devMachineHost(): string | null {
  * that computer's address on any Wi-Fi or hotspot. Otherwise a full URL,
  * e.g. http://192.168.1.23:8000. A phone cannot reach your laptop's "localhost".
  */
-function resolveBaseUrl(raw: string | undefined): string | null {
+function resolveBaseUrl(raw: string | undefined, port: string): string | null {
   const value = raw?.trim();
   if (!value) return null;
   if (value.toLowerCase() === 'auto') {
     const host = devMachineHost();
-    return host ? `http://${host}:${API_PORT}` : null;
+    return host ? `http://${host}:${port}` : null;
   }
   return value.replace(/\/+$/, '');
 }
 
-export const API_BASE_URL = resolveBaseUrl(process.env.EXPO_PUBLIC_API_BASE_URL);
+export const API_BASE_URL = resolveBaseUrl(process.env.EXPO_PUBLIC_API_BASE_URL, API_PORT);
+
+/**
+ * Kiev's voice server (apps/server: Agora "Listen"). Same rules as above;
+ * `auto` = this computer on port EXPO_PUBLIC_VOICE_API_PORT (default 3000).
+ * Unset = no Listen button.
+ */
+export const VOICE_API_BASE_URL = resolveBaseUrl(
+  process.env.EXPO_PUBLIC_VOICE_API_BASE_URL,
+  process.env.EXPO_PUBLIC_VOICE_API_PORT?.trim() || '3000',
+);
 
 /** Mock until a backend URL is configured, or when explicitly forced for rehearsals. */
 export const USE_MOCK = process.env.EXPO_PUBLIC_USE_MOCK === 'true' || API_BASE_URL === null;
@@ -51,6 +61,9 @@ export const DEFAULT_UI_LANG: UiLang = process.env.EXPO_PUBLIC_UI_LANG === 'bik'
  *   on-screen notice) when either is missing.
  */
 export const VOICE_MODE: 'agora' | 'simulated' = process.env.EXPO_PUBLIC_VOICE_MODE === 'agora' ? 'agora' : 'simulated';
+
+/** Show the not-yet-supported Philippine languages in the answer-language picker. */
+export const SHOW_UPCOMING_LANGUAGES = process.env.EXPO_PUBLIC_SHOW_UPCOMING_LANGUAGES === 'true';
 
 /** Voice-first by default; `text` makes cards/Explain use the reading flow. */
 export const INTERACTION_MODE: 'voice' | 'text' = process.env.EXPO_PUBLIC_INTERACTION === 'text' ? 'text' : 'voice';

@@ -93,7 +93,14 @@ export default function CallScreen() {
     <SafeAreaView style={styles.safe} edges={['top', 'bottom']}>
       <View style={styles.topBar}>
         <View style={styles.badges}>
-          {kind === 'simulated' ? (
+          {kind === 'simulated' && voice.voice === 'agora' ? (
+            <View style={[styles.pill, styles.pillLive]}>
+              <Icon name="waveform" size={16} color={colors.success} />
+              <AppText variant="caption" color={colors.success} bold>
+                {t.agoraVoice}
+              </AppText>
+            </View>
+          ) : kind === 'simulated' ? (
             <View style={styles.pill}>
               <Icon name="flask" size={16} color={colors.warn} />
               <AppText variant="caption" color={colors.warn} bold>

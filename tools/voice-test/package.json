@@ -1,0 +1,16 @@
+{
+  "name": "bikol-voice-test",
+  "private": true,
+  "type": "module",
+  "description": "Records Agora Conversational AI TTS reading reviewed Bikol samples, for native-speaker pronunciation review.",
+  "scripts": {
+    "record": "node record.mjs"
+  },
+  "dependencies": {
+    "agora-agents": "^2.11.0",
+    "agora-token": "^2.0.5",
+    "dotenv": "^16.4.5",
+    "ffmpeg-static": "^5.2.0",
+    "playwright": "1.63.0"
+  }
+}

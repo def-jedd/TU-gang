@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Env files (never commit secrets)
+.env
+.env.local
+.env.*.local
+.env.keys
+
+# Supabase local state
+supabase/.temp/
+supabase/.branches/
+
+# OS / editor
+.DS_Store
+*.log

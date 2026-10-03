@@ -10,7 +10,7 @@
 import Constants, { ExecutionEnvironment } from 'expo-constants';
 import { Platform } from 'react-native';
 
-import type { NfcAvailability, NfcReader, ScannedTag } from './types';
+import type { NfcAvailability, NfcReader, ScannedTag, WriteResult } from './types';
 
 type NfcModule = typeof import('react-native-nfc-manager');
 type TagEvent = import('react-native-nfc-manager').TagEvent;
@@ -93,6 +93,39 @@ export const nfcReader: NfcReader = {
       manager.setEventListener(NfcEvents.SessionClosed, null);
       manager.unregisterTagEvent().catch(() => {});
     };
+  },
+
+  async writeText(build): Promise<WriteResult> {
+    const nfc = loadModule();
+    if (!nfc) return { ok: false, error: 'unavailable' };
+    const { default: manager, NfcTech, Ndef } = nfc;
+    try {
+      await ensureStarted(nfc);
+      await manager.requestTechnology(NfcTech.Ndef, { alertMessage: 'Hold the card to the phone' });
+      const tag = await manager.getTag();
+      // NDEF message + Text record headers + "en" language code take ~10 bytes.
+      const maxTextBytes = Math.max(0, (tag?.maxSize ?? 144) - 10);
+      let text: string;
+      try {
+        text = build(maxTextBytes);
+      } catch {
+        return { ok: false, error: 'too_small' };
+      }
+      const bytes = Ndef.encodeMessage([Ndef.textRecord(text)]);
+      if (tag?.maxSize && bytes.length > tag.maxSize) return { ok: false, error: 'too_small' };
+      await manager.ndefHandler.writeNdefMessage(bytes);
+      return { ok: true, text, maxTextBytes };
+    } catch (error) {
+      const detail = String(error);
+      return { ok: false, error: /cancel/i.test(detail) ? 'cancelled' : 'failed', detail };
+    } finally {
+      manager.cancelTechnologyRequest().catch(() => {});
+    }
+  },
+
+  async cancelWrite() {
+    const nfc = loadModule();
+    await nfc?.default.cancelTechnologyRequest().catch(() => {});
   },
 
   async openSettings() {

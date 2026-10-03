@@ -6,9 +6,11 @@ import { PHILIPPINE_LANGUAGE_NAMES } from '../data/philippineLanguages';
 import { useTutor } from '../hooks/useTutor';
 import { LANGUAGE_CARDS } from '../nfc/cards';
 import { category, colors, radius, space, touch } from '../theme/tokens';
+import { SHOW_UPCOMING_LANGUAGES } from '../services/config';
 import type { Language } from '../types/tutor';
 import { speakLabel } from '../voice/deviceSpeech';
 import { AppText } from './AppText';
+import { ChoiceGroup } from './ChoiceGroup';
 import { Icon, type IconName } from './Icon';
 import { SpeakableTitle } from './SpeakableTitle';
 
@@ -45,6 +47,24 @@ export function AnswerLanguageSelector({ value, onChange, compact, speakable }: 
   }, [query, uiLang, t.languageAvailableNow, t.languageComingSoon]);
 
   const close = () => { setOpen(false); setQuery(''); };
+
+  // Focus for now: English, Tagalog, Bikolano as three big speakable picture
+  // buttons (no reading or typing). The searchable list with upcoming
+  // dialects returns with EXPO_PUBLIC_SHOW_UPCOMING_LANGUAGES=true.
+  if (!SHOW_UPCOMING_LANGUAGES) {
+    return (
+      <ChoiceGroup
+        title={t.answerLanguageTitle}
+        titleIcon="translate"
+        palette="language"
+        value={value}
+        onChange={onChange}
+        compact={compact}
+        speakable={speakable ? t.hearThis : undefined}
+        options={LANGUAGE_CARDS.map((card) => ({ value: card.value, label: card.label[uiLang], icon: card.icon }))}
+      />
+    );
+  }
   const choose = (language: Language, label: string) => {
     onChange(language);
     if (speakable) speakLabel(label);
