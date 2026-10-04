@@ -1,0 +1,106 @@
+{
+  "lesson_id": "g3-science-w1-1",
+  "grade": 3,
+  "subject": "science",
+  "language": "bikol_daet",
+  "difficulty": "simple",
+  "deped_competency": "Identify objects, activities, or natural events observed in their local environment that can be explained by science.",
+  "generated_by": "Gemini 3.5 Flash-Lite (TU-gang server), not yet teacher-reviewed",
+  "lesson": {
+    "intentions": "Pagkatapos kaini, aram mo na an mga simpleng bagay asin pananyaring natural sa palibot ta na may paliwanag na siyensya.",
+    "steps": [
+      {
+        "text": "An siyensya nakakatabang tanganing masabutan ta an mga bagay sa satong palibot. Halimbawa, an pagkahulog kan sarong sira sa saod ipinapaliwanag kan grabidad o an pagbutong kan daga pababa.",
+        "check": {
+          "question": "Ano an nagbubutong kan nahuhulog na bagay pababa sa daga?",
+          "choices": [
+            "lipot",
+            "init",
+            "grabidad"
+          ],
+          "answer": 2,
+          "why": "An grabidad iyo an nagbubutong kan mga bagay pasiring sa daga."
+        }
+      },
+      {
+        "text": "An mga pananyaring natural arog kan pag-uran igwang paliwanag na siyensya. An init kan saldang nagpapainit kan tubig sa mga salog kaya ini nagigin alisngaw.",
+        "check": {
+          "question": "Ano an nagpapainit sa tubig sa salog para magin alisngaw?",
+          "choices": [
+            "an duros",
+            "an saldang",
+            "an bulan"
+          ],
+          "answer": 1,
+          "why": "An saldang an nagtatao nin init na nagpapainit sa tubig."
+        }
+      },
+      {
+        "text": "An mga gibo-gibo ta sa harong pwedeng ipaliwanag kan siyensya. Kun ika nagluluto nin bagas, an init kan kalayo an nagpapainit asin naglaluto kan paroy.",
+        "check": {
+          "question": "Ano an nagpapainit asin naglaluto kan bagas sa kaldero?",
+          "choices": [
+            "an init kan kalayo",
+            "an lipot kan yelo",
+            "an dulum kan banggi"
+          ],
+          "answer": 0,
+          "why": "An init kan kalayo an naglaluto kan bagas."
+        }
+      }
+    ],
+    "exam": [
+      {
+        "question": "Ano an nagbubutong kan bola pabalik sa saod kun ika nagbabayo?",
+        "choices": [
+          "an kakanon",
+          "an grabidad",
+          "an duros"
+        ],
+        "answer": 1,
+        "why": "An grabidad an nagpapababa kan bola sa saod."
+      },
+      {
+        "question": "Ano an nagpapainit kan tubig sa saldang?",
+        "choices": [
+          "an init",
+          "an lipot",
+          "an kulog"
+        ],
+        "answer": 0,
+        "why": "An init kan saldang an nagpapainit sa tubig."
+      },
+      {
+        "question": "An pagluto nin bagas sa kaldero gamit an kalayo sarong gibo na may paliwanag sa ano?",
+        "choices": [
+          "pagbayle",
+          "pagkanta",
+          "siyensya"
+        ],
+        "answer": 2,
+        "why": "An pagluto sarong gibo sa palibot na ipinapaliwanag kan siyensya."
+      },
+      {
+        "question": "Saen naggagaling an alisngaw kan tubig sa salog?",
+        "choices": [
+          "sa uran",
+          "sa init",
+          "sa gapo"
+        ],
+        "answer": 1,
+        "why": "An init kan saldang an nagigin dahilan kan alisngaw."
+      },
+      {
+        "question": "Ano an saro sa mga bagay sa palibot na may paliwanag kan grabidad?",
+        "choices": [
+          "pagkahulog kan dahon",
+          "pagkilyab kan bitoon",
+          "paglupad kan gamgam"
+        ],
+        "answer": 0,
+        "why": "An pagkahulog kan dahon ipinapaliwanag kan grabidad."
+      }
+    ],
+    "ways_forward": "Magayon an saimong pinag-adalan ngunyan dapit sa mga bagay na may paliwanag na siyensya. Paghiling mo sa palibot sa harong, isipa kung anong init o grabidad an nanyata."
+  }
+}

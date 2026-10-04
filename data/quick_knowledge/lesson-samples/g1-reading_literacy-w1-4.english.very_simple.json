@@ -1,0 +1,106 @@
+{
+  "lesson_id": "g1-reading_literacy-w1-4",
+  "grade": 1,
+  "subject": "reading_literacy",
+  "language": "english",
+  "difficulty": "very_simple",
+  "deped_competency": "Say two or three words that rhyme.",
+  "generated_by": "Gemini 3.5 Flash-Lite (TU-gang server), not yet teacher-reviewed",
+  "lesson": {
+    "intentions": "By the end of this lesson, you will be able to listen and say two or three words that rhyme.",
+    "steps": [
+      {
+        "text": "Rhyming words are words that sound the same at the end. Listen to the ends of words when people talk. For example, cat and hat sound the same at the end.",
+        "check": {
+          "question": "Which two words sound the same at the end?",
+          "choices": [
+            "dog and sun",
+            "cat and hat",
+            "big and red"
+          ],
+          "answer": 1,
+          "why": "Cat and hat both end with the at sound."
+        }
+      },
+      {
+        "text": "Let us practice with words from our home. Rice and mice rhyme because they end with ice. Listen to rice and mice.",
+        "check": {
+          "question": "Which word rhymes with rice?",
+          "choices": [
+            "mice",
+            "spoon",
+            "water"
+          ],
+          "answer": 0,
+          "why": "Mice rhymes with rice because both end in ice."
+        }
+      },
+      {
+        "text": "We can also rhyme three words together. Day, play, and say all rhyme. They all sound the same at the end.",
+        "check": {
+          "question": "Which three words rhyme together?",
+          "choices": [
+            "eat, drink, sleep",
+            "sun, moon, star",
+            "day, play, say"
+          ],
+          "answer": 2,
+          "why": "Day, play, and say all end with the ay sound."
+        }
+      }
+    ],
+    "exam": [
+      {
+        "question": "What does it mean when words rhyme?",
+        "choices": [
+          "they sound the same at the end",
+          "they mean the exact same thing",
+          "they start with the same sound"
+        ],
+        "answer": 0,
+        "why": "Rhyming words sound the same at the end."
+      },
+      {
+        "question": "Which word rhymes with hat?",
+        "choices": [
+          "sun",
+          "mat",
+          "dog"
+        ],
+        "answer": 1,
+        "why": "Mat rhymes with hat because both end in at."
+      },
+      {
+        "question": "Which word rhymes with book?",
+        "choices": [
+          "cook",
+          "bag",
+          "pen"
+        ],
+        "answer": 0,
+        "why": "Cook rhymes with book because both end in ook."
+      },
+      {
+        "question": "Which group of three words rhymes?",
+        "choices": [
+          "fish, bird, cat",
+          "red, blue, green",
+          "boy, toy, joy"
+        ],
+        "answer": 2,
+        "why": "Boy, toy, and joy all end with the oy sound."
+      },
+      {
+        "question": "Which word rhymes with ball?",
+        "choices": [
+          "cup",
+          "tall",
+          "shoe"
+        ],
+        "answer": 1,
+        "why": "Tall rhymes with ball because both end in all."
+      }
+    ],
+    "ways_forward": "You did a wonderful job learning about rhyming words today. Practice listening for rhyming words in songs and stories with your family at home."
+  }
+}

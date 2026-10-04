@@ -88,12 +88,12 @@ steering files that hold the project rules and mobile conventions (`.kiro/steeri
 
 **Amazon Quick: how we orchestrated the work.** Quick is where our content and research come
 together, not a chatbot inside the app.
-- **Connected data sources:** a Quick Space links DepEd's official Term 1 Budgets of Work
+- **Connected data sources:** the Quick Space `TU-gang Knowledge Hub` links DepEd's official Term 1 Budgets of Work
   (866 competencies, `data/quick_knowledge/curriculum-grade-*.md`), our native-reviewed Bikol
   dataset, and the tutor's teaching and quiz rules.
 - **Synthesized research:** Quick Research gathered the evidence for our pain point (learning
   poverty, PISA 2022, SEA-PLM 2019, RA 12027) with sources.
-- **Automated a workflow:** a Quick flow checks AI-written lessons against their DepEd
+- **Automated a workflow:** the Quick flow `TU-gang Lesson QA` checks AI-written lessons against their DepEd
   competency and our quiz rules (exactly one right answer, answerable from the lesson). It
   flags any that need a teacher.
 - *[Keep only the items the team actually set up in Quick, and add a screenshot of each.]*
@@ -156,8 +156,9 @@ corporate sponsors who can underwrite cards and data for a barangay at a time.
 The build window ends at **10:00 AM**. Judges review submissions for 1.5 hours before the
 1:10 PM pitches.
 
-1. **Quick (−5 if missing).** Set up the orchestration items above in Quick (Space + research +
-   one flow), take screenshots, and keep only what you did in "Strategic integration".
+1. **Quick (−5 if missing).** Follow `ai/quick-agent/QUICK_ORCHESTRATION.md`: the Space
+   `TU-gang Knowledge Hub`, Research, and the `TU-gang Lesson QA` flow (about 30 min). Take the 4
+   screenshots, and keep only what you did in "Strategic integration".
 2. **Kiro (−5 if missing).** Keep `.kiro/` in the repo (don't commit its local deletion).
    Be ready to show Kiro's commits and steering files.
 3. **AWS infrastructure.** The submission field asks for it. Deploy the server, or state the

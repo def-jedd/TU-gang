@@ -40,7 +40,8 @@ GenerateEmbedUrlForRegisteredUser API reference.
 - mock: rehearsals only, labelled "Demo data", never in the real demo.
 
 ## Same teaching material in both
-- Quick agent setup = `ai/quick-agent/SETUP.md` (ILAW lessons + quizzes, like the app)
+- Update 2026-10-04: per the participants' playbook, Quick is the team's orchestration layer, not
+  an in-app tutor. See `ai/quick-agent/QUICK_ORCHESTRATION.md` (Space, Research, Lesson QA flow).
 - Quick reference documents = `data/quick_knowledge/` (tutor guide, the native-reviewed Bikol
   examples, the demo grade's curriculum); Space = all 9 grades' DepEd Term 1 curriculum
   (`python scripts/export_quick_knowledge.py`)
