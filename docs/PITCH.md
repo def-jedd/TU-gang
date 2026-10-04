@@ -1,6 +1,11 @@
 # TU-gang: pitch details
 
+**Project name:** TU-gang (Bikol: *tugang* = sibling)
 **Track:** Shift to Lean OpenLearning (Lean Educational Technology)
+**Project overview:** A voice-first, Bikol-first tutor for children aged 16 and under who can't
+read well yet. It runs on one shared Android phone. Children log in by tapping an NFC card that
+also holds their progress. They talk with an AI tutor and work through all 866 DepEd Term 1
+lessons in the ILAW format, with quizzes, in Bikol, Tagalog or English.
 **One line:** TU-gang is a voice-first Bikol tutor on one shared phone. A child who can't read yet
 taps a picture card, listens, talks back, and passes DepEd lessons. The NFC card in their pocket is
 their save file.
@@ -65,29 +70,54 @@ TU-gang turns the curriculum into a conversation the child can hear and answer:
 
 ## Strategic integration
 
-Each technology was chosen for a specific constraint, and we kept the simplest option that works.
+> Playbook definitions: **Kiro** is the primary development environment (spec-driven
+> development, parallel agents). **Amazon Quick** is the team's agentic AI orchestration layer
+> (connecting data sources, automating workflows, synthesizing research). The submission also
+> asks how **AWS infrastructure** was used. Keep only sentences that are true when you submit:
+> judges check the repo.
 
-- **Agora Conversational AI** carries the live voice conversation and reads lessons aloud. It is
-  the only part that has to be real-time.
-- **Gemini 3.5 Flash-Lite**, a small and inexpensive model, writes answers and ILAW lessons. A
-  second "strict teacher" pass checks every quiz: one right answer, a correct answer key, facts
-  that fit the grade.
-- **Lessons are generated once and cached.** The thousandth child to open a lesson costs nothing
-  extra and waits no time.
-- **The model is swappable.** Our tutor already runs on a local open model (Ollama) as well as
-  Gemini, so a school can move to an offline small model without changing the app.
-- **Kiro** was our spec-driven development agent. It built and documented the backend: the
-  Supabase schema, retrieval and embeddings for the reviewed examples, and the Express/Agora voice
-  server.
-- **Amazon Quick** is our agent workspace. A Bikol Tutor agent is grounded in the same reviewed
-  examples and the DepEd curriculum, so teachers and reviewers can test and check lessons before
-  they reach children. *(Must be built before the pitch: see "Before the semi-finals" below.)*
+**Kiro: how we built it.** Kiro was our development environment for the backend, driven by
+steering files that hold the project rules and mobile conventions (`.kiro/steering/`).
+- Working from specs, the Kiro agent built the Supabase schema for the native-reviewed Bikol
+  dataset, the retrieval function and embedding Edge Functions, and the Express server that
+  starts Agora voice agents.
+- It also built the voice test page and the health checks that report when the tutor is down.
+- Its commits are in the repository under "Kiro Agent", so the work is visible and checkable.
+- *[If true, add: which parts ran as parallel Kiro agents, and any Kiro specs for the next
+  milestones.]*
 
-The product also fits the way schools already work:
-- It follows DepEd's ILAW lesson format and official competencies.
-- Teachers can hand out NFC cards like library cards.
-- It keeps no student data on a server, which removes privacy and IT-staff burdens for schools
-  that have no IT staff.
+**Amazon Quick: how we orchestrated the work.** Quick is where our content and research come
+together, not a chatbot inside the app.
+- **Connected data sources:** a Quick Space links DepEd's official Term 1 Budgets of Work
+  (866 competencies, `data/quick_knowledge/curriculum-grade-*.md`), our native-reviewed Bikol
+  dataset, and the tutor's teaching and quiz rules.
+- **Synthesized research:** Quick Research gathered the evidence for our pain point (learning
+  poverty, PISA 2022, SEA-PLM 2019, RA 12027) with sources.
+- **Automated a workflow:** a Quick flow checks AI-written lessons against their DepEd
+  competency and our quiz rules (exactly one right answer, answerable from the lesson). It
+  flags any that need a teacher.
+- *[Keep only the items the team actually set up in Quick, and add a screenshot of each.]*
+
+**AWS infrastructure: how it runs.** *[Fill in what is actually deployed. The lean target:]*
+- The API server (one small Node service) on a single small AWS instance, such as Lightsail
+  or App Runner.
+- Generated lessons cached in Amazon S3 and served to every school, so each lesson's AI cost
+  is paid once.
+- *[If not deployed by submission, say plainly: "Runs today on one laptop on the classroom
+  Wi-Fi; designed to move to one small AWS instance + S3."]*
+
+**Why each other piece is there (technology judgment):**
+- **Agora Conversational AI** for live voice only, because hearing and speaking is the
+  interface for children who can't read.
+- **Gemini 3.5 Flash-Lite**, a small, inexpensive model, writes answers and lessons. We don't
+  just wrap a big API: every lesson is written once, checked by a second "strict teacher" pass,
+  cached, and reused by every child. Repeat use costs nothing.
+- **Swappable model:** the text tutor also runs on a local open model (Ollama), the path to an
+  offline school hub.
+- **The NFC card instead of accounts:** no passwords, no student database, nothing for a
+  school without IT staff to manage. A whole grade of progress fits on a cheap NTAG213 sticker.
+- **DepEd ILAW + official competencies** instead of free-form chat, so lessons fit how
+  teachers already plan.
 
 ## Sustainability and growth
 
@@ -115,18 +145,28 @@ corporate sponsors who can underwrite cards and data for a barangay at a time.
 
 | Criterion | Our evidence |
 |---|---|
-| MVP & technical (30%, Kiro + Quick required) | Working Android dev build: live Agora voice, NFC lessons and profile cards, 866 ILAW lessons with quizzes. Kiro built the backend. **Quick agent still to set up.** |
+| MVP & technical (30%, Kiro + Quick required) | Working Android build: live Agora voice, NFC lessons and profile cards, 866 ILAW lessons with quizzes. Kiro built the backend. Quick orchestrates our curriculum, research and lesson QA (**must be done before submitting**). |
 | Problem & domain fit (25%) | Learning-poverty evidence; mother-tongue gap after RA 12027; DepEd ILAW + BOW alignment; shared-phone reality. |
 | Technology & automation judgment (25%) | Voice and NFC instead of typing and passwords; a small model + caching instead of a big model per request; swappable to an offline model; no server-side student data. |
 | Innovation (15%) | The NFC card as an offline save file for several children on one phone; native-reviewed local-language grounding; ILAW lessons as a spoken conversation. |
 | Real-world impact / deployment / scale (finals) | Fits classroom routines and DepEd format; costs pesos per child; adds languages through community reviewers; runs on a classroom hub with a local model. |
 
-## Before the semi-finals (risks)
+## Before submitting (playbook checklist)
 
-1. **Amazon Quick must be integrated, or we lose 5 points.** Set up the Bikol Tutor agent with
-   `ai/quick-agent/SETUP.md` and rehearse the side-by-side demo.
-2. **Keep the `.kiro/` folder in the repo.** It is evidence of Kiro use; don't commit its deletion.
-3. **Say plainly what needs internet.** AI answers and live voice do; progress on cards does not.
-   Running fully offline with a local model is the next step, not today's demo.
-4. **The Bikol UI labels are drafts.** Have the native reviewer check the on-screen words before
-   the demo.
+The build window ends at **10:00 AM**. Judges review submissions for 1.5 hours before the
+1:10 PM pitches.
+
+1. **Quick (−5 if missing).** Set up the orchestration items above in Quick (Space + research +
+   one flow), take screenshots, and keep only what you did in "Strategic integration".
+2. **Kiro (−5 if missing).** Keep `.kiro/` in the repo (don't commit its local deletion).
+   Be ready to show Kiro's commits and steering files.
+3. **AWS infrastructure.** The submission field asks for it. Deploy the server, or state the
+   honest plan.
+4. **Video link.** Upload `video/renders/tugang-demo.mp4` to YouTube (unlisted), Loom or
+   Google Drive.
+5. **"Play Store / Website URL".** The current APK is a *development* build that needs our
+   laptop's Metro server, so judges can't run it alone. Either link the EAS install page and
+   say it needs our server, or ship a standalone preview APK pointed at a hosted server.
+6. **Repo accuracy.** Every feature claimed here must be in the code on GitHub. Merge
+   `jjoshua-sek` into `main` before submitting.
+7. **Check every statistic** before you say it (sources listed above).
