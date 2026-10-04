@@ -243,7 +243,7 @@
           <div data-hf-id="hf-wv9n" class="card clay mint"><div data-hf-id="hf-ac5g" class="t">Gemini Flash-Lite</div><div data-hf-id="hf-frkk" class="d">A small, low-cost model. Each lesson is written once, checked, then cached for everyone.</div></div>
           <div data-hf-id="hf-0fia" class="card clay peach"><div data-hf-id="hf-er18" class="t">Swappable model</div><div data-hf-id="hf-9np5" class="d">Also runs on a local open model, so a school hub can work offline</div></div>
           <div data-hf-id="hf-c8iw" class="card clay lav"><div data-hf-id="hf-x8h3" class="t">Kiro</div><div data-hf-id="hf-mlud" class="d">Built our backend: Supabase retrieval + the voice server</div></div>
-          <div data-hf-id="hf-1q4e" class="card clay" id="quickCard"><div data-hf-id="hf-l1rb" class="t">Amazon Quick</div><div data-hf-id="hf-fkz4" class="d">Bikol Tutor agent workspace for teachers and reviewers</div></div>
+          <div data-hf-id="hf-1q4e" class="card clay" id="quickCard"><div data-hf-id="hf-l1rb" class="t">Amazon Quick</div><div data-hf-id="hf-fkz4" class="d">Orchestration: curriculum knowledge hub, evidence research, automated lesson QA</div></div>
           <div data-hf-id="hf-knml" class="card clay"><div data-hf-id="hf-cqrt" class="t">NFC + DepEd ILAW</div><div data-hf-id="hf-mrht" class="d">Fits the classroom: cards like library cards, lessons in DepEd's format</div></div>
         </div>
       </div>
@@ -261,9 +261,9 @@
     </div>
 
     <script>
-      // Set to true once the Amazon Quick Bikol Tutor agent is really set up
-      // (ai/quick-agent/SETUP.md). Until then the video must not claim it.
-      const SHOW_QUICK = false;
+      // Amazon Quick = the team's orchestration layer (ai/quick-agent/QUICK_ORCHESTRATION.md):
+      // Knowledge Hub Space, Research and the Lesson QA flow, all set up on 2026-10-04.
+      const SHOW_QUICK = true;
 
       const tl = gsap.timeline({ paused: true });
       const scenes = ["#s1", "#s2", "#s3", "#s4", "#s5", "#s6", "#s7", "#s8", "#s9"];
