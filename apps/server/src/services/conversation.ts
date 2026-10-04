@@ -52,7 +52,9 @@ const PROMPT_PATH = join(publicDir, '../../../prompts/voice_tutor_system.txt');
 
 const LANGUAGE_RULE: Record<Language, string> = {
   bikol_daet:
-    'natural Bikol, not Tagalog. Follow the wording of the Bikol examples below. ' +
+    'natural Bikol, written the way the speaker-reviewed Bikol examples below are written (they use some ' +
+    'forms also found in Tagalog, like ang and ning, next to Bikol words; follow them, but never switch to ' +
+    'plain Tagalog sentences). ' +
     "The exact regional variety is not confirmed, so do not claim any town's dialect.",
   tagalog: 'natural, simple Tagalog. Taglish is fine for technical terms.',
   english: 'simple, clear English.',

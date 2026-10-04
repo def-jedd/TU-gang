@@ -40,9 +40,10 @@ GenerateEmbedUrlForRegisteredUser API reference.
 - mock: rehearsals only, labelled "Demo data", never in the real demo.
 
 ## Same teaching material in both
-- Quick agent instructions = `prompts/tutor_system.txt` (spoken-style, Bikol)
-- Quick knowledge source = `data/quick_reference.md`
-  (`python scripts/export_quick_reference.py`; native-reviewed rows only)
+- Quick agent setup = `ai/quick-agent/SETUP.md` (ILAW lessons + quizzes, like the app)
+- Quick reference documents = `data/quick_knowledge/` (tutor guide, the native-reviewed Bikol
+  examples, the demo grade's curriculum); Space = all 9 grades' DepEd Term 1 curriculum
+  (`python scripts/export_quick_knowledge.py`)
 - App = the same 20 reviewed examples via retrieval + the same rules
   (concept-first, examples are style not facts, say when unsure).
 

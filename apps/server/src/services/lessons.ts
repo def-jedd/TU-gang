@@ -98,7 +98,10 @@ const RESPONSE_SCHEMA = {
 };
 
 const LANGUAGE_RULE: Record<Language, string> = {
-  bikol_daet: 'natural Bikol, not Tagalog, following the wording of the Bikol examples. Keep English for technical terms you are unsure of.',
+  bikol_daet:
+    'natural Bikol, written the way the speaker-reviewed Bikol examples are written (they use some forms also ' +
+    'found in Tagalog, like ang and ning, next to Bikol words; follow them, but never switch to plain Tagalog ' +
+    'sentences). Keep English for technical terms you are unsure of.',
   tagalog: 'natural, simple Tagalog. Taglish is fine for technical terms.',
   english: 'simple, clear English.',
 };
