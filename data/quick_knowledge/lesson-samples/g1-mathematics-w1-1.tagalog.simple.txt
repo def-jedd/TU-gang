@@ -1,0 +1,106 @@
+{
+  "lesson_id": "g1-mathematics-w1-1",
+  "grade": 1,
+  "subject": "mathematics",
+  "language": "tagalog",
+  "difficulty": "simple",
+  "deped_competency": "Identify simple 2-dimensional shapes (triangle, rectangle, square) of different size and in different orientation.",
+  "generated_by": "Gemini 3.5 Flash-Lite (TU-gang server), not yet teacher-reviewed",
+  "lesson": {
+    "intentions": "Pagkatapos ng araling ito, makikilala mo ang mga hugis na triyanggolo, parisukat, at parihaba kahit magkakaiba ang laki o ayos nila.",
+    "steps": [
+      {
+        "text": "Ang triyanggolo ay may tatlong gilid at tatlong sulok. Katulad ito ng slice ng masarap na bibingka sa mesa.",
+        "check": {
+          "question": "Ilan ang gilid ng isang triyanggolo?",
+          "choices": [
+            "tatlong gilid",
+            "apat na gilid",
+            "walang gilid"
+          ],
+          "answer": 0,
+          "why": "Ang triyanggolo ay may laging tatlong gilid at tatlong sulok."
+        }
+      },
+      {
+        "text": "Ang parisukat ay may apat na gilid na pareho ang haba. Katulad ito ng panyo na ginagamit natin sa bulsa.",
+        "check": {
+          "question": "Ano ang hugis ng panyo na may apat na magkakatulad na gilid?",
+          "choices": [
+            "triyanggolo",
+            "parisukat",
+            "parihaba"
+          ],
+          "answer": 1,
+          "why": "Ang parisukat ay may apat na magkakatulad na gilid."
+        }
+      },
+      {
+        "text": "Ang parihaba ay may apat na gilid din pero dalawa ang mahaba at dalawa ang maikli. Katulad ito ng pinto sa ating bahay.",
+        "check": {
+          "question": "Alin sa mga ito ang may dalawang mahabang gilid at dalawang maikling gilid?",
+          "choices": [
+            "parisukat",
+            "triyanggolo",
+            "parihaba"
+          ],
+          "answer": 2,
+          "why": "Ang parihaba ay may dalawang mahaba at dalawang maikling gilid."
+        }
+      }
+    ],
+    "exam": [
+      {
+        "question": "Anong hugis ang may tatlong gilid tulad ng slice ng bibingka?",
+        "choices": [
+          "parisukat",
+          "parihaba",
+          "triyanggolo"
+        ],
+        "answer": 2,
+        "why": "Ang triyanggolo ay laging may tatlong gilid."
+      },
+      {
+        "question": "Anong hugis ang may apat na magkakatulad na haba ng gilid?",
+        "choices": [
+          "triyanggolo",
+          "parisukat",
+          "parihaba"
+        ],
+        "answer": 1,
+        "why": "Ang parisukat ay may apat na pare-parehong gilid."
+      },
+      {
+        "question": "Ano ang tawag sa hugis ng pintuan na may dalawang mahaba at dalawang maikling gilid?",
+        "choices": [
+          "parihaba",
+          "parisukat",
+          "triyanggolo"
+        ],
+        "answer": 0,
+        "why": "Ang parihaba ay may magkapares na mahaba at maikling gilid."
+      },
+      {
+        "question": "Kahit nakatagilid ang isang parisukat, ano pa rin ang tawag sa hugis nito?",
+        "choices": [
+          "parisukat",
+          "bilog",
+          "triyanggolo"
+        ],
+        "answer": 0,
+        "why": "Hindi nagbabago ang pangalan ng hugis kahit nakatagilid ito."
+      },
+      {
+        "question": "Alin ang may tatlong sulok at tatlong gilid?",
+        "choices": [
+          "parisukat",
+          "triyanggolo",
+          "parihaba"
+        ],
+        "answer": 1,
+        "why": "Ang triyanggolo ay may tatlong sulok at tatlong gilid."
+      }
+    ],
+    "ways_forward": "Magaling! Nakilala mo na ang triyanggolo, parisukat, at parihaba. Subukan mong hanapin ang mga hugis na ito sa loob ng inyong bahay ngayon."
+  }
+}

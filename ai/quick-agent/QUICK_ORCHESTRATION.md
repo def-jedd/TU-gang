@@ -74,7 +74,7 @@ AI writes our lessons. This flow is the automated check before a teacher sees th
 2. In the prompt field, paste:
 
    ```text
-   Create a flow named "TU-gang Lesson QA". Input: one lesson file (JSON) uploaded by the user.
+   Create a flow named "TU-gang Lesson QA". Input: one lesson file (.txt containing JSON) uploaded by the user.
    The file has lesson_id, grade, subject, language, deped_competency, and lesson with
    intentions, 3 steps (each with a check question), a 5-question exam, and ways_forward.
    Each question has 3 choices, an answer index (0, 1 or 2) and a "why".
@@ -93,8 +93,9 @@ AI writes our lessons. This flow is the automated check before a teacher sees th
 
 3. **Generate Flow**. Check that it has a file-input step, an AI step using the Space, and an
    output step.
-4. **Run mode**: upload `data/quick_knowledge/lesson-samples/g3-science-w1-1.bikol_daet.simple.json`
-   and run it. Then try the English and Tagalog samples.
+4. **Run mode**: upload `data/quick_knowledge/lesson-samples/g3-science-w1-1.bikol_daet.simple.txt`
+   and run it. Then try the English and Tagalog samples. Flow file inputs don't accept `.json`,
+   so use the `.txt` copies: same content, different extension.
 5. **Save**, and share or publish it with the team.
 6. 📸 **Screenshot 3:** the flow's steps (builder). 📸 **Screenshot 4:** one run's QA report.
 
