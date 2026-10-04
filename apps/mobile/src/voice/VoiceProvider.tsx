@@ -57,6 +57,8 @@ const IDLE: CallState = {
 };
 
 const MAX_CAPTIONS = 30;
+/** Speaking longer than this = the tutor actually explained something. */
+const MIN_LESSON_SPEECH_MS = 5000;
 
 function buzz(style: Haptics.ImpactFeedbackStyle) {
   if (Platform.OS !== 'web') Haptics.impactAsync(style).catch(() => {});
@@ -97,6 +99,7 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
       agentRef.current?.stop();
       const d = draftRef.current;
       const context: VoiceContext = {
+        lesson: null,
         topic: d.topic,
         question: d.question.trim() || null,
         language: d.language,
@@ -104,52 +107,66 @@ export function VoiceProvider({ children }: { children: ReactNode }) {
         style: d.style,
         ...override,
       };
-      const { agent, notice } = createVoiceAgent();
-      agentRef.current = agent;
-      mutedRef.current = false;
-      setLabelsMuted(true);
-      setCall({ ...IDLE, active: true, phase: 'connecting', kind: agent.kind, canHear: agent.canHear, notice });
+      launch(false);
 
-      // Every callback checks it still belongs to the current call.
-      const mine = () => agentRef.current === agent;
-      let lastPhase: VoicePhase = 'connecting';
-      agent.start(context, {
-        onPhase(phase) {
-          if (!mine()) return;
-          // The tutor finished explaining a topic = one lesson done for this student.
-          if (lastPhase === 'speaking' && phase === 'listening' && draftRef.current.topic) {
-            markDoneRef.current(draftRef.current.topic);
-          }
-          lastPhase = phase;
-          // "Your turn" is felt, not just seen: a buzz when the tutor stops talking.
-          if (phase === 'listening' && agent.canHear) buzz(Haptics.ImpactFeedbackStyle.Medium);
-          setCall((prev) => ({ ...prev, phase }));
-        },
-        onCaption(caption) {
-          if (!mine()) return;
-          setCall((prev) => {
-            const rest = prev.captions.filter((c) => c.id !== caption.id);
-            return { ...prev, captions: [...rest, caption].slice(-MAX_CAPTIONS) };
-          });
-        },
-        onLevel(who, level) {
-          if (!mine()) return;
-          (who === 'agent' ? agentLevel : studentLevel).setValue(level);
-        },
-        onProvider(provider) {
-          if (mine()) setCall((prev) => ({ ...prev, provider }));
-        },
-        onVoice(voice) {
-          if (mine()) setCall((prev) => ({ ...prev, voice }));
-        },
-        onError(kind) {
-          if (!mine()) return;
-          agentRef.current = null;
-          agent.stop();
-          setLabelsMuted(false);
-          setCall((prev) => ({ ...prev, active: false, phase: 'error', error: kind }));
-        },
-      });
+      function launch(liveFailed: boolean) {
+        const { agent, notice } = createVoiceAgent(liveFailed);
+        agentRef.current = agent;
+        mutedRef.current = false;
+        setLabelsMuted(true);
+        setCall({ ...IDLE, active: true, phase: 'connecting', kind: agent.kind, canHear: agent.canHear, notice });
+
+        // Every callback checks it still belongs to the current call.
+        const mine = () => agentRef.current === agent;
+        let lastPhase: VoicePhase = 'connecting';
+        let speakingSince = 0;
+        agent.start(context, {
+          onPhase(phase) {
+            if (!mine()) return;
+            // The tutor finished explaining a topic = one lesson done for this student.
+            // A real explanation takes a while; a short greeting doesn't count.
+            if (phase === 'speaking' && lastPhase !== 'speaking') speakingSince = Date.now();
+            const explained = Date.now() - speakingSince > MIN_LESSON_SPEECH_MS;
+            if (lastPhase === 'speaking' && phase === 'listening' && explained && draftRef.current.topic) {
+              markDoneRef.current(draftRef.current.topic);
+            }
+            lastPhase = phase;
+            // "Your turn" is felt, not just seen: a buzz when the tutor stops talking.
+            if (phase === 'listening' && agent.canHear) buzz(Haptics.ImpactFeedbackStyle.Medium);
+            setCall((prev) => ({ ...prev, phase }));
+          },
+          onCaption(caption) {
+            if (!mine()) return;
+            setCall((prev) => {
+              const rest = prev.captions.filter((c) => c.id !== caption.id);
+              return { ...prev, captions: [...rest, caption].slice(-MAX_CAPTIONS) };
+            });
+          },
+          onLevel(who, level) {
+            if (!mine()) return;
+            (who === 'agent' ? agentLevel : studentLevel).setValue(level);
+          },
+          onProvider(provider) {
+            if (mine()) setCall((prev) => ({ ...prev, provider }));
+          },
+          onVoice(voice) {
+            if (mine()) setCall((prev) => ({ ...prev, voice }));
+          },
+          onError(kind) {
+            if (!mine()) return;
+            agentRef.current = null;
+            agent.stop();
+            // Server down / no key / Agora refused: keep the lesson going with the
+            // practice voice (the screen says so) instead of an error screen.
+            if (kind === 'session' && agent.kind === 'agora') {
+              launch(true);
+              return;
+            }
+            setLabelsMuted(false);
+            setCall((prev) => ({ ...prev, active: false, phase: 'error', error: kind }));
+          },
+        });
+      }
     },
     [agentLevel, studentLevel],
   );

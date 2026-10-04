@@ -6,7 +6,10 @@
     "dev": "tsx watch src/index.ts",
     "start": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
-    "test:voice": "node scripts/voice-smoke.mjs"
+    "test:voice": "node scripts/voice-smoke.mjs",
+    "lessons:warm": "tsx scripts/warm-lessons.ts",
+    "quick:export": "tsx scripts/quick-export.ts",
+    "quick:import": "tsx scripts/quick-import.ts"
   },
   "engines": {
     "node": ">=20"

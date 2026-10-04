@@ -12,6 +12,7 @@ import { ScreenHeader } from '@/components/ScreenHeader';
 import { StudentAvatar } from '@/components/StudentAvatar';
 import { useTutor } from '@/hooks/useTutor';
 import { useNfc } from '@/nfc/NfcProvider';
+import { lessonIds } from '@/curriculum';
 import { encodeProfileCard, type Profile } from '@/profiles/profileCard';
 import { useProfiles } from '@/profiles/ProfileProvider';
 import { layout, colors, radius, space } from '@/theme/tokens';
@@ -37,7 +38,7 @@ export default function ProfilesScreen() {
     setWrite({ profileId: profile.id, phase: 'waiting' });
     let dropped = 0;
     const result = await nfc.writeCardText((maxTextBytes) => {
-      const encoded = encodeProfileCard(profile, maxTextBytes);
+      const encoded = encodeProfileCard(profile, maxTextBytes, lessonIds);
       dropped = encoded.dropped;
       return encoded.text;
     });
@@ -87,7 +88,7 @@ export default function ProfilesScreen() {
                   <View style={styles.flex}>
                     <AppText variant="title">{profile.name}</AppText>
                     <AppText color={colors.inkSoft}>
-                      {t.gradeTitle} {profile.grade} · ★ {profile.done.length} {t.lessonsDone}
+                      {t.gradeTitle} {profile.grade} · 📖 {profile.done.length} {t.lessonsRead} · ★ {profile.passed.length} {t.examsPassed}
                     </AppText>
                     {isActive ? (
                       <AppText variant="caption" bold color={colors.success}>

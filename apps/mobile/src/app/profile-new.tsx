@@ -7,7 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AppText } from '@/components/AppText';
 import { Button } from '@/components/Button';
-import { Icon, type IconName } from '@/components/Icon';
+import { AvatarIcon } from '@/components/AvatarIcon';
 import { ScreenHeader } from '@/components/ScreenHeader';
 import { SpeakableTitle } from '@/components/SpeakableTitle';
 import { useTutor } from '@/hooks/useTutor';
@@ -97,7 +97,7 @@ export default function NewProfileScreen() {
                   accessibilityState={{ checked: selected }}
                   style={[styles.avatarButton, selected && styles.avatarSelected]}>
                   <ClaySurface selected={selected} intensity="subtle" radius={radius.pill} style={StyleSheet.absoluteFill} pointerEvents="none" />
-                  <Icon name={a as IconName} size={36} color={colors.primary} />
+                  <AvatarIcon avatar={a} size={36} color={colors.primary} />
                 </Pressable>
               );
             })}

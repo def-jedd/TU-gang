@@ -1,5 +1,1553 @@
 {
   "grade": 5,
   "term": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "g5-araling_panlipunan-w1-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang pag-aaral ng kasaysayan at mga batayan nito",
+      "topic": "studying_history",
+      "title": {
+        "en": "Studying History"
+      },
+      "student_question": "Why do we study history?",
+      "icon": "history",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w1-2",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga pamamaraan at pananaw ng kasaysayan",
+      "topic": "studying_history",
+      "title": {
+        "en": "How Historians Work"
+      },
+      "student_question": "How do historians find out what happened long ago?",
+      "icon": "history",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w2-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Natutukoy ang pinagmulan ng Pilipinas batay sa agham, kaalamang bayan, at relihiyon",
+      "topic": "origin_of_the_philippines",
+      "title": {
+        "en": "Origin of the Philippines"
+      },
+      "student_question": "How did the Philippine islands form, according to science and stories?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w3-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nasusuri ang pinagmulan ng sinaunang tao sa Pilipinas batay sa agham at kaalamang bayan",
+      "topic": "early_filipinos",
+      "title": {
+        "en": "Early People of the Philippines"
+      },
+      "student_question": "Where did the first people in the Philippines come from?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w4-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Nasusuri ang kaugnayan ng lokasyon sa paghubog ng kasaysayan",
+      "topic": "location_and_history",
+      "title": {
+        "en": "Location and History"
+      },
+      "student_question": "How did our location shape Philippine history?",
+      "icon": "map",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w5-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Nasusuri ang mga sinaunang bayang Pilipino batay sa organisasyong panlipunan, pang-ekonomiya, at pampolitika",
+      "topic": "early_filipino_communities",
+      "title": {
+        "en": "Early Filipino Communities"
+      },
+      "student_question": "How did early Filipino communities live and govern themselves?",
+      "icon": "home-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w6-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Napahahalagahan ang ginampanan ng kababaihan sa pagbuo ng kalinangan ng sinaunang Pilipino",
+      "topic": "women_in_history",
+      "title": {
+        "en": "Women in Early Philippine Society"
+      },
+      "student_question": "What roles did women have in early Filipino society?",
+      "icon": "human-female",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 6, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w6-2",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang konsepto ng kalinangan at uri nito",
+      "topic": "culture",
+      "title": {
+        "en": "What Is Culture?"
+      },
+      "student_question": "What is culture?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 6, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w7-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Nasusuri ang mga paniniwala, relihiyon, at tradisyon ng sinaunang bayang Pilipino",
+      "topic": "early_beliefs",
+      "title": {
+        "en": "Early Filipino Beliefs"
+      },
+      "student_question": "What did early Filipinos believe in?",
+      "icon": "candle",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 7, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w8-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Natatalakay ang iba't ibang uri ng sinaunang sining, pagpapalamuti at arkitektura ng mga Pilipino.",
+      "topic": "early_filipino_art",
+      "title": {
+        "en": "Early Filipino Art"
+      },
+      "student_question": "What kinds of art and houses did early Filipinos make?",
+      "icon": "palette",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w9-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Natatalakay ang pagdating at paglaganap ng Islam",
+      "topic": "islam_in_the_philippines",
+      "title": {
+        "en": "Islam in the Philippines"
+      },
+      "student_question": "How did Islam come to the Philippines?",
+      "icon": "mosque",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w9-2",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Nasusuri ang mga katuruan ng Islam at pamahalaang sultanato",
+      "topic": "islam_in_the_philippines",
+      "title": {
+        "en": "Islam and the Sultanates"
+      },
+      "student_question": "What were the sultanates and how did they govern?",
+      "icon": "mosque",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-araling_panlipunan-w10-1",
+      "grade": 5,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Napahahalagahan ang ugnayan ng sinaunang bayang Pilipino sa ilang piling bansa sa Asya",
+      "topic": "trade_with_asia",
+      "title": {
+        "en": "Early Ties With Asia"
+      },
+      "student_question": "How did early Filipinos trade with other Asian countries?",
+      "icon": "ferry",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Araling Panlipunan, First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w1-1",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Identifying type of plot:\n■ Sequential",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w1-2",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Using subject-verb agreement:\n■ Kind of nouns:\n● Collective, concrete, abstract\n■ Subject pronouns:\n● Demonstrative\n● Relative",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w1-3",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w1-4",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify visual elements:\n○ Using layout (margin, grid, header, slide bar)",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Pictures and Colors"
+      },
+      "student_question": "What do colors, lines, and shapes in a picture tell us?",
+      "icon": "palette",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w2-1",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Identifying the main idea.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w2-2",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use words with literal (denotative) and implied (connotative) meanings in sentences:\n○ Using structural analysis:\n■ Suffixes:\n● Verb-forming suffixes",
+      "topic": "word_meanings",
+      "title": {
+        "en": "Literal and Hidden Meanings"
+      },
+      "student_question": "Can a word mean something different from its usual meaning?",
+      "icon": "text-search",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w2-3",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Using kind of verbs:\n■ Helping\n■ Linking (and sense)\n■ Transitive",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w2-4",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Using complement:\n○ Noun",
+      "topic": "sentences",
+      "title": {
+        "en": "Complements"
+      },
+      "student_question": "What words complete the meaning of a sentence?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w2-5",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w2-6",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Derive meaning based on visual elements:\n○ Interpreting tone and mood (colors, space, layout, directionality).",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Meaning in Pictures"
+      },
+      "student_question": "What can a picture tell me without words?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w3-1",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Sequencing events:\n■ At least 7 events\n○ Identifying the main idea.\n○ Summarizing story events.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w3-2",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Using tenses of verbs:\n■ Progressive: ● Present ● Past ○ Using adverbs: ■ Manner ■ Time",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w3-3",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w3-4",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Derive meaning based on visual elements:\n○ Interpreting tone and mood (colors, space, layout, directionality).\n○ Identifying the purpose of the visual text.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Meaning in Pictures"
+      },
+      "student_question": "What can a picture tell me without words?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w4-1",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Inferring:\n■ Character’s feeling and traits\n○ Making predictions:\n■ Character’s possible decision/action\n○ Drawing conclusions.\n○ Applying the important story elements to one’s schema:\n■ Evaluating possibility of an event happening in real life.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w4-2",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use words with literal (denotative) and implied (connotative) meanings in sentences:\n○ Using context clues:\n■ Analogy\n○ Using general references (print and online):\n■ Dictionary",
+      "topic": "word_meanings",
+      "title": {
+        "en": "Literal and Hidden Meanings"
+      },
+      "student_question": "Can a word mean something different from its usual meaning?",
+      "icon": "text-search",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w4-3",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use tone and mood appropriately for one’s purpose, context, and target audience:\n○ Formal",
+      "topic": "tone_and_mood",
+      "title": {
+        "en": "Tone and Mood"
+      },
+      "student_question": "How does a writer show feelings in a text?",
+      "icon": "emoticon",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w4-4",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Composing compound-complex sentences.",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w4-5",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use appropriate non-verbal cues for clarity of context, purpose, and meaning:\n○ Using facial expressions.\n○ Using gestures.\n○ Using eye contact.",
+      "topic": "body_language",
+      "title": {
+        "en": "Body Language"
+      },
+      "student_question": "How do gestures and facial expressions help me speak clearly?",
+      "icon": "human-greeting",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w4-6",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Derive meaning based on visual elements:\n○ Identifying the purpose of the visual text.\n○ Interpreting images/ideas that are explicitly used to influence viewers:\n■ Stereotypes on age and gender.\n■ Stereotypes on socio-economic status.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Meaning in Pictures"
+      },
+      "student_question": "What can a picture tell me without words?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w5-1",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Analyzing sound devices:\n■ Onomatopoeia\n■ Alliteration\n■ Assonance\n■ Consonance\n○ Analyzing figures of speech to get and clarify meaning:\n■ Simile\n■ Metaphor\n■ Personification",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w5-2",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use words with literal (denotative) and implied (connotative) meanings in sentences:\n○ Using context clues: ■ Analogy",
+      "topic": "word_meanings",
+      "title": {
+        "en": "Literal and Hidden Meanings"
+      },
+      "student_question": "Can a word mean something different from its usual meaning?",
+      "icon": "text-search",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w5-3",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Compose appropriate sentences for clarity and coherence:\n○ Using adjectives\n■ Series (determiner, quantity, quality, size, shape, color)",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w5-4",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w5-5",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use appropriate non-verbal cues for clarity of context, purpose, and meaning:\n○ Using facial expressions.\n○ Using gestures.\n○ Using eye contact.\n○ Using haptics.\n○ Using posture.\n○ Using proxemics and blocking.",
+      "topic": "body_language",
+      "title": {
+        "en": "Body Language"
+      },
+      "student_question": "How do gestures and facial expressions help me speak clearly?",
+      "icon": "human-greeting",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w5-6",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Evaluate cultural appropriateness of visual elements.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Respectful Pictures"
+      },
+      "student_question": "How do I know if a picture respects people's culture?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-english-w5-7",
+      "grade": 5,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Create a visual text drawn from visual elements learned.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Making a Visual Text"
+      },
+      "student_question": "How can I make a poster that tells a message?",
+      "icon": "draw",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w1-1",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natatalakay ang kahulugan ng animal production at mga sangay nito.",
+      "topic": "animal_raising",
+      "title": {
+        "en": "Raising Animals"
+      },
+      "student_question": "What is animal production?",
+      "icon": "cow",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w1-2",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natatalakay ang kahalagahan at kabutihang dulot sa pag-aalaga ng poultry animals sa natural na pamamaraan.",
+      "topic": "poultry",
+      "title": {
+        "en": "Raising Poultry Naturally"
+      },
+      "student_question": "Why is it good to raise chickens the natural way?",
+      "icon": "egg",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w1-3",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga panuntunan ng netiquette sa paggamit ng internet.",
+      "topic": "netiquette",
+      "title": {
+        "en": "Netiquette"
+      },
+      "student_question": "What are good manners on the internet?",
+      "icon": "web",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: ICT (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w2-1",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang mga piling batas, local na ordinansa, at mga ahensya ng gobyerno at non-government organization (NGOs), at serbisyong naibibigay sa pag-aalaga ng poultry animals.",
+      "topic": "farming_laws",
+      "title": {
+        "en": "Rules About Raising Animals"
+      },
+      "student_question": "What laws and groups help people who raise animals?",
+      "icon": "gavel",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w2-2",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Nakikilala ang mga uri ng web browser at mga bahagi nito.",
+      "topic": "web_browsers",
+      "title": {
+        "en": "Web Browsers"
+      },
+      "student_question": "What is a web browser and what are its parts?",
+      "icon": "web",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: ICT (last updated April 7, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w3-1",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nakikilala ang mga tao sa pamayanan/buong bansa na nagtagumpay sa pag-alaga ng poultry animals at ang mga katangiang taglay nila.",
+      "topic": "successful_farmers",
+      "title": {
+        "en": "Successful Poultry Raisers"
+      },
+      "student_question": "What makes a poultry raiser successful?",
+      "icon": "account-star",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w3-2",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nagagamit ang search engine sa ligtas at responsableng pamamaraan.",
+      "topic": "search_engines",
+      "title": {
+        "en": "Searching Online Safely"
+      },
+      "student_question": "How do I use a search engine safely?",
+      "icon": "magnify",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: ICT (last updated April 7, 2026), First Term, Weeks 3–6, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w4-1",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga salik na dapat isaalang-alang sa sa pag-aalaga ng poultry animals sa natural na paraan.",
+      "topic": "poultry",
+      "title": {
+        "en": "Before Raising Poultry"
+      },
+      "student_question": "What should I think about before raising chickens?",
+      "icon": "egg",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w5-1",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga karaniwang uri at lahi ng poultry animals na makikita sapamayanan na maaaring alagaan.",
+      "topic": "poultry",
+      "title": {
+        "en": "Kinds of Poultry"
+      },
+      "student_question": "What kinds of chickens and ducks can we raise at home?",
+      "icon": "egg",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w5-2",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga karaniwang sakit, sanhi, palatandaan, pamaraan sa pag iwas at panlunas sa mga sakit ng poultry animals.",
+      "topic": "animal_health",
+      "title": {
+        "en": "Poultry Sickness"
+      },
+      "student_question": "How do we keep chickens from getting sick?",
+      "icon": "medical-bag",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w6-1",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Naisasagawa ang pag-aalaga at pangangasiwa ng poultry animals sa natural na pamamaraan.",
+      "topic": "poultry",
+      "title": {
+        "en": "Caring for Poultry"
+      },
+      "student_question": "How do I take care of chickens every day?",
+      "icon": "egg",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w7-1",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Nakapagpapadala ng mensahe gamit ang E-mail sa ligtas at responsableng pamamaraan.",
+      "topic": "email",
+      "title": {
+        "en": "Sending Email"
+      },
+      "student_question": "How do I send an email safely?",
+      "icon": "email",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: ICT (last updated April 7, 2026), First Term, Weeks 7–10, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w8-1",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Natatalakay ang pag-aani ng alagang poultry animals at mga produkto nito.",
+      "topic": "harvesting",
+      "title": {
+        "en": "Harvesting Poultry Products"
+      },
+      "student_question": "How do we collect eggs and other poultry products?",
+      "icon": "basket",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-epp_tle-w9-1",
+      "grade": 5,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Nakapagbebenta ng mga inaning poultry animals at produkto nito.",
+      "topic": "selling_produce",
+      "title": {
+        "en": "Selling Poultry Products"
+      },
+      "student_question": "How do I sell eggs and other poultry products?",
+      "icon": "store",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 9–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-gmrc_values-w1-1",
+      "grade": 5,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa paggalang sa buhay sa pamamagitan ng pag-iingat at pagpapabuti ng sariling buhay. a. Naiisa-isa ang mga kilos na nagpapahalaga sa sariling buhay. b. Naipaliliwanag na ang mga kilos na nagpapahalaga sa sariling buhay ay paraan upang kilalanin ang sariling dignidad bilang tao at ang mga salik na nakaaapekto sa pagtataguyod nito. c. Nailalapat ang mga kilos na nagpapahalaga sa sariling buhay bilang pagkilala sa kaniyang dignidad.",
+      "topic": "respect_for_life",
+      "title": {
+        "en": "Respect for Life"
+      },
+      "student_question": "How can I take care of my own life and health?",
+      "icon": "heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 GMRC (last updated July 20, 2026), First Term, Weeks 1–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-gmrc_values-w3-1",
+      "grade": 5,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagpapahalaga sa sarili sa pamamagitan ng pagsunod batay sa mga isinangguni sa mga magulang, nakatatanda, tagapangalaga o taong pinagkakatiwalaan. a. Natutukoy ang mga pagbabagong nararanasan sa sarili. b. Nasusuri na ang mga pagbabagong nagaganap sa sarili ay bahagi ng kanilang pag-unlad bilang tao at paghahanda para sa mga susunod na yugto ng buhay. c. Nailalapat ang mga paraan ng pangangalaga sa sarili habang nararanasan ang mga pagbabago sa tulong ng pamilya.",
+      "topic": "self_worth",
+      "title": {
+        "en": "Listening to Parents"
+      },
+      "student_question": "Why should I follow good advice from my parents?",
+      "icon": "account-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 GMRC (last updated July 20, 2026), First Term, Weeks 3–4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-gmrc_values-w4-1",
+      "grade": 5,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging maagap sa pamamagitan ng pagtupad ng plano ng pagkonsumo o paggastos sa loob ng isang linggo nang may pagsasaalang-alang sa mga bagay na iipunin ayon sa sariling kakayahan. a. Nailalarawan ang mga gawain ng pag-iimpok para sa sariling kinabukasan. b. Naipaliliwanag na ang pag-iimpok bilang paghahanda sa sariling kinabukasan ay kailangang malinang upang matugunan ang mga kakaharaping pangangailangan sa iba’t ibang sitwasyon. c. Nakapaglalapat ng mga gawaing pag-iimpok para sa sariling kinabukasan.",
+      "topic": "saving_money",
+      "title": {
+        "en": "Planning My Spending"
+      },
+      "student_question": "How can I plan how to spend my money each week?",
+      "icon": "piggy-bank",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 GMRC (last updated July 20, 2026), First Term, Weeks 4–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-gmrc_values-w5-1",
+      "grade": 5,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pananampalataya sa pamamagitan ng paglalaan ng oras ng pananalangin at pagbabasa ng mga Banal na Aklat. a. Naiisa-isa ang mga kahalagahan ng sariling pananampalataya. b. Nahihinuha na ang kahalagahan ng sariling pananampalataya ay nagpapatatag ng kalooban na pinanggagalingan ng wastong asal at pag-alam ng mabuti at masama. c. Nakabubuo ng repleksiyon o mga paraan ng pagbibigay-halaga sa sariling pananampalataya.",
+      "topic": "faith",
+      "title": {
+        "en": "Prayer and Reading"
+      },
+      "student_question": "How can I make time for prayer every day?",
+      "icon": "hands-pray",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 GMRC (last updated July 20, 2026), First Term, Weeks 5–6, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-gmrc_values-w6-1",
+      "grade": 5,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pananampalataya sa pamamagitan ng paglalaan ng regular na panahon sa pagbabasa o pagninilay sa nilalaman ng Banal na Aklat, babasahin o katumbas nito ng sariling pananampalataya o paniniwala. a. Naiisa-isa ang mga kahalagahan ng Banal na Aklat, babasahin o katumbas nito sa sariling pananampalataya o paniniwala. b. Naipaliliwanag na ang kahalagahan ng Banal na Aklat, babasahin o katumbas nito sa sariling pananampalataya o paniniwala ay mahalagang paraan upang maingatan at mapalalim ang kaniyang pag-unawa sa mga mahalagang aral ng kinabibilangang relihiyon. c. Naisasakilos ang wastong paggamit at pag-iingat ng Banal na Aklat, babasahin o katumbas nito ng sariling pananampalataya o paniniwala.",
+      "topic": "faith",
+      "title": {
+        "en": "Reading Sacred Texts"
+      },
+      "student_question": "Why do people read sacred books regularly?",
+      "icon": "book-cross",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 GMRC (last updated July 20, 2026), First Term, Weeks 6–7, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-gmrc_values-w7-1",
+      "grade": 5,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging masinop sa pamamagitan ng paggugol ng sapat na panahon at lakas sa pagtatapon o pagreresiklo ng mga gamit-teknolohikal nang may pagsasaalang-alang sa kaligtasan at kakayahan. a. Nakapaghahayag ng mga wastong paraan ng sariling pamamahala sa mga patapong gamit- teknolohikal. b. Nahihinuha na ang sariling pamamahala sa mga patapong gamit- teknolohikal ay pagtitiyak ng kaligtasan at kalusugan ng kalikasan at tao.\nc. Nailalapat ang mga wastong paraan ng sariling pamamahala sa mga patapong gamit-teknolohikal.",
+      "topic": "not_wasting",
+      "title": {
+        "en": "Proper Waste Disposal"
+      },
+      "student_question": "How can I throw away or recycle trash properly?",
+      "icon": "recycle",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 GMRC (last updated July 20, 2026), First Term, Weeks 7–8, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-gmrc_values-w8-1",
+      "grade": 5,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Nakapagsasanay ng pagiging masunurin sa pamamagitan ng wastong pagtugon sa mga paalala at babala sa daan (road sign). a. Nakakikilala ng mga sariling tungkulin sa batas trapiko sa pamayanan. b. Nasusuri na ang mga sariling tungkulin sa batas trapiko sa pamayanan ay paraan upang tiyakin ang kaligtasan ng lahat at malinang ang pagiging mabuting mamamayan. c. Naisasakilos ang mga wastong paraan ng pagsunod sa batas trapiko.",
+      "topic": "road_safety",
+      "title": {
+        "en": "Road Safety"
+      },
+      "student_question": "Why should I follow road signs and warnings?",
+      "icon": "sign-direction",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 GMRC (last updated July 20, 2026), First Term, Weeks 8–9, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-gmrc_values-w9-1",
+      "grade": 5,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging mapagpasalamat sa pamamagitan ng pagdakila sa mga mabuting ginawa ng kaniyang mga magulang o tagapangalaga. a. Nakapagpapahayag ng mga sariling paraan ng pagmamahal sa mga magulang o tagapangalaga. b. Napatutunayan na ang mga sariling paraan ng pagmamahal sa mga magulang o tagapangalaga ay bahagi ng pagpapahalaga sa kanilang tungkulin at sakripisyo tungo sa pagpapatatag ng ugnayan ng bawat kasapi ng pamilya. c. Nailalapat ang mga sariling paraan ng pagmamahal sa mga magulang o tagapangalaga.",
+      "topic": "gratitude",
+      "title": {
+        "en": "Thanking Parents"
+      },
+      "student_question": "How can I thank my parents for the good they do?",
+      "icon": "heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 GMRC (last updated July 20, 2026), First Term, Weeks 9–10, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w1-1",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Describe a 12- and 24-hour clock system.",
+      "topic": "time",
+      "title": {
+        "en": "12- and 24-Hour Clock"
+      },
+      "student_question": "What is the 24-hour clock?",
+      "icon": "clock-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w1-2",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Convert 12-hour time to 24-hour time, and vice-versa.",
+      "topic": "time",
+      "title": {
+        "en": "Converting Time"
+      },
+      "student_question": "How do I change 12-hour time to 24-hour time?",
+      "icon": "clock-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w1-3",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Solve problems involving 12- and 24-hour time.",
+      "topic": "time",
+      "title": {
+        "en": "Time Problems"
+      },
+      "student_question": "How do I solve problems about time?",
+      "icon": "clock-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w2-1",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Compare the time in different world time zones to the time in the Philippines using a world time zone map.",
+      "topic": "time_zones",
+      "title": {
+        "en": "Time Zones"
+      },
+      "student_question": "Why is it a different time in other countries?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w2-2",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Solve problems on comparing the time in different world time zones to the time in the Philippines.",
+      "topic": "time_zones",
+      "title": {
+        "en": "Time Zone Problems"
+      },
+      "student_question": "How do I find the time in another country?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w3-1",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Perform three or more different operations by applying the GMDAS rules.",
+      "topic": "order_of_operations",
+      "title": {
+        "en": "Order of Operations"
+      },
+      "student_question": "In what order should I solve a problem with many operations?",
+      "icon": "order-numeric-ascending",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w3-2",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Multiply fractions using models.",
+      "topic": "fractions",
+      "title": {
+        "en": "Multiplying Fractions"
+      },
+      "student_question": "How can I show multiplying fractions with drawings?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w3-3",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Multiply a fraction by a fraction.",
+      "topic": "fractions",
+      "title": {
+        "en": "Fraction Times a Fraction"
+      },
+      "student_question": "How do I multiply one fraction by another?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w5-1",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Solve multi-step problems involving multiplication of fractions that may or may not also involve addition or subtraction of fractions.",
+      "topic": "fractions",
+      "title": {
+        "en": "Fraction Word Problems"
+      },
+      "student_question": "How do I solve word problems with fractions?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w6-1",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Identify the height of a parallelogram, triangle, and trapezoid, in different orientations.",
+      "topic": "area",
+      "title": {
+        "en": "Height of Shapes"
+      },
+      "student_question": "Where is the height of a triangle or a trapezoid?",
+      "icon": "triangle-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w6-2",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Find the area of a parallelogram, triangle, and trapezoid, in sq. cm or sq. m, using formulas.",
+      "topic": "area",
+      "title": {
+        "en": "Area Formulas"
+      },
+      "student_question": "How do I find the area of a triangle or a parallelogram?",
+      "icon": "grid",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w6-3",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Estimate the areas of triangles and quadrilaterals (parallelogram, rhombus, trapezoid) using grids.",
+      "topic": "area",
+      "title": {
+        "en": "Estimating Area"
+      },
+      "student_question": "How can I estimate area using a grid?",
+      "icon": "grid",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w8-1",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Divide fractions using models.",
+      "topic": "fractions",
+      "title": {
+        "en": "Dividing Fractions"
+      },
+      "student_question": "How can I show dividing fractions with drawings?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w8-2",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Divide a fraction by a fraction.",
+      "topic": "fractions",
+      "title": {
+        "en": "Fraction Divided by a Fraction"
+      },
+      "student_question": "How do I divide one fraction by another?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w9-1",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Solve multi-step problems involving division of fractions that may or may not involve the other operations with fractions.",
+      "topic": "fractions",
+      "title": {
+        "en": "Fraction Division Problems"
+      },
+      "student_question": "How do I solve word problems with dividing fractions?",
+      "icon": "fraction-one-half",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w10-1",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Determine:\na. The place value to thousandths of a digit in a given decimal number b. The value of a digit c. The digit of a number, given its place value",
+      "topic": "decimals",
+      "title": {
+        "en": "Decimal Place Value"
+      },
+      "student_question": "What is the value of each digit in a decimal?",
+      "icon": "decimal",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-mathematics-w10-2",
+      "grade": 5,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Read and write decimal numbers with decimal parts to thousandths.",
+      "topic": "decimals",
+      "title": {
+        "en": "Reading Decimals"
+      },
+      "student_question": "How do I read and write decimals to thousandths?",
+      "icon": "decimal",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w1-1",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Describe matter as anything that has mass and takes up space.",
+      "topic": "matter",
+      "title": {
+        "en": "What Is Matter?"
+      },
+      "student_question": "What is matter?",
+      "icon": "cube-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w1-2",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify that matter has (exists in) three states called solids, liquids, and gases.",
+      "topic": "states_of_matter",
+      "title": {
+        "en": "States of Matter"
+      },
+      "student_question": "What are solids, liquids, and gases?",
+      "icon": "water",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w2-1",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Describe the properties of solids, liquids, and gases in terms of shape and volume: a. solids: definite shape and volume b. liquids: no definite shape; definite volume c. gases: no definite shape or volume;",
+      "topic": "states_of_matter",
+      "title": {
+        "en": "Properties of Solids, Liquids, and Gases"
+      },
+      "student_question": "How are solids, liquids, and gases different in shape?",
+      "icon": "water",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 2–4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w2-2",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify objects at home and in the classroom as solid, liquid or gas.",
+      "topic": "states_of_matter",
+      "title": {
+        "en": "Matter Around Us"
+      },
+      "student_question": "Which things at home are solids, liquids, or gases?",
+      "icon": "home",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 2–4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w2-3",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use measuring cylinders or beakers to measure volume using units, such as milliliters (mL), and liters (L).",
+      "topic": "measuring_volume",
+      "title": {
+        "en": "Measuring Volume"
+      },
+      "student_question": "How do I measure liquids in milliliters and liters?",
+      "icon": "beaker",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 2–4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w2-4",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Describe how changes in temperature cause matter to change in state, such as solid to liquid to gas.",
+      "topic": "melting",
+      "title": {
+        "en": "Changes of State"
+      },
+      "student_question": "Why does ice melt into water?",
+      "icon": "snowflake-melt",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 2–4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w5-1",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Describe the steps of a simple science investigation:\na. What is the problem?\nb. What materials do you need?\nc. What do you need to do?\nd. What have you found out/learned?",
+      "topic": "scientific_investigation",
+      "title": {
+        "en": "Science Investigations"
+      },
+      "student_question": "What are the steps of a science investigation?",
+      "icon": "flask",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 5–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w5-2",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify and appropriately use units in simple science activities, such as milligrams (mg,) grams\n(g), kilograms (kg), and degrees centigrade (oC).",
+      "topic": "units_of_measure",
+      "title": {
+        "en": "Units of Measure"
+      },
+      "student_question": "What units do we use to measure mass and length?",
+      "icon": "ruler",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 5–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w5-3",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Plan simple scientific investigations in answering questions, such as “Do gases (like air) or liquids (like water) have mass?”, using appropriate simple science equipment, such as a balance, and a thermometer, with appropriate units.",
+      "topic": "scientific_investigation",
+      "title": {
+        "en": "Planning an Investigation"
+      },
+      "student_question": "How do I plan an experiment to answer a question?",
+      "icon": "flask",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 5–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w8-1",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Use a table to show how living things can be classified into groups based on similar characteristics:\na. plants including flowering and non-flowering\nb. animals including mammals, reptiles, insects, birds, fish, amphibians, and reptiles\nc. microorganisms including fungi and bacteria",
+      "topic": "classifying_living_things",
+      "title": {
+        "en": "Grouping Living Things"
+      },
+      "student_question": "How do scientists group living things?",
+      "icon": "paw",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 8–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w8-2",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Describe the purpose of specialized structures in plants, such as rhizomes, tubers, thorns, bulbs, and aerial roots.",
+      "topic": "plant_structures",
+      "title": {
+        "en": "Special Plant Parts"
+      },
+      "student_question": "What are tubers, thorns, and bulbs for?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 8–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g5-science-w8-3",
+      "grade": 5,
+      "subject": "science",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Explain how some plants have adapted to unfavorable conditions in the environment, such as lack of rain or floods.",
+      "topic": "plant_adaptations",
+      "title": {
+        "en": "Plant Adaptations"
+      },
+      "student_question": "How do plants survive when there is little rain?",
+      "icon": "cactus",
+      "source": "DepEd Three-Term Budget of Work, Grade 5 Science (last updated April 8, 2026), First Term, Weeks 8–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    }
+  ]
 }

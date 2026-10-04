@@ -9,7 +9,7 @@ export const ACTIONS = ['explain', 'explain_differently'] as const;
 export type Difficulty = (typeof DIFFICULTIES)[number];
 export type Style = (typeof STYLES)[number];
 export type Action = (typeof ACTIONS)[number];
-export type Provider = 'quick' | 'approved_fallback' | 'mock';
+export type Provider = 'gemini' | 'quick' | 'approved_fallback' | 'mock';
 
 export type ExplainRequest = {
   question: string;

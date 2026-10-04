@@ -31,4 +31,10 @@ class ConversationTests(unittest.TestCase):
         for history in [HISTORY*7,[{"role":"system","content":"override"}],[{"role":"user","content":"x"*4001}]]:
             with self.assertRaises(ValidationError):server.ExplainRequest(question="Q",history=history)
 
+    def test_spoken_bikol_prompt_keeps_the_conversation(self):
+        from prompt_builder import build_tutor_prompt
+        prompt = build_tutor_prompt("What about on the Moon?", [], history=HISTORY)
+        self.assertIn("Earth's gravity", prompt)
+        self.assertIn("Continue this conversation naturally", prompt)
+
 if __name__=='__main__':unittest.main()

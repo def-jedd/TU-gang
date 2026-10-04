@@ -3,6 +3,7 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 import { AppState } from 'react-native';
 
 import { useTutor, type CardOutcome } from '../hooks/useTutor';
+import { lessonIds } from '../curriculum';
 import { decodeProfileCard, isProfileCardText, type Profile } from '../profiles/profileCard';
 import { useProfiles } from '../profiles/ProfileProvider';
 import { speakLabel } from '../voice/deviceSpeech';
@@ -115,7 +116,7 @@ export function NfcProvider({ children }: { children: ReactNode }) {
     (tag: ScannedTag) => {
       // Student profile card: switch to that student (merging their progress).
       const profileText = tag.payloads.find(isProfileCardText);
-      const card = profileText ? decodeProfileCard(profileText) : null;
+      const card = profileText ? decodeProfileCard(profileText, lessonIds) : null;
       if (card) {
         const merged = profilesRef.current.importFromCard(card);
         setLastProfile({ profile: merged, at: Date.now() });

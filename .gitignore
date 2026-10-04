@@ -14,3 +14,9 @@ supabase/.branches/
 # OS / editor
 .DS_Store
 *.log
+
+# Generated lessons (apps/server/.cache/lessons)
+.cache/
+
+# Amazon Quick review packets and pasted replies (results live in data/quick_lessons)
+data/quick_review/

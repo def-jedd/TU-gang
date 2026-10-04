@@ -1,176 +1,351 @@
-<!doctype html>
-<html lang="en" data-resolution="portrait">
+<!DOCTYPE html>
+<html lang="en" data-resolution="landscape">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1080, height=1920" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <title>TU-gang demo</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <style>
+      /* TU-gang demo video (~104 s). Real app screens (assets/screens, captured from the
+         app) in a phone frame, on the app's clay/pastel look. Silent: captions carry it. */
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body {
-        width: 1080px; height: 1920px; overflow: hidden;
-        background: radial-gradient(circle at 50% 30%, #FFF8EC 0%, #F7E9CE 55%, #EFD9AE 100%);
-        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        width: 1920px; height: 1080px; overflow: hidden;
+        font-family: "Segoe UI", Inter, Roboto, system-ui, sans-serif;
+        color: #24334B;
+        background: linear-gradient(160deg, #D9EBFF 0%, #EDE7FC 50%, #E4F8EE 100%);
       }
-      #root { width: 100%; height: 100%; position: relative; }
+      #root { width: 1920px; height: 1080px; position: relative; overflow: hidden; }
+      .clip { position: absolute; inset: 0; }
 
-      .blob { position: absolute; border-radius: 50%; filter: blur(2px); opacity: 0.55; }
-      .blob.b1 { width: 320px; height: 320px; top: 120px; left: -80px; background: #FFD79A; }
-      .blob.b2 { width: 260px; height: 260px; bottom: 160px; right: -70px; background: #FFC46B; }
-      .blob.b3 { width: 180px; height: 180px; top: 760px; right: 120px; background: #FFE6B8; }
+      /* Backdrop clouds, like the app's ScreenBackdrop */
+      .cloud { position: absolute; background: #fff; border-radius: 999px; opacity: .85; }
 
-      #brand {
-        position: absolute; inset: 0; display: flex; flex-direction: column;
-        align-items: center; justify-content: center; gap: 24px;
+      /* Clay card */
+      .clay {
+        background: linear-gradient(160deg, #FFFFFF, #EEF5FD);
+        border: 3px solid #fff; border-radius: 36px;
+        box-shadow: 0 18px 40px rgba(141,168,198,.35), inset 0 -6px 0 rgba(220,232,245,.9);
       }
-      #logo {
-        width: 220px; height: 220px; border-radius: 56px;
-        background: linear-gradient(135deg, #FF8A3D, #FF6B3D);
-        display: flex; align-items: center; justify-content: center;
-        box-shadow: 0 30px 60px rgba(255,107,61,0.35);
-        color: #fff; font-size: 120px; font-weight: 800;
-      }
-      #brandName { font-size: 96px; font-weight: 800; color: #2A2015; letter-spacing: -0.03em; }
-      #brandName span { color: #FF6B3D; }
-      #brandTag { font-size: 40px; font-weight: 600; color: #8A6E45; }
+      .peach { background: linear-gradient(160deg, #FFF0DD, #FFD7BD); }
+      .mint { background: linear-gradient(160deg, #E5FFF0, #C5EEDC); }
+      .lav { background: linear-gradient(160deg, #F1E9FF, #DCD0F7); }
+      .blue { background: linear-gradient(160deg, #DFF3FF, #BDE3FA); }
 
-      #phone {
-        position: absolute; top: 180px; left: 50%; transform: translateX(-50%);
-        width: 640px; height: 1360px; background: #FFFFFF; border-radius: 68px;
-        box-shadow: 0 40px 90px rgba(140,100,40,0.28);
-        border: 14px solid #231B12; overflow: hidden;
-      }
-      .screen { position: absolute; inset: 0; padding: 56px 48px; background: #FFFDF8; }
-      .appbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 44px; }
-      .appbar .name { font-size: 44px; font-weight: 800; color: #2A2015; }
-      .appbar .name span { color: #FF6B3D; }
-      .pill { font-size: 26px; font-weight: 700; color: #8A6E45; background: #FFF0D6; padding: 12px 22px; border-radius: 999px; }
+      .kicker { font-size: 34px; font-weight: 700; color: #3579AE; letter-spacing: .04em; text-transform: uppercase; }
+      .h1 { font-size: 88px; font-weight: 800; line-height: 1.05; letter-spacing: -.02em; }
+      .h2 { font-size: 64px; font-weight: 800; line-height: 1.1; letter-spacing: -.01em; }
+      .body { font-size: 40px; font-weight: 600; line-height: 1.35; color: #3B4D66; }
+      .src { font-size: 24px; font-weight: 600; color: #6B7C93; }
+      .accent { color: #3579AE; }
 
-      .prompt { font-size: 40px; font-weight: 700; color: #4A3A24; margin-bottom: 26px; }
-      .field {
-        background: #FFF3DD; border: 3px solid #F0D9A8; border-radius: 28px;
-        padding: 32px 30px; font-size: 36px; color: #6B5636; min-height: 110px;
+      /* Phone frame holding real screenshots (1170x2532 -> 390x844 at 1x) */
+      .phone {
+        position: absolute; width: 430px; height: 900px; border-radius: 64px;
+        background: #1F2A3C; padding: 18px;
+        box-shadow: 0 40px 80px rgba(36,51,75,.35);
       }
-      .caret { color: #FF6B3D; font-weight: 800; }
-      .askbtn {
-        margin-top: 28px; background: linear-gradient(135deg, #FF8A3D, #FF6B3D);
-        color: #fff; font-size: 38px; font-weight: 800; text-align: center;
-        padding: 30px; border-radius: 28px; box-shadow: 0 16px 30px rgba(255,107,61,0.35);
-      }
+      .phone .glass { position: relative; width: 100%; height: 100%; border-radius: 48px; overflow: hidden; background: #EAF4FF; }
+      .phone img.scr { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; opacity: 0; }
 
-      .answer {
-        margin-top: 40px; background: #FFF8EC; border-left: 10px solid #FF6B3D;
-        border-radius: 20px; padding: 34px 32px;
-      }
-      .answer .lbl { font-size: 26px; font-weight: 800; color: #FF6B3D; letter-spacing: 0.08em; margin-bottom: 16px; }
-      .answer .body { font-size: 36px; line-height: 1.4; color: #3A2E1C; font-weight: 600; }
+      /* Scene 1: hook */
+      #s1 { display: flex; flex-direction: column; justify-content: center; padding: 0 180px; }
+      #big9 { font-size: 300px; font-weight: 900; line-height: .9; color: #3579AE; letter-spacing: -.04em; }
 
-      #nfc {
-        position: absolute; bottom: 150px; left: 50%; transform: translateX(-50%);
-        width: 560px; background: linear-gradient(135deg, #231B12, #3A2C1A);
-        color: #FFE6B8; border-radius: 40px; padding: 40px 44px;
-        box-shadow: 0 30px 70px rgba(0,0,0,0.4); display: flex; align-items: center; gap: 30px;
-      }
-      #nfc .wave { font-size: 76px; }
-      #nfc .txt .t1 { font-size: 42px; font-weight: 800; color: #fff; }
-      #nfc .txt .t2 { font-size: 30px; font-weight: 600; color: #FFC46B; margin-top: 6px; }
+      /* Scene 2: pain */
+      #s2 { padding: 140px 160px; }
+      .needs { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 60px; width: 1300px; }
+      .need { padding: 34px 40px; font-size: 44px; font-weight: 700; display: flex; align-items: center; gap: 24px; }
+      .x { width: 64px; height: 64px; border-radius: 32px; background: #C2410C; color: #fff; font-size: 44px; font-weight: 900; display: flex; align-items: center; justify-content: center; flex: none; }
 
-      #outro {
-        position: absolute; inset: 0; display: flex; flex-direction: column;
-        align-items: center; justify-content: center; gap: 20px; opacity: 0;
+      /* Scene 3: brand */
+      #s3 { display: flex; align-items: center; justify-content: center; gap: 80px; }
+      #s3 img { width: 620px; }
+      #brand { font-size: 170px; font-weight: 900; letter-spacing: -.04em; line-height: 1; }
+      #brand span { color: #3579AE; }
+      .tags { display: flex; gap: 18px; margin-top: 36px; }
+      .tag { font-size: 34px; font-weight: 700; padding: 16px 30px; border-radius: 999px; }
+
+      /* Shared demo layout: caption column left, phone right */
+      .demo { padding: 0; }
+      .caption { position: absolute; left: 150px; top: 230px; width: 980px; }
+      .caption .h2 { margin: 18px 0 30px; }
+      .bullets { display: flex; flex-direction: column; gap: 22px; }
+      .bullet { font-size: 40px; font-weight: 650; padding: 22px 32px; display: flex; gap: 22px; align-items: center; }
+      .dot { width: 22px; height: 22px; border-radius: 11px; background: #3579AE; flex: none; }
+
+      /* NFC card graphic */
+      #nfcCard {
+        position: absolute; width: 330px; height: 210px; border-radius: 28px; left: 1230px; top: 760px;
+        background: linear-gradient(135deg, #FFF0DD, #FFD7BD); border: 3px solid #fff;
+        box-shadow: 0 24px 50px rgba(141,100,60,.35); padding: 26px 30px;
       }
-      #outro .big { font-size: 110px; font-weight: 800; color: #2A2015; }
-      #outro .big span { color: #FF6B3D; }
-      #outro .sub { font-size: 42px; font-weight: 600; color: #8A6E45; }
+      #nfcCard .n1 { font-size: 34px; font-weight: 800; line-height: 1.2; }
+      #nfcCard .n2 { font-size: 22px; font-weight: 700; color: #9A5B25; margin-top: 14px; line-height: 1.2; }
+      #nfcCard .chip { position: absolute; right: 26px; bottom: 24px; width: 70px; height: 56px; border-radius: 12px; background: linear-gradient(135deg,#F7C873,#E3A43A); }
+      .ring { position: absolute; border: 6px solid #3579AE; border-radius: 50%; opacity: 0; }
+
+      /* Speech bubbles (illustration of the voice call) */
+      .bubble { position: absolute; font-size: 38px; font-weight: 700; padding: 26px 34px; max-width: 640px; }
+      .bubble small { display: block; font-size: 22px; font-weight: 700; color: #3579AE; margin-bottom: 6px; letter-spacing: .03em; }
+
+      /* ILAW chips */
+      .ilaw { display: flex; gap: 18px; margin: 10px 0 34px; }
+      .ilaw .chip2 { width: 200px; padding: 18px 0; text-align: center; font-size: 30px; font-weight: 800; color: #52647D; border-radius: 999px; }
+      .ilaw .chip2 b { display: block; font-size: 54px; color: #24334B; }
+
+      /* Lean stack */
+      #s8 { padding: 120px 150px; }
+      .stack { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 56px; }
+      .card { padding: 36px 40px; min-height: 250px; }
+      .card .t { font-size: 40px; font-weight: 800; margin-bottom: 12px; }
+      .card .d { font-size: 30px; font-weight: 600; color: #3B4D66; line-height: 1.35; }
+
+      /* Outro */
+      #s9 { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+      #s9 .row { display: flex; align-items: flex-end; gap: 10px; }
+      #s9 img { height: 360px; }
+      #s9 .h1 { margin-top: 30px; font-size: 120px; }
+      #s9 .body { margin-top: 18px; }
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="5"
-      data-fps="30"
-      data-width="1080"
-      data-height="1920"
-    >
-      <div class="blob b1"></div>
-      <div class="blob b2"></div>
-      <div class="blob b3"></div>
+    <div data-hf-id="hf-aje3" id="root" data-composition-id="main" data-start="0" data-duration="104" data-fps="30" data-width="1920" data-height="1080">
+      <div data-hf-id="hf-btas" class="cloud" style="width:260px;height:110px;top:70px;left:1540px"></div>
+      <div data-hf-id="hf-5zks" class="cloud" style="width:170px;height:90px;top:40px;left:1690px"></div>
+      <div data-hf-id="hf-c4ji" class="cloud" style="width:220px;height:90px;top:900px;left:-60px"></div>
 
-      <div id="brand" class="clip" data-start="0" data-duration="5" data-track-index="0">
-        <div id="logo">T</div>
-        <div id="brandName">TU<span>-gang</span></div>
-        <div id="brandTag">Bikol-first learning tutor</div>
+      <!-- 1. Hook (0-8) -->
+      <div data-hf-id="hf-kknv" id="s1" class="clip" data-start="0" data-duration="104">
+        <div data-hf-id="hf-4wmn" class="kicker">The Philippines' reading crisis</div>
+        <div data-hf-id="hf-z25x" id="big9">9 in 10</div>
+        <div data-hf-id="hf-nj2y" class="h2">Filipino 10-year-olds can't read and<br data-hf-id="hf-x5px">understand a simple text.</div>
+        <div data-hf-id="hf-w8gl" class="src" style="margin-top:28px">World Bank, Learning Poverty update (2022)</div>
       </div>
 
-      <div id="phone" class="clip" data-start="0" data-duration="5" data-track-index="1">
-        <div class="screen">
-          <div class="appbar">
-            <div class="name">TU<span>-gang</span></div>
-            <div class="pill">Bikol &middot; Daet</div>
-          </div>
-          <div class="prompt">Ano an gusto mong manudan?</div>
-          <div class="field" id="qfield">Ano an photosynthesis?<span class="caret">|</span></div>
-          <div class="askbtn" id="askbtn">Hapoton an tutor</div>
+      <!-- 2. Pain (8-17) -->
+      <div data-hf-id="hf-9p68" id="s2" class="clip" data-start="0" data-duration="104">
+        <div data-hf-id="hf-m9yt" class="kicker">For a Bikol child, it's harder</div>
+        <div data-hf-id="hf-6mad" class="h2" style="margin-top:18px">School is now in Filipino and English,<br data-hf-id="hf-rsrt"><span data-hf-id="hf-7i3r" class="accent">not the language spoken at home.</span></div>
+        <div data-hf-id="hf-8khj" class="src" style="margin-top:16px">Republic Act No. 12027 (2024)</div>
+        <div data-hf-id="hf-2icf" class="needs">
+          <div data-hf-id="hf-meeu" class="need clay"><span data-hf-id="hf-lu9a" class="x">✕</span>Apps assume you can read</div>
+          <div data-hf-id="hf-ug8g" class="need clay"><span data-hf-id="hf-bywi" class="x">✕</span>…and type a password</div>
+          <div data-hf-id="hf-985r" class="need clay"><span data-hf-id="hf-cd7j" class="x">✕</span>…and own a phone</div>
+          <div data-hf-id="hf-1irm" class="need clay"><span data-hf-id="hf-crik" class="x">✕</span>…and are always online</div>
+        </div>
+      </div>
 
-          <div class="answer" id="answerCard">
-            <div class="lbl">PALIWANAG</div>
-            <div class="body">An photosynthesis iyo an paagi kan mga tanom na ginigibong kakanon an saldang, tubig, asin hangin.</div>
+      <!-- 3. Brand (17-25) -->
+      <div data-hf-id="hf-agu1" id="s3" class="clip" data-start="0" data-duration="104">
+        <img data-hf-id="hf-m99t" src="assets/clay-girl.png" alt="">
+        <div data-hf-id="hf-yeow">
+          <div data-hf-id="hf-luk3" id="brand">TU<span data-hf-id="hf-ejan">-gang</span></div>
+          <div data-hf-id="hf-1ai6" class="body" style="font-size:48px;margin-top:10px">Your learning sibling.</div>
+          <div data-hf-id="hf-k2nf" class="tags">
+            <div data-hf-id="hf-yd32" class="tag clay mint">Voice-first</div>
+            <div data-hf-id="hf-ym86" class="tag clay peach">Bikol-first</div>
+            <div data-hf-id="hf-ri23" class="tag clay lav">One shared phone</div>
           </div>
         </div>
       </div>
 
-      <div id="nfc" class="clip" data-start="0" data-duration="5" data-track-index="2">
-        <div class="wave">&#128246;</div>
-        <div class="txt">
-          <div class="t1">Tap a learning card</div>
-          <div class="t2">TOPIC &middot; PHOTOSYNTHESIS</div>
+      <!-- 4. Card = save file (25-38) -->
+      <div data-hf-id="hf-jv29" id="s4" class="clip demo" data-start="0" data-duration="104">
+        <div data-hf-id="hf-gsc6" class="caption">
+          <div data-hf-id="hf-eaw6" class="kicker">Step 1 · Who is learning?</div>
+          <div data-hf-id="hf-xviq" class="h2">Tap your card.<br data-hf-id="hf-szow"><span data-hf-id="hf-26bc" class="accent">It's your save file.</span></div>
+          <div data-hf-id="hf-yodn" class="bullets">
+            <div data-hf-id="hf-mg0a" class="bullet clay"><span data-hf-id="hf-9gry" class="dot"></span>No account, no password to type</div>
+            <div data-hf-id="hf-h2y5" class="bullet clay"><span data-hf-id="hf-zcc2" class="dot"></span>Siblings share one phone, each with a card</div>
+            <div data-hf-id="hf-c0qb" class="bullet clay"><span data-hf-id="hf-zqn3" class="dot"></span>Progress moves to any phone, no internet</div>
+          </div>
         </div>
       </div>
 
-      <div id="outro" class="clip" data-start="0" data-duration="5" data-track-index="3">
-        <div class="big">TU<span>-gang</span></div>
-        <div class="sub">Learn in your language.</div>
+      <!-- 5. Talk (38-50) -->
+      <div data-hf-id="hf-j3eg" id="s5" class="clip demo" data-start="0" data-duration="104">
+        <div data-hf-id="hf-0o2i" class="caption">
+          <div data-hf-id="hf-krh6" class="kicker">Step 2 · Just talk</div>
+          <div data-hf-id="hf-593t" class="h2">Ask out loud.<br data-hf-id="hf-sldv"><span data-hf-id="hf-5sz6" class="accent">The tutor talks back.</span></div>
+          <div data-hf-id="hf-m9jf" class="bullets">
+            <div data-hf-id="hf-06jv" class="bullet clay"><span data-hf-id="hf-04y4" class="dot"></span>Live, hands-free voice (Agora)</div>
+            <div data-hf-id="hf-6a3s" class="bullet clay"><span data-hf-id="hf-0j95" class="dot"></span>Bikol, Tagalog or English</div>
+            <div data-hf-id="hf-r4qu" class="bullet clay"><span data-hf-id="hf-0xk6" class="dot"></span>Grounded in native-reviewed Bikol</div>
+          </div>
+        </div>
+        <div data-hf-id="hf-lxhb" id="b1" class="bubble clay lav" style="left:150px;top:860px"><small data-hf-id="hf-91j3">STUDENT</small>Bakin nauran?</div>
+      </div>
+
+      <!-- 6. ILAW lessons (50-77) -->
+      <div data-hf-id="hf-tyw3" id="s6" class="clip demo" data-start="0" data-duration="104">
+        <div data-hf-id="hf-bfy5" class="caption" style="top:170px">
+          <div data-hf-id="hf-oysq" class="kicker">Step 3 · Real DepEd lessons</div>
+          <div data-hf-id="hf-2kiq" class="h2"><span data-hf-id="hf-btn7" id="count866">866</span> Term 1 lessons,<br data-hf-id="hf-qluq"><span data-hf-id="hf-fje8" class="accent">Grades 1 to 9.</span></div>
+          <div data-hf-id="hf-mr6b" class="ilaw">
+            <div data-hf-id="hf-79xw" class="chip2 clay" id="cI"><b data-hf-id="hf-90w4">I</b>Intentions</div>
+            <div data-hf-id="hf-3gxe" class="chip2 clay" id="cL"><b data-hf-id="hf-a7t7">L</b>Learning</div>
+            <div data-hf-id="hf-s8nb" class="chip2 clay" id="cA"><b data-hf-id="hf-c7cc">A</b>Assessment</div>
+            <div data-hf-id="hf-lpt2" class="chip2 clay" id="cW"><b data-hf-id="hf-6n1y">W</b>Ways forward</div>
+          </div>
+          <div data-hf-id="hf-lv8e" class="bullets">
+            <div data-hf-id="hf-a8ws" class="bullet clay" id="l1"><span data-hf-id="hf-1bv7" class="dot"></span>Every step is read aloud</div>
+            <div data-hf-id="hf-2bwy" class="bullet clay" id="l2"><span data-hf-id="hf-1q68" class="dot"></span>Quick checks with big A, B, C buttons</div>
+            <div data-hf-id="hf-rydl" class="bullet clay" id="l3"><span data-hf-id="hf-vrkt" class="dot"></span>Wrong answers are explained kindly</div>
+            <div data-hf-id="hf-bzgw" class="bullet clay" id="l4"><span data-hf-id="hf-w5vu" class="dot"></span>5-question quiz · pass at 75%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Two tracks (77-87) -->
+      <div data-hf-id="hf-nt6a" id="s7" class="clip demo" data-start="0" data-duration="104">
+        <div data-hf-id="hf-12dj" class="caption">
+          <div data-hf-id="hf-4qyn" class="kicker">Progress teachers can trust</div>
+          <div data-hf-id="hf-ptaa" class="h2">Two tracks:<br data-hf-id="hf-q7jp"><span data-hf-id="hf-0u7q" class="accent">read 📖 and passed ★</span></div>
+          <div data-hf-id="hf-lgxd" class="bullets">
+            <div data-hf-id="hf-e7in" class="bullet clay"><span data-hf-id="hf-mnty" class="dot"></span>Passing the quiz counts, not just reading</div>
+            <div data-hf-id="hf-tg9q" class="bullet clay"><span data-hf-id="hf-m9ix" class="dot"></span>A whole grade fits on one cheap NFC sticker</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shared phone (scenes 4-7) -->
+      <div data-hf-id="hf-iq51" id="phone" class="phone clip" data-start="0" data-duration="104" style="left:1290px;top:90px">
+        <div data-hf-id="hf-mpg4" class="glass">
+          <img data-hf-id="hf-4dyn" class="scr" id="p03" src="assets/screens/03-students.png" alt="">
+          <img data-hf-id="hf-1ny7" class="scr" id="p04" src="assets/screens/04-home-ana.png" alt="">
+          <img data-hf-id="hf-moei" class="scr" id="p15" src="assets/screens/15-chat-answer.png" alt="">
+          <img data-hf-id="hf-8dll" class="scr" id="p05" src="assets/screens/05-lesson-intentions.png" alt="">
+          <img data-hf-id="hf-0d00" class="scr" id="p06" src="assets/screens/06-lesson-step.png" alt="">
+          <img data-hf-id="hf-4fig" class="scr" id="p07" src="assets/screens/07-quick-check-correct.png" alt="">
+          <img data-hf-id="hf-mhl3" class="scr" id="p08" src="assets/screens/08-quiz-question.png" alt="">
+          <img data-hf-id="hf-w7n6" class="scr" id="p09" src="assets/screens/09-quiz-wrong-feedback.png" alt="">
+          <img data-hf-id="hf-abql" class="scr" id="p10" src="assets/screens/10-score.png" alt="">
+          <img data-hf-id="hf-p7uj" class="scr" id="p11" src="assets/screens/11-ways-forward.png" alt="">
+          <img data-hf-id="hf-r444" class="scr" id="p13" src="assets/screens/13-lessons.png" alt="">
+          <img data-hf-id="hf-ouxk" class="scr" id="p12" src="assets/screens/12-home-progress.png" alt="">
+        </div>
+      </div>
+      <div data-hf-id="hf-9t94" id="nfcCard" class="clip" data-start="0" data-duration="104">
+        <div data-hf-id="hf-ympc" class="n1">Ana · Grade 3</div>
+        <div data-hf-id="hf-7lsq" class="n2">TU-gang profile card</div>
+        <div data-hf-id="hf-sqmm" class="chip"></div>
+      </div>
+      <div data-hf-id="hf-y9oa" id="ring1" class="ring clip" data-start="0" data-duration="104" style="width:200px;height:200px;left:1405px;top:640px"></div>
+      <div data-hf-id="hf-2y8r" id="ring2" class="ring clip" data-start="0" data-duration="104" style="width:200px;height:200px;left:1405px;top:640px"></div>
+
+      <!-- 8. Lean stack (87-97) -->
+      <div data-hf-id="hf-825e" id="s8" class="clip" data-start="0" data-duration="104">
+        <div data-hf-id="hf-d0sq" class="kicker">Lean by design</div>
+        <div data-hf-id="hf-op34" class="h2" style="margin-top:14px">Pesos per child. <span data-hf-id="hf-uece" class="accent">No IT staff needed.</span></div>
+        <div data-hf-id="hf-d1zs" class="stack">
+          <div data-hf-id="hf-ez7z" class="card clay blue"><div data-hf-id="hf-zrv8" class="t">Agora</div><div data-hf-id="hf-dm7x" class="d">Live voice conversation and read-aloud lessons</div></div>
+          <div data-hf-id="hf-wv9n" class="card clay mint"><div data-hf-id="hf-ac5g" class="t">Gemini Flash-Lite</div><div data-hf-id="hf-frkk" class="d">A small, low-cost model. Each lesson is written once, checked, then cached for everyone.</div></div>
+          <div data-hf-id="hf-0fia" class="card clay peach"><div data-hf-id="hf-er18" class="t">Swappable model</div><div data-hf-id="hf-9np5" class="d">Also runs on a local open model, so a school hub can work offline</div></div>
+          <div data-hf-id="hf-c8iw" class="card clay lav"><div data-hf-id="hf-x8h3" class="t">Kiro</div><div data-hf-id="hf-mlud" class="d">Built our backend: Supabase retrieval + the voice server</div></div>
+          <div data-hf-id="hf-1q4e" class="card clay" id="quickCard"><div data-hf-id="hf-l1rb" class="t">Amazon Quick</div><div data-hf-id="hf-fkz4" class="d">Bikol Tutor agent workspace for teachers and reviewers</div></div>
+          <div data-hf-id="hf-knml" class="card clay"><div data-hf-id="hf-cqrt" class="t">NFC + DepEd ILAW</div><div data-hf-id="hf-mrht" class="d">Fits the classroom: cards like library cards, lessons in DepEd's format</div></div>
+        </div>
+      </div>
+
+      <!-- 9. Outro (97-104) -->
+      <div data-hf-id="hf-c09f" id="s9" class="clip" data-start="0" data-duration="104">
+        <div data-hf-id="hf-thy4" class="row">
+          <img data-hf-id="hf-tpwl" src="assets/clay-girl.png" alt="">
+          <img data-hf-id="hf-gxvc" src="assets/clay-dog.png" alt="" style="height:220px">
+          <img data-hf-id="hf-dyyt" src="assets/clay-boy.png" alt="">
+        </div>
+        <div data-hf-id="hf-rdim" class="h1">TU<span data-hf-id="hf-7c0l" class="accent">-gang</span></div>
+        <div data-hf-id="hf-2dvy" class="body">Learn in your language. Bikol · Tagalog · English</div>
       </div>
     </div>
 
     <script>
+      // Set to true once the Amazon Quick Bikol Tutor agent is really set up
+      // (ai/quick-agent/SETUP.md). Until then the video must not claim it.
+      const SHOW_QUICK = false;
+
       const tl = gsap.timeline({ paused: true });
+      const scenes = ["#s1", "#s2", "#s3", "#s4", "#s5", "#s6", "#s7", "#s8", "#s9"];
+      gsap.set([...scenes, "#phone", "#nfcCard", "#ring1", "#ring2"], { opacity: 0 });
+      if (!SHOW_QUICK) document.getElementById("quickCard").remove();
 
-      gsap.set("#phone", { opacity: 0, y: 120, scale: 0.92 });
-      gsap.set("#answerCard", { opacity: 0, y: 30 });
-      gsap.set("#nfc", { opacity: 0, y: 160 });
-      gsap.set(".blob", { scale: 0.6, opacity: 0 });
+      const scene = (sel, start, end) => {
+        tl.fromTo(sel, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, start);
+        tl.to(sel, { opacity: 0, y: -20, duration: 0.45, ease: "power2.in" }, end - 0.45);
+      };
+      const rise = (sel, at, stagger = 0.18) =>
+        tl.from(sel, { opacity: 0, y: 40, duration: 0.55, stagger, ease: "power3.out" }, at);
+      // Crossfade the phone to a screenshot at time `at`.
+      let current = null;
+      const screen = (id, at) => {
+        if (current) tl.to(current, { opacity: 0, duration: 0.35 }, at);
+        tl.to(id, { opacity: 1, duration: 0.35 }, at);
+        current = id;
+      };
+      const light = (sel, at) => tl.to(sel, { scale: 1.08, background: "linear-gradient(160deg,#C6E7FF,#A7D2F7)", duration: 0.35, ease: "back.out(2)" }, at);
 
-      // 0.0-0.9  brand intro
-      tl.from("#logo", { scale: 0.3, opacity: 0, rotate: -25, duration: 0.6, ease: "back.out(1.8)" }, 0);
-      tl.from("#brandName", { y: 40, opacity: 0, duration: 0.5, ease: "power3.out" }, 0.25);
-      tl.from("#brandTag", { y: 24, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.4);
-      tl.to(".blob", { scale: 1, opacity: 0.55, duration: 0.8, stagger: 0.08, ease: "power2.out" }, 0.1);
+      // 1. Hook 0-8
+      scene("#s1", 0.2, 8);
+      tl.from("#big9", { scale: 0.5, opacity: 0, duration: 0.8, ease: "back.out(1.7)" }, 0.5);
 
-      // 1.0-1.7  brand exits, phone enters
-      tl.to("#brand", { opacity: 0, scale: 0.9, duration: 0.4, ease: "power2.in" }, 1.0);
-      tl.to("#phone", { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 1.1);
+      // 2. Pain 8-17
+      scene("#s2", 8, 17);
+      rise("#s2 .need", 10.2, 0.6);
+      tl.from("#s2 .x", { scale: 0, duration: 0.35, stagger: 0.6, ease: "back.out(3)" }, 10.5);
 
-      // 1.9-2.3  ask button press
-      tl.to("#askbtn", { scale: 0.94, duration: 0.12, ease: "power1.in" }, 1.9);
-      tl.to("#askbtn", { scale: 1, duration: 0.2, ease: "back.out(2)" }, 2.02);
+      // 3. Brand 17-25
+      scene("#s3", 17, 25);
+      tl.from("#s3 img", { x: -120, opacity: 0, duration: 0.8, ease: "power3.out" }, 17.2);
+      tl.from("#brand", { scale: 0.7, opacity: 0, duration: 0.7, ease: "back.out(1.8)" }, 17.6);
+      rise("#s3 .tag", 18.6, 0.3);
 
-      // 2.3  answer reveals
-      tl.to("#answerCard", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 2.3);
+      // Phone in for scenes 4-7 (25-87)
+      tl.fromTo("#phone", { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.7, ease: "power3.out" }, 25.2);
+      tl.to("#phone", { opacity: 0, x: 120, duration: 0.5, ease: "power2.in" }, 86.5);
 
-      // 2.95  NFC card slides up + pulse
-      tl.to("#nfc", { opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.6)" }, 2.95);
-      tl.to("#nfc .wave", { scale: 1.25, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut" }, 3.4);
+      // 4. Card 25-38: students list, then the card taps the phone, then Home as Ana
+      scene("#s4", 25, 38);
+      rise("#s4 .bullet", 26.5, 0.5);
+      screen("#p03", 25.4);
+      tl.fromTo("#nfcCard", { opacity: 0, x: 300 }, { opacity: 1, x: 0, duration: 0.8, ease: "power3.out" }, 29);
+      tl.to("#nfcCard", { y: -150, x: 40, duration: 0.6, ease: "power2.inOut" }, 30.2);
+      tl.fromTo("#ring1", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 1.8, duration: 0.9, ease: "power2.out", immediateRender: false }, 30.8);
+      tl.fromTo("#ring2", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 1.8, duration: 0.9, ease: "power2.out", immediateRender: false }, 31.2);
+      screen("#p04", 31.2);
+      tl.to("#nfcCard", { opacity: 0, y: 40, duration: 0.5 }, 33.5);
 
-      // 3.95  exit
-      tl.to(["#phone", "#nfc"], { opacity: 0, y: -80, duration: 0.4, ease: "power2.in" }, 3.95);
-      tl.to(".blob", { opacity: 0, duration: 0.4 }, 3.95);
+      // 5. Talk 38-50
+      scene("#s5", 38, 50);
+      rise("#s5 .bullet", 39.3, 0.5);
+      tl.from("#b1", { opacity: 0, scale: 0.6, duration: 0.5, ease: "back.out(2)" }, 41.5);
+      screen("#p15", 42.6);
 
-      // 4.15  outro
-      tl.to("#outro", { opacity: 1, duration: 0.5, ease: "power2.out" }, 4.15);
-      tl.from("#outro .big", { scale: 0.8, duration: 0.6, ease: "back.out(1.6)" }, 4.2);
-      tl.from("#outro .sub", { y: 24, opacity: 0, duration: 0.5, ease: "power2.out" }, 4.4);
+      // 6. ILAW 50-77
+      scene("#s6", 50, 77);
+      tl.from("#count866", { textContent: 0, duration: 1.6, snap: { textContent: 1 }, ease: "power2.out" }, 50.4);
+      rise("#s6 .chip2", 51.2, 0.25);
+      screen("#p05", 52.4); light("#cI", 52.4);
+      screen("#p06", 56.2); light("#cL", 56.2); rise("#l1", 56.4);
+      screen("#p07", 60.2); rise("#l2", 60.4);
+      screen("#p08", 64.2); light("#cA", 64.2);
+      screen("#p09", 67.6); rise("#l3", 67.8);
+      screen("#p10", 71); rise("#l4", 71.2);
+      screen("#p11", 74.2); light("#cW", 74.2);
+
+      // 7. Tracks 77-87
+      scene("#s7", 77, 87);
+      rise("#s7 .bullet", 78.4, 0.6);
+      screen("#p13", 77.2);
+      screen("#p12", 82.4);
+
+      // 8. Lean 87-97
+      scene("#s8", 87, 97);
+      rise("#s8 .card", 88.2, 0.35);
+
+      // 9. Outro 97-104
+      scene("#s9", 97, 104.4);
+      tl.from("#s9 img", { y: 80, opacity: 0, duration: 0.7, stagger: 0.2, ease: "back.out(1.6)" }, 97.3);
 
       window.__timelines = window.__timelines || {};
       window.__timelines["main"] = tl;

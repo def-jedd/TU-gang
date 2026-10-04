@@ -1,5 +1,1570 @@
 {
   "grade": 4,
   "term": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "g4-araling_panlipunan-w1-1",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natutukoy ang kinalalagyan ng Pilipinas gamit ang tiyak at relatibong lokasyon",
+      "topic": "philippine_location",
+      "title": {
+        "en": "Where Is the Philippines?"
+      },
+      "student_question": "Where is the Philippines on the map?",
+      "icon": "map-marker",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-araling_panlipunan-w2-1",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Natatalakay ang konsepto ng bansa",
+      "topic": "what_is_a_country",
+      "title": {
+        "en": "What Is a Country?"
+      },
+      "student_question": "What makes a place a country?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-araling_panlipunan-w2-2",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang mga saligan ng lawak at hangganan ng teritoryo ng Pilipinas",
+      "topic": "philippine_territory",
+      "title": {
+        "en": "Philippine Territory"
+      },
+      "student_question": "How do we know how big the Philippines is and where it ends?",
+      "icon": "map",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-araling_panlipunan-w3-1",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nailalarawan ang pagkakakilanlang heograpikal ng Pilipinas (Pisikal at Pantao)",
+      "topic": "philippine_geography",
+      "title": {
+        "en": "Philippine Geography"
+      },
+      "student_question": "What are the land, water, and people of the Philippines like?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-araling_panlipunan-w4-1",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Nasusuri ang ugnayan ng lokasyon ng Pilipinas sa heograpiya nito",
+      "topic": "philippine_geography",
+      "title": {
+        "en": "Location and Geography"
+      },
+      "student_question": "How does the location of the Philippines affect its land and weather?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Weeks 4–5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-araling_panlipunan-w4-2",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Napahahalagahan ang katangiang heograpikal ng bansa",
+      "topic": "philippine_geography",
+      "title": {
+        "en": "Valuing Our Geography"
+      },
+      "student_question": "Why should we take care of the special land of the Philippines?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Weeks 4–5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-araling_panlipunan-w6-1",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Natutukoy ang mga pinagkukunang-yamang matatagpuan sa bansa",
+      "topic": "natural_resources",
+      "title": {
+        "en": "Natural Resources"
+      },
+      "student_question": "What natural resources can we find in the Philippines?",
+      "icon": "pine-tree",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Week 6, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-araling_panlipunan-w7-1",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang iba’t-ibang pakinabang pang-ekonomiko ng mga pinagkukunang-yaman ng bansa",
+      "topic": "natural_resources",
+      "title": {
+        "en": "Using Natural Resources"
+      },
+      "student_question": "How do natural resources help people earn a living?",
+      "icon": "pine-tree",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Week 7, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-araling_panlipunan-w8-1",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga hamon at pagtugon sa mga gawaing pangkabuhayan ng bansa",
+      "topic": "livelihood",
+      "title": {
+        "en": "Livelihood Challenges"
+      },
+      "student_question": "What problems do farmers and fishers face, and how are they solved?",
+      "icon": "tractor",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-araling_panlipunan-w9-1",
+      "grade": 4,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Natutukoy ang mga hamon sa pagkamit ng likas-kayang pag-unlad",
+      "topic": "sustainable_development",
+      "title": {
+        "en": "Sustainable Development"
+      },
+      "student_question": "How can we grow and still protect nature for the future?",
+      "icon": "leaf",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Araling Panlipunan, First Term, Weeks 9–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w1-1",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Identifying author’s/speaker’s point of view:\n■ First person\n■ Second person\n■ Third person (omniscient)",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w1-2",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identifying type of plot:\n○ Sequential",
+      "topic": "plot",
+      "title": {
+        "en": "Story Plot"
+      },
+      "student_question": "How do the events in a story follow one another?",
+      "icon": "timeline",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w1-3",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use words with literal (denotative) and implied (connotative) meanings in sentences:\n○ Using structural analysis:\n■ Root words\n■ Prefixes:\n● un-, in-, il-, ir-, im-, mis-, dis-\n■ Suffixes:\n● -able, -en, -ful, -ion, -less, -er, -or, -ly, -ible, -ness\n■ Compound words",
+      "topic": "word_meanings",
+      "title": {
+        "en": "Literal and Hidden Meanings"
+      },
+      "student_question": "Can a word mean something different from its usual meaning?",
+      "icon": "text-search",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w1-4",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Compose appropriate sentence for clarity and coherence:\n○ Using subject-verb agreement:\n■ Number of nouns:\n● Regular\n■ Kind of nouns: ● Mass, count ■ Subject pronouns: ● Personal",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w1-5",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify visual elements:\n○ Using lines:\n■ Straight\n■ Diagonal and zigzag\n■ Thin, thicks, broken, and dotted",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Pictures and Colors"
+      },
+      "student_question": "What do colors, lines, and shapes in a picture tell us?",
+      "icon": "palette",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w1-6",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify multimedia elements:\n○ Text (headlines, subtitles, slogans)",
+      "topic": "multimedia",
+      "title": {
+        "en": "Multimedia"
+      },
+      "student_question": "What are sounds, pictures, and videos in a text?",
+      "icon": "play-box",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w2-1",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Identifying author’s/speaker’s point of view:\n■ First person\n■ Second person\n■ Third person (omniscient)\n○ Identifying type of plot:\n■ Sequential\n○ Applying the important story elements to one’s schema:\n■ Relating story to one’s experiences",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w2-2",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use words with literal (denotative) and implied (connotative) meanings in sentences:\n○ Using structural analysis:\n■ Root words\n■ Prefixes:\n● un-, in-, il-, ir-, im-, mis-, dis- ■ Suffixes: ● -able, -en, -ful, -ion, -less, -er, -or, -ly, -ible, -ness ■ Compound words",
+      "topic": "word_meanings",
+      "title": {
+        "en": "Literal and Hidden Meanings"
+      },
+      "student_question": "Can a word mean something different from its usual meaning?",
+      "icon": "text-search",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w2-3",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Compose appropriate sentence for clarity and coherence:\n○ Using subject-verb agreement:\n■ Number of nouns:\n● Regular\n○ Using kind of verbs:\n■ Action",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w2-4",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify visual elements:\n○ Using lines:\n■ Straight\n■ Diagonal and zigzag\n■ Thin, thicks, broken, and dotted",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Pictures and Colors"
+      },
+      "student_question": "What do colors, lines, and shapes in a picture tell us?",
+      "icon": "palette",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w2-5",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify multimedia elements:\n○ Text (headlines, subtitles, slogans)",
+      "topic": "multimedia",
+      "title": {
+        "en": "Multimedia"
+      },
+      "student_question": "What are sounds, pictures, and videos in a text?",
+      "icon": "play-box",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 22 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w3-1",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Identifying type of plot:\n■ Sequential\n○ Sequencing events:\n■ At least 6 events\n○ Identifying the main idea.\n○ Summarizing story events.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w3-2",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w3-3",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Compose appropriate sentence for clarity and coherence:\n○ Using kind of verbs:\n■ Action\n○ Using tenses of verbs:\n■ Simple present\n■ Simple past\n■ Simple future.\n○ Using active and passive voices.",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w3-4",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Derive meaning based on the visual elements:\n○ Interpreting images/ideas that are explicitly used to influence viewers (symbolism).\n○ Identifying the purpose of the visual text.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Meaning in Pictures"
+      },
+      "student_question": "What can a picture tell me without words?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w4-1",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Inferring:\n■ Setting, theme, genre\n○ Making predictions:\n■ Outcomes of events\n○ Drawing conclusions.\n○ Applying the important story elements to one’s schema:\n■ Relating story to one’s experiences",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w4-2",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Compose appropriate sentence for clarity and coherence: ○ Using tenses of verbs: ■ Simple present ■ Simple past ■ Simple future. ○ Composing complex sentences.",
+      "topic": "verb_tenses",
+      "title": {
+        "en": "Verb Tenses"
+      },
+      "student_question": "How do verbs show if something happened now or before?",
+      "icon": "clock",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w4-3",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use tone and mood appropriately for one’s purpose, context, and target audience:\n○ Informal",
+      "topic": "tone_and_mood",
+      "title": {
+        "en": "Tone and Mood"
+      },
+      "student_question": "How does a writer show feelings in a text?",
+      "icon": "emoticon",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w4-4",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w5-1",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Comprehend literary texts:\n○ Noting important elements (story grammar).\n○ Analyzing sound devices:\n■ Onomatopoeia\n■ Alliteration\n○ Differentiating fantasy from reality.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "What are the important parts of a story?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w5-2",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Compose appropriate sentence for clarity and coherence:\n○ Using adjectives:\n■ Descriptive/qualitative or attributive",
+      "topic": "sentences",
+      "title": {
+        "en": "Writing Clear Sentences"
+      },
+      "student_question": "How do I write sentences that are clear and correct?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w5-3",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use words with literal (denotative) and implied (connotative) meanings in sentences:\n○ Using context clues:\n■ Synonyms\n■ Antonyms",
+      "topic": "word_meanings",
+      "title": {
+        "en": "Literal and Hidden Meanings"
+      },
+      "student_question": "Can a word mean something different from its usual meaning?",
+      "icon": "text-search",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w5-4",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Express ideas appropriately (age-appropriate, gender-responsive, culture sensitive) for one’s purpose, context, and target audience:\n○ Using text types:\n■ Narrative",
+      "topic": "expressing_ideas",
+      "title": {
+        "en": "Saying It Right"
+      },
+      "student_question": "How do I share my ideas kindly and respectfully?",
+      "icon": "chat",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w5-5",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Derive meaning based on the visual elements:\n○ Interpreting lines, shapes, and colors used to convey meaning.",
+      "topic": "visual_elements",
+      "title": {
+        "en": "Meaning in Pictures"
+      },
+      "student_question": "What can a picture tell me without words?",
+      "icon": "image",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-english-w5-6",
+      "grade": 4,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify real or make-believe , fact or non-fact images.",
+      "topic": "fact_or_fiction",
+      "title": {
+        "en": "Real or Make-Believe"
+      },
+      "student_question": "How can I tell if a picture is real or make-believe?",
+      "icon": "help-circle",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 English (last updated April 20, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 25 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w1-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natatalakay ang kahulugan ng agrikultura, mga sangay nito sa paghahalaman.",
+      "topic": "agriculture",
+      "title": {
+        "en": "What Is Agriculture?"
+      },
+      "student_question": "What is agriculture and gardening?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w1-2",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga pamamaraan ng pagtatanim ng halaman.",
+      "topic": "planting",
+      "title": {
+        "en": "Ways of Planting"
+      },
+      "student_question": "How do people plant crops?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w1-3",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang kahalagahan ng computer at iba pang computing device.",
+      "topic": "computers",
+      "title": {
+        "en": "Why Computers Matter"
+      },
+      "student_question": "Why are computers important?",
+      "icon": "laptop",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: ICT (last updated April 7, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w2-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Nakikilala ang iba’t-ibang alternatibong paraan ng paghahalaman.",
+      "topic": "planting",
+      "title": {
+        "en": "Other Ways of Gardening"
+      },
+      "student_question": "How can I grow plants in pots or small spaces?",
+      "icon": "flower",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w2-2",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga kahalagahan at kabutihang dulot ng paghahalaman sa tao, hayop, at kalikasan o kapaligiran",
+      "topic": "gardening_benefits",
+      "title": {
+        "en": "Why Gardening Helps"
+      },
+      "student_question": "How does gardening help people, animals, and nature?",
+      "icon": "flower",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w2-3",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga batas, lokal na ordinansa, ahensya ng gobyerno at mga non-government organization (NGO), at serbisyong kanilang naibibigay ukol sa paghahalaman.",
+      "topic": "gardening_laws",
+      "title": {
+        "en": "Rules About Farming"
+      },
+      "student_question": "What laws and groups help farmers and gardeners?",
+      "icon": "gavel",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w3-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nakikilala ang mga taong naging matagumpay sa paghahalaman sa komunidad at ang mga katangiang kanilang taglay.",
+      "topic": "successful_farmers",
+      "title": {
+        "en": "Successful Gardeners"
+      },
+      "student_question": "What makes a gardener or farmer successful?",
+      "icon": "account-star",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w3-2",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nakagagawa ng compost, organikong pataba, at natural na pestisidyo na magagamit sa paghahanda ng lupa at pangangalaga ng mga pananim.",
+      "topic": "compost",
+      "title": {
+        "en": "Compost and Natural Fertilizer"
+      },
+      "student_question": "How do we make compost and natural fertilizer?",
+      "icon": "recycle",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w3-3",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga bahagi at gamit ng computer at peripherals nito.",
+      "topic": "computer_parts",
+      "title": {
+        "en": "Parts of a Computer"
+      },
+      "student_question": "What are the parts of a computer?",
+      "icon": "monitor",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: ICT (last updated April 7, 2026), First Term, Weeks 3–4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w4-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Natatalakay ang mga salik na dapat isaalang-alang sa paghahalaman.",
+      "topic": "planting",
+      "title": {
+        "en": "Before Planting"
+      },
+      "student_question": "What should I think about before I plant?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w4-2",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Naisasagawa ang pagtatanim ng piniling halaman sa natural na pamamaraan nang may pag-iingat.",
+      "topic": "planting",
+      "title": {
+        "en": "Planting Naturally"
+      },
+      "student_question": "How do I plant a seedling the natural way?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w5-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Naipakikita ang mga paraan ng pangangalaga ng mga pananim (pre-care, during, post-care).",
+      "topic": "caring_for_plants",
+      "title": {
+        "en": "Caring for Plants"
+      },
+      "student_question": "How do I take care of my plants?",
+      "icon": "watering-can",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w5-2",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagpaparami ng halaman sa paraang sekswal at asekswal.",
+      "topic": "plant_propagation",
+      "title": {
+        "en": "Growing New Plants"
+      },
+      "student_question": "How can new plants grow from seeds or cuttings?",
+      "icon": "seed",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w5-3",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Natatalakay ang basic computer operations.",
+      "topic": "computer_basics",
+      "title": {
+        "en": "Using a Computer"
+      },
+      "student_question": "How do I turn on and use a computer?",
+      "icon": "mouse",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: ICT (last updated April 7, 2026), First Term, Weeks 5–6, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w6-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Natutukoy ang mga palatandaan o indikasyon na dapat isaalang-alang sa pag-aani.",
+      "topic": "harvesting",
+      "title": {
+        "en": "When to Harvest"
+      },
+      "student_question": "How do I know when a plant is ready to harvest?",
+      "icon": "basket",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w7-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Naipakikita ang mga paraan ng pag-aani.",
+      "topic": "harvesting",
+      "title": {
+        "en": "Ways of Harvesting"
+      },
+      "student_question": "How do farmers harvest crops?",
+      "icon": "basket",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w7-2",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Natatalakay ang wastong posisyon, layo, at oras sa paggamit ng computer at iba pang computing devices.",
+      "topic": "computer_posture",
+      "title": {
+        "en": "Using Computers Safely"
+      },
+      "student_question": "How should I sit and how long should I use a computer?",
+      "icon": "seat",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: ICT (last updated April 7, 2026), First Term, Weeks 7–8, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w8-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Naisasagawa ang mga paraan ng pag-aani, pag-iimbak at pangangalaga ng inaning tanim.",
+      "topic": "harvesting",
+      "title": {
+        "en": "Storing the Harvest"
+      },
+      "student_question": "How do we keep harvested crops fresh?",
+      "icon": "basket",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w9-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Naisasagawa nang wasto ang pagbebenta ng mga inani.",
+      "topic": "selling_produce",
+      "title": {
+        "en": "Selling Our Harvest"
+      },
+      "student_question": "How do I sell vegetables I grew?",
+      "icon": "store",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w9-2",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang mga panuntunang pangkaligtasan sa paggamit ng Internet.",
+      "topic": "internet_safety",
+      "title": {
+        "en": "Internet Safety"
+      },
+      "student_question": "How can I stay safe on the internet?",
+      "icon": "shield-lock",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: ICT (last updated April 7, 2026), First Term, Weeks 9–10, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-epp_tle-w10-1",
+      "grade": 4,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Naisasagawa ang pagtutuos ng kinita at tubo gamit ang manwal na pagkukwenta o electronic spreadsheet tool.",
+      "topic": "profit",
+      "title": {
+        "en": "Counting Profit"
+      },
+      "student_question": "How do I know how much money I earned from selling?",
+      "icon": "calculator",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 EPP: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-gmrc_values-w1-1",
+      "grade": 4,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagpapahalaga sa sarili sa pamamagitan ng pagbibigay-halaga sa mga sariling kakayahan na wala sa ibang nilalang (hal. kakayahang magpasiya, umunawa ng damdamin ng iba). a. Nailalarawan ang mga katangian ng tao na nagpapabukod-tangi sa kaniya sa ibang nilalang. b. Naipaliliwanag na ang sariling kakayahang mag-isip at magmahal na natatangi sa tao ay magagamit niya upang mapabuti ang kaniyang mga gawi at pakikipag- ugnayan sa kapwa. c. Nakapag-aangkop ng mga kilos na nagpapakita ng kakayahang mag-isip at magmahal ng tao bilang bahagi ng kaniyang pagkabukod-tangi.",
+      "topic": "self_worth",
+      "title": {
+        "en": "Valuing Myself"
+      },
+      "student_question": "Why are my own abilities special?",
+      "icon": "account-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 GMRC (last updated July 20, 2026), First Term, Weeks 1–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-gmrc_values-w3-1",
+      "grade": 4,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging matapat sa pamamagitan ng angkop na paglalahad ng tunay na saloobin sa mga kasapi ng pamilya. a. Nakakikilala ng mga sariling gawi ng mabuting pakikitungo sa mga kasapi ng pamilya. b. Napangangatuwiranan na ang mga sariling gawi ng mabuting pakikitungo sa mga kasapi ng pamilya ay tungkulin at pananagutan ng bawat isa tungo sa masaya at matatag na samahan. c. Naisasakilos ang mga sariling gawi ng mabuting pakikitungo sa mga kasapi ng pamilya na nagpapanatili ng masaya at matatag na Samahan.",
+      "topic": "honesty",
+      "title": {
+        "en": "Being Honest"
+      },
+      "student_question": "How can I honestly share my feelings with my family?",
+      "icon": "handshake",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 GMRC (last updated July 20, 2026), First Term, Weeks 3–5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-gmrc_values-w5-1",
+      "grade": 4,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagiging magalang sa pamamagitan ng pakikilahok sa mga gawain na kumikilala sa karapatan ng kapuwa-bata. a. Nailalahad ang sariling mga tungkulin sa pagkilala sa karapatan ng kapuwa-bata. b. Nakapagbibigay ng mga patunay na ang sariling tungkulin sa pagkilala sa karapatan ng kapuwa-bata ay mahalaga sa pagpapanatili ng kaayusan at kapayapaan.\nc. Naisasakilos ang mga tungkulin sa pagkilala sa mga karapatan ng kapuwa-bata.",
+      "topic": "respect",
+      "title": {
+        "en": "Respecting Others' Rights"
+      },
+      "student_question": "How do I respect the rights of other children?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 GMRC (last updated July 20, 2026), First Term, Weeks 5–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-gmrc_values-w7-1",
+      "grade": 4,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Naipakikita ang pananalig sa Diyos sa pamamagitan ng mga paraan ng pagsamba at pagsunod sa mga tagubilin ng kinabibilangang pananampalataya. a. Nakapaghahayag ng mga mahalagang aral ng kinabibilangang pananampalataya. b. Naipaliliwanag na ang pagkilala sa sariling pananampalataya ay nagsisilbing gabay upang mas mapabuti ang mga kilos at mailapit ang sarili sa Diyos c. Naisasakilos ang mga aral ng kinabibilangang pananampalataya",
+      "topic": "faith",
+      "title": {
+        "en": "Faith in God"
+      },
+      "student_question": "How do people show their faith in God?",
+      "icon": "hands-pray",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 GMRC (last updated July 20, 2026), First Term, Weeks 7–8, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-gmrc_values-w8-1",
+      "grade": 4,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging mapanagutan sa pamamagitan ng paglahok sa mga gawaing pangangalaga at pagpaparami ng mga puno at halaman. a. Naiisa-isa ang mga sariling gawi sa pangangalaga sa mga puno at halaman. b. Naipaliliwanag na ang mga sariling gawi sa pangangalaga sa mga puno at halaman ay dapat linangin sa bawat bata bilang bahagi ng kaniyang pagiging katiwala sa pagpapanatiling ligtas, malinis at maayos ang kapaligiran. c. Naisasakilos ang mga sariling gawi sa pangangalaga sa mga puno at halaman.",
+      "topic": "accountability",
+      "title": {
+        "en": "Caring for Nature"
+      },
+      "student_question": "How can I help take care of plants and animals?",
+      "icon": "tree",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 GMRC (last updated July 20, 2026), First Term, Weeks 8–9, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-gmrc_values-w9-1",
+      "grade": 4,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Nakapagsasanay ng pagmamahal sa bayan sa pamamagitan ng mga gawain na nagtatampok sa mga Pilipinong nagsasabuhay ng mabuting kaugalian. a. Natutukoy ang mga pansariling taglay na mga mabuting kaugaliang Pilipino (hal. masayahin, madasalin, masipag). b. Naipaliliwanag na ang sariling kamalayan sa mga mabuting kaugaliang Pilipino ay mahalaga upang maiangkop ang mga kilos at pag-iisip na katangi-tangi sa lahing pinagmulan. c. Naisasakilos ang mga tinataglay na mabuting kaugaliang Pilipino.",
+      "topic": "love_of_country",
+      "title": {
+        "en": "Love of Country"
+      },
+      "student_question": "Who are Filipinos who helped our country?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 GMRC (last updated July 20, 2026), First Term, Weeks 9–10, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-gmrc_values-w10-1",
+      "grade": 4,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang tiwala sa sarili sa pamamagitan ng paglahok sa mga programang pampaaralan na nagpapaunlad ng mga kakayahan, talento at hilig nang may paggabay ng pamilya. a. Naiisa-isa ang mga sariling kakayahan, talento at hilig ng isang bata na kailangang paunlarin nang may paggabay ng pamilya. b. Naipaliliwanag na ang pagpapaunlad ng sariling kakayahan, talento at hilig nang may paggabay ng pamilya ay nakapag-aangat ng tiwala sa sarili at kalooban upang gawin ang kaniyang mga tungkulin. c. Nailalapat ang sariling pagpapaunlad ng mga sariling kakayahan, talento at hilig nang may paggabay ng pamilya.",
+      "topic": "self_confidence",
+      "title": {
+        "en": "Joining School Activities"
+      },
+      "student_question": "How can school activities make me more confident?",
+      "icon": "star",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 GMRC (last updated July 20, 2026), First Term, Weeks 10–11, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w1-1",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Illustrate different angles (right, acute, and obtuse) using models.",
+      "topic": "angles",
+      "title": {
+        "en": "Angles"
+      },
+      "student_question": "What are right, acute, and obtuse angles?",
+      "icon": "angle-acute",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w1-2",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Measure and draw angles using a protractor.",
+      "topic": "angles",
+      "title": {
+        "en": "Measuring Angles"
+      },
+      "student_question": "How do I measure an angle with a protractor?",
+      "icon": "angle-acute",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w2-1",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Draw and state the properties of triangles and quadrilaterals.",
+      "topic": "triangles_quadrilaterals",
+      "title": {
+        "en": "Triangles and Quadrilaterals"
+      },
+      "student_question": "What are the parts of triangles and four-sided shapes?",
+      "icon": "triangle-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w3-1",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Classify triangles and quadrilaterals according to sides and angles.",
+      "topic": "triangles_quadrilaterals",
+      "title": {
+        "en": "Kinds of Triangles"
+      },
+      "student_question": "How do we group triangles by their sides and angles?",
+      "icon": "triangle-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w3-2",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Differentiate different quadrilaterals.",
+      "topic": "triangles_quadrilaterals",
+      "title": {
+        "en": "Kinds of Quadrilaterals"
+      },
+      "student_question": "How is a square different from other four-sided shapes?",
+      "icon": "square-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w4-1",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Find the perimeter of quadrilaterals that are not squares or rectangles.",
+      "topic": "perimeter",
+      "title": {
+        "en": "Perimeter"
+      },
+      "student_question": "How do I find the distance around a shape?",
+      "icon": "vector-square",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w4-2",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Find the perimeter of composite figures composed of triangles and quadrilaterals.",
+      "topic": "perimeter",
+      "title": {
+        "en": "Perimeter of Combined Shapes"
+      },
+      "student_question": "How do I find the perimeter of a shape made of other shapes?",
+      "icon": "vector-square",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w5-1",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Read and write numbers up to 1 000 000 in numerals and in words.",
+      "topic": "numbers",
+      "title": {
+        "en": "Numbers to a Million"
+      },
+      "student_question": "How do I read and write numbers up to one million?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w5-2",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Determine:\na. the place value of a digit in a 6-digit number\nb. the value of a digit\nc. the digit of number, given its place value",
+      "topic": "place_value",
+      "title": {
+        "en": "Place Value"
+      },
+      "student_question": "What is the value of each digit in a big number?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w6-1",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Compare numbers up to 1 000 000 using =, < and >.",
+      "topic": "comparing_numbers",
+      "title": {
+        "en": "Comparing Big Numbers"
+      },
+      "student_question": "How do I compare numbers up to one million?",
+      "icon": "greater-than",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w6-2",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Round numbers to the nearest hundred thousand.",
+      "topic": "rounding",
+      "title": {
+        "en": "Rounding Big Numbers"
+      },
+      "student_question": "How do I round to the nearest hundred thousand?",
+      "icon": "approximately-equal",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w6-3",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Estimate the sum and difference of two 5- to 6-digit numbers by rounding the addends to the nearest large place value of the numbers.",
+      "topic": "estimation",
+      "title": {
+        "en": "Estimating Sums"
+      },
+      "student_question": "How can I quickly guess the answer when adding big numbers?",
+      "icon": "approximately-equal",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w7-1",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Add numbers with sums up to 1 000 000 and subtracts numbers where both numbers are less than 1 000 000, with and without regrouping.",
+      "topic": "addition",
+      "title": {
+        "en": "Adding and Subtracting"
+      },
+      "student_question": "How do I add and subtract big numbers?",
+      "icon": "plus-minus",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Weeks 7–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w7-2",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Multiply two numbers with and without regrouping:\na. 3- to 4-digit numbers by a 1-digit number\nb. 2- to 3-digit numbers by 2-digit numbers, with products up to 1 000 000.\"",
+      "topic": "multiplication",
+      "title": {
+        "en": "Multiplying"
+      },
+      "student_question": "How do I multiply two numbers?",
+      "icon": "close",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Weeks 7–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w7-3",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Estimate the result of multiplying two numbers where the product is less than 1 000 000.",
+      "topic": "estimation",
+      "title": {
+        "en": "Estimating Products"
+      },
+      "student_question": "How can I guess the answer to a multiplication?",
+      "icon": "approximately-equal",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Weeks 7–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w9-1",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Solve multi-step problems involving one or more of the four operations with results of calculations up to 1 000 000, including problems involving money.",
+      "topic": "word_problems",
+      "title": {
+        "en": "Multi-Step Problems"
+      },
+      "student_question": "How do I solve a problem that needs more than one step?",
+      "icon": "head-question",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Weeks 9–10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w9-2",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Divide two numbers with and without regrouping:\na. 3- to 4-digit numbers by 1-digit numbers\nb. 2- to 3-digit numbers by 2-digit numbers\"",
+      "topic": "division",
+      "title": {
+        "en": "Dividing"
+      },
+      "student_question": "How do I divide one number by another?",
+      "icon": "division",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Weeks 9–10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-mathematics-w9-3",
+      "grade": 4,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Estimate the quotient when dividing 3- to 4-digit dividends by 1- to 2-digit divisors, by first estimating the dividends and divisors using multiples of 10.",
+      "topic": "estimation",
+      "title": {
+        "en": "Estimating Quotients"
+      },
+      "student_question": "How can I guess the answer to a division?",
+      "icon": "approximately-equal",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Mathematics (last updated April 17, 2026), First Term, Weeks 9–10, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w1-1",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use information from secondary sources to identify a famous Filipino and/or foreign scientist and their invention/s.",
+      "topic": "scientists_inventions",
+      "title": {
+        "en": "Scientists and Inventions"
+      },
+      "student_question": "Who are famous scientists and what did they invent?",
+      "icon": "lightbulb-on",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w1-2",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use information from the home or the local community to identify a science invention and explain its impact on their everyday life.",
+      "topic": "scientists_inventions",
+      "title": {
+        "en": "Inventions at Home"
+      },
+      "student_question": "How do inventions make our daily life easier?",
+      "icon": "lightbulb-on",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w3-1",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Describe the chemical properties of materials, such as they can be burnt, react with other materials, or are degradable or biodegradable.",
+      "topic": "burning",
+      "title": {
+        "en": "Chemical Properties"
+      },
+      "student_question": "What happens when materials burn or rot?",
+      "icon": "fire",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 3–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w3-2",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Describe changes in properties of materials when exposed to certain changes in temperature, such as changes when wood or coal are burned.",
+      "topic": "burning",
+      "title": {
+        "en": "Changes When Heated"
+      },
+      "student_question": "What happens to wood or coal when it is burned?",
+      "icon": "fire",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 3–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w3-3",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Demonstrate ways to minimize harmful changes in materials, such as restriction of burning of waste materials, and care in handling reactive materials.",
+      "topic": "materials",
+      "title": {
+        "en": "Preventing Harmful Changes"
+      },
+      "student_question": "How can we prevent harmful changes like burning trash?",
+      "icon": "alert",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 3–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w6-1",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Identify issues and concerns in the local community and how they could be addressed by science, such as the treatment of waste.",
+      "topic": "environment",
+      "title": {
+        "en": "Science and Our Community"
+      },
+      "student_question": "How can science help solve problems like waste?",
+      "icon": "recycle",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w6-2",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Apply science process skills and attitudes in conducting a guided survey about environmental issues and concerns including grouping and classifying, communicating, and open mindedness.",
+      "topic": "science_process_skills",
+      "title": {
+        "en": "Doing a Survey"
+      },
+      "student_question": "How do scientists gather information with a survey?",
+      "icon": "clipboard-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 6–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w8-1",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Describe in simple terms how the following human body systems work: muscular, skeletal, digestive, circulatory, and respiratory.",
+      "topic": "human_body",
+      "title": {
+        "en": "Human Body Systems"
+      },
+      "student_question": "How do our bones, muscles, and heart work?",
+      "icon": "human",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 8–9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w8-2",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Observe the root and shoot system in plants and describe why they are important.",
+      "topic": "roots_and_shoots",
+      "title": {
+        "en": "Roots and Shoots"
+      },
+      "student_question": "Why are roots and shoots important to plants?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 8–9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w10-1",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Use a drawing or diagram to classify some Philippine animals and plants, based on their habitat: some live on land (terrestrial), live in water (aquatic) or fly in the air (aerial).",
+      "topic": "habitats",
+      "title": {
+        "en": "Habitats"
+      },
+      "student_question": "Which animals live on land, in water, or in the air?",
+      "icon": "paw",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 10–11, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g4-science-w10-2",
+      "grade": 4,
+      "subject": "science",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Make a list or draw up a table with examples of animals and plants in a particular habitat, such as a garden, rice field, seashore, and mangrove swamp.",
+      "topic": "habitats",
+      "title": {
+        "en": "Plants and Animals in a Habitat"
+      },
+      "student_question": "What plants and animals live in a rice field or a mangrove?",
+      "icon": "paw",
+      "source": "DepEd Three-Term Budget of Work, Grade 4 Science (last updated April 8, 2026), First Term, Weeks 10–11, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    }
+  ]
 }

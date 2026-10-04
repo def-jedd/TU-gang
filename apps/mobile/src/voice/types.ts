@@ -25,6 +25,8 @@ export type Caption = {
 
 /** What the tutor should talk about and how. Built from the learning draft. */
 export type VoiceContext = {
+  /** DepEd lesson id: the live tutor teaches it step by step (ILAW) with an oral quiz. */
+  lesson?: string | null;
   topic: string | null;
   question: string | null;
   language: Language;

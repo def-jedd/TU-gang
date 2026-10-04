@@ -5,14 +5,13 @@
  *    │◀── app_id, channel, token, uid, agent_uid ──┘                    │
  *    └──────────── joins the same RTC channel (audio both ways) ◀───────┘
  *
- * The agent does speech recognition → LLM (Quick route, decided by
- * Teammates 2/3) → text-to-speech, all server-side. The phone only streams
+ * The agent does speech recognition (+ turn detection, so the student just
+ * talks — no push-to-talk) → Gemini → text-to-speech, all server-side. The phone only streams
  * the microphone and plays the reply, and reads captions from the agent's
  * data stream.
  *
  * Needs a development build: react-native-agora cannot load in Expo Go.
- * ⚠ Written against react-native-agora 4.6 docs/typings; not yet run against
- *   a live agent (waiting on the Agora project + backend session route).
+ * Server side: apps/server/src/services/conversation.ts.
  */
 import Constants, { ExecutionEnvironment } from 'expo-constants';
 import { PermissionsAndroid, Platform } from 'react-native';
@@ -90,6 +89,7 @@ export class AgoraVoiceAgent implements VoiceAgent {
       return;
     }
     if (this.session.provider) listener.onProvider?.(this.session.provider);
+    listener.onVoice?.('agora');
 
     const { app_id, channel, token, uid, agent_uid } = this.session;
     const engine = agora.createAgoraRtcEngine();
@@ -108,6 +108,9 @@ export class AgoraVoiceAgent implements VoiceAgent {
       if (remoteUid !== agent_uid) return;
       this.agentJoined = true;
       this.setPhase('listening');
+      // Both of us are in the channel: the tutor can start explaining the
+      // topic now without the first words being lost.
+      if (this.session) sendVoiceControl(this.session.session_id, { action: 'ready' }).catch(() => {});
     });
     engine.addListener('onUserOffline', (_c: RtcConnection, remoteUid: number) => {
       if (remoteUid === agent_uid && !this.stopped) listener.onError('agent_left');

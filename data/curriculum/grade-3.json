@@ -1,5 +1,2284 @@
 {
   "grade": 3,
   "term": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "g3-english-w1-1",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify Grade 3 level-appropriate sight words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Sight Words"
+      },
+      "student_question": "What are sight words and why should I know them?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-2",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Read words accurately and automatically according to word patterns (initial, final, medial).\na. CVCC words",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Word Patterns"
+      },
+      "student_question": "How do word patterns help me read faster?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-3",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify high-frequency words accurately.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-4",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. regional themes",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about my region?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-5",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use content-specific words.\na. Mathematics (basic symbols and terminologies)",
+      "topic": "math_words",
+      "title": {
+        "en": "Subject Words"
+      },
+      "student_question": "What special words do we use in math and science?",
+      "icon": "calculator",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-6",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify words with different functions.\na. words that replace persons, places, things, animals, events, ideas, and emotions\ni. demonstrative pronouns",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Kinds of Words"
+      },
+      "student_question": "What jobs do different words do in a sentence?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-7",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Read words correctly for meaning (based on word patterns).",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading Words Correctly"
+      },
+      "student_question": "How do word patterns help me read words?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-8",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Write words legibly and correctly (based on word patterns).",
+      "topic": "handwriting",
+      "title": {
+        "en": "Writing Words"
+      },
+      "student_question": "How can I write words neatly and correctly?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-9",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify sentences and non-sentences.",
+      "topic": "sentences",
+      "title": {
+        "en": "What Is a Sentence?"
+      },
+      "student_question": "How do I know if a group of words is a sentence?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-10",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use simple sentences to express ideas about regional themes.",
+      "topic": "sentences",
+      "title": {
+        "en": "Simple Sentences"
+      },
+      "student_question": "How do I make a simple sentence about my region?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-11",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use simple sentences with proper intonation (pitch, juncture, rhythm).",
+      "topic": "tone_of_voice",
+      "title": {
+        "en": "Reading With Expression"
+      },
+      "student_question": "How should my voice go up and down when I read a sentence?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-12",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Sequence words to represent meaning in simple sentences.\na. telling sentences (declarative)",
+      "topic": "sentences",
+      "title": {
+        "en": "Word Order"
+      },
+      "student_question": "Why does the order of words in a sentence matter?",
+      "icon": "sort",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-13",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify the parts of simple sentences: (who/what, what are they doing, when/where/how).\na. telling sentences (declarative)",
+      "topic": "sentences",
+      "title": {
+        "en": "Parts of a Sentence"
+      },
+      "student_question": "What are the parts of a simple sentence?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-14",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use correct capitalization and punctuation for simple sentences. a. telling sentences (declarative)",
+      "topic": "punctuation",
+      "title": {
+        "en": "Capitals and Periods"
+      },
+      "student_question": "When do I use a capital letter and a period?",
+      "icon": "format-letter-case-upper",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-15",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Read grade level sentences with appropriate speed, accuracy, and expression.",
+      "topic": "reading_fluency",
+      "title": {
+        "en": "Reading Smoothly"
+      },
+      "student_question": "How can I read sentences smoothly and correctly?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-16",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important elements from stories (characters, setting, events).\nb. Sequence at least four to five events.\nc. Identify the problem and solution in stories.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-17",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use common expressions and polite greetings appropriate to a given situation.",
+      "topic": "greetings",
+      "title": {
+        "en": "Polite Greetings"
+      },
+      "student_question": "What polite words should I use when I greet people?",
+      "icon": "hand-wave",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-18",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use own words in retelling myths, legends, fables, and narrative poems.",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Legends and Fables"
+      },
+      "student_question": "How can I retell a legend or fable in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-19",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences.\na. regional themes",
+      "topic": "telling_events",
+      "title": {
+        "en": "Sharing My Experiences"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w1-20",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use basic sight words, high frequency, and content-specific words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Using Common Words"
+      },
+      "student_question": "How can I use common words when I write?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 19 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-1",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify Grade 3 level-appropriate sight words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Sight Words"
+      },
+      "student_question": "What are sight words and why should I know them?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-2",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Read words accurately and automatically according to word patterns (initial, final, medial).\na. CVCC words\nb. CCVC words (clusters and diphthongs)",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Word Patterns"
+      },
+      "student_question": "How do word patterns help me read faster?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-3",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify high-frequency words accurately.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-4",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. regional themes",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about my region?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-5",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use content-specific words.\na. Mathematics (basic symbols and terminologies)",
+      "topic": "math_words",
+      "title": {
+        "en": "Subject Words"
+      },
+      "student_question": "What special words do we use in math and science?",
+      "icon": "calculator",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-6",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify words with different functions.\na. words that label actions (doing words - verbs)\nb. words that replace persons, places, things, animals, events, ideas, and emotions\ni. interrogative pronouns ii. possessive pronouns",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Kinds of Words"
+      },
+      "student_question": "What jobs do different words do in a sentence?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-7",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Read words correctly for meaning (based on word patterns).",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading Words Correctly"
+      },
+      "student_question": "How do word patterns help me read words?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-8",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Write words legibly and correctly (based on word patterns).",
+      "topic": "handwriting",
+      "title": {
+        "en": "Writing Words"
+      },
+      "student_question": "How can I write words neatly and correctly?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-9",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify roots of high frequency words (nouns, verbs, and adjectives).",
+      "topic": "root_words",
+      "title": {
+        "en": "Root Words"
+      },
+      "student_question": "What is the root of a word like playing or happiness?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-10",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use simple sentences to express ideas about regional themes.",
+      "topic": "sentences",
+      "title": {
+        "en": "Simple Sentences"
+      },
+      "student_question": "How do I make a simple sentence about my region?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-11",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use simple sentences with proper intonation (pitch, juncture, rhythm).",
+      "topic": "tone_of_voice",
+      "title": {
+        "en": "Reading With Expression"
+      },
+      "student_question": "How should my voice go up and down when I read a sentence?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-12",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Sequence words to represent meaning in simple sentences.\na. asking sentences (interrogative)",
+      "topic": "sentences",
+      "title": {
+        "en": "Word Order"
+      },
+      "student_question": "Why does the order of words in a sentence matter?",
+      "icon": "sort",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-13",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify the parts of simple sentences: (who/what, what are they doing, when/where/how).\na. asking sentences (interrogative)",
+      "topic": "sentences",
+      "title": {
+        "en": "Parts of a Sentence"
+      },
+      "student_question": "What are the parts of a simple sentence?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-14",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use correct capitalization and punctuation for simple sentences.\na. asking sentences (interrogative)",
+      "topic": "punctuation",
+      "title": {
+        "en": "Capitals and Periods"
+      },
+      "student_question": "When do I use a capital letter and a period?",
+      "icon": "format-letter-case-upper",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-15",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Read grade level sentences with appropriate speed, accuracy, and expression.",
+      "topic": "reading_fluency",
+      "title": {
+        "en": "Reading Smoothly"
+      },
+      "student_question": "How can I read sentences smoothly and correctly?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-16",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important elements from stories (characters, setting, events).\nb. Sequence at least four to five events.\nc. Identify the problem and solution in stories.\nd. Infer the character’s feelings and traits.\ne. Relate story events to one’s experience.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-17",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use own words in retelling myths, legends, fables, and narrative poems.",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Legends and Fables"
+      },
+      "student_question": "How can I retell a legend or fable in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-18",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences.\na. regional themes",
+      "topic": "telling_events",
+      "title": {
+        "en": "Sharing My Experiences"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w2-19",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Use basic sight words, high frequency, and content-specific words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Using Common Words"
+      },
+      "student_question": "How can I use common words when I write?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 2, PDF page 20 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-1",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify Grade 3 level-appropriate sight words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Sight Words"
+      },
+      "student_question": "What are sight words and why should I know them?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-2",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Read words accurately and automatically according to word patterns (initial, final, medial).\na. CVCC words b. CCVC words (clusters and diphthongs) c. VCV words",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Word Patterns"
+      },
+      "student_question": "How do word patterns help me read faster?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-3",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify high-frequency words accurately.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-4",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. regional themes",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about my region?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-5",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use content-specific words.\na. Mathematics (basic symbols and terminologies)",
+      "topic": "math_words",
+      "title": {
+        "en": "Subject Words"
+      },
+      "student_question": "What special words do we use in math and science?",
+      "icon": "calculator",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-6",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify words with different functions.\na. words that label actions (doing words - verbs)",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Kinds of Words"
+      },
+      "student_question": "What jobs do different words do in a sentence?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-7",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Read words correctly for meaning (based on word patterns).",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading Words Correctly"
+      },
+      "student_question": "How do word patterns help me read words?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-8",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Write words legibly and correctly (based on word patterns).",
+      "topic": "handwriting",
+      "title": {
+        "en": "Writing Words"
+      },
+      "student_question": "How can I write words neatly and correctly?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-9",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify roots of high frequency words (nouns, verbs, and adjectives).",
+      "topic": "root_words",
+      "title": {
+        "en": "Root Words"
+      },
+      "student_question": "What is the root of a word like playing or happiness?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-10",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use simple sentences to express ideas about regional themes.",
+      "topic": "sentences",
+      "title": {
+        "en": "Simple Sentences"
+      },
+      "student_question": "How do I make a simple sentence about my region?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-11",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use simple sentences with proper intonation (pitch, juncture, rhythm).",
+      "topic": "tone_of_voice",
+      "title": {
+        "en": "Reading With Expression"
+      },
+      "student_question": "How should my voice go up and down when I read a sentence?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-12",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Sequence words to represent meaning in simple sentences.\na. commanding and requesting sentences (imperative)",
+      "topic": "sentences",
+      "title": {
+        "en": "Word Order"
+      },
+      "student_question": "Why does the order of words in a sentence matter?",
+      "icon": "sort",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-13",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify the parts of simple sentences: (who/what, what are they doing, when/where/how).\na. commanding and requesting sentences (imperative)",
+      "topic": "sentences",
+      "title": {
+        "en": "Parts of a Sentence"
+      },
+      "student_question": "What are the parts of a simple sentence?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-14",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use correct capitalization and punctuation for simple sentences.\na. commanding and requesting sentences (imperative)",
+      "topic": "punctuation",
+      "title": {
+        "en": "Capitals and Periods"
+      },
+      "student_question": "When do I use a capital letter and a period?",
+      "icon": "format-letter-case-upper",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-15",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Read grade level sentences with appropriate speed, accuracy, and expression.",
+      "topic": "reading_fluency",
+      "title": {
+        "en": "Reading Smoothly"
+      },
+      "student_question": "How can I read sentences smoothly and correctly?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-16",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important elements from stories (characters, setting, events).\nb. Sequence at least four to five events.\nc. Identify the problem and solution in stories.\nd. Infer the character’s feelings and traits. e. Relate story events to one’s experience. f. Identify cause and effect of events.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-17",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use own words in retelling myths, legends, fables, and narrative poems.",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Legends and Fables"
+      },
+      "student_question": "How can I retell a legend or fable in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-18",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences.\na. regional themes",
+      "topic": "telling_events",
+      "title": {
+        "en": "Sharing My Experiences"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w3-19",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Use basic sight words, high frequency, and content-specific words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Using Common Words"
+      },
+      "student_question": "How can I use common words when I write?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 3, PDF page 21 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-1",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify Grade 3 level-appropriate sight words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Sight Words"
+      },
+      "student_question": "What are sight words and why should I know them?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-2",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Read words accurately and automatically according to word patterns (initial, final, medial).\na. CVCC words\nb. CCVC words (clusters and diphthongs)\nc. VCV words",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Word Patterns"
+      },
+      "student_question": "How do word patterns help me read faster?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-3",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify high-frequency words accurately.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-4",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. regional themes",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about my region?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-5",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use content-specific words.\na. Mathematics (basic symbols and terminologies)",
+      "topic": "math_words",
+      "title": {
+        "en": "Subject Words"
+      },
+      "student_question": "What special words do we use in math and science?",
+      "icon": "calculator",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-6",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify words with different functions.\na. words that describe persons, places, things, animals, events, ideas, and emotions (describing words - adjectives)",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Kinds of Words"
+      },
+      "student_question": "What jobs do different words do in a sentence?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-7",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify the synonyms and antonyms of words.",
+      "topic": "synonyms_antonyms",
+      "title": {
+        "en": "Synonyms and Antonyms"
+      },
+      "student_question": "What are words that mean the same or the opposite?",
+      "icon": "swap-horizontal",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-8",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Read words correctly for meaning (based on word patterns).",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading Words Correctly"
+      },
+      "student_question": "How do word patterns help me read words?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-9",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Write words legibly and correctly (based on word patterns).",
+      "topic": "handwriting",
+      "title": {
+        "en": "Writing Words"
+      },
+      "student_question": "How can I write words neatly and correctly?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-10",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify roots of high frequency words (nouns, verbs, and adjectives).",
+      "topic": "root_words",
+      "title": {
+        "en": "Root Words"
+      },
+      "student_question": "What is the root of a word like playing or happiness?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-11",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use simple sentences to express ideas about regional themes.",
+      "topic": "sentences",
+      "title": {
+        "en": "Simple Sentences"
+      },
+      "student_question": "How do I make a simple sentence about my region?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-12",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use simple sentences with proper intonation (pitch, juncture, rhythm).",
+      "topic": "tone_of_voice",
+      "title": {
+        "en": "Reading With Expression"
+      },
+      "student_question": "How should my voice go up and down when I read a sentence?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-13",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Sequence words to represent meaning in simple sentences.\na. commanding and requesting sentences (imperative)",
+      "topic": "sentences",
+      "title": {
+        "en": "Word Order"
+      },
+      "student_question": "Why does the order of words in a sentence matter?",
+      "icon": "sort",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-14",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Identify the parts of simple sentences: (who/what, what are they doing, when/where/how).\na. commanding and requesting sentences (imperative)",
+      "topic": "sentences",
+      "title": {
+        "en": "Parts of a Sentence"
+      },
+      "student_question": "What are the parts of a simple sentence?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-15",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use correct capitalization and punctuation for simple sentences.\na. commanding and requesting sentences (imperative)",
+      "topic": "punctuation",
+      "title": {
+        "en": "Capitals and Periods"
+      },
+      "student_question": "When do I use a capital letter and a period?",
+      "icon": "format-letter-case-upper",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-16",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Read grade level sentences with appropriate speed, accuracy, and expression.",
+      "topic": "reading_fluency",
+      "title": {
+        "en": "Reading Smoothly"
+      },
+      "student_question": "How can I read sentences smoothly and correctly?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-17",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important elements from stories (characters, setting, events).\nb. Sequence at least four to five events.\nc. Identify the problem and solution in stories.\nd. Infer the character’s feelings and traits.\ne. Relate story events to one’s experience.\nf. Identify cause and effect of events.\ng. Predict possible ending.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-18",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use own words in retelling myths, legends, fables, and narrative poems.",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Legends and Fables"
+      },
+      "student_question": "How can I retell a legend or fable in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-19",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences.\na. regional themes",
+      "topic": "telling_events",
+      "title": {
+        "en": "Sharing My Experiences"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w4-20",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Use basic sight words, high frequency, and content-specific words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Using Common Words"
+      },
+      "student_question": "How can I use common words when I write?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 4, PDF page 23 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-1",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify Grade 3 level-appropriate sight words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Sight Words"
+      },
+      "student_question": "What are sight words and why should I know them?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-2",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Read words accurately and automatically according to word patterns (initial, final, medial).\na. CVCC words\nb. CCVC words (clusters and diphthongs)\nc. VCV words\nd. VCCV words",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Word Patterns"
+      },
+      "student_question": "How do word patterns help me read faster?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-3",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify high-frequency words accurately.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Common Words"
+      },
+      "student_question": "How can I read common words quickly?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-4",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use vocabulary referring to:\na. regional themes",
+      "topic": "vocabulary",
+      "title": {
+        "en": "New Words"
+      },
+      "student_question": "What new words can I use to talk about my region?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-5",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use content-specific words.\na. Science (basic terminologies)",
+      "topic": "math_words",
+      "title": {
+        "en": "Subject Words"
+      },
+      "student_question": "What special words do we use in math and science?",
+      "icon": "calculator",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-6",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify words with different functions.\na. words that describe persons, places, things, animals, events, ideas, and emotions (describing words - adjectives)",
+      "topic": "naming_and_describing_words",
+      "title": {
+        "en": "Kinds of Words"
+      },
+      "student_question": "What jobs do different words do in a sentence?",
+      "icon": "format-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-7",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify the synonyms and antonyms of words.",
+      "topic": "synonyms_antonyms",
+      "title": {
+        "en": "Synonyms and Antonyms"
+      },
+      "student_question": "What are words that mean the same or the opposite?",
+      "icon": "swap-horizontal",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-8",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Read words correctly for meaning (based on word patterns).",
+      "topic": "word_patterns",
+      "title": {
+        "en": "Reading Words Correctly"
+      },
+      "student_question": "How do word patterns help me read words?",
+      "icon": "format-letter-case",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-9",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Write words legibly and correctly (based on word patterns).",
+      "topic": "handwriting",
+      "title": {
+        "en": "Writing Words"
+      },
+      "student_question": "How can I write words neatly and correctly?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-10",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify roots of high frequency words (nouns, verbs, and adjectives).",
+      "topic": "root_words",
+      "title": {
+        "en": "Root Words"
+      },
+      "student_question": "What is the root of a word like playing or happiness?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-11",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use simple sentences to express ideas about regional themes.",
+      "topic": "sentences",
+      "title": {
+        "en": "Simple Sentences"
+      },
+      "student_question": "How do I make a simple sentence about my region?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-12",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use simple sentences with proper intonation (pitch, juncture, rhythm).",
+      "topic": "tone_of_voice",
+      "title": {
+        "en": "Reading With Expression"
+      },
+      "student_question": "How should my voice go up and down when I read a sentence?",
+      "icon": "account-voice",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-13",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Sequence words to represent meaning in simple sentences.\na. exclamatory sentences",
+      "topic": "sentences",
+      "title": {
+        "en": "Word Order"
+      },
+      "student_question": "Why does the order of words in a sentence matter?",
+      "icon": "sort",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-14",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify the parts of simple sentences: (who/what, what are they doing, when/where/how).\na. exclamatory sentences",
+      "topic": "sentences",
+      "title": {
+        "en": "Parts of a Sentence"
+      },
+      "student_question": "What are the parts of a simple sentence?",
+      "icon": "format-quote-close",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-15",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use correct capitalization and punctuation for simple sentences.\na. exclamatory sentences",
+      "topic": "punctuation",
+      "title": {
+        "en": "Capitals and Periods"
+      },
+      "student_question": "When do I use a capital letter and a period?",
+      "icon": "format-letter-case-upper",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-16",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Read grade level sentences with appropriate speed, accuracy, and expression.",
+      "topic": "reading_fluency",
+      "title": {
+        "en": "Reading Smoothly"
+      },
+      "student_question": "How can I read sentences smoothly and correctly?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-17",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Comprehend stories.\na. Note important elements from stories (characters, setting, events).\nb. Sequence at least four to five events.\nc. Identify the problem and solution in stories.\nd. Infer the character’s feelings and traits. e. Relate story events to one’s experience. f. Identify cause and effect of events. g. Predict possible ending. h. Give a summary.",
+      "topic": "understanding_stories",
+      "title": {
+        "en": "Understanding Stories"
+      },
+      "student_question": "How do I understand a story I read?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-18",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use own words in retelling myths, legends, fables, and narrative poems.",
+      "topic": "retelling_stories",
+      "title": {
+        "en": "Retelling Legends and Fables"
+      },
+      "student_question": "How can I retell a legend or fable in my own words?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-19",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Express ideas about one’s experiences.\na. regional themes",
+      "topic": "telling_events",
+      "title": {
+        "en": "Sharing My Experiences"
+      },
+      "student_question": "How can I tell others about something I did?",
+      "icon": "message-text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-20",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Use basic sight words, high frequency, and content-specific words.",
+      "topic": "sight_words",
+      "title": {
+        "en": "Using Common Words"
+      },
+      "student_question": "How can I use common words when I write?",
+      "icon": "text",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-21",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Compose texts to react to the character, setting, or events in a story.",
+      "topic": "responding_to_stories",
+      "title": {
+        "en": "Writing About a Story"
+      },
+      "student_question": "How can I write what I think about a story's characters?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-english-w5-22",
+      "grade": 3,
+      "subject": "english",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Make a summary of narrative text.",
+      "topic": "summarizing",
+      "title": {
+        "en": "Summarizing a Story"
+      },
+      "student_question": "How do I tell the most important parts of a story?",
+      "icon": "text-short",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 5, PDF page 24 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-gmrc_values-w1-1",
+      "grade": 3,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naipakikita ang tiwala sa sarili sa pamamagitan ng kawilihan na paunlarin ang kaniyang hilig at kakayahan a. Naiisa-isa ang sariling hilig at kakayahan b. Napatutunayan na ang sariling hilig at kakayahan ay mahalaga upang makilala ang sarili bilang bata c. Nailalapat ang sariling hilig at kakayahan tungo sa kakayahan sa pagpapatibay ng tiwala sa sarili",
+      "topic": "self_confidence",
+      "title": {
+        "en": "Growing My Talents"
+      },
+      "student_question": "How can I become more confident by growing my talents?",
+      "icon": "star",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 GMRC (last updated July 20, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-gmrc_values-w2-1",
+      "grade": 3,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging mapagmalasakit sa pamamagitan ng tamang paglalaan ng mga pera o gamit na angkop sa iba’t ibang situwasyon a. Nakakikilala ng mga paraan ng pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid kasama ang pamilya b. Napatutunayan na ang pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid kasama ang pamilya ay magpapaunlad ng sariling kasanayan na mapamahalaan ang higit na mas malaking halaga ng pera o mga gamit sa kinabukasan c. Naisasakilos ang mga paraan ng pagpapatatag ng mga gawi sa pag-iimpok at pagtitipid kasama ang pamilya",
+      "topic": "compassion",
+      "title": {
+        "en": "Caring for Others"
+      },
+      "student_question": "How can I share money or things to help others?",
+      "icon": "hand-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 GMRC (last updated July 20, 2026), First Term, Weeks 2–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-gmrc_values-w4-1",
+      "grade": 3,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Naipakikita ang pagiging responsable sa pamamagitan ng wastong pagtupad sa kaniyang mga gampanin batay sa mga tagubilin ng magulang at nakatatanda a. Natutukoy ang mga gawain ng isang bata sa tahanan at paaralan\nb. Napatutunayan na ang mga sariling gampanin ng bata sa tahanan at paaralan ay nakatutulong upang mahubog ang pagiging responsable sa kanilang gawain at kilos c. Nakapagbabahagi ng mga karanasan sa pagtugon sa mga gampanin ng isang bata sa tahanan at paaralan",
+      "topic": "responsibility",
+      "title": {
+        "en": "Being Responsible"
+      },
+      "student_question": "How can I do my tasks at home and in school well?",
+      "icon": "clipboard-check",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 GMRC (last updated July 20, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-gmrc_values-w5-1",
+      "grade": 3,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Naipakikita ang pananalig sa Diyos sa pamamagitan ng pagsunod sa Kaniyang mga aral a. Nakakikilala ng mga sariling pagkilos ng may paggalang sa Diyos b. Naipaliliwanag na ang mga sariling pagkilos na may paggalang sa Diyos ay tanda ng pagkilala at pagmamahal sa Kaniya at ito ay nagdudulot ng pagkakaroon ng mabuting asal c. Nailalapat ang mga pagkilos na nagpapakita ng paggalang sa Diyos",
+      "topic": "faith",
+      "title": {
+        "en": "Faith in God"
+      },
+      "student_question": "How can I follow the good lessons of my faith?",
+      "icon": "hands-pray",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 GMRC (last updated July 20, 2026), First Term, Week 5, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-gmrc_values-w6-1",
+      "grade": 3,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Naipakikita ang disiplina sa pamamagitan ng pakikiisa sa mga gawaing pangkapaligiran a. Natutukoy ang mga pansariling gawain na nakabubuti sa kapaligiran b. Naipaliliwanag na ang mga pansariling gawain na nakabubuti sa kapaligiran ay magdudulot ng ligtas, maayos, at malinis na pamayanan c. Naisasakilos ang mga natukoy na mabuting magagawa ng bata sa kapaligiran",
+      "topic": "discipline",
+      "title": {
+        "en": "Caring for the Environment"
+      },
+      "student_question": "How can I help keep our surroundings clean?",
+      "icon": "tree",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 GMRC (last updated July 20, 2026), First Term, Weeks 6–7, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-gmrc_values-w8-1",
+      "grade": 3,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging magalang sa pamamagitan ng wastong pakikitungo sa kapuwa sa iba’t ibang situwasyon a. Naiisa-isa ang mga pansariling karapatan na natatamasa ng isang bata sa pamayanan b. Naipaliliwanag na ang mga pansariling karapatan na kinikilala sa pamayanan ay nagtitiyak sa kaligtasan at matiwasay na pamumuhay ng bawat bata c. Naisasakilos ang mga gawain na nagbibigay-halaga sa mga karapatang tinatamasa ng bawat bata",
+      "topic": "respect",
+      "title": {
+        "en": "Respecting Others"
+      },
+      "student_question": "How do I show respect to people in different situations?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 GMRC (last updated July 20, 2026), First Term, Week 8, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-gmrc_values-w9-1",
+      "grade": 3,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Naipakikita ang pakikiisa sa pamamagitan ng pagtupad sa mga gawain sa loob ng tahanan na ayon sa kaniyang kakayahan a. Natutukoy ang mga sariling paraan ng pakikilahok sa mga gawain sa loob ng tahanan b. Naipaliliwanag na ang sariling paraan ng pakikilahok sa mga gawain ng pamilya ay nakatutulong sa pagkakabuklod-buklod at pagpapatatag ng ugnayan ng bawat kasapi ng pamilya c. Nailalapat ang mga sariling paraan ng pakikiisa sa mga gawain sa loob ng tahanan (Hal. paraan ng wastong pakikipag-ugnayan nang may paggalang ang bawat kasapi ng mag-anak)",
+      "topic": "cooperation",
+      "title": {
+        "en": "Helping at Home"
+      },
+      "student_question": "How can I help with chores at home?",
+      "icon": "home-heart",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 GMRC (last updated July 20, 2026), First Term, Weeks 9–10, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-makabansa-w1-1",
+      "grade": 3,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Natatalakay ang mahahalagang tao, lugar, at pangyayari na bahagi ng kasaysayan ng pook (hal. barangay, bayan, lungsod, lalawigan, rehiyon) na kinabibilangan",
+      "topic": "local_history",
+      "title": {
+        "en": "History of Our Place"
+      },
+      "student_question": "Who and what are important in the history of our barangay?",
+      "icon": "map-marker",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 MAKABANSA, First Term, Weeks 1–5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-makabansa-w6-1",
+      "grade": 3,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang mga pagbabagong naganap sa kinabibilangang komunidad",
+      "topic": "community",
+      "title": {
+        "en": "Changes in My Community"
+      },
+      "student_question": "How has my community changed over time?",
+      "icon": "city",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 MAKABANSA, First Term, Weeks 6–8, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-makabansa-w9-1",
+      "grade": 3,
+      "subject": "makabansa",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Napahahalagahan ang kasaysayan at pagbabagong nagaganap sa kinabibilangang komunidad",
+      "topic": "local_history",
+      "title": {
+        "en": "Valuing Our History"
+      },
+      "student_question": "Why should I care about my community's history?",
+      "icon": "map-marker",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 MAKABANSA, First Term, Weeks 9–10, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w1-1",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Illustrate and estimate the area of a square or rectangle using square tile units.",
+      "topic": "area",
+      "title": {
+        "en": "Area With Tiles"
+      },
+      "student_question": "How can I use square tiles to find the area of a shape?",
+      "icon": "grid",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w1-2",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Explore inductively the derivation of the formulas for the areas of a square and a rectangle using square tile units.",
+      "topic": "area",
+      "title": {
+        "en": "Area Formulas"
+      },
+      "student_question": "How do we get the formula for the area of a square or rectangle?",
+      "icon": "grid",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w2-1",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Find the areas of squares and rectangles in sq. cm and sq. m.",
+      "topic": "area",
+      "title": {
+        "en": "Finding Area"
+      },
+      "student_question": "How do I find the area of a square or rectangle?",
+      "icon": "grid",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w2-2",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Solve problems involving areas of squares and rectangles.",
+      "topic": "area",
+      "title": {
+        "en": "Area Problems"
+      },
+      "student_question": "How do I solve problems about area?",
+      "icon": "grid",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w2-3",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Recognize, using models, and draw a point, line, line segment, and ray.",
+      "topic": "lines",
+      "title": {
+        "en": "Points, Lines, and Rays"
+      },
+      "student_question": "What are points, lines, line segments, and rays?",
+      "icon": "vector-line",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w3-1",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Recognize and draw parallel, intersecting, and perpendicular lines.",
+      "topic": "lines",
+      "title": {
+        "en": "Kinds of Lines"
+      },
+      "student_question": "What are parallel, intersecting, and perpendicular lines?",
+      "icon": "vector-line",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w3-2",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Identify and draw line segments of equal length using a ruler.",
+      "topic": "measuring_length",
+      "title": {
+        "en": "Equal Line Segments"
+      },
+      "student_question": "How do I draw two lines of the same length with a ruler?",
+      "icon": "ruler",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w4-1",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Represent numbers up to 10 000 using pictorial models and numerals.",
+      "topic": "place_value",
+      "title": {
+        "en": "Showing Big Numbers"
+      },
+      "student_question": "How can I show numbers up to 10 000 with pictures?",
+      "icon": "cube-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w5-1",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Read and write numbers up to 10 000 in numerals and in words.",
+      "topic": "numbers",
+      "title": {
+        "en": "Writing Big Numbers"
+      },
+      "student_question": "How do I read and write numbers up to 10 000 in words?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w6-1",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Describe the position of objects using ordinal numbers up to 100th.",
+      "topic": "ordinal_numbers",
+      "title": {
+        "en": "Ordinal Numbers"
+      },
+      "student_question": "What do words like fiftieth and hundredth mean?",
+      "icon": "format-list-numbered",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w7-1",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Determine:\na. the place value of a digit in a 4-digit number\nb. the value of a digit\nc. the digit of number, given its place value",
+      "topic": "place_value",
+      "title": {
+        "en": "Place Value"
+      },
+      "student_question": "What is the value of each digit in a number?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Weeks 7–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w9-1",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Round numbers to the nearest ten, hundred, or thousand.",
+      "topic": "rounding",
+      "title": {
+        "en": "Rounding Numbers"
+      },
+      "student_question": "How do I round a number to the nearest ten or hundred?",
+      "icon": "approximately-equal",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w9-2",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Compare numbers up to 10 000 using the symbols =, >, and <.",
+      "topic": "comparing_numbers",
+      "title": {
+        "en": "Comparing Numbers"
+      },
+      "student_question": "How do I use the greater than and less than signs?",
+      "icon": "greater-than",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-mathematics-w10-1",
+      "grade": 3,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Order numbers up to 10 000 from smallest to largest, and vice versa.",
+      "topic": "comparing_numbers",
+      "title": {
+        "en": "Ordering Numbers"
+      },
+      "student_question": "How do I put numbers in order up to 10 000?",
+      "icon": "sort-numeric-ascending",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w1-1",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify objects, activities, or natural events observed in their local environment that can be explained by science.",
+      "topic": "science_everyday",
+      "title": {
+        "en": "Science in Daily Life"
+      },
+      "student_question": "How does science explain things I see every day?",
+      "icon": "flask",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Weeks 1–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w1-2",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Participate in guided science activities by asking questions and tinkering with materials.",
+      "topic": "science_activities",
+      "title": {
+        "en": "Doing Science Activities"
+      },
+      "student_question": "How can I learn by asking questions and trying things?",
+      "icon": "flask",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Weeks 1–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w1-3",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Describe the uses of various science equipment and materials used in simple activities, such as a ruler, hand lens, scissors, balloons, modeling clay, and cardboard.",
+      "topic": "science_tools",
+      "title": {
+        "en": "Science Tools"
+      },
+      "student_question": "What tools do scientists use, like a ruler or a magnifying glass?",
+      "icon": "magnify",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Weeks 1–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w4-1",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Describe different science process skills used in performing simple science activities, such as observing, predicting, and measuring using units such as millimeter, centimeter, and meter.",
+      "topic": "science_process_skills",
+      "title": {
+        "en": "Science Skills"
+      },
+      "student_question": "What does it mean to observe, measure, and predict?",
+      "icon": "magnify",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w5-1",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Describe the physical properties of solid materials, such as hard, shiny, or stretchable.",
+      "topic": "materials",
+      "title": {
+        "en": "Properties of Materials"
+      },
+      "student_question": "How can materials be hard, shiny, or stretchy?",
+      "icon": "cube",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Weeks 5–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w5-2",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Explain that changes in materials can be harmful to living and non-living things in the environment, such as trash disposal, and burning household materials.",
+      "topic": "materials",
+      "title": {
+        "en": "Harmful Changes in Materials"
+      },
+      "student_question": "How can changes in materials harm living things?",
+      "icon": "alert",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Weeks 5–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w5-3",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Demonstrate proper handling and disposal of materials according to their properties, such as reusing objects, disposing of excess oil into garbage, and recycling paper, plastic or glass.",
+      "topic": "waste_disposal",
+      "title": {
+        "en": "Throwing Away Materials Properly"
+      },
+      "student_question": "How should I reuse or throw away materials safely?",
+      "icon": "recycle",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Weeks 5–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w5-4",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Describe how changes in solid materials make them useful, such as when they are shaped, pressed, hammered, joined, or cut.",
+      "topic": "materials",
+      "title": {
+        "en": "Shaping Materials"
+      },
+      "student_question": "How do we make materials useful by shaping or pressing them?",
+      "icon": "hammer",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Weeks 5–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w5-5",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Identify the properties and uses of metals used by the local community such as iron, gold, silver, and copper.",
+      "topic": "metals",
+      "title": {
+        "en": "Metals"
+      },
+      "student_question": "What metals do people in my community use?",
+      "icon": "gold",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Weeks 5–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g3-science-w11-1",
+      "grade": 3,
+      "subject": "science",
+      "term": 1,
+      "week": 11,
+      "competency_code": null,
+      "competency": "Use the skills of observing, predicting, and measuring in performing simple guided science activities.",
+      "topic": "science_process_skills",
+      "title": {
+        "en": "Science Skills"
+      },
+      "student_question": "How do I observe, predict, and measure in an activity?",
+      "icon": "magnify",
+      "source": "DepEd Three-Term Budget of Work, Grade 3 Science (last updated April 8, 2026), First Term, Week 11, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    }
+  ]
 }

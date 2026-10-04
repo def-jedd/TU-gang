@@ -35,6 +35,7 @@ export const colors = {
   warnTint: '#FFF0E0',
   success: '#2F7D32',
   successTint: '#E7F4E4',
+  star: '#C98A12', // passed-quiz stars
 
   // One indigo/aqua primary system; red ends a call.
   call: '#3579AE',

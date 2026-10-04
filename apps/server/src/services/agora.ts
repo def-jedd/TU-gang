@@ -12,7 +12,7 @@ const { RtcTokenBuilder, RtcRole } = agoraToken;
 const MINIMAX_MODEL = 'speech-2.8-turbo';
 const MINIMAX_VOICE = 'English_captivating_female1';
 
-function makeTts() {
+export function makeTts() {
   const tts = new MiniMaxTTS({ model: MINIMAX_MODEL, voiceId: MINIMAX_VOICE });
   if (env.VOICE_TTS === 'minimax-filipino-boost') {
     // Passed through to MiniMax unvalidated; not confirmed that Agora forwards it.
@@ -34,7 +34,7 @@ export const voiceDescription = {
   credential_mode: 'agora_managed',
 };
 
-const client = new AgoraClient({
+export const client = new AgoraClient({
   area: Area.AP,
   appId: env.AGORA_APP_ID,
   appCertificate: env.AGORA_APP_CERTIFICATE,

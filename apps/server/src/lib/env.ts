@@ -1,3 +1,4 @@
+import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import dotenv from 'dotenv';
@@ -5,6 +6,16 @@ import { z } from 'zod';
 
 const serverRoot = join(dirname(fileURLToPath(import.meta.url)), '../..');
 dotenv.config({ path: [join(serverRoot, '.env.local'), join(serverRoot, '.env')], quiet: true });
+
+// The Gemini key already lives in Jed's tutor (.env next to server.py). Borrow
+// ONLY the Gemini settings from there, so the key exists in one place.
+const tutorEnv = join(serverRoot, '../bikol-rag-cli/.env');
+if (existsSync(tutorEnv)) {
+  const borrowed = dotenv.parse(readFileSync(tutorEnv));
+  for (const key of ['GEMINI_API_KEY', 'GEMINI_MODEL'] as const) {
+    if (!process.env[key] && borrowed[key]) process.env[key] = borrowed[key];
+  }
+}
 
 const schema = z.object({
   PORT: z.coerce.number().int().positive().default(3000),
@@ -19,6 +30,9 @@ const schema = z.object({
     z.url().optional().transform((v) => v?.replace(/\/+$/, '')),
   ),
   TUTOR_TIMEOUT_MS: z.coerce.number().int().positive().default(90_000),
+  // Live voice calls: Agora's agent calls Gemini directly. Unset = calls return 503.
+  GEMINI_API_KEY: z.string().trim().min(1).optional().catch(undefined),
+  GEMINI_MODEL: z.string().trim().min(1).default('gemini-3.5-flash-lite'),
   ENABLE_VOICE_TEST_PAGE: z
     .enum(['true', 'false'])
     .default('false')

@@ -152,7 +152,7 @@ export default function CallScreen() {
           </ClaySurface>
           {notice ? (
             <AppText variant="caption" color={colors.inkSoft} style={styles.center}>
-              {notice === 'needs_build' ? t.noticeNeedsBuild : t.noticeNoBackend}
+              {notice === 'needs_build' ? t.noticeNeedsBuild : notice === 'live_failed' ? t.noticeLiveFailed : t.noticeNoBackend}
             </AppText>
           ) : null}
           {kind === 'simulated' && phase === 'listening' ? (

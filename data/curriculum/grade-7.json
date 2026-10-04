@@ -1,5 +1,1196 @@
 {
   "grade": 7,
   "term": 1,
-  "entries": []
+  "entries": [
+    {
+      "id": "g7-araling_panlipunan-w1-1",
+      "grade": 7,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang mahalagang ginampanan ng katangiang pisikal ng Pilipinas at ng rehiyon sa pagbuo ng sinaunang kasaysayan at kalinangan ng mga mamamayan sa Pilipinas at Timog-Silangang Asya",
+      "topic": "southeast_asia_geography",
+      "title": {
+        "en": "Geography and Early Civilizations"
+      },
+      "student_question": "How did the land of Southeast Asia shape early civilizations?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Araling Panlipunan, First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-araling_panlipunan-w2-1",
+      "grade": 7,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Nasusuri ang heograpiyang pantao ng Timog-Silangang Asya batay sa pangkat-etnolinggwistiko, pananampalataya, estrukturang panlipunan, at ugnayang pangkapangyarihan",
+      "topic": "southeast_asia_people",
+      "title": {
+        "en": "Peoples of Southeast Asia"
+      },
+      "student_question": "What groups of people live in Southeast Asia?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Araling Panlipunan, First Term, Week 2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-araling_panlipunan-w3-1",
+      "grade": 7,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Naiuugnay ang katangian ng sinaunang lipunan sa pagkakamag-anak, pamilya at kasarian (kinship, family and gender) sa Timog-Silangang Asya",
+      "topic": "early_societies",
+      "title": {
+        "en": "Early Families and Society"
+      },
+      "student_question": "How were families organized in early Southeast Asian societies?",
+      "icon": "home-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Araling Panlipunan, First Term, Week 3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-araling_panlipunan-w4-1",
+      "grade": 7,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Nasusuri ang kalinangang Austronesyano at Imperyong Maritima kaugnay sa pagbuo ng kalinangan ng Pilipinas at Timog-Silangang Asya",
+      "topic": "austronesians",
+      "title": {
+        "en": "Austronesian Culture"
+      },
+      "student_question": "Who were the Austronesians and how did they shape our culture?",
+      "icon": "ferry",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Araling Panlipunan, First Term, Week 4, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-araling_panlipunan-w5-1",
+      "grade": 7,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Naiuugnay ang sinaunang kabihasnan ng Pilipinas sa mga bansa sa Timog-Silangang Asya, China, at India",
+      "topic": "early_civilizations",
+      "title": {
+        "en": "Early Ties With China and India"
+      },
+      "student_question": "How were early Filipinos connected to China and India?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Araling Panlipunan, First Term, Week 5, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-araling_panlipunan-w6-1",
+      "grade": 7,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Napahahalagahan ang ugnayan ng heograpiya at sinaunang kasaysayan ng mga bansa sa Timog-Silangang Asya.",
+      "topic": "southeast_asia_geography",
+      "title": {
+        "en": "Geography and History"
+      },
+      "student_question": "Why does geography matter in the history of Southeast Asia?",
+      "icon": "earth",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Araling Panlipunan, First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-araling_panlipunan-w7-1",
+      "grade": 7,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Naipaliliwanag ang konsepto ng kolonyalismo at imperyalismo",
+      "topic": "colonialism",
+      "title": {
+        "en": "Colonialism and Imperialism"
+      },
+      "student_question": "What are colonialism and imperialism?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Araling Panlipunan, First Term, Weeks 7–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-araling_panlipunan-w9-1",
+      "grade": 7,
+      "subject": "araling_panlipunan",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Naipaghahambing ang una at ikalawang yugto ng imperyalismong Kanluranin",
+      "topic": "imperialism",
+      "title": {
+        "en": "Waves of Western Imperialism"
+      },
+      "student_question": "How were the first and second waves of Western imperialism different?",
+      "icon": "flag",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Araling Panlipunan, First Term, Weeks 9–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-english-w1-1",
+      "grade": 7,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Analyze literary texts as expressions of individual or communal values within: o Structural context:\n▪ Conflict:\n▪ Character vs Character\n▪ Character\n▪ Characterization\n▪ Plot:\n● Linear and flashback\n▪ Diction\n▪ Tone and mood\n▪ Style",
+      "topic": "literary_analysis",
+      "title": {
+        "en": "Analyzing Literature"
+      },
+      "student_question": "How does a story show the values of a person or a community?",
+      "icon": "book-open-variant",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 14 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-english-w1-2",
+      "grade": 7,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Identify one’s meaning and purpose in selecting the type of literary text for composition.",
+      "topic": "creative_writing",
+      "title": {
+        "en": "Choosing What to Write"
+      },
+      "student_question": "How do I choose what kind of story or poem to write?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 15 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-english-w1-3",
+      "grade": 7,
+      "subject": "english",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Compose literary texts using appropriate structure.",
+      "topic": "creative_writing",
+      "title": {
+        "en": "Writing Literature"
+      },
+      "student_question": "How do I give my story or poem a good structure?",
+      "icon": "pencil",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 English (last updated April 23, 2026), First Term, sample clustering of competencies for the first five weeks, Week 1, PDF page 15 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w1-1",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Discuss career and business opportunities in agriculture",
+      "topic": "agriculture_careers",
+      "title": {
+        "en": "Careers in Agriculture"
+      },
+      "student_question": "What jobs and businesses are there in agriculture?",
+      "icon": "briefcase",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w1-2",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Differentiate agricultural tools, implements, and equipment.",
+      "topic": "farm_tools",
+      "title": {
+        "en": "Farm Tools and Equipment"
+      },
+      "student_question": "What is the difference between farm tools, implements, and equipment?",
+      "icon": "shovel",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w1-3",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Analyze the various sectors of ICT and evaluate the potential career and business prospects relevant to their future career choices",
+      "topic": "ict_careers",
+      "title": {
+        "en": "Careers in ICT"
+      },
+      "student_question": "What jobs and businesses are there in ICT?",
+      "icon": "laptop",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: ICT (last updated April 7, 2026), First Term, Weeks 1–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w2-1",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Identify different tools and equipment used in agriculture.",
+      "topic": "farm_tools",
+      "title": {
+        "en": "Using Farm Tools"
+      },
+      "student_question": "What tools do farmers use?",
+      "icon": "shovel",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w2-2",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Discuss safety procedures in farm operations",
+      "topic": "farm_safety",
+      "title": {
+        "en": "Farm Safety"
+      },
+      "student_question": "How do farmers stay safe while working?",
+      "icon": "shield-check",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w3-1",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Discuss hazards and risks in farm operations",
+      "topic": "farm_safety",
+      "title": {
+        "en": "Farm Hazards"
+      },
+      "student_question": "What dangers are there on a farm?",
+      "icon": "alert",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 3–4, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w3-2",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Perform agricultural practices in crop production",
+      "topic": "crop_production",
+      "title": {
+        "en": "Growing Crops"
+      },
+      "student_question": "How do farmers grow crops?",
+      "icon": "sprout",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 3–4, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w4-1",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Discuss the emerging trends and issues in ICT.",
+      "topic": "ict_trends",
+      "title": {
+        "en": "ICT Trends"
+      },
+      "student_question": "What are new trends in technology?",
+      "icon": "trending-up",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: ICT (last updated April 7, 2026), First Term, Weeks 4–7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w5-1",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Discuss care and maintenance of crops",
+      "topic": "caring_for_plants",
+      "title": {
+        "en": "Caring for Crops"
+      },
+      "student_question": "How do farmers take care of growing crops?",
+      "icon": "watering-can",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 5, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w5-2",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Explain farm waste processing",
+      "topic": "farm_waste",
+      "title": {
+        "en": "Farm Waste"
+      },
+      "student_question": "How can farm waste be processed?",
+      "icon": "recycle",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Week 5, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w6-1",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Perform basket composting and foliar fertilizer fermentation",
+      "topic": "compost",
+      "title": {
+        "en": "Composting"
+      },
+      "student_question": "How do I make compost in a basket?",
+      "icon": "recycle",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 6–7, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w6-2",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Discuss harvesting and post-harvesting practices",
+      "topic": "harvesting",
+      "title": {
+        "en": "Harvest and After"
+      },
+      "student_question": "How do farmers harvest and store crops?",
+      "icon": "basket",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 6–7, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w7-1",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Determine the breeds of farm animals.",
+      "topic": "livestock",
+      "title": {
+        "en": "Breeds of Farm Animals"
+      },
+      "student_question": "What are different breeds of farm animals?",
+      "icon": "cow",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 7–10, PDF page 7 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w7-2",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Determine poultry and livestock materials, tools, and equipment and their uses based on industry standards.",
+      "topic": "livestock",
+      "title": {
+        "en": "Tools for Raising Animals"
+      },
+      "student_question": "What tools are used to raise poultry and livestock?",
+      "icon": "cow",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 7–10, PDF page 7 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w7-3",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Illustrate housing requirements for poultry and livestock based on industry standards.",
+      "topic": "livestock",
+      "title": {
+        "en": "Animal Housing"
+      },
+      "student_question": "What kind of shelter do farm animals need?",
+      "icon": "barn",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 7–10, PDF page 7 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w7-4",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Discuss feeding management according to the Philippine National Standard (PNS) for poultry and livestock animals.",
+      "topic": "livestock",
+      "title": {
+        "en": "Feeding Farm Animals"
+      },
+      "student_question": "How should we feed poultry and livestock?",
+      "icon": "cow",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 7–10, PDF page 7 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w7-5",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Discuss farm waste management in poultry and livestock production according to Republic Act No 9003 or the Ecological Solid Waste Management Act of 2000.",
+      "topic": "farm_waste",
+      "title": {
+        "en": "Animal Farm Waste"
+      },
+      "student_question": "How should animal farm waste be managed?",
+      "icon": "recycle",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 7–10, PDF page 7 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w7-6",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Identify products and by products of poultry and livestock production.",
+      "topic": "livestock",
+      "title": {
+        "en": "Products From Farm Animals"
+      },
+      "student_question": "What products come from poultry and livestock?",
+      "icon": "egg",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: AFA / FCS / IA (last updated April 7, 2026), First Term, Weeks 7–10, PDF page 7 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-epp_tle-w8-1",
+      "grade": 7,
+      "subject": "epp_tle",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Discuss the qualities of successful entrepreneurs in the field of ICT.",
+      "topic": "entrepreneurship",
+      "title": {
+        "en": "ICT Entrepreneurs"
+      },
+      "student_question": "What makes a tech entrepreneur successful?",
+      "icon": "account-star",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 TLE: ICT (last updated April 7, 2026), First Term, Weeks 8–10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-gmrc_values-w1-1",
+      "grade": 7,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa maingat na paghuhusga sa pamamagitan ng pangingilatis sa katotohanan at kabutihan na nakapaloob sa isang situwasyon a. Natutukoy ang mga katangian, gamit at tunguhin ng isip at kilos-loob b. Naipaliliwanag na ang gamit ng isip at kilos-loob sa sariling pagpapasiya at pagkilos ay ang nagsisilbing gabay sa pagpili at pagkilos na alisunod sa katotohanan at kabutihan, dahil ang mga ito ang nagpapabukod-tangi sa kaniya sa ibang nilalang c. Nailalapat ang wastong gamit ng isip at kilos-loob sa mga sariling pagpapasiya at pagkilos alinsunod sa katotohanan at kabutihan",
+      "topic": "prudence",
+      "title": {
+        "en": "Judging Wisely"
+      },
+      "student_question": "How do I judge what is true and good in a situation?",
+      "icon": "scale-balance",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Values Education (last updated July 20, 2026), First Term, Weeks 1–2, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-gmrc_values-w2-1",
+      "grade": 7,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Naisasabuhay ang pagiging magalang sa pamamagitan ng pakikibahagi sa mga gawaing magpapabuti sa sarili, pamilya, at kapuwa a. Nakakikilala na ang dignidad ay ang batayan ng paggalang sa sarili, pamilya, at kapuwa b. Naipaliliwanag na ang dignidad ng tao bilang batayan ng paggalang sa sarili, pamilya, at kapuwa ay ang nagpapantay-pantay sa lahat ng tao dahil sa taglay niyang isip at kilos-loob, at ito ang nagbubunsod sa kaniya na gumawa ng mabuti c. Nakapaglalapat ng mga sariling kilos ng pagkilala sa dignidad ng sarili, pamilya, at kapuwa",
+      "topic": "respect",
+      "title": {
+        "en": "Respect Through Helping"
+      },
+      "student_question": "How can helping others show respect?",
+      "icon": "account-group",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Values Education (last updated July 20, 2026), First Term, Weeks 2–3, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-gmrc_values-w3-1",
+      "grade": 7,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging matatag sa pamamagitan ng palagiang paninindigan sa mga taglay na pagpapahalaga at virtue a. Nakakikilala ng mga paraan ng paggamit ng pagpapahalaga at virtue bilang batayan ng sariling pagpapasiya, pagkilos, at pakikipagkapuwa b. Naipaliliwanag na ang pagpapahalaga at virtue bilang batayan ng sariling pagpapasiya, pagkilos, at pakikipagkapuwa ay gabay na magtitiyak na patungo sa katotohanan at kabutihan ang bawat pagtugon lalo na sa mga situwasyon na sinusubok ang kanilang pagkatao c. Nailalapat nang wasto ang pagpapahalaga at virtue sa mga gagawing pagpapasiya, pagkilos, at pakikipagkapuwa",
+      "topic": "resilience",
+      "title": {
+        "en": "Being Resilient"
+      },
+      "student_question": "How can I stand firm on my values?",
+      "icon": "arm-flex",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Values Education (last updated July 20, 2026), First Term, Weeks 3–4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-gmrc_values-w4-1",
+      "grade": 7,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pananalig sa Diyos sa pamamagitan ng pagbabahagi ng positibong pananaw sa pagharap sa mga hamon sa buhay a. Natutukoy ang mahalagang papel ng sariling pananampalataya sa buhay b. Naipaliliwanag na ang sariling pananampalataya sa Diyos ay nakatutulong sa pagkakaroon ng pag-asa, katatagan, at lakas ng loob (courage) sa pagharap sa mga hamon sa buhay c. Nailalapat ang sariling pananampalataya sa Diyos sa lahat ng oras lalo na sa mga mapanghamong situwasyon (hal. positibong pananaw sa kabila ng kahirapan)",
+      "topic": "faith",
+      "title": {
+        "en": "Faith in Hard Times"
+      },
+      "student_question": "How can faith help me face problems?",
+      "icon": "hands-pray",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Values Education (last updated July 20, 2026), First Term, Weeks 4–5, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-gmrc_values-w5-1",
+      "grade": 7,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagiging mabuting katiwala sa pamamagitan ng pagsisinop ng lahat ng bagay upang mapakinabangan hindi lamang ng sarili kundi ng kapuwa at pamayanan a. Nakapag-uugnay sa kahalagahan ng pagtitipid at pag- iimpok sa sariling pangangasiwa sa mga biyaya ng Diyos b. Naipaliliwanag na ang pagtitipid at pag-iimpok bilang sariling pangangasiwa sa mga biyaya ng Diyos ay pagiging mabuting katiwala ng mga kaloob Niya na magagamit sa pagtulong sa kapuwa at pamayanan c. Naisasakilos ang pagtitipid at pag-iimpok upang tulungan ang kapuwa at pamayanan ayon sa sariling kakayahan",
+      "topic": "stewardship",
+      "title": {
+        "en": "Good Stewardship"
+      },
+      "student_question": "How can I take good care of the things I have?",
+      "icon": "hand-coin",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Values Education (last updated July 20, 2026), First Term, Weeks 5–6, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-gmrc_values-w6-1",
+      "grade": 7,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa kahandaan sa pamamagitan ng pagkakaroon ng emergency kit o katumbas nito batay sa sariling kakayahan a. Nakakikilala ng mga wastong pagtugon sa panahon ng kalamidad b. Naipaliliwanag na ang pansariling pagtugon sa panahon ng kalamidad ay paraan upang mailigtas ang buhay, malinang ang kahandaan sa pagharap sa mga panganib, mabawasan ang posibleng pagdurusa ng tao at makatulong sa kaligtasan ng kapuwa alinsunod sa mga alituntunin ng awtoridad c. Nailalapat ang mga pansariling pagtugon sa panahon ng kalamidad",
+      "topic": "preparedness",
+      "title": {
+        "en": "Being Prepared"
+      },
+      "student_question": "What should be in an emergency kit?",
+      "icon": "bag-personal",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Values Education (last updated July 20, 2026), First Term, Weeks 6–7, PDF page 5 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-gmrc_values-w7-1",
+      "grade": 7,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa pagigng mapanagutan sa pamamagitan ng panghihikayat sa iba na gampanan ang kanilang mga tungkulin bilang mamamayan a. Nakapagpapahayag ng mga paraan sa pagtupad ng sariling tungkulin bilang mamamayan b. Naipaliliwanag na ang pagtupad ng sariling tungkulin bilang mamamayan ay pakikibahagi niya sa pagpapabuti at pagpapatatag ng bayan para sa kapakinabangan ng mga mamamayan c. Nailalapat ang mga paraan ng pagtupad ng sariling tungkulin bilang mamamayan tulad ng paggalang sa mga karapatan ng kapuwa, pagsunod sa mga batas, pagiging mabuting pinuno, at tagasunod",
+      "topic": "accountability",
+      "title": {
+        "en": "Doing Our Part"
+      },
+      "student_question": "How can I encourage others to do their duties?",
+      "icon": "account-check",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Values Education (last updated July 20, 2026), First Term, Weeks 7–8, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-gmrc_values-w8-1",
+      "grade": 7,
+      "subject": "gmrc_values",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Nakapagsasanay sa maingat na paghusga sa pamamagitan ng palagiang pagsangguni sa mga magulang o tagapangalaga tungkol sa mga karanasan kaugnay ng mga natutuhang pagpapahalaga a. Natutukoy ang mga pagpapahalagang natutuhan sa pamilya na may impluwensiya sa kaniyang pagkatao b. Naipaliliwanag na ang pamilya bilang sandigan ng mga pagpapahalaga ay may gampanin na hubugin ang mga anak sa mga pagpapahalaga c. Nailalapat ang mga natutuhang pagpapahalaga sa mga situwasyong kinakaharap",
+      "topic": "prudence",
+      "title": {
+        "en": "Asking for Advice"
+      },
+      "student_question": "Why should I ask my parents before deciding?",
+      "icon": "account-supervisor",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Values Education (last updated July 20, 2026), First Term, Weeks 8–9, PDF page 6 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w1-1",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Draw and describe regular and irregular polygons with 5, 6, 8, or 10 sides, based on measurements of sides and angles, using a ruler and protractor.",
+      "topic": "polygons",
+      "title": {
+        "en": "Regular and Irregular Polygons"
+      },
+      "student_question": "What is the difference between regular and irregular polygons?",
+      "icon": "hexagon-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w1-2",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Draw triangles, quadrilaterals, and regular polygons (5, 6, 8, or 10 sides) with given angle measures.",
+      "topic": "polygons",
+      "title": {
+        "en": "Drawing Polygons"
+      },
+      "student_question": "How do I draw a shape with given angles?",
+      "icon": "hexagon-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 1, PDF page 2 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w2-1",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Describe and explain the relationships between angle pairs based on their measures.",
+      "topic": "angles",
+      "title": {
+        "en": "Angle Pairs"
+      },
+      "student_question": "What are angle pairs like complementary and supplementary angles?",
+      "icon": "angle-acute",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w2-2",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 2,
+      "competency_code": null,
+      "competency": "Classify polygons according to the number of sides, whether they are regular or irregular, and whether they are convex or non-convex.",
+      "topic": "polygons",
+      "title": {
+        "en": "Classifying Polygons"
+      },
+      "student_question": "How do we group polygons?",
+      "icon": "hexagon-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 2, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w3-1",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Deduce the relationship between the exterior angle and adjacent interior angle of a polygon.",
+      "topic": "angles",
+      "title": {
+        "en": "Exterior Angles"
+      },
+      "student_question": "How are the outside and inside angles of a polygon related?",
+      "icon": "angle-obtuse",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w3-2",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 3,
+      "competency_code": null,
+      "competency": "Determine the measures of angles and the number of sides of polygons.",
+      "topic": "polygons",
+      "title": {
+        "en": "Angles of Polygons"
+      },
+      "student_question": "How do I find the angles of a polygon?",
+      "icon": "hexagon-outline",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w4-1",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Solve problems involving:\na. percentage increase\nb. percentage decrease",
+      "topic": "percent",
+      "title": {
+        "en": "Percent Increase and Decrease"
+      },
+      "student_question": "How do I find how much something went up or down in percent?",
+      "icon": "percent",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w4-2",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Solve money problems involving percentages (e. g., discount, commission, sales tax, simple interest).",
+      "topic": "percent",
+      "title": {
+        "en": "Discounts and Interest"
+      },
+      "student_question": "How do I compute a discount or interest?",
+      "icon": "sale",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 4, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w5-1",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 5,
+      "competency_code": null,
+      "competency": "Create a financial plan.",
+      "topic": "financial_planning",
+      "title": {
+        "en": "Making a Budget"
+      },
+      "student_question": "How do I make a plan for my money?",
+      "icon": "wallet",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w6-1",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Identify and explain the uses of rates.",
+      "topic": "rates",
+      "title": {
+        "en": "Rates"
+      },
+      "student_question": "What is a rate, like kilometers per hour?",
+      "icon": "speedometer",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w6-2",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Solve problems involving rates (e.g., speed).",
+      "topic": "rates",
+      "title": {
+        "en": "Rate Problems"
+      },
+      "student_question": "How do I solve problems about speed?",
+      "icon": "speedometer",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 6, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w7-1",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Describe given rational numbers as fractions, decimals, or percentages.",
+      "topic": "rational_numbers",
+      "title": {
+        "en": "Rational Numbers"
+      },
+      "student_question": "How can one number be a fraction, a decimal, and a percent?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w7-2",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 7,
+      "competency_code": null,
+      "competency": "Order rational numbers on a number line.",
+      "topic": "rational_numbers",
+      "title": {
+        "en": "Rational Numbers on a Number Line"
+      },
+      "student_question": "How do I order fractions and decimals on a number line?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 7, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w8-1",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Perform operations on rational numbers.",
+      "topic": "rational_numbers",
+      "title": {
+        "en": "Operations With Rational Numbers"
+      },
+      "student_question": "How do I add and multiply fractions and negative numbers?",
+      "icon": "numeric",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Weeks 8–9, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w10-1",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Determine the square roots of perfect squares and the cube roots of perfect cubes.",
+      "topic": "square_roots",
+      "title": {
+        "en": "Square and Cube Roots"
+      },
+      "student_question": "What is a square root?",
+      "icon": "square-root",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-mathematics-w10-2",
+      "grade": 7,
+      "subject": "mathematics",
+      "term": 1,
+      "week": 10,
+      "competency_code": null,
+      "competency": "Identify irrational numbers involving square roots and cube roots, and their locations on the number line.",
+      "topic": "irrational_numbers",
+      "title": {
+        "en": "Irrational Numbers"
+      },
+      "student_question": "What is an irrational number?",
+      "icon": "pi",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Mathematics (last updated April 17, 2026), First Term, Week 10, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w1-1",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Recognize that scientists use models to explain phenomena that cannot be easily seen or detected;",
+      "topic": "scientific_models",
+      "title": {
+        "en": "Scientific Models"
+      },
+      "student_question": "Why do scientists use models?",
+      "icon": "atom",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 1–3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w1-2",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Describe the Particle Model of Matter as “All matter is made up of tiny particles with each pure substance having its own kind of particles.”",
+      "topic": "particle_model",
+      "title": {
+        "en": "Particle Model of Matter"
+      },
+      "student_question": "What is matter made of?",
+      "icon": "atom",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 1–3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w1-3",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Describe that particles are constantly in motion, have spaces between them, attract each other, and move faster as the temperature increases (or with the addition of heat).",
+      "topic": "particle_model",
+      "title": {
+        "en": "Moving Particles"
+      },
+      "student_question": "How do the tiny particles in matter move?",
+      "icon": "atom",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 1–3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w1-4",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Use diagrams and illustrations to describe the arrangement, spacing, and relative motion of the particles in each of the three states (phases) of matter.",
+      "topic": "particle_model",
+      "title": {
+        "en": "Particles in Solids, Liquids, and Gases"
+      },
+      "student_question": "How are particles arranged in solids, liquids, and gases?",
+      "icon": "atom",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 1–3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w1-5",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 1,
+      "competency_code": null,
+      "competency": "Explain the changes of state in terms of particle arrangement and energy changes:\na. solid → liquid → vapor\nb. vapor → liquid → solid",
+      "topic": "melting",
+      "title": {
+        "en": "Changes of State and Particles"
+      },
+      "student_question": "What happens to particles when ice melts?",
+      "icon": "snowflake-melt",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 1–3, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w4-1",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Follow appropriate steps of a scientific investigation which includes:\na. Aim or problem\nb. Materials and equipment\nc. Method or procedures\nd. Results including data\ne. Conclusion.",
+      "topic": "scientific_investigation",
+      "title": {
+        "en": "Scientific Investigation"
+      },
+      "student_question": "What are the steps of a scientific investigation?",
+      "icon": "flask",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 4–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w4-2",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 4,
+      "competency_code": null,
+      "competency": "Make accurate measurements using standard units for physical quantities and organize the collected data when carrying out a scientific investigation.",
+      "topic": "units_of_measure",
+      "title": {
+        "en": "Accurate Measurements"
+      },
+      "student_question": "How do I measure accurately and record data in a table?",
+      "icon": "ruler",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 4–5, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w6-1",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Identify the role of the solute and solvent in a solution.",
+      "topic": "solutions",
+      "title": {
+        "en": "Solute and Solvent"
+      },
+      "student_question": "What are a solute and a solvent?",
+      "icon": "cup-water",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 6–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w6-2",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Express quantitatively the amount of solute present in a given volume of solvent.",
+      "topic": "solutions",
+      "title": {
+        "en": "Concentration"
+      },
+      "student_question": "How do we measure how much solute is in a solution?",
+      "icon": "cup-water",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 6–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w6-3",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Demonstrate how different factors affect the solubility of a solute in a given solvent, such as heat;",
+      "topic": "solutions",
+      "title": {
+        "en": "Solubility"
+      },
+      "student_question": "Why does sugar dissolve faster in hot water?",
+      "icon": "cup-water",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 6–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w6-4",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Identify solutions, which can be found at home and in school and that react with a litmus indicator, as acids, bases, and salts.",
+      "topic": "acids_and_bases",
+      "title": {
+        "en": "Acids and Bases"
+      },
+      "student_question": "How can litmus paper tell if a solution is an acid or a base?",
+      "icon": "test-tube",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 6–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w6-5",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 6,
+      "competency_code": null,
+      "competency": "Demonstrate proper use and handling of science equipment.",
+      "topic": "lab_safety",
+      "title": {
+        "en": "Lab Safety"
+      },
+      "student_question": "How do I handle science equipment safely?",
+      "icon": "safety-goggles",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 6–8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w8-1",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 8,
+      "competency_code": null,
+      "competency": "Identify the parts and functions, and demonstrate proper handling and storing of a compound microscope.",
+      "topic": "microscope",
+      "title": {
+        "en": "The Microscope"
+      },
+      "student_question": "What are the parts of a microscope and how do I use it?",
+      "icon": "microscope",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Week 8, PDF page 3 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w9-1",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Use proper techniques in observing and identifying the parts of a cell with a microscope such as the cell membrane, nucleus, cytoplasm, mitochondria, and chloroplasts.",
+      "topic": "cells",
+      "title": {
+        "en": "Looking at Cells"
+      },
+      "student_question": "How do I see cells using a microscope?",
+      "icon": "microscope",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 9–11, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w9-2",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Recognize that some organisms consist of a single cell (unicellular) like in bacteria and some consist of many cells (multicellular) like in a human.",
+      "topic": "cells",
+      "title": {
+        "en": "One Cell or Many"
+      },
+      "student_question": "What is the difference between unicellular and multicellular organisms?",
+      "icon": "bacteria",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 9–11, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    },
+    {
+      "id": "g7-science-w9-3",
+      "grade": 7,
+      "subject": "science",
+      "term": 1,
+      "week": 9,
+      "competency_code": null,
+      "competency": "Differentiate plant and animal cells based on their organelles.",
+      "topic": "cells",
+      "title": {
+        "en": "Plant and Animal Cells"
+      },
+      "student_question": "How are plant cells different from animal cells?",
+      "icon": "leaf",
+      "source": "DepEd Three-Term Budget of Work, Grade 7 Science (last updated April 8, 2026), First Term, Weeks 9–11, PDF page 4 — sites.google.com/deped.gov.ph/lsguide/budgets-of-work",
+      "review_status": "draft"
+    }
+  ]
 }

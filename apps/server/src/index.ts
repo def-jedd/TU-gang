@@ -4,8 +4,10 @@ import express, { type ErrorRequestHandler } from 'express';
 import { env, publicDir } from './lib/env.js';
 import { explainRouter } from './routes/explain.js';
 import { healthRouter } from './routes/health.js';
+import { lessonsRouter } from './routes/lessons.js';
 import { voiceRouter } from './routes/voice.js';
 import { stopAllListens, VoiceError } from './services/agora.js';
+import { stopAllCalls } from './services/conversation.js';
 
 const app = express();
 app.use(cors());
@@ -13,6 +15,7 @@ app.use(express.json({ limit: '192kb' }));
 
 app.use('/api/health', healthRouter);
 app.use('/api/explain', explainRouter);
+app.use('/api/lessons', lessonsRouter);
 app.use('/api/voice', voiceRouter);
 
 if (env.ENABLE_VOICE_TEST_PAGE) {
@@ -52,13 +55,14 @@ const server = app.listen(env.PORT, () => {
       ? `Forwarding /api/explain to ${env.TUTOR_UPSTREAM_URL}`
       : 'TUTOR_UPSTREAM_URL not set: /api/explain returns 503',
   );
+  console.log(env.GEMINI_API_KEY ? `Live voice calls: Gemini ${env.GEMINI_MODEL}` : 'GEMINI_API_KEY not set: live voice calls return 503');
   if (env.ENABLE_VOICE_TEST_PAGE) console.log(`Voice test page: http://localhost:${env.PORT}/voice-test`);
 });
 
 // Stop any running Agora agents so they don't keep billing after shutdown.
 for (const signal of ['SIGINT', 'SIGTERM'] as const) {
   process.on(signal, async () => {
-    await stopAllListens();
+    await Promise.all([stopAllListens(), stopAllCalls()]);
     server.close(() => process.exit(0));
   });
 }

@@ -17,6 +17,8 @@ import { DevConnection } from '@/components/DevConnection';
 import { DifficultySelector } from '@/components/DifficultySelector';
 import { Icon } from '@/components/Icon';
 import { LearningCard } from '@/components/LearningCard';
+import { LessonArtwork } from '@/components/LessonArtwork';
+import { lessonsFor, lessonTitle, subjectInfo } from '@/curriculum';
 import { SpeakableTitle } from '@/components/SpeakableTitle';
 import { TeachingStyleSelector } from '@/components/TeachingStyleSelector';
 import { PersonaPortrait } from '@/components/PersonaPortrait';
@@ -50,6 +52,8 @@ export default function HomeScreen() {
   const voice = useVoice();
   const tutor = STYLE_CARDS.find((c) => c.value === draft.style) ?? STYLE_CARDS[0];
   const tutorName = tutor.label[uiLang];
+  // The first lesson of the student's grade whose quiz isn't passed yet.
+  const upNext = lessonsFor(student?.grade ?? 1).find((l) => !student?.passed.includes(l.id)) ?? null;
 
   const call = (override?: Partial<VoiceContext>) => {
     voice.startCall(override);
@@ -94,7 +98,7 @@ export default function HomeScreen() {
             <AppText variant="heading">{greeting ?? (student ? student.name : t.whoIsLearning)}</AppText>
             {student ? (
               <AppText variant="caption" color={colors.inkSoft}>
-                {t.gradeTitle} {student.grade} · ★ {student.done.length} {t.lessonsDone}
+                {t.gradeTitle} {student.grade} · 📖 {student.done.length} {t.lessonsRead} · ★ {student.passed.length} {t.examsPassed}
               </AppText>
             ) : null}
           </View>
@@ -123,6 +127,31 @@ export default function HomeScreen() {
           onPress={() => call({ topic: null, question: null })}
         />
       </ClaySurface>
+
+        {/* Guided DepEd lessons (ILAW) with quizzes: the tutor-led path. */}
+        {upNext ? (
+          <View style={styles.section}>
+            <SpeakableTitle text={t.nextLesson} hearLabel={t.hearThis} icon="school" iconColor={category.level.ink} />
+            <Pressable
+              onPress={() => router.push({ pathname: '/lesson', params: { id: upNext.id } })}
+              accessibilityRole="button"
+              accessibilityLabel={`${t.nextLesson}: ${lessonTitle(upNext, uiLang)}`}
+              style={({ pressed }) => [styles.nextLesson, pressed && styles.pressed]}>
+              <ClaySurface tint="peach" intensity="strong" radius={radius.lg} pointerEvents="none" style={StyleSheet.absoluteFill} />
+              <LessonArtwork lesson={upNext} size={64} />
+              <View style={styles.flex}>
+                <AppText variant="caption" color={colors.inkSoft} bold>
+                  {subjectInfo(upNext.subject).label[uiLang]} · {t.week} {upNext.week}
+                </AppText>
+                <AppText variant="heading" color={colors.ink} numberOfLines={2}>
+                  {lessonTitle(upNext, uiLang)}
+                </AppText>
+              </View>
+              <Icon name="play-circle" size={44} color={colors.primary} />
+            </Pressable>
+            <Button label={t.allLessons} icon="book-education" variant="secondary" size="md" onPress={() => router.push('/lessons')} />
+          </View>
+        ) : null}
 
         <View style={styles.metaRow}>
           <LanguageBadge t={t} language={draft.language} />
@@ -225,6 +254,7 @@ const styles = StyleSheet.create({
   avatarWrap: { flexDirection: 'row-reverse', alignItems: 'center', justifyContent: 'space-between', gap: space.lg, padding: space.xl, minHeight: 206, borderRadius: radius.lg, ...shadow.card },
   pressed: { opacity: 0.85 },
   section: { gap: space.md },
+  nextLesson: { flexDirection: 'row', alignItems: 'center', gap: space.md, padding: space.md, borderRadius: radius.lg, ...shadow.card },
   footer: {
     paddingHorizontal: layout.screen,
     paddingVertical: space.md,
