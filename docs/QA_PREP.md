@@ -142,6 +142,27 @@ Each grade's lessons are a fixed list, so "read" and "passed" are stored as one 
 Both tracks for all 173 Grade 1 lessons fit in about 60 characters on a cheap sticker. Phone
 and card merge, so nothing learned is ever lost.
 
+## 4b. Competitors (checked October 2026; re-check before claiming)
+
+| Alternative | What it does | What it doesn't do for our learners |
+|---|---|---|
+| **Microsoft Reading Progress** (DepEd nationwide rollout, 2026) | AI reading-fluency checks with insights for teachers; Filipino and English | It assesses reading; it doesn't teach lessons or talk with the child. It runs in Microsoft Teams with school accounts, and has no Bikol |
+| **AGAP.AI** (DepEd + Microsoft, launched January 2026) | AI-literacy training for 1.5M students, teachers and parents | It's a training program, not a tutor |
+| **Google Read Along** | Voice-based reading practice | No Filipino, Tagalog or Bikol |
+| **NABU** | Multilingual storybooks, including Bikol | Reading-based books, not curriculum lessons, quizzes or a conversation |
+| **"Learn Bicol"-type apps** | Teach the Bikol language | Language learning, not school subjects in Bikol |
+| **Kolibri** (used in DepEd offline projects) | Offline server for open educational content | Text and video content with accounts; no AI tutor, no Bikol voice |
+| **ChatGPT / Khanmigo-style tutors** | General AI tutoring | They assume reading and typing, personal accounts, English, and are often paid |
+
+**Q: DepEd already has Microsoft Reading Progress. Why TU-gang?**
+They solve different steps. Reading Progress *measures* reading fluency for teachers. TU-gang
+*teaches* the competencies by voice, in the child's home language, on a shared phone with no
+accounts. A school could use both: Reading Progress to find who's struggling, TU-gang to help them.
+
+**Q: Aren't there already Bikol apps?**
+There are Bikol storybooks (NABU) and apps for learning the Bikol language. We found none that
+teaches DepEd subjects in Bikol, by voice, with quizzes and progress for non-readers.
+
 ## 5. Language quality, safety & privacy
 
 **Q: How do you know the Bikol is correct?**
