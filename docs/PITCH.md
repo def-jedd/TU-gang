@@ -93,10 +93,15 @@ together, not a chatbot inside the app.
   dataset, and the tutor's teaching and quiz rules.
 - **Synthesized research:** Quick Research gathered the evidence for our pain point (learning
   poverty, PISA 2022, SEA-PLM 2019, RA 12027) with sources.
-- **Automated a workflow:** the Quick flow `TU-gang Lesson QA` checks AI-written lessons against their DepEd
-  competency and our quiz rules (exactly one right answer, answerable from the lesson). It
-  flags any that need a teacher.
-- *[Keep only the items the team actually set up in Quick, and add a screenshot of each.]*
+- **Automated a workflow:** the Quick flow `TU-gang Lesson QA` takes an AI-written lesson from
+  our server and checks it against the DepEd competency in the Knowledge Hub and our quiz rules:
+  - the lesson teaches only its competency;
+  - each question has exactly one right answer, and the answer key matches;
+  - every quiz question can be answered from the lesson;
+  - the facts and the language are right.
+  It returns PASS or NEEDS TEACHER REVIEW, with a suggested fix per question. Teachers review
+  only what the flow flags, instead of every lesson. That keeps quality control lean as we grow
+  to all 866 lessons.
 
 **AWS infrastructure: how it runs.** *[Fill in what is actually deployed. The lean target:]*
 - The API server (one small Node service) on a single small AWS instance, such as Lightsail
@@ -145,7 +150,7 @@ corporate sponsors who can underwrite cards and data for a barangay at a time.
 
 | Criterion | Our evidence |
 |---|---|
-| MVP & technical (30%, Kiro + Quick required) | Working Android build: live Agora voice, NFC lessons and profile cards, 866 ILAW lessons with quizzes. Kiro built the backend. Quick orchestrates our curriculum, research and lesson QA (**must be done before submitting**). |
+| MVP & technical (30%, Kiro + Quick required) | Working Android build: live Agora voice, NFC lessons and profile cards, 866 ILAW lessons with quizzes. Kiro built the backend. Quick orchestrates our curriculum (Knowledge Hub Space), evidence research, and an automated lesson-QA flow. |
 | Problem & domain fit (25%) | Learning-poverty evidence; mother-tongue gap after RA 12027; DepEd ILAW + BOW alignment; shared-phone reality. |
 | Technology & automation judgment (25%) | Voice and NFC instead of typing and passwords; a small model + caching instead of a big model per request; swappable to an offline model; no server-side student data. |
 | Innovation (15%) | The NFC card as an offline save file for several children on one phone; native-reviewed local-language grounding; ILAW lessons as a spoken conversation. |
@@ -156,9 +161,8 @@ corporate sponsors who can underwrite cards and data for a barangay at a time.
 The build window ends at **10:00 AM**. Judges review submissions for 1.5 hours before the
 1:10 PM pitches.
 
-1. **Quick (−5 if missing).** Follow `ai/quick-agent/QUICK_ORCHESTRATION.md`: the Space
-   `TU-gang Knowledge Hub`, Research, and the `TU-gang Lesson QA` flow (about 30 min). Take the 4
-   screenshots, and keep only what you did in "Strategic integration".
+1. ~~**Quick (−5 if missing).**~~ ✅ Done: Space `TU-gang Knowledge Hub`, Research, and the
+   `TU-gang Lesson QA` flow. Attach the screenshots to the submission.
 2. **Kiro (−5 if missing).** Keep `.kiro/` in the repo (don't commit its local deletion).
    Be ready to show Kiro's commits and steering files.
 3. **AWS infrastructure.** The submission field asks for it. Deploy the server, or state the
