@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 
 import { View } from 'react-native';
 import { BottomNav } from '@/components/BottomNav';
+import { avatarFont } from '@/components/AvatarIcon';
 import { iconFont } from '@/components/Icon';
 import { TutorProvider } from '@/hooks/useTutor';
 import { NfcProvider } from '@/nfc/NfcProvider';
@@ -24,6 +25,7 @@ export default function RootLayout() {
     Fredoka_600SemiBold,
     Fredoka_700Bold,
     ...iconFont,
+    ...avatarFont,
   });
   // A font failure must never block the app — fall back to system fonts.
   const ready = fontsLoaded || !!fontError;
