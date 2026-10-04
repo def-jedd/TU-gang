@@ -268,7 +268,7 @@
       const tl = gsap.timeline({ paused: true });
       const scenes = ["#s1", "#s2", "#s3", "#s4", "#s5", "#s6", "#s7", "#s8", "#s9"];
       gsap.set([...scenes, "#phone", "#nfcCard", "#ring1", "#ring2"], { opacity: 0 });
-      if (!SHOW_QUICK) gsap.set("#quickCard", { visibility: "hidden" });
+      if (!SHOW_QUICK) document.getElementById("quickCard").remove();
 
       const scene = (sel, start, end) => {
         tl.fromTo(sel, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, start);
@@ -310,8 +310,8 @@
       screen("#p03", 25.4);
       tl.fromTo("#nfcCard", { opacity: 0, x: 300 }, { opacity: 1, x: 0, duration: 0.8, ease: "power3.out" }, 29);
       tl.to("#nfcCard", { y: -150, x: 40, duration: 0.6, ease: "power2.inOut" }, 30.2);
-      tl.fromTo("#ring1", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 1.8, duration: 0.9, ease: "power2.out" }, 30.8);
-      tl.fromTo("#ring2", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 1.8, duration: 0.9, ease: "power2.out" }, 31.2);
+      tl.fromTo("#ring1", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 1.8, duration: 0.9, ease: "power2.out", immediateRender: false }, 30.8);
+      tl.fromTo("#ring2", { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 1.8, duration: 0.9, ease: "power2.out", immediateRender: false }, 31.2);
       screen("#p04", 31.2);
       tl.to("#nfcCard", { opacity: 0, y: 40, duration: 0.5 }, 33.5);
 
